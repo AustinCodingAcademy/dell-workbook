@@ -1,0 +1,7 @@
+.left-block {
+    display: inline-block;
+}
+.right-block {
+    float:right;
+    vertical-align: top;
+}
