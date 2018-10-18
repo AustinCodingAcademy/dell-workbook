@@ -1,7 +1,7 @@
 .left-block {
-    display: inline-block;
+  display: inline-block;
 }
 .right-block {
-    float:right;
-    vertical-align: top;
+  float:right;
+  vertical-align: top;
 }
