@@ -1,5 +1,5 @@
-< !--For modern browsers-->
-h2 {
+<!--For modern browsers-->
+h2 {  
 	color: white;
 	font-size: 1.25em;
 	line-height: .5em;
@@ -23,7 +23,7 @@ p {
 }
 
 li {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 footer {
@@ -40,29 +40,6 @@ footer {
 
 p {
 	font-style: italic
-}
-
-
-/* Rules for sizing the icon. */
-
-.material-icons.md-18 {
-	font-size: 18px;
-}
-
-.material-icons.md-24 {
-	font-size: 24px;
-}
-
-.material-icons.md-36 {
-	font-size: 36px;
-}
-
-.material-icons.md-48 {
-	font-size: 48px;
-}
-
-i {
-	margin-right: 5px;
 }
 
 .boxed {
