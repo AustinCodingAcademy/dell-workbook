@@ -1,0 +1,28 @@
+h1 {
+  font-style: normal;
+  font-family: Verdana;
+  margin-bottom: 0%;
+}
+
+h2 {
+  font-family: Verdana;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: Verdana;
+}
+
+h4 {
+  margin-top: 0%;
+  margin-bottom:0%;
+  font-family: Verdana;
+}
+
+p{
+  font-family: Verdana;
+  font-size: large;
+}
