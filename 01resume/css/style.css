@@ -1,16 +1,28 @@
-body{
+body {
   padding-top: 1%;
   padding-right: 25%;
   padding-bottom: 5%;
   padding-left: 25%;
 }
 
+img {
+  max-height: 25%;
+  max-width: 25%;
+  object-fit: contain;
+}
 
-#name{
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+#name {
   font-size: 3em;
 }
 
-#job-title{
+#job-title {
   font-size: 1.5em;
 }
 
@@ -25,17 +37,4 @@ body{
   height: 70%;
   width: auto;
   border: dashed blue 1px;
-}
-
-img {
-  max-height: 25%;
-  max-width: 25%;
-  object-fit: contain;
-}
-
-blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
 }
