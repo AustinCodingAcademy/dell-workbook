@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tameesha Desangles</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tameesha Desangles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1>Tameesha Desangles</h1>
+    <header>
+      <a class="skip-link" href="#main">Skip to main</a>
+      <nav>
+        <ul>
+          <li>About Me</li>
+          <li>Resume</li>
+          <li>Experience</li>
+          <li>Skills</li>
+          <li>Education</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="main" tabindex="-1">
+      <h1>Tameesha J. Desangles</h1>
+      <p>UX Architect</p>
+      <section>
+        <h2>About Me</h2>
+        <h2>Resume</h2>
+          <h3>Experience</h3>
+          <h3>Skills</h3>
+          <h3>Education</h3>
+          <h3>Tetimonials</h3>
+        <h2>Portfolio</h2>
+      </section>  
+      <section>
+        <h2>Contact</h2>
+          <h3>Call</h3>
+          <h3>Connect</h3>
+          <h3>Send a message</h3>
+          <p>Reach Me Here</p>
+         
+          <p>All fields are required.</p>
+          <form id="contact" action="/contact.php" method="POST" novalidate>
+
+            <section id="errors' aria-live="assertive" tab-index="-1">
+            </section>
+            
+            <label for="name">Name
+              <span class="error-message">Name cannot be empty</span>
+            </label>
+            <input id="name" type="text" name="name" required aria-invalid="true">
+
+            <label for="email">Email
+                <span class="error-message">Email cannot be empty</span>
+            </label>
+            <input id="email" type="email" name="email" required arial-invalid="true">
+
+            <label for="subject">Subject
+                <span class="error-message">Subject cannot be empty</span>
+            </label>
+            <input id="subject" type="text" name="subject" required aria-invalid="true">
+
+            <label for="message">Message
+                <span class="error-message">Message cannot be empty</span>
+            </label>
+            <input id="message" type="text-field" name="message" required aria-invalid="true">
+          </form>
+          
+      </section>  
+    </main>
+    
+      <footer>
+        <a href="#">Site Map</a>
+      </footer>    
 </body>
+
 </html>
