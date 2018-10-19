@@ -1,5 +1,7 @@
 body {
     background-image: url(../background-canvas-close-up-1020320.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 h1 {
     color: navy;
