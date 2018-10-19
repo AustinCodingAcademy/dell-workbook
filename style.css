@@ -1,1 +1,5 @@
 /* You can style your links page here */
+a {
+  text-decoration: none;
+  color: turquoise;
+}
