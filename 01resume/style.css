@@ -1,5 +1,10 @@
 <!--For modern browsers-->
 
+.body {
+  color: white;
+  background-color: #2c3539; 
+}
+
 h2 {
   color:white;
   font-size: 1.25em;
@@ -15,13 +20,16 @@ h4 {
   font-size: 1em;
   text-indent: 25px;
   line-height: 0em;
+  color: white;
 }
 p {
   font-size: 1em;
   font-style: initial;
+  color: white;
 }
 li {
   font-size: 1em;
+  color: white;
 
 }
 footer{
