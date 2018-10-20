@@ -1,37 +1,37 @@
-h1 {
-  font-style: normal;
-  font-family: Verdana;
-  margin-bottom: 0%;
-}
+/* CSS Styling to achieve the appearance I desire */
 
-h2 {
-  font-family: Verdana;
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-h3 {
+.title {
+  font-size: xxx-large;
   margin-top: 0%;
   margin-bottom: 0%;
   font-family: Verdana;
+  color:black;
 }
 
-h4 {
-  margin-top: 0%;
-  margin-bottom:0%;
-  font-family: Verdana;
-}
-
-p{
-  margin-top: 0%;
-  margin-bottom: 1%;
-  font-family: Verdana;
+.subContent {
   font-size: large;
-}
-
-span{
   margin-top: 0%;
   margin-bottom: 0%;
   font-family: Verdana;
-  font-size: medium;
+  color:black;
+}
+
+.contentTitle {
+  font-size: x-large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: Verdana;
+  color:black;
+}
+
+.subContentTitle {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: larger;
+  font-family: Verdana;
+  color:black;
+}
+
+.jumbotron {
+  background-color: mistyrose !important;
 }
