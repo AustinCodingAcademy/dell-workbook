@@ -10,3 +10,6 @@ h1 {
 .center {
     text-align: center;
  }
+ .all-sides {
+    margin: 15px; /* 15px will be applied to all four sides of the element */
+  }
