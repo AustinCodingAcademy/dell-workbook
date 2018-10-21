@@ -30,6 +30,10 @@ section {
   width: 30%;
 }
 
+#sidebar-left h3 {
+  color: #05a8aa;
+}
+
 header {
   border: 2px solid #05a8aa;
   height: 80px;
