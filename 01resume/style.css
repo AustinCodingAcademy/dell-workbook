@@ -1,3 +1,6 @@
+body {
+  margin: 75px;
+}
 
 h3 {
   text-align: center;
@@ -5,4 +8,10 @@ h3 {
 
 div.a {
   text-align: center;
+}
+
+.pix {
+  float: right;
+  /* padding-right: 30px; */
+  margin-right: 30px; 
 }
