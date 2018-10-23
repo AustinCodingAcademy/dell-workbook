@@ -1,3 +1,16 @@
 body {
-  background-image: url("https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg");
+  background-color: black;
+  color:white;  
+}
+
+header {
+  text-align: center;
+}
+
+a.email {
+  text-decoration: none; color: white;
+}
+
+a.twitter {
+  text-decoration: none; color: white;
 }
