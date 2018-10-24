@@ -7,8 +7,6 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: chartreuse; 
-    /* don't forget to delete this later this is just so you can see the planet  */
   }
   
   .core {
