@@ -1,1 +1,12 @@
-/* You can style your links page here */
+body {
+  background-color: black;
+  color:white;  
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+.center {
+  text-align: center;
+}
