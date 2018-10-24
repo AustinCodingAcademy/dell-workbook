@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+}
+
+.planet {
+  margin: 50px auto;
+ 
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.planet.earth {
+height: 601px;
+width: 601px;
+
+  
+
+}
+
+.earth .crust {
+border-color: blue;
+border-width: 1.5px;
+  border-radius: 50%;
+    height: 598px;
+    width: 598px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.earth .mantle {
+  border-width: 12px;
+  padding: 105px;
+  margin:17.5px;
+  border-radius: 50%;
+  height: 329px;
+  width: 329px;
+
+}
+
+.earth .core {
+  border-width: 107px;
+  padding: 57.5px;
+  border-radius: 50%;
+  width:0px;
+
+}
+
+.planet.mars {
+  height: 396.1px;
+  width: 396.1px;
+
+}
+
+.mars .crust {
+  border-color: firebrick;
+  border-width: 2.5px;
+    border-radius: 50%;
+      height: 391.02px;
+      width: 391.02px;
+      margin: 0px;
+      padding: 0px;
+
+}
+
+.mars .mantle {
+  border-width: 9.4px;
+  padding: 23.5px;
+  margin:49.3px;
+  border-radius: 50%;
+  height: 226.8px;
+  width: 226.8px;
+
+}
+
+.mars .core {
+  border-width: 9.4px;
+  padding: 104px;
+  border-radius: 50%;
+  width:0px;
+
+}
