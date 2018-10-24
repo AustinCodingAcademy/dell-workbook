@@ -26,11 +26,8 @@ outer-layers => border-width;
 make it round => border-radius;
 */
 .planet.earth {
-  height: 300px;
-  width: 300px;
-  padding: 25px;
-  border-width: 25px;
-  border-radius: 50%;
+  height: 320px;
+  width: 320px;
 }
 .earth .crust {
   height: 300px;
@@ -47,6 +44,7 @@ make it round => border-radius;
 .earth .core {
   height: 300px;
   width: 300px;
+  padding: 20px;
   border-width: 25px;
   border-radius: 50%;
 }
