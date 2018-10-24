@@ -1,65 +1,48 @@
-
 body {
-    background-color: black;
-  }
-  
-  .planet {
-    margin: 50px auto;
-  }
-  
-  .core {
-    background-color: yellow;
-    border-color: orange;
-    border-style: solid;
-  }
-  
-  .mantle {
-    background-color: orangered;
-    border-color: red;
-    border-style: solid;
-  }
-  
-  .crust {
-    background-color: brown;
-    /* border-color depends on planet! */
-    border-style: solid;
-  }
-  
-  /*
+  background-color: black;
+}
+
+.planet {
+  margin: 50px auto;
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+/*
     planet height and width => height and width
     inner-layers => padding;
     outer-layers => border-width;
     make it round => border-radius;
   */
-  
-  .planet.earth {
-  
-  }
-  
-  .earth .crust {
-  
-  }
-  
-  .earth .mantle {
-  
-  }
-  
-  .earth .core {
-  
-  }
-  
-  .planet.mars {
-  
-  }
-  
-  .mars .crust {
-  
-  }
-  
-  .mars .mantle {
-  
-  }
-  
-  .mars .core {
-  
-  }
+
+.planet.earth {}
+
+.earth .crust {}
+
+.earth .mantle {}
+
+.earth .core {}
+
+.planet.mars {}
+
+.mars .crust {}
+
+.mars .mantle {}
+
+.mars .core {}
