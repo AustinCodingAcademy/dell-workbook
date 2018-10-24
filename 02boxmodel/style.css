@@ -32,18 +32,24 @@ body {
   */
   
   .planet.earth {
-  
+  height 100px;
+  width 100px;
+
   }
   
   .earth .crust {
-  
+    height 70px;
+    width 70px;
   }
   
   .earth .mantle {
-  
+    height 60px;
+    width 60px;
   }
   
   .earth .core {
+    height 50px;
+    width 50px; 
   
   }
   
