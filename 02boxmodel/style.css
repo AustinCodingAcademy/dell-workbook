@@ -64,13 +64,22 @@ body {
   }
   
   .mars .crust {
-  
+    background-color: pink;
+    margin: 2px;
+    padding: 25px;
+    border-width: 5px;
+    border-radius: 50%;
+    position:absolute;
   }
   
   .mars .mantle {
-  
+    padding: 25px;
+  margin: 2px;
+  border-radius: 50%;
   }
   
   .mars .core {
-  
+    padding: 25px;
+    margin: 2px;
+    border-radius: 50%;
   }
