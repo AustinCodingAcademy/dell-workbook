@@ -4,6 +4,11 @@ body {
   
   .planet {
     margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: chartreuse; 
+    /* don't forget to delete this later this is just so you can see the planet  */
   }
   
   .core {
@@ -32,25 +37,28 @@ body {
   */
   
   .planet.earth {
-  height: 400px;
-  /* height: 500px; */
+
   }
   
-  /* .earth .crust {
-  border-width: 25px;
-  border-radius: 50%;
+  .earth .crust {
+    background-color: pink;
+    margin: 10px;
+    padding: 75%;
+    border-width: 5px;
+    border-radius: 50%;
   }
   
-  .earth .mantle {
+   .earth .mantle {
   padding: 50px;
   border-radius: 50%;
   }
   
   .earth .core {
-  padding: 50px;
-  border-radius: 50%;
-  } */
-  
+    padding: 100px;
+    margin: 2px;
+    border-radius: 50%;
+  }
+   
   .planet.mars {
   
   }
