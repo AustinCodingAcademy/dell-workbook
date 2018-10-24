@@ -19,12 +19,12 @@ body {
   /* border-color depends on planet! */
   border-style: solid;
 }
-  /*
-  planet height and width => height and width
-  inner-layers => padding;
-  outer-layers => border-width;
-  make it round => border-radius;
-  */
+/*
+planet height and width => height and width
+inner-layers => padding;
+outer-layers => border-width;
+make it round => border-radius;
+*/
 .planet.earth {
   height: 300px;
   width: 300px;
