@@ -30,47 +30,47 @@ make it round => border-radius;
   width: 300px;
   padding: 25px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .earth .crust {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .earth .mantle {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .earth .core {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .planet.mars {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .mars .crust {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .mars .mantle {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 .mars .core {
   height: 300px;
   width: 300px;
   border-width: 25px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
