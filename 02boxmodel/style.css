@@ -26,41 +26,41 @@ outer-layers => border-width;
 make it round => border-radius;
 */
 .planet.earth {
-  height: 320px;
-  width: 320px;
+  height: 360px;
+  width: 360px;
 }
 .earth .crust {
-  padding: 20px;
-  border-width: 25px;
+  padding: 30px;
+  border-width: 30px;
   border-radius: 50%;
+  color: blue;
 }
 .earth .mantle {
-  padding: 20px;
-  border-width: 25px;
+  padding: 30px;
+  border-width: 30px;
   border-radius: 50%;
 }
 .earth .core {
-  padding: 20px;
-  border-width: 25px;
+  padding: 30px;
+  border-width: 30px;
   border-radius: 50%;
 }
 .planet.mars {
-  padding: 20px;
-  border-width: 25px;
-  border-radius: 50%;
+  height: 240px;
+  width: 240px;
 }
 .mars .crust {
   padding: 20px;
-  border-width: 25px;
+  border-width: 20px;
   border-radius: 50%;
 }
 .mars .mantle {
   padding: 20px;
-  border-width: 25px;
+  border-width: 20px;
   border-radius: 50%;
 }
 .mars .core {
   padding: 20px;
-  border-width: 25px;
+  border-width: 20px;
   border-radius: 50%;
 }
