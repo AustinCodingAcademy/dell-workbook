@@ -369,13 +369,13 @@ body {
   height: 100%;
 }
 
-  .pluto .surfacewrap {
-    border-width: 0px;
-    position: relative;
-    right: 9px;
-    bottom: 9px;
-    width: 20px;
-    height: 20px;
-    border-color: sandybrown;
-    box-shadow: inset 2px -5px 2px sandybrown;
-  }
+.pluto .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 9px;
+  bottom: 9px;
+  width: 20px;
+  height: 20px;
+  border-color: sandybrown;
+  box-shadow: inset 2px -5px 2px sandybrown;
+}
