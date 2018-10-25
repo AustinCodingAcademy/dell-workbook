@@ -53,6 +53,7 @@ make it round => border-radius;
   padding: 20px;
   border-width: 20px;
   border-radius: 50%;
+  color: red;
 }
 .mars .mantle {
   padding: 20px;
@@ -62,5 +63,25 @@ make it round => border-radius;
 .mars .core {
   padding: 20px;
   border-width: 20px;
+  border-radius: 50%;
+}
+.planet.jupitor {
+  height: 1200px;
+  width: 1200px;
+}
+.jupitor .crust {
+  padding: 100px;
+  border-width: 100px;
+  border-radius: 50%;
+  color: sandybrown;
+}
+.jupitor .mantle {
+  padding: 100px;
+  border-width: 100px;
+  border-radius: 50%;
+}
+.jupitor .core {
+  padding: 100px;
+  border-width: 100px;
   border-radius: 50%;
 }
