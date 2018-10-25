@@ -40,8 +40,8 @@ body {
   border-color: blue;
   border-width: 1.5px;
   border-radius: 50%;
-  height: 598px;
-  width: 598px;
+ /* height: 598px;
+  width: 598px;*/
   margin: 0px;
   padding: 0px;
 }
@@ -51,8 +51,8 @@ body {
   padding: 105px;
   margin: 17.5px;
   border-radius: 50%;
-  height: 329px;
-  width: 329px;
+ /*height: 329px;
+  --0width: 329px;*/
 }
 
 .earth .core {
@@ -71,8 +71,8 @@ body {
   border-color: firebrick;
   border-width: 2.5px;
   border-radius: 50%;
-  height: 391.02px;
-  width: 391.02px;
+  /* height: 391.02px;
+  width: 391.02px; */
   margin: 0px;
   padding: 0px;
 }
@@ -82,8 +82,8 @@ body {
   padding: 23.5px;
   margin: 49.3px;
   border-radius: 50%;
-  height: 226.8px;
-  width: 226.8px;
+  /*height: 226.8px;
+  width: 226.8px;*/
 }
 
 .mars .core {
