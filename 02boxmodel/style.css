@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+  }
+  
+  .planet {
+    margin: 50px auto;
+  }
+  
+  .core {
+    background-color: yellow;
+    border-color: orange;
+    border-style: solid;
+  }
+  
+  .mantle {
+    background-color: orangered;
+    border-color: red;
+    border-style: solid;
+  }
+  
+  .crust {
+    background-color: brown;
+    /* border-color depends on planet! */
+    border-style: solid;
+  }
+  
+  /*
+    planet height and width => height and width
+    inner-layers => padding;
+    outer-layers => border-width;
+    make it round => border-radius;
+  */
+  
+  .planet.earth {
+      height: 320px;
+      width: 320px;
+  }
+  
+  .earth .crust {
+      padding: 50px;
+      border-width: 10px;
+      border-color: blue;
+      border-radius: 50%;
+  
+  }
+  
+  .earth .mantle {
+      padding: 20px;
+      border-width: 30px;
+      border-radius: 50%;
+  
+  }
+  
+  .earth .core {
+      padding: 20px;
+      border-width: 30px;
+      border-radius: 50%;
+  
+  }
+  
+  .planet.mars {
+      height: 180px;
+      width: 180px;
+  
+  }
+  
+  .mars .crust {
+      padding: 20px;
+      border-width: 10px;
+      border-radius: 50%;
+  
+  }
+  
+  .mars .mantle {
+    padding: 10px;
+    border-width: 20px;
+    border-radius: 50%;
+  }
+  
+  .mars .core {
+    padding: 10px;
+    border-width: 20px;
+    border-radius: 50%;
+  }
+
+  .planet {
+    display: inline-block;
+    background-color: #000000;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 3px;
+    margin-left: 100px;
+    animation: roll 5s infinite;
+    transform: rotate(30deg);
+    opacity: .7;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*body, html {
+    height: 100%;
+  }
+  */
+  
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
