@@ -10,18 +10,22 @@ body {
   background-color: yellow;
   border-color: orange;
   border-style: solid;
+  width: 20px;
+  height: 20px;
 }
 
 .mantle {
   background-color: orangered;
   border-color: red;
   border-style: solid;
+  width: 120px;
 }
 
 .crust {
   background-color: brown;
   /* border-color depends on planet! */
   border-style: solid;
+  width: 220px;
 }
 
 /*
@@ -31,18 +35,50 @@ body {
     make it round => border-radius;
   */
 
-.planet.earth {}
+.planet.earth {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 350px;
+  margin-bottom: 350px;
+}
 
-.earth .crust {}
+.earth .crust {
+  padding: 50px;
+  border-width: 10px;
+  border-color: blue;
+  border-radius:50%;
+}
 
-.earth .mantle {}
+.earth .mantle {
+  padding: 20px;
+  border-width: 30px;
+  border-radius: 50%; 
+}
 
-.earth .core {}
+.earth .core {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-right-width: 15px;
+  border-top-width: 15px;
+  border-left-width: 15px;
+  border-bottom-width: 15px;
+  border-radius: 50%;
+  
+}
 
-.planet.mars {}
+.planet.mars {
+  height: 350px;
+  width: 350px;
+
+}
 
 .mars .crust {}
 
 .mars .mantle {}
 
-.mars .core {}
+.mars7�8Gd���
