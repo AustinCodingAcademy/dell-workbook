@@ -35,39 +35,52 @@ body {
 */
 
 .planet.earth {
-  height: 400px;
-  width: 400px;
+  height: 240px;
+  width: 240px;
 }
 
+/*ml */
+
 .earth .crust {
-  
-  padding: 15px;
-  
+  border-width: 10px;
+  border-color:blue;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .earth .mantle {
+  border-width: 30px;
   padding: 20px;
+  border-radius: 50%;
 }
 
 .earth .core {
-  padding: 30px;
-  border-width: 20px;
-  border-radius: 50px;
+  padding: 20px;
+  border-width: 30px;
+  border-radius: 50%;
 
 }
 
 .planet.mars {
- 
+  height: 160px;
+  width: 160px;
 }
 
 .mars .crust {
-
+  border-width: 5px;
+  border-color: pink;
+  padding: 25px;
+  border-radius: 50%;
 }
 
 .mars .mantle {
-
+  border-width: 15px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .mars .core {
-
+  padding: 10px;
+  border-width: 15px;
+  border-radius: 50%;
 }
