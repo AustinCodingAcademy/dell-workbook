@@ -1,20 +1,17 @@
 body {
   background-color: black;
   color: white;
-  
 }
 
 .planet {
   margin: 50px auto;
   box-sizing: border-box;
-      
 }
 
 .core {
   background-color: yellow;
   border-color: orange;
   border-style: solid;
-  
 }
 
 .mantle {
@@ -35,7 +32,6 @@ body {
   border-style: solid;
 }
 
-
 /*
   planet height and width => height and width
   inner-layers => padding;
@@ -47,20 +43,20 @@ body {
   width: 150px;
   height: 150px;
 }
-  
+
 .mercury .crust {
   padding: 20px;
   border-width: 15px;
   border-radius: 50%;
   border-color: grey;
 }
-  
+
 .mercury .mantle {
   padding: 10px;
   border-width: 15px;
   border-radius: 50%;
 }
-  
+
 .mercury .core {
   padding: 10px;
   border-width: 5px;
@@ -71,20 +67,20 @@ body {
   width: 250px;
   height: 250px;
 }
-  
+
 .venus .crust {
   padding: 30px;
   border-width: 15px;
   border-radius: 50%;
   border-color: #c7bf90;
 }
-  
+
 .venus .mantle {
   padding: 30px;
   border-width: 15px;
   border-radius: 50%;
 }
-  
+
 .venus .core {
   padding: 20px;
   border-width: 15px;
@@ -92,171 +88,157 @@ body {
 }
 
 .planet.earth {
- width: 250px;
- height: 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .earth .crust {
-padding: 30px;
-border-width: 15px;
-border-radius: 50%;
-border-color: darkcyan;
-
+  padding: 30px;
+  border-width: 15px;
+  border-radius: 50%;
+  border-color: darkcyan;
 }
 
 .earth .mantle {
-padding: 30px;
-border-width: 15px;
-border-radius: 50%;
-
+  padding: 30px;
+  border-width: 15px;
+  border-radius: 50%;
 }
 
 .earth .core {
-padding: 20px;
-border-width: 15px;
-border-radius: 50%;
-
+  padding: 20px;
+  border-width: 15px;
+  border-radius: 50%;
 }
 
 .planet.mars {
-width: 120px;
-height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .mars .crust {
-padding: 20px;
-border-width: 10px;
-border-radius: 50%;
-border-color: rgb(240, 149, 30);
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
+  border-color: rgb(240, 149, 30);
 }
 
 .mars .mantle {
-padding: 10px;
-border-width: 5px;
-border-radius: 50%;
+  padding: 10px;
+  border-width: 5px;
+  border-radius: 50%;
 }
 
 .mars .core {
-padding: 10px;
-border-width: 5px;
-border-radius: 50%;
+  padding: 10px;
+  border-width: 5px;
+  border-radius: 50%;
 }
 
 .planet.jupiter {
   width: 350px;
   height: 350px;
 }
- 
- .jupiter .crust {
- padding: 50px;
- border-width: 25px;
- border-radius: 50%;
- border-color: rgba(110, 53, 6, 0.568);
- 
- }
- 
- .jupiter .mantle {
- padding: 40px;
- border-width: 25px;
- border-radius: 50%;
- 
- }
- 
- .jupiter .core {
- padding: 20px;
- border-width: 15px;
- border-radius: 50%;
- 
- }
+
+.jupiter .crust {
+  padding: 50px;
+  border-width: 25px;
+  border-radius: 50%;
+  border-color: rgba(110, 53, 6, 0.568);
+}
+
+.jupiter .mantle {
+  padding: 40px;
+  border-width: 25px;
+  border-radius: 50%;
+}
+
+.jupiter .core {
+  padding: 20px;
+  border-width: 15px;
+  border-radius: 50%;
+}
 
 .planet.saturn {
   width: 260px;
   height: 260px;
 }
- 
+
 .saturn .crust {
- padding: 40px;
- border-width: 15px;
- border-radius: 50%;
- border-color: orange;
- 
+  padding: 40px;
+  border-width: 15px;
+  border-radius: 50%;
+  border-color: orange;
 }
- 
+
 .saturn .mantle {
- padding: 30px;
- border-width: 15px;
- border-radius: 50%;
- 
+  padding: 30px;
+  border-width: 15px;
+  border-radius: 50%;
 }
- 
+
 .saturn .core {
- padding: 20px;
- border-width: 10px;
- border-radius: 50%;
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
 }
 
 .ring {
-height: 150px;
-width: 150px;
-padding: 10px;
-border-radius: 140px;
-border-width: 15px;
-transform: skewY(125deg);
-position: relative;
-bottom: 270px;
-left: 650px;
-z-index: -1;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 140px;
+  border-width: 15px;
+  transform: skewY(125deg);
+  position: relative;
+  bottom: 270px;
+  left: 650px;
+  z-index: -1;
 }
 
 .planet.uranus {
- width: 170px;
- height: 170px;
+  width: 170px;
+  height: 170px;
 }
 
 .uranus .crust {
-padding: 20px;
-border-width: 10px;
-border-radius: 50%;
-border-color: rgb(58, 138, 165);
-
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
+  border-color: rgb(58, 138, 165);
 }
 
 .uranus .mantle {
-padding: 20px;
-border-width: 10px;
-border-radius: 50%;
-
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
 }
 
 .uranus .core {
-padding: 20px;
-border-width: 5px;
-border-radius: 50%;
-
+  padding: 20px;
+  border-width: 5px;
+  border-radius: 50%;
 }
 .planet.neptune {
   width: 150px;
   height: 150px;
 }
- 
+
 .neptune .crust {
- padding: 20px;
- border-width: 5px;
- border-radius: 50%;
- border-color: rgb(68, 68, 243);
- 
+  padding: 20px;
+  border-width: 5px;
+  border-radius: 50%;
+  border-color: rgb(68, 68, 243);
 }
- 
+
 .neptune .mantle {
- padding: 20px;
- border-width: 10px;
- border-radius: 50%;
- 
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
 }
- 
+
 .neptune .core {
- padding: 10px;
- border-width: 10px;
- border-radius: 50%;
- 
+  padding: 10px;
+  border-width: 10px;
+  border-radius: 50%;
 }
