@@ -40,9 +40,9 @@ make it round => border-radius;
   border-radius: 50%;
 }
 .earth .core {
-  /*padding: 20px;
+  padding: 20px;
   border-width: 25px;
-  border-radius: 50%;*/
+  border-radius: 50%;
 }
 .planet.mars {
   padding: 20px;
