@@ -80,4 +80,6 @@ body {
 }
 
 .mars .core {
+  padding: 2px;
+  border-width: 7px;
 }
