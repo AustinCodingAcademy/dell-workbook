@@ -1,0 +1,103 @@
+body {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.planet { 
+  margin: 50px auto;
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.planet.earth {
+  height:320px;
+  width: 320px;
+}
+
+.earth .crust {
+  padding: 50px;
+  border-width: 10px;
+  border-color: blue;
+  border-radius: 50%;
+}
+
+.earth .mantle {
+  padding: 20px;
+  border-width: 30px;
+  border-radius: 50%;
+}
+
+.earth .core {
+  padding: 20px;
+  border-width: 30px;
+  border-radius: 50%;
+}
+
+.planet.mars {
+  height: 176px;
+  width: 176px;
+}
+
+.mars .crust {
+  padding: 20px;
+  border-width: 9px;
+  border-radius: 50%;
+  background-color: red;
+  border-color: beige;
+}
+
+.mars .mantle {
+  border-color: yellow;
+  background-color: yellow;
+  padding: 7px;
+  border-width: 21px;
+  border-radius: 50%;
+}
+
+.mars .core {
+  padding: 10px;
+  border-width: 21px;
+  border-radius: 50%;
+  border-color: sandybrown;
+  background-color: sandybrown;
+}
+
+
+#planet {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
