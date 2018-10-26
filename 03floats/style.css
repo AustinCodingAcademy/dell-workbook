@@ -1,0 +1,33 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.top-header-container{
+    background-color:rgba(25, 58, 85, 1);
+    padding: 0 45px;
+    height: 85px;
+    vertical-align: middle;
+}
+
+header .clickable-buttons {
+    float: right;
+    list-style-type: none;
+    height: 100%;
+    /* vertical-align: middle; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center; 
+}
+
+header .clickable-buttons li{
+    padding: 9px;
+}
+
+header .clickable-buttons li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    height: 100%;
+}
