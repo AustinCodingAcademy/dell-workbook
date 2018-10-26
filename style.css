@@ -13,3 +13,10 @@ h1 {
   width: 500px;
   padding: 2%;
 }
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
