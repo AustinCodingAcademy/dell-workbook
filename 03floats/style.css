@@ -1,0 +1,145 @@
+body{
+  background-image: url("./img/airline.jpg");
+  /* background-size: 100% 100%;  */
+  background-color:white;
+  background-repeat: no-repeat;
+  background-position:center;
+  width :100%;
+  height: 100vh;
+  margin: 0px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.top{
+  background-image: url("./img/logo.png");
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  content :"";
+  display: block;
+  height : 100px;
+  background-color:#183a55;
+  margin-bottom: 10px;
+
+
+}
+
+.nav{
+  color:white;
+}
+
+.home{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  margin-left:5px;
+  margin-right:15px;
+  margin-top: 33px;
+}
+.traveldeals{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 33px;
+}
+.flightschedule{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 33px;
+}
+.RegisterLogin{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top: 33px;
+}
+.row { 
+  content: "";
+  clear: both;
+  display: block;
+}
+section {
+  background-color: #183a55;
+  
+}
+.box{
+  width: 340px;
+  /* height: 200px; */
+  margin-top:200px;
+  margin-left:50px;
+  background-color: #183a55;
+}
+
+.flight{
+  background-color:rgb(12, 135,206);
+  border:none;
+  width:111px;
+  margin-bottom:10px;
+}
+.hotel{
+  background-color:rgb(33, 182, 83);
+  border:none;
+  width:110px;
+  margin-bottom:10px;
+}
+.car{
+  background-color:rgb(33, 182, 83);
+  border:none;
+  width:110px;
+  margin-bottom:10px;
+}
+
+.depart{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+
+}
+.arrive{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.row3{
+  margin-right:20px;
+}
+.date{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.search{
+  background-color: rgb(12, 135, 206);
+  border:none;
+  width: 310px;
+  height:36px;
+  margin-right: 10px;
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  color:white;
+
+
+}
