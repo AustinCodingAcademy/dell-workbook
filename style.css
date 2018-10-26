@@ -1,1 +1,15 @@
 /* You can style your links page here */
+body {
+  background-color: rgb(29, 105, 110);
+  color: wheat;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+.links {
+  height: 400px;
+  width: 500px;
+  padding: 2%;
+}
