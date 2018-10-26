@@ -1,9 +1,15 @@
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: white;
+}
 header {
   background-color: rgb(6, 107, 189);
-  color: wheat;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 
 .clearfix:after {
   content: "";
@@ -11,9 +17,18 @@ header {
   display: block;
 }
 
-body {
+nav {
+  float: left
+}
+
+button{
   background-color: rgb(6, 107, 189);
-  color: wheat;
+  color: white;
+}
+
+body {
+  background-color: rgb(25, 58, 85);
+  color: white;
 }
 .Logo {
   float: left;
@@ -22,7 +37,12 @@ body {
 li {
   list-style: none;
   float: right;
+}
 
+form {
+  height: 50px;
+  width: 50px;
+  margin-top: 50 px;
 }
 
 section {
