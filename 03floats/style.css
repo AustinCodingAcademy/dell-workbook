@@ -1,0 +1,32 @@
+header {
+  background-color: rgb(6, 107, 189);
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  background-color: rgb(6, 107, 189);
+  color: wheat;
+}
+.Logo {
+  float: left;
+}
+
+li {
+  list-style: none;
+  float: right;
+
+}
+
+section {
+  width: 400 px;
+  height: 400px;
+  border-color: beige;
+}
