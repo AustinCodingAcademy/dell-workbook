@@ -9,6 +9,7 @@ body{
   margin: 0px;
   color: white;
   font-family: 'Open Sans', sans-serif;
+  font-size: 8pt;
 }
 
 .top{
@@ -33,78 +34,104 @@ body{
   float:right;
   border:none;
   background-color:#183a55;
+  height: 100px;
   color:white;
   margin-left:5px;
   margin-right:15px;
-  margin-top: 33px;
+  /* margin-top: 33px; */
+}
+.home:hover{
+  background-color:darkgrey;
 }
 .traveldeals{
   float:right;
   border:none;
   background-color:#183a55;
   color:white;
+  height: 100px;
   margin-left:5px;
   margin-right:5px;
-  margin-top: 33px;
+}
+.traveldeals:hover{
+  background-color:darkgrey;
 }
 .flightschedule{
   float:right;
   border:none;
   background-color:#183a55;
   color:white;
+  height: 100px;
   margin-left:5px;
   margin-right:5px;
-  margin-top: 33px;
+}
+.flightschedule:hover{
+  background-color:darkgrey;
 }
 .RegisterLogin{
   float:right;
   border:none;
   background-color:#183a55;
+  height: 100px;
   color:white;
   margin-left:5px;
   margin-right:5px;
-  margin-top: 33px;
+}
+.RegisterLogin:hover{
+  background-color:darkgrey;
 }
 .row { 
   content: "";
   clear: both;
   display: block;
 }
+
 section {
   background-color: #183a55;
   
 }
+
 .box{
   width: 340px;
-  /* height: 200px; */
+  height: 260px;
   margin-top:200px;
   margin-left:50px;
   background-color: #183a55;
 }
 
 .flight{
-  background-color:rgb(12, 135,206);
+  background-color:#0d67bd;
   border:none;
   width:111px;
   margin-bottom:10px;
 }
+.flight:hover{
+  background-color: darkgrey;
+}
+
 .hotel{
-  background-color:rgb(33, 182, 83);
+  background-color:#0a8c84;
   border:none;
   width:110px;
   margin-bottom:10px;
 }
+.hotel:hover{
+  background-color: darkgrey;
+}
 .car{
-  background-color:rgb(33, 182, 83);
+  background-color:#0a8c84;
   border:none;
   width:110px;
   margin-bottom:10px;
+}
+.car:hover{
+  background-color: darkgrey;
 }
 
 .depart{
   width: 140px;
   height: 25px;
   margin-left:20px;
+  margin-top:14px;
   margin-bottom: 10px;
   background-color: transparent;
   border: 1px solid white;
@@ -114,32 +141,50 @@ section {
   width: 140px;
   height: 25px;
   margin-left:20px;
+  margin-top:14px;
   margin-bottom: 10px;
   background-color: transparent;
   border: 1px solid white;
 }
 .row3{
-  margin-right:20px;
+  /* margin-right:10px;
+  margin-left:10px; */
+  margin: 0px;
+}
+.passengers{
+  margin-left:20px;
+  margin-top:20px;
+  width: 100px;
+}
+#select{
+  margin-right:70px;
 }
 .date{
   width: 140px;
   height: 25px;
   margin-left:20px;
+  margin-top:14px;
   margin-bottom: 10px;
   background-color: transparent;
   color: white;
   border: 1px solid white;
 }
+.radio{
+  margin-top:14px;
+  margin-left:10px;
+}
+
 .search{
-  background-color: rgb(12, 135, 206);
+  background-color: #0d67bd;
   border:none;
   width: 310px;
   height:36px;
   margin-right: 10px;
   margin-left:10px;
-  margin-top:10px;
+  margin-top:14px;
   margin-bottom:10px;
   color:white;
-
-
+}
+.search:hover{
+  background-color:darkgrey;
 }
