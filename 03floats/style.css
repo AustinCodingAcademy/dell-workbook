@@ -1,0 +1,31 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+header{
+  display:flex;
+  flex-direction: row;
+}
+
+main{
+  display:flex;
+  height:768px;
+  width:1366px;
+}
+.search_menu{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.search option{
+  justify-content:center;
+}
