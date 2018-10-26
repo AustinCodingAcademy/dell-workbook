@@ -1,6 +1,7 @@
-html {
+html{
     font-family: 'Roboto', sans-serif;
 }
+
 .top-header-container{
     background-color:rgba(25, 58, 85, 1);
     padding: 0 45px;
@@ -8,7 +9,7 @@ html {
     vertical-align: middle;
 }
 
-header .clickable-buttons {
+header .clickable-buttons{
     float: right;
     list-style-type: none;
     height: 100%;
@@ -30,4 +31,23 @@ header .clickable-buttons li a {
     font-weight: 600;
     font-size: 12px;
     height: 100%;
+}
+
+header .clickable-buttons li a:hover{
+    color: teal;
+}
+
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* set the image background  */
+
+main{
+    background-image: url(./img/airline.jpg);
+    background-size: cover;
+    height: 86vh;
 }
