@@ -18,12 +18,15 @@ header {
 }
 
 nav {
-  float: left
+  float: left;
+  height: 30px;
+  width: 500px;
 }
 
-button{
-  background-color: rgb(6, 107, 189);
+button {
+  background-color: rgb(25, 58, 85);
   color: white;
+  border: none;
 }
 
 body {
@@ -32,21 +35,27 @@ body {
 }
 .Logo {
   float: left;
+  height: 50px;
+  width: 500px;
 }
 
-li {
+/* li {
   list-style: none;
   float: right;
+} */
+
+ul {
+  list-style: none;
+  float: left;
 }
 
 form {
-  height: 50px;
-  width: 50px;
-  margin-top: 50 px;
-}
-
-section {
-  width: 400 px;
-  height: 400px;
-  border-color: beige;
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+  }
+.row {
+  float: left;
+  height: 30px;
+  width: 500px;
 }
