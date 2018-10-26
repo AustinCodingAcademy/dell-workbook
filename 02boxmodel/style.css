@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/649694main_pia15417-43_full.jpg);
+}
+
+.planet {
+  margin: 50px auto;
+  display: inline-block
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.planet.earth {
+  height: 310px;
+  width: 310px;
+  border-radius: 50%;
+
+}
+
+.earth .crust {
+  padding: 40px;
+  border: 35px solid turquoise;
+  border-radius: 50%;
+
+}
+
+.earth .mantle {
+  padding: 10px;
+  border-width: 30px;
+  border-radius: 50%;
+
+}
+
+.earth .core {
+  padding: 10px;
+  border-width: 30px;
+  border-radius: 50%;
+}
+
+.planet.mars {
+  height: 144px;
+  width: 144px;
+  border-radius: 50%;
+}
+
+.mars .crust {
+  padding: 16px;
+  border: 4px solid turquoise;
+  border-radius: 50%;
+}
+
+.mars .mantle {
+  padding: 6px;
+  border-width: 20px;
+  border-radius: 50%;
+}
+
+.mars .core {
+  padding: 6px;
+  border-width: 20px;
+  border-radius: 50%;
+}
+
+
+.star{
+  /* width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin: 0px 0px 0px -250px;
+  border: 10px solid orange;
+  color: yellow;
+  display: inline-block; */
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin-left: -250px;
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.star .core{
+  padding: 260px;
+  border-width: 20px;
+  border-radius: 50%;
+
+}
