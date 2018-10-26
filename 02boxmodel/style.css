@@ -162,6 +162,7 @@ body {
 .planet.saturn {
   width: 260px;
   height: 260px;
+  position: relative;
 }
 
 .saturn .crust {
@@ -184,16 +185,15 @@ body {
 }
 
 .ring {
-  height: 150px;
-  width: 150px;
-  padding: 10px;
-  border-radius: 140px;
+  padding: 85px;
+  border-radius: 240px;
   border-width: 15px;
   transform: skewY(125deg);
-  position: relative;
-  bottom: 270px;
-  left: 650px;
   z-index: -1;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  
 }
 
 .planet.uranus {
