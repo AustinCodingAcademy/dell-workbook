@@ -64,6 +64,7 @@ main form {
     /* for debugging purposes */
     border: black;
     border-style: solid;
+    background-color:rgba(25, 58, 85, 1);
 }
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
@@ -76,10 +77,12 @@ main form {
 main .floating-nav-container{
     display: flex;
     justify-content: space-around;
+    
 }
 main nav button{
     background-color: teal;
     border: none;
+    width: 143px;
     /* width: 160px;  */
     /* might need to change width after */
 }
@@ -99,18 +102,24 @@ main nav button:hover{
 code for row 1 .. departure and arrival
  */
 
-main .row1 article{
-    border: white;
-    border-style: solid;
-    color: white;
-    display: flex;
-    flex-direction: row;
-}
-
-main .row1{
+ main .row1{
     display: flex;
     justify-content: space-around;
 }
+
+main .row1 article{
+    border: white;
+    border-style: solid;
+    border-radius: 10%;
+    color: gray;
+    text-align: left;
+    margin: 5px;
+    height: 40px;
+    width: 110px;
+    /* need to center this text  */
+}
+
+
 
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
@@ -124,6 +133,9 @@ main .row2{
     justify-content: space-around;
 }
 
+main .row2 p{
+    background: rgba(25, 58, 85, 1);;
+}
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
     content: "";
