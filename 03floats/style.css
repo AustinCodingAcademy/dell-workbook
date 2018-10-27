@@ -52,6 +52,10 @@ main{
     height: 86vh;
 }
 
+/* / */
+/* * Formatting the nav window begins here  * */
+/* / */
+
 main form {
     display: flex;
     float: left;
@@ -60,6 +64,18 @@ main form {
     /* for debugging purposes */
     border: black;
     border-style: solid;
+}
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Code for editing the icons  */
+main .floating-nav-container{
+    display: flex;
+    justify-content: space-around;
 }
 main nav button{
     background-color: teal;
@@ -72,6 +88,17 @@ main nav button:hover{
     background-color: blue;
 }
 
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 
+code for row 1 .. departure and arrival
+ */
+
 main .row1 article{
     border: white;
     border-style: solid;
@@ -81,5 +108,42 @@ main .row1 article{
 }
 
 main .row1{
+    display: flex;
     justify-content: space-around;
+}
+
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main .row2{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main .row3{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* clearfix hack because there was a flexbox just before  */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main .row4{
+    display: flex;
+    justify-content: center;
 }
