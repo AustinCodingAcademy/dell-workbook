@@ -1,39 +1,50 @@
+<!DOCTYPE html>
+
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-	<ul class="header-ul">
-		<li><img src="img/logo.png" alt="company-logo"></li>
-		<li><a href="#"><img src="img/home-icon.png" alt="home-icon"> Home</a></li>
-		<li><a href="#"><img src="img/deal-icon.png" alt="deal-icon"> Trave Deals</a></li>
-		<li><a href="#"><img src="img/schedule-icon.png" alt="schedule-icon"> Flight Schedule</a></li>
-		<li><a href="#"><img src="img/login-icon.png" alt="login-icon"> Register/Login</a></li>
-	</ul>
-</header>
-
 <body>
-	<section>
-		<div>
+	<header class="clearfix">
+		<div class="logo"><img src="img/logo.png" alt="logo"></div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Travel Deals</a></li>
+			<li><a href="#">Flight Schedule</a></li>
+			<li><a href="#">Register/Login</a></li>
+		</ul>
+	</header>
+	<main>
+		<section>
 			<nav>
-				<ul class="nav-ul">
-					<li class="plane"><a href="#"><img src="img/plane-icon.png" alt="plane-icon"></a></li>
-					<li class="hotel"><a href="#"><img src="img/hotel-icon.png" alt="hotel-icon"></a></li>
-					<li class="car"><a href="#"><img src="img/car-icon.png" alt="car-icon"></a></li>
-				</ul>
+				<button></button>
+				<button></button>
+				<button></button>
 			</nav>
-		</div>
-		<form>
-			<div>
-				<section class="form">
-					<div class="flight"></div>
-					<div class="hotel"></div>
-					<div class="car"></div>
-					<input type="text" name="depart" value="Depart">
-					<input type="text" name="arrive" value="Arrive"><br>
-					<input type="datetime" name="departDate">
-					<input type="datetime" name="arriveDate">
-				</section>
-			</div>
-		</form>
+			<form>
+				<div class="row">
+					<input type="text">
+					<input type="text">
+				</div>
+				<div class="row">
+					<input type="date">
+					<input type="date">
+				</div>
+				<div class="row">
+					<label for="passengers">Passengers</label>
+					<select name="" id="passengers">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<input type="radio" name="flight-type" id="">One-Way
+					<input type="radio" name="flight-type" id="" selected> Round0Trip
+				</div>
+				<div class="row">
+					<button>Submit</button>
+				</div>
+			</form>
+		</section>
+	</main>
 </body>
