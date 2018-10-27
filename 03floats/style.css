@@ -1,3 +1,54 @@
-body {
-    background-image: url(../03floats/img/logo.png);
+header {
+    background-color: #183a55;
+}
+header .logo {
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+}
+header ul {
+    float:right;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+header ul li {
+    float:left;
+    list-style: none;
+    margin-left: 15px;
+}
+header a {
+    color: white;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+    background-color: teal;
+}
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+main {
+    background-image: url('./img/airline.jpg');
+    background-size: cover;
+    height: 86vh;
+    Margin-top: 1px;
+}
+section {
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    border-radius: 20%;
+}
+section nav a {
+    float: left;
+    width: 33.3%;
+    background-color: #03b5aa
+    text-align: center;
+    padding: 10px 0;
+    boarder-right: 1px solid white;
 }
