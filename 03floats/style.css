@@ -134,7 +134,7 @@ main .row2{
 }
 
 main .row2 p{
-    background: rgba(25, 58, 85, 1);;
+    margin: 15px;
 }
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
@@ -147,6 +147,7 @@ main .row3{
     display: flex;
     justify-content: space-around;
     color: white;
+    margin: 15px;
 }
 
 /* clearfix hack because there was a flexbox just before  */
