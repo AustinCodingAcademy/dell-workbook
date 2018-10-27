@@ -113,7 +113,7 @@ main .row1 article{
     border-radius: 10%;
     color: gray;
     text-align: left;
-    margin: 5px;
+    margin: 10px;
     height: 40px;
     width: 110px;
     /* need to center this text  */
@@ -134,7 +134,7 @@ main .row2{
 }
 
 main .row2 p{
-    margin: 15px;
+    margin: 5px 0px 10px 0px;
 }
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
@@ -147,7 +147,7 @@ main .row3{
     display: flex;
     justify-content: space-around;
     color: white;
-    margin: 15px;
+    margin: 10px 0px 15px 0px;
 }
 
 /* clearfix hack because there was a flexbox just before  */
