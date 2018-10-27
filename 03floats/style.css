@@ -146,6 +146,7 @@ main .row2 p{
 main .row3{
     display: flex;
     justify-content: space-around;
+    color: white;
 }
 
 /* clearfix hack because there was a flexbox just before  */
@@ -158,4 +159,10 @@ main .row3{
 main .row4{
     display: flex;
     justify-content: center;
+    height: 50px;
+    width: 429px;
+}
+
+main .row4 button{
+    width: inherit;
 }
