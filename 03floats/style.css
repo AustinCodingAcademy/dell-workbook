@@ -1,57 +1,57 @@
 header {
-    background-color: #183a55;
+ background-color: #183a55;
 }
 header .logo {
-    float: left;
+ float: left;
 }
 
 .logo img {
-    width: 100%;
+  width: 100%;
 }
 header ul {
-    float:right;
-    margin-top: 25px;
-    margin-right: 15px;
+ float:right;
+ margin-top: 25px;
+ margin-right: 15px;
 }
 header ul li {
-    float:left;
-    list-style: none;
-    margin-left: 15px;
+ float:left;
+ list-style: none;
+ margin-left: 15px;
 }
 header a {
-    color: white;
+ color: white;
 }
 a {
-text-decoration: none;
+ text-decoration: none;
 }
 a:hover {
-    background-color: teal;
+ background-color: teal;
 }
 .clearfix::after {
-    content: '';
-    clear: both;
-    display: block;
+ content: '';
+ clear: both;
+ display: block;
 }
 main {
-    background-image: url('./img/airline.jpg');
-    background-size: cover;
-    height: 86vh;
-    Margin-top: 1px;
+ background-image: url('./img/airline.jpg');
+ background-size: cover;
+ height: 86vh;
+ Margin-top: 1px;
 }
 section {
-    position: absolute;
-    left: 60px;
-    top: 160px;
+ position: absolute;
+ left: 60px;
+ top: 160px;
 }
 section nav a {
-    float: left;
-    width: 33.3%;
-    background-color: #03b5aa;
-    text-align: center;
-    padding: 10px 0;
-    boarder-right: 1px solid white;
+ float: left;
+ width: 33.3%;
+ background-color: #03b5aa;
+ text-align: center;
+ padding: 10px 0;
+ border-right: 1px solid white;
 }
 section nav li:last-child a{
-    border-right:none;
-    border-top-right-radius: 7px;
+ border-right:none;
+ border-top-right-radius: 7px;
 }
