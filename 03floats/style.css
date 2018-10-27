@@ -42,13 +42,16 @@ section {
     position: absolute;
     left: 60px;
     top: 160px;
-    border-radius: 20%;
 }
 section nav a {
     float: left;
     width: 33.3%;
-    background-color: #03b5aa
+    background-color: #03b5aa;
     text-align: center;
     padding: 10px 0;
     boarder-right: 1px solid white;
+}
+section nav li:last-child a{
+    border-right:none;
+    border-top-right-radius: 7px;
 }
