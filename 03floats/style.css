@@ -51,3 +51,35 @@ main{
     background-size: cover;
     height: 86vh;
 }
+
+main form {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    margin: 80px;
+    /* for debugging purposes */
+    border: black;
+    border-style: solid;
+}
+main nav button{
+    background-color: teal;
+    border: none;
+    /* width: 160px;  */
+    /* might need to change width after */
+}
+
+main nav button:hover{
+    background-color: blue;
+}
+
+main .row1 article{
+    border: white;
+    border-style: solid;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+main .row1{
+    justify-content: space-around;
+}
