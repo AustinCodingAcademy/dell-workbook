@@ -121,6 +121,7 @@ input[type=radio] {
   border-style: solid;
   background-color:  #193a55;
   border-color: #c9ced1;
+  border-radius: 5px;
   width: 50px;
   color: #c9ced1;
 
