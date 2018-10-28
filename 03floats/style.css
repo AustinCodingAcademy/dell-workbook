@@ -1,0 +1,183 @@
+/* global elements styling  */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/airline.jpg");
+  background-size: cover;
+}
+
+/* header elements styling  */
+header {
+  background-color: #193a55;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  float: left;
+}
+
+/* menu elements styling  */
+.menu {
+  float: right;
+  color: white;
+  margin-right: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-top: 30px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+  margin: 5px;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #148289;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+nav {
+  width: 28%;
+  background-color: #018d80;
+}
+
+/* main section elements styling  */
+
+main > section nav {
+  margin-top: 100px;
+}
+
+main section nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main > section nav ul li {
+  float: right;
+  width: 33.33333%;
+  text-align: center;
+}
+
+main > section nav ul li:hover {
+  background-color: #0063b7;
+}
+
+main section {
+  margin-left: 50px;
+}
+
+/* Form element and children element styling  */
+section form {
+  width: 28%;
+  padding: 10px;
+  background-color: #123754;
+}
+
+section div:nth-child(1) {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+section div:nth-child(2) {
+  margin-bottom: 5%;
+}
+
+/* field size class elements styling  */
+.field-size {
+  width: 47%;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 2px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.field-size:first-of-type {
+  float: left;
+  background-color: transparent;
+}
+
+.field-size:last-of-type {
+  float: right;
+  background-color: transparent;
+}
+
+/* Select container class elements styling  */
+.select-container {
+  color: white;
+}
+
+.select-container div:first-of-type {
+  float: left;
+  margin: 0px;
+  font-size: 75%;
+  font-weight: bold;
+}
+
+.select-container div:first-of-type select {
+  height: 40px;
+  width: 50px;
+  color: white;
+  background-color: transparent;
+}
+
+.select-container label {
+  padding-right: 10px;
+}
+
+.select-container div:last-of-type {
+  float: right;
+  font-size: 75%;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* Search Flight elements styling  */
+
+.search-flights {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.search-flights input {
+  width: 99%;
+  height: 40px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  background-color: #0d67bd;
+  border: 0;
+  border-radius: 2px;
+}
