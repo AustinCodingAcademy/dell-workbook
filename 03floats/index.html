@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Floats</title>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="img/logo.png" alt="Site logo">
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li><i class="fas fa-home"></i><a href="#" class="active">Home</a></li>
+        <li><i class="fas fa-plane"></i><a href="#">Travel Deals</a></li>
+        <li><i class="far fa-clock"></i><a href="#">Flight Schedule</a></li>
+        <li><i class="fas fa-sign-out-alt"></i><a href="#">Register/Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-main">
+    <div class="form-container">
+      <nav>
+        <ul class="tabset clearfix">
+          <li class="active"><a href="#"><i class="fas fa-plane"></i></a></li>
+          <li><a href="#"><i class="fas fa-bed"></i></a></li>
+          <li><a href="#"><i class="fas fa-car"></i></a></li>
+        </ul>
+      </nav>
+      <form>
+        <div class="form-row clearfix">
+          <input type="text" placeholder="Depart">
+          <input type="text" placeholder="Arrive">
+        </div>
+        <div class="form-row clearfix">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="form-row clearfix">
+          <div class="form-group clearfix">
+            <label for="passengers">Passengers</label>
+            <select name="passengers" id="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-group">
+              <input type="radio" id="return" name="options" value="return" checked />
+              <label for="return">Return</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="radio" id="one" name="options" value="one" />
+              <label for="one">One Way</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -3,11 +3,28 @@
 }
 
 body {
+  align-items: center;
   background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.star.sun {
+  background-color: #ffa500;
+  border-radius: 50%;
+  border: 20px solid orangered;
+  height: 90vh;
+  right: calc(100vh / 2);
+  position: relative;
+  width: 90vh;
 }
 
 .planet {
-  margin: 50px auto;
+  margin-left: 50px;
+  position: relative;
+  right: calc(100vh / 2);
 }
 
 .core {
@@ -42,8 +59,8 @@ body {
 }
 
 .planet.earth {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .earth .crust {
@@ -54,7 +71,7 @@ body {
 
 .earth .mantle {
   border-width: 20px;
-  padding: 120px;
+  padding: 90px;
 }
 
 .earth .core {
@@ -63,23 +80,23 @@ body {
 }
 
 .planet.mars {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
 }
 
 .mars .crust {
-  border-width: 10px;
+  border-width: 8px;
   border-color: #ffc0cb;
   padding: 10px;
 }
 
 .mars .mantle {
-  border-width: 25px;
+  border-width: 10px;
   border-color: #ff0000;
-  padding: 55px;
+  padding: 35px;
 }
 
 .mars .core {
-  border-width: 10px;
+  border-width: 5px;
   border-color: #ffa500;
 }
