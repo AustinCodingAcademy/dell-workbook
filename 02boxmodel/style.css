@@ -5,13 +5,12 @@
 .main {
   background-color: #000000;
   height: 100%;
+  padding: 20px;
 }
 
-.planet {
-  margin: 50px auto;
-}
 
-.planet div {
+
+.planets div {
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -42,48 +41,47 @@
   make it round => border-radius;
 */
 
-.planet.earth {
+.earth {
   height: 450px;
   width: 450px;
+  margin: 50px auto;
 }
 
 .earth .crust {
-  padding: 10px;
-  border-width: 15px;
+  padding: 60px;
+  border-width: 10px;
   border-color: blue;
 }
 
 .earth .mantle {
-  padding: 110px;
-  border-width: 50px;
+  padding: 20px;
+  border-width: 30px;
   border-color: #ff0000;
 }
 
 .earth .core {
   padding: 20px;
-  border-width: 10px;
+  border-width: 40px;
 }
 
-.planet.mars {
+.mars {
   height: 150px;
   width: 150px;
+  margin: 50px auto;
 }
 
 .mars .crust {
-  padding: 50%;
-  border-width: 15px;
-  border-radius: 50%;
-  border-color: #ff0000;
+  padding: 10px;
+  border-width: 8px;
+  border-color: rgb(224, 136, 114);
 }
 
 .mars .mantle {
-  padding: 50%;
-  border-width: 50px;
-  border-radius: 50%;
+  padding: 30px;
+  border-width: 10px;
 }
 
 .mars .core {
-  padding: 50%;
-  border-width: 50px;
-  border-radius: 50%;
+  padding: 4px;
+  border-width: 9px;
 }
