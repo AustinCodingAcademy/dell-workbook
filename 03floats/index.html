@@ -31,13 +31,13 @@
   </header>
   <main style="background-image: url('./img/airline.jpg')">
     <!--<img src="./img/airline.jpg">-->
-    <form class="search_menu">
+    <form class="search menu">
       <div class="search option">
         <div class="flight"><i class="fas fa-plane"></i></div>
         <div class="hotel"><i class="fas fa-bed"></i></div>
         <div class="car"><i class="fas fa-car-side"></i></div>
       </div>
-      <div class="search_details">
+      <div class="search details">
         <div class="search row">
           <input type="text" name="Departure_Airport" value="Depart">
           <input type="text" name="Arrival_Airport" value="Arrive">
@@ -47,18 +47,22 @@
           <input type="date" name="Arrival_Date">
         </div>
         <div class="search row">
-          Passengers
-          <select name="num_passengers">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-          <input type="radio" name="round_trip" value="return">return
-          <input type="radio" name="round_trip" value="one-way">one-way
+          <div class="passengers">
+            Passengers
+            <select name="num_passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div>
+            <input type="radio" name="round_trip" value="return" checked>Return
+            <input type="radio" name="round_trip" value="one-way">One Way
+          </div>
         </div>
-        <div class="search row">
+        <div class="search row submit">
           <input type="submit" value="Search Flights">
         </div>
       </div>

@@ -40,7 +40,7 @@ main {
   color: aliceblue;
 }
 
-.search_menu {
+.search.menu {
   display: flex;
   flex-direction: column;
   background-color: #193a55;
@@ -50,32 +50,73 @@ main {
   border-radius: 5px;
 }
 
-.search_details {
+.search.option {
+  justify-content: space-evenly;
+  background-color: green;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  padding: 0px;
+}
+
+.search.details {
   justify-content: space-around;
+  flex-direction: column;
 }
 
 .search * {
   justify-content: space-around;
   padding: 8px;
+  border-width:2px;
 }
 
 .search .row {
   justify-content: space-around;
+  background-color:inherit;
+  color:inherit;
+}
+
+.search .row > * {
+  width: 50%;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.search.row input{
+  background-color:inherit;
+  color: inherit;
+  
+}
+
+.passengers select{
+  background-color: inherit;
+  justify-content: space-between;
+  color: inherit;
+  width:inherit;
+  /* border:inherit; */
+  border-radius: inherit;
+}
+
+.submit {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(79, 79, 214);
 }
 
 .option > * {
-  background-color: rgb(79, 79, 214);
+  background-color: inherit;
   /* padding: 6px 48px; */
   /* border-color: black; */
   /* border-style: solid; */
   /* border-width: 1px; */
-  border-left: 1px solid white;
+  /* border-left: 1px solid white; */
   /* box-sizing: border-box; */
   width: 33%;
   text-align: center;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
 .option > :first-child {
   border-left: 0px;
-  background-color: green;
+  background-color: rgb(79, 79, 214);
 }
