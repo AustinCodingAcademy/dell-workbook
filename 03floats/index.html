@@ -3,6 +3,7 @@
 
 <head>
   <title>Endrica Hardwick Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -12,19 +13,47 @@
       <img src="./img/logo.png">
     </div>
     <ul>
-      <li> <img src="img/home-icon.png"> <a href="#">Home</a></li>
-      <li> <img src="img/deal-icon.png"> <a href="#">Travel Deals</a></li>
-      <li> <img src="img/schedule-icon.png"> <a href="#">Flight Schedule</a></li>
-      <li> <img src="img/login-icon.png"> <a href="#">Register/Login</a></li>
+        <li><img src="img/home-icon.png"> <a href="#">Home</a></li>
+        <li><img src="img/deal-icon.png"> <a href="#">Travel Deals</a></li>
+        <li><img src="img/schedule-icon.png"> <a href="#">Flight Schedule</a></li>
+        <li><img src="img/login-icon.png"> <a href="#">Register/Login</a></li>
     </ul>
   </header>
   <main>
     <section>
       <nav>
-        <ul>
-          <li></li>
+        <ul class="clearfix">
+            <li><a href="#"><img src="img/plane-icon.png"></a></li>
+            <li><a href="#"><img src="img/hotel-icon.png"> </a></li>
+            <li><a href="#"><img src="img/car-icon.png"> </a></li>
         </ul>
       </nav>
+      <form class="clearfix">
+        <div class="row">
+          <input placeholder="Depart" type="text">
+          <input placeholder="Arrive" type="text">
+        </div>
+        <div class="row">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="row3">
+          <label for="passengers">Passengers</label>
+          <select name="" id="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <label for="radio1">
+            <input id="radio1" name="radio" type="radio" class="radio" checked="checked"> "Return"</label>
+          <label for="radio2">
+            <input id="radio2" name="radio" type="radio" class="radio" checked="checked"> "One Way"</label>
+        </div>
+        <div class="row">
+          <ul>
+            <li><a href="#"> Search Flights</a></li>
+          </ul>
+        </div>
+      </form>
 
 
     </section>
