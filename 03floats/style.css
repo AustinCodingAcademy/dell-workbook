@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 header {
   background-color: #183a55;
@@ -54,79 +54,79 @@ section nav a {
   text-align: center;
 }
 section nav a:hover {
-background-color: #2a5ecb;
+  background-color: #2a5ecb;
 }
 section nav li a img {
-    height: 30%;
-    width: 30%;
-    padding: 5px;
+  height: 30%;
+  width: 30%;
+  padding: 5px;
 }
 section nav li:last-child a {
   border-right:none;
   border-top-right-radius: 7px;
 }
 section nav li:first-child a {
-    border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
 }
 section form {
-    padding: 10px;
-    padding-bottom: 40px;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    background-color: #183a55;
+  padding: 10px;
+  padding-bottom: 40px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #183a55;
 }
 .row {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 section form .row > *:last-child {
-    float: right;
+  float: right;
 }
 section form .row > *:first-child {
-    float: left;
+  float: left;
 }
 section form .row input {
-    background-color:  #183a55;
-    color: white;
-    padding: 10px;
-    width: 40%;
-    margin: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 7px;
+  background-color:  #183a55;
+  color: white;
+  padding: 10px;
+  width: 40%;
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
 }
 section form .row3 > *:last-child {
-    float: right;
+  float: right;
 }
 section form .row3 > *:first-child {
-    float: left;
+  float: left;
 }
 section form .row3 label {
-    color: white;
-    margin: 5px;
-    padding: 10px;
+  color: white;
+  margin: 5px;
+  padding: 10px;
 }
 section form .row3 select {
-    background-color:  #183a55;
-    color: white;
-    padding: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 7px;
-    border-color: white;
-    margin-top: 5px;
-    margin-right: 20px;
-    margin-left: 20px;
+  background-color:  #183a55;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  border-color: white;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 /*Search Flights*/
 section form .row a {
-    float: left;
-    background-color: #03b5aa;
-    text-align: center;
-    color: white;
-    padding: 10px 130px 10px 130px;
-    margin: 5px 5px 5px 40px;
-    border-radius: 7px;
+  float: left;
+  background-color: #03b5aa;
+  text-align: center;
+  color: white;
+  padding: 10px 130px 10px 130px;
+  margin: 5px 5px 5px 40px;
+  border-radius: 7px;
 }
 section form .row a:hover {
-    background-color: #2a5ecb;
-    }
+  background-color: #2a5ecb;
+}
