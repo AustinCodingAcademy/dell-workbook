@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #183a55;
+  
+
+}
+
+header .logo {
+  float: left;
+}
+
+header ul {
+  float: right;
+  margin-top: 33px;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #03b5aa;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.clearfix {
+  height: auto;
+  width: auto;
+}
+
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+main {
+  background-image: url(img/airline.jpg);
+  background-size: cover;
+  height: 85vh;
+  
+}
+
+section {
+  position: absolute;
+  left: 60px;
+  top: 260px;
+  
+}
+
+section nav a {
+  float: left;
+  width: 33.3%;
+  background-color: teal;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  border-right: 1px solid white;
+}
+
+section nav a:hover {
+  background-color: #0d67bd;
+}
+
+section nav li:last-child a{
+  border-right: none;
+  border-top-right-radius: 7px;
+}
+
+section nav li:first-child a{
+  border-top-left-radius: 7px;
+}
+
+section form {
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #183a55;
+  color: white;
+}
+
+.row {
+  padding: 10px 0;
+}
+
+section form .row > * :last-child {
+  float: right;
+}
+
+button {
+  background-color: #0d67bd ;
+  width: 150px;
+  color: white;
+  margin-right: 10px;
+}
