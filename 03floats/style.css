@@ -74,7 +74,7 @@ form {
   height: 30px;
   width: 500px;
 }
-clearfix:after {
+.clearfix:after {
   content: "";
   clear: both;
   display: block;
