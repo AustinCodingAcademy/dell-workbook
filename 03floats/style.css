@@ -29,45 +29,41 @@ header {
 
 main {
   display: flex;
-  height: 768px; 
+  height: 768px;
   width: 1366px;
 }
-
 
 .search {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: aliceblue;
-} 
+}
 
 .search_menu {
   display: flex;
   flex-direction: column;
   background-color: #193a55;
   margin: 100px 100px;
-  height:300px;
+  height: 300px;
   justify-content: flex-start;
   border-radius: 5px;
 }
 
-.search_details{
-justify-content: space-around;
+.search_details {
+  justify-content: space-around;
 }
-
-
 
 .search * {
   justify-content: space-around;
   padding: 8px;
-  
 }
 
-.search .row{
+.search .row {
   justify-content: space-around;
 }
 
-.option > *{
+.option > * {
   background-color: rgb(79, 79, 214);
   /* padding: 6px 48px; */
   /* border-color: black; */
@@ -78,7 +74,6 @@ justify-content: space-around;
   width: 33%;
   text-align: center;
 }
-
 
 .option > :first-child {
   border-left: 0px;
