@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box
+}
+
+main {
+  background-image: url(./img/airline.jpg);
+  background-size: cover;
+  height: 84vh;
+}
+
+header {
+  background-color: #183a55;
+  height: 90px;
+}
+
+header .logo{
+  float:left;
+}
+
+header ul {
+  position: absolute;
+  float:right;
+  margin-top: 33px;
+  line-height: 1;
+  left: 700px;
+}
+
+header ul li {
+  float:left;
+  list-style: none;
+  margin-right: 10px;
+
+}
+
+header a {
+  color: white;
+}
+
+header a:hover{
+  color: aqua;
+}
+
+a {
+  text-decoration: none
+}
+
+.clearfix::after{
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.passenger{
+  color: white;
+}
+
+.navbutton{
+  color:white;
+}
+
+section {
+  position:absolute;
+  left:60px;
+  top:160px;
+
+}
+
+section nav li{
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  background-color: #018d80;
+  margin-bottom: 10px;
+
+}
+
+section nav li:last-child{
+  border-right: none
+}
+
+section nav a:hover{
+  background-color: green;
+}
+
+section form {
+  padding: 0px;
+  background-color: #123754;
+
+}
+
+.row {
+  padding: 10px 0;
+}
+
+section form .row>*:last-child{
+  float: right;
+}
+
+
+.button{
+  background-color: lightblue;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 9px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+
+.row2{
+  margin-top: 10px;
+}
+
+.airport {
+  background: transparent; 
+  
+}
+
+.date {
+  background: transparent; 
+  color: white;
+  padding: 4px;
+  
+}
+
+.passengermenu{
+  background: transparent;
+}
