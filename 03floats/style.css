@@ -1,3 +1,4 @@
+
 a:hover,
 a:visited,
 a:link,
@@ -6,12 +7,13 @@ a:active {
   color: white;
 }
 header {
-  background-color: rgb(6, 107, 189);
+  background-color: rgb(25, 58, 85);
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   clear: both;
   display: block;
@@ -19,43 +21,62 @@ header {
 
 nav {
   float: left;
-  height: 30px;
-  width: 500px;
+  width: 360px;
 }
 
 button {
   background-color: rgb(25, 58, 85);
   color: white;
-  border: none;
+  border: 1px;
+  height: 50px;
+  width: 120px;
+  float: left;
+  image-rendering: auto;
+}
+button:hover{
+  background-color: brown;
 }
 
-body {
-  background-color: rgb(25, 58, 85);
+.plane {
+  background-color: rgb(110, 128, 143);
   color: white;
+  background-image: url(./img/airline.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 .Logo {
   float: left;
-  height: 50px;
-  width: 500px;
+  width: 250px;
 }
 
-/* li {
+.Logo img {
+  width: 100%;
+}
+
+li {
   list-style: none;
-  float: right;
-} */
+   display: inline;
+   margin: 5px;
+}
 
 ul {
   list-style: none;
-  float: left;
+  float: right;
+  margin-top: 20px;
 }
 
 form {
   height: 500px;
   width: 500px;
-  margin: 50px;
+  padding: 50px;
 }
 .row {
   float: left;
   height: 30px;
   width: 500px;
+}
+clearfix:after {
+  content: "";
+  clear:both
+  display:block;
 }
