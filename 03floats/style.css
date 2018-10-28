@@ -125,7 +125,7 @@ section form .row a {
     color: white;
     padding: 10px 130px 10px 130px;
     margin: 5px 5px 5px 40px;
-    border-radius 7px;
+    border-radius: 7px;
 }
 section form .row a:hover {
     background-color: #2a5ecb;
