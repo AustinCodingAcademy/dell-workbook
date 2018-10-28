@@ -99,7 +99,7 @@ form{
   border-bottom-right-radius: 4px;
 }
 
-.mainLoginInput::-webkit-input-placeholder{
+.main-login-input::-webkit-input-placeholder{
   color: rgb(141, 140, 140);
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
