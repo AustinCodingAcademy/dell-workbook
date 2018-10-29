@@ -37,7 +37,7 @@
 
   <main>
     <section class="flight-content">
-      <div class="topTabs">
+      <div class="top-tabs">
         <nav class="top-slider">
           <ul class="selection-tabs">
             <li><a href="#"><i class="fas fa-plane slanted"></i></a></li>
@@ -50,21 +50,21 @@
       <div id="flight-details" class="flight-details">
         <div class="row">
           <label for="depart-city">
-            <input type="text" name="depart-city" placeholder="Departure City" />
+            <input id="depart-city" type="text" name="depart-city" placeholder="Departure City" />
           </label>
 
           <label for="arrive-city">
-            <input type="text" name="depart-city" placeholder="Arrival City" />
+            <input id="arrive-city" type="text" name="depart-city" placeholder="Arrival City" />
           </label>
         </div>
 
         <div class="row">
           <label for="depart-date">
-            <input type="date" min='10-28-2018' name="depart-date" placeholder="Departure City" />
+            <input id="depart-date" type="date" min="10-28-2018" name="depart-date" placeholder="Departure City" />
           </label>
 
           <label for="arrive-city">
-            <input type="date" min='10-28-2018' name="arrive-date" placeholder="Arrival City" />
+            <input id="arrive-city" type="date" min="10-28-2018" name="arrive-date" placeholder="Arrival City" />
           </label>
         </div>
 
@@ -79,11 +79,11 @@
           </label>
 
           <label for="one-way">
-            <input name="trip-way" type="radio" class="one-way" />One Way
+            <input id="one-way" name="trip-way" type="radio" class="one-way" />One Way
           </label>
 
           <label for="round-trip">
-            <input name="trip-way" type="radio" class="round-trip" />Round Trip
+            <input id="round-trip" name="trip-way" type="radio" class="round-trip" />Round Trip
           </label>
         </div>
 
@@ -96,7 +96,7 @@
 
       </div>
 
-      <div id="flight-content" class="rental-content">
+      <div id="rental-content" class="rental-content">
 
       </div>
     </section>
