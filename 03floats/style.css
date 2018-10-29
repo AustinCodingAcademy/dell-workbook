@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'PT Serif', serif;
 }
 
 .clearfix:after {
@@ -56,33 +57,30 @@ section {
   margin: 0;
 } 
 
-.row1 input {  
+.row1 input, .row2 input {  
   background-color: #193a55;
   color: white;
   border: 2px solid white;
-  border-radius: 4px;
-  margin: 25px 18px 5px 5px;
-  width:37%;
-  padding: 15px;
-}
-
-.row2 input {
-  background-color: #193a55;
-  color: white;
-  border: 2px solid white;
-  border-radius: 4px;
-  margin-top: 25px;
-  margin-right:25px;
-  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 23px 10px 5px;
+  width: 160px;
+  padding: 5px 0px 10px 5px;
 }
 
 .row3 input, .row3 select {
   background-color: #193a55;
   color: white;
   border: 2px solid white;
-  border-radius: 4px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  border-radius: 5px;
+  margin: 20px 2px 20px 10px;
+  width: 80px;
+  height: 40px;
+  padding: 5px;
+}
+
+.row3 .radio {
+  width: 12px;
+  height: 12px;
 }
 
 button {
@@ -92,6 +90,7 @@ button {
   text-align: center;
   color: white;
   border: 0px;
+  border-radius: 5px;
 }
 
 section nav {
@@ -131,29 +130,18 @@ section nav a:hover {
 
 section nav li:last-child a{
   border-right: none;
-  border-top-right-radius: 4px;
+  border-top-right-radius: 5px;
 }
 
 section nav li:first-child a{
   border-right: none;
-  border-top-left-radius: 4px;
+  border-top-left-radius: 5px;
 }
 
 section form {
-  padding: 10px;
+  padding: 50px 10px 20px 10px;
   background-color:#193a55;
   color: white;
-  padding-bottom: 20px;
+  width: 400px;
+  border-radius: 5px;
 }
-
-.row {
-  margin: 10px;
-}
-
-/* section form .row> *:last-child {
- float: right; 
-}
-
-section form:last-child {
-  text-align: center;
-} */
