@@ -71,7 +71,7 @@ main {
 
 .search .row {
   justify-content: space-around;
-  background-color:inherit;
+  /* background-color:inherit; */
   color:inherit;
 }
 
@@ -88,7 +88,7 @@ main {
 }
 
 .passengers select{
-  background-color: inherit;
+  background-color: #193a55;
   justify-content: space-between;
   color: inherit;
   width:inherit;
@@ -96,10 +96,24 @@ main {
   border-radius: inherit;
 }
 
+.passengers select option{
+  background-color: inherit;
+  color: inherit;
+}
+
+.round-trip{
+  justify-content: space-evenly;
+}
+
 .submit {
   width: 100%;
   box-sizing: border-box;
   background-color: rgb(79, 79, 214);
+  color:  rgb(79, 79, 214);
+}
+
+.submit input{
+  border:0px;
 }
 
 .option > * {
