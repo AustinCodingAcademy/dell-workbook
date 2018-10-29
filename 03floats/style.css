@@ -10,6 +10,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
 }
 header {
   background-color: #183a55;
@@ -90,8 +91,18 @@ form {
   border-top-right-radius: 7px;
 }
 .row {
-  padding: 10px;
+  padding: 5px;
+  display: flex;
 }
+
+.row one input{
+  justify-content: space-between;
+}
+
+.row two input{
+  justify-content: space-between;
+}
+
 section form .row >*:last-child {
   float:right;
 }
@@ -103,7 +114,9 @@ section form .row >*:last-child {
   background-color: #183a55;
   color: white;
   padding: 5px;
-  border-style: solid white;
+  border-color: white;
+  border-style: solid;
+  font-size: 10px;
 }
 .row input:first-child {
   margin-right: 5px;
@@ -124,4 +137,9 @@ section form .row >*:last-child {
   border-top-right-radius: 3px;
   font-size: 14px;
   padding: 10px;
+}
+
+.three label{
+  width: 33%;
+}
 }
