@@ -89,6 +89,7 @@ section form {
 
 .row {
   padding: 10px 0;
+  
 }
 
 section form .row > * :last-child {
@@ -97,7 +98,7 @@ section form .row > * :last-child {
 
 button {
   background-color: #0d67bd;
-  width: 150px;
+  width: 100%;
   color: white;
   margin-right: 10px;
 }
