@@ -111,12 +111,11 @@ main .row1 article{
     border: white;
     border-style: solid;
     border-radius: 10%;
-    color: gray;
+    color:gray;
     text-align: left;
     margin: 10px;
-    height: 40px;
-    width: 110px;
-    /* need to center this text  */
+    height: 41px;
+    width: 170px;
 }
 
 
@@ -131,6 +130,14 @@ main .row1 article{
 main .row2{
     display: flex;
     justify-content: space-around;
+}
+
+input[type=date]{
+    background-color:rgba(25, 58, 85, 1);
+    border-color: white;
+    color: white;
+    padding: 8px 0px;
+    border-radius: 10%;    
 }
 
 main .row2 p{
@@ -150,6 +157,12 @@ main .row3{
     margin: 10px 0px 15px 0px;
 }
 
+input[type=select]{
+    background-color: rgba(25, 58, 85, 1);
+    border-style: solid;
+    border-color: white;
+}
+
 /* clearfix hack because there was a flexbox just before  */
 .clearfix::after {
     content: "";
@@ -166,4 +179,12 @@ main .row4{
 
 main .row4 button{
     width: inherit;
+    background-color: teal;
+    border-color: teal;
+    border-style: solid;
+    color: white;
+}
+
+main .row4 button:hover{
+    background-color: blue;
 }
