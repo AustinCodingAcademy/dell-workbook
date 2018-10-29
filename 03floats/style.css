@@ -27,7 +27,7 @@ header a {
 	color: white;
 }
 
-header a:hover {
+header a span:hover {
 	color: #03b5aa;
 }
 
@@ -154,7 +154,7 @@ button {
 }
 
 .preselected-home {
-	color: teal;
+	color: #03b5aa;
 }
 
 .preselected-plane {
