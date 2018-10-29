@@ -1,0 +1,243 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #efefef;
+  background-color: #efefef;
+}
+
+p {
+  line-height: 20px;
+}
+
+.content {
+  margin: auto;
+  padding: 0 0 50px 0;
+  position: relative;
+  color: #ffffff;
+  width: 75%;
+  background-color: #0375b4;
+  box-sizing: border-box;
+}
+
+.skills {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  width: 75%;
+  background-color: #262228;
+}
+
+.top-grid-items {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0 0 0;
+  display: inline-block;
+  font-size: 3em;
+  color: #ffce00;
+}
+
+.top-grid-items i {
+  padding: 0 25px 0 25px;
+}
+
+.bottom-grid-items {
+  width: 80%;
+  margin: auto;
+  padding: 70px auto;
+  display: inline-block;
+  font-size: 3em;
+  color: #ffce00;
+}
+
+.bottom-grid-items i {
+  padding: 0 25px 0 25px;
+}
+
+.grid-text {
+  margin: auto;
+  padding: 20px 0 70px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #efefef;
+}
+
+.content h1 {
+  font-family: "Lora", serif;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  padding: 75px 0 10px 0;
+}
+
+p.heading {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  color: #efefef;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 50px 0 10px 0;
+  text-align: center;
+}
+
+p.intro {
+  text-align: center;
+  line-height: 25px;
+  width: 66%;
+  margin: auto;
+}
+
+.timeline {
+  position: relative;
+  margin: auto;
+  padding: 40px 0 0 0;
+  width: 100%;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 90%;
+  background: #c5c5c5;
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: #ffce00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(251, 252, 234, 0.3);
+}
+.timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: #ffce00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(251, 252, 234, 0.3);
+}
+.timeline ul li h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #ffce00;
+}
+.timeline ul li p {
+  margin: 5px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -150px;
+  margin: 0;
+  padding: 8px 16px;
+  background: #ffce00;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(251, 252, 234, 0.3);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -150px;
+  margin: 0;
+  padding: 8px 16px;
+  background: #ffce00;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(251, 252, 234, 0.3);
+}
+
+.education {
+  margin: auto;
+  padding: 0 0 70px 0;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  background-color: #ffce00;
+}
+
+.education h2 {
+  color: navy;
+}
+
+.education li {
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  font-weight: 600;
+  color: navy;
+}
+
+.connect {
+  margin: auto;
+  padding: 30px 0 30px 0;
+  position: relative;
+  color: #efefef;
+  width: 75%;
+  background-color: #007849;
+}
+
+.social ul li {
+  text-align: center;
+  width: 98%;
+}
+
+.social a {
+  color: #efefef;
+  text-decoration: none;
+}
