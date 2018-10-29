@@ -1,0 +1,28 @@
+header {
+    background-color: #183a55;
+}
+
+header .logo {
+    float: left;
+}
+
+header ul {
+    float: right;
+    margin-top: 33px;
+}
+
+header ul li {
+    float: left; 
+    list-style: none;
+    margin-right: 10px;
+}
+
+header  a {
+    color: white;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
