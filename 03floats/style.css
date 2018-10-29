@@ -1,81 +1,118 @@
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none;
-  color: white;
+/* colors  header background = #123754
+button color = #0d67bd
+button color hover = #018d80  */
+
+* {
+  box-sizing: border-box;
 }
+
 header {
-  background-color: rgb(25, 58, 85);
-  color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #183a55;
+  position: fixed;
   width: 100%;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-nav {
+header .logo {
   float: left;
-  width: 360px;
 }
 
-button {
-  background-color: rgb(25, 58, 85);
-  color: white;
-  border: 1px;
-  height: 50px;
-  width: 120px;
-  float: left;
-  image-rendering: auto;
-}
-button:hover {
-  background-color: brown;
-}
-
-.plane {
-  background-color: rgb(110, 128, 143);
-  color: white;
-  background-image: url(./img/airline.jpg);
-  background-size: cover;
-  height: 100vh;
-}
-.Logo {
-  float: left;
-  width: 250px;
-}
-
-.Logo img {
-  width: 100%;
-}
-
-li {
-  list-style: none;
-  display: inline;
-  margin: 5px;
-}
-
-ul {
-  list-style: none;
+header ul {
   float: right;
-  margin-top: 20px;
+  margin-top: 33px;
 }
 
-form {
-  height: 500px;
-  width: 500px;
-  padding: 50px;
-}
-.row {
+header ul li {
   float: left;
-  height: 30px;
-  width: 500px;
+  list-style: none;
+  margin-right: 10px;
 }
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: #018d80;
+}
+
+a {
+  text-decoration: none;
+}
+
 .clearfix:after {
-  content: "";
+  content: '';
   clear: both;
   display: block;
+}
+
+main {
+  background-image: url("./img/airline.jpg");
+  background-size: cover;
+  height: 86vh;
+}
+
+section {
+  position: absolute;
+  left: 60px;
+  top: 250px;
+  border-radius: 2px;
+}
+
+section nav a {
+  float: left;
+  width: 33.3%;
+  background-color: #0d67bd;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+section nav li {
+  border-right: 1px solid white;
+}
+
+section nav a:hover {
+  background-color: #018d80;
+}
+
+section nav li:last-child a {
+  border-right: none;
+  border-top-right-radius: 7px;
+}
+
+section nav li:first-child a {
+  border-top-left-radius: 7px;
+}
+
+section form {
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #183a55;
+  color: white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.row {
+  padding: 10px 0;
+}
+
+.row input {
+  background-color: #183a55;
+  color: grey;
+}
+
+.row ul li a {
+  background-color: #183a55;
+  color: white;
+  text-decoration: none;
+  margin-right: 130px;
+}
+
+.row ul li a:hover {
+  background-color: #018d80;
+}
+
+section form .row > *:last-child {
+  float: right;
 }
