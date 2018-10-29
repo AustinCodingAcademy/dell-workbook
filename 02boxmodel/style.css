@@ -9,11 +9,13 @@ body {
 .core {
   background-color: yellow;
   border-color: orange;
+  border-style: solid;
 }
 
 .mantle {
   background-color: orangered;
   border-color: red;
+  border-style: solid;
 }
 
 .crust {
