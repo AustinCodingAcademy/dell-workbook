@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 
- .clearfix:after {
+.clearfix:after {
   content: '';
   clear: both;
   display: block;
 } 
 
 .current-header {
-  color: #03b5aa
+  color: #03b5aa;
 }
 
 header .logo {
@@ -39,13 +39,13 @@ header a {
 }
 
 header a:hover {
-  color: #03b5aa
+  color: #03b5aa;
 }
 
 main {
- background-image: url(./img/airline.jpg);
- background-size: cover;
- height: 100vh;
+  background-image: url(./img/airline.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 section {
@@ -119,11 +119,11 @@ section nav a {
   color: white;
   text-align: center;
   padding: 10px 0;
- }
+}
 
- .current {
-   background-color: #0063b7;
- }
+.current {
+  background-color: #0063b7;
+}
 
 section nav a:hover {
   background-color: #0063b7;
