@@ -49,8 +49,8 @@ main {
 
 section {
 	position: absolute;
-	left: 60px; 
-	top: 200px;
+	left: 100px; 
+	top: 170px;
 }
 
 section nav a {
@@ -64,7 +64,7 @@ section nav a {
 }
 
 section nav a:hover {
-	background-color: blue;
+	background-color: #0D67BD;
 }
 
 section nav li:last-child a{
@@ -77,7 +77,7 @@ section nav li:first-child a{
 }
 
 section form {
-	padding: 10px;
+	padding: 2px;
 	background-color: #183A55;
 	color: white;
 	padding-bottom: 20px;
@@ -87,6 +87,10 @@ section form {
 
 .row{
 	padding: 10px 0;
+}
+
+section nav ul .plane {
+	background-color: #0D67BD;
 }
 
 section form .row > *:last-child {
@@ -120,10 +124,39 @@ section form .grid > * {
 
 #passengers {
 	width: 60px;
-	height: 35px;
+	height: 30px;
 	border-radius: 5px;
 	border-style: solid;
 	border-color: white;
 	background-color: rgba(0,0,0,0);
 	color: white;
+	padding-left: 17px;
+}
+
+select option {
+	text-align: center;
+	color: #183a55;
+}
+
+button {
+	width: 310px;
+	height: 35px;
+	border-style: none;
+	background-color: #0D67BD;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-right: 9px;
+}
+
+.form-button {
+	height: 45px;
+}
+
+.preselected-home {
+	color: teal;
+}
+
+.preselected-plane {
+	background-color: #0D67BD;
 }

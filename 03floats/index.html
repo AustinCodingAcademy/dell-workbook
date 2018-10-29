@@ -10,9 +10,8 @@
 <body>
 	<header class="clearfix">
 		<div class="logo"><img src="img/logo.png" alt="logo"></div>
-		<!-- To-Do: Need to pre-selected. When another is selected, change color accordingly -->
 		<ul>
-			<li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+			<li><a href="#"><i class="fas fa-home"></i><span class="preselected-home"> Home</span></a></li>
 			<li><a href="#"><i class="fa fa-plane"></i> Travel Deals</a></li>
 			<li><a href="#"><i class="fa fa-clock"></i> Flight Schedule</a></li>
 			<li><a href="#"><i class="fas fa-sign-in-alt"></i> Register/Login</a></li>
@@ -22,8 +21,7 @@
 		<section>
 			<nav>
 				<ul class="clearfix">
-					<!-- To-Do: Need to pre-selected. When another is selected, change color accordingly -->
-					<li><a href="#"><i class="fas fa-plane"></i></a></li>
+					<li><a href="#" class="preselected-plane"><i class="fas fa-plane"></i></a></li>
 					<li><a href="#"><i class="fas fa-bed"></i></a></li>
 					<li><a href="#"><i class="fas fa-car"></i></a></li>
 				</ul>
@@ -38,7 +36,7 @@
 					<input type="date">
 				</div>
 				<div class="row grid">
-					<span class="passengers">
+					<span>
 						<label for="passengers">Passengers</label>
 						<select name="" id="passengers">
 							<option value="1">1</option>
@@ -51,9 +49,8 @@
 						<input type="radio" name="flight-type" value="One-Way"><span>One-Way</span>
 					</span>
 				</div>
-				<!-- To-Do: Work on the Submit -->
-				<div class="row">
-					<button>Submit</button>
+				<div class="row form-button">
+					<button>Search Flight</button>
 				</div>
 			</form>
 		</section>
