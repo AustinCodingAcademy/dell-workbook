@@ -1,24 +1,22 @@
 header {
-    background-color: #183A55;
-  }
+  background-color: #183a55;
+}
 
-  header .logo {
-      float: left;
+header .logo {
+  float: left;
+}
 
-  }
+header ul {
+  float: right;
+}
 
-  header ul {
-      float: right;
-  }
+header ul li {
+  float: right;
+  list-style: none;
+}
 
-  header ul li {
-      float: right;
-      list-style: none;
-
-  }
-
-  .clearfix::after {
-      content: '';
-      clear: both;
-      display: block;
-  }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
