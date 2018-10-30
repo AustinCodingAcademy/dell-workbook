@@ -25,6 +25,7 @@ header a:hover {
 .clearfix {
   height: auto;
   width: auto;
+  padding-right: 25px;
 }
 
 .clearfix:after {
