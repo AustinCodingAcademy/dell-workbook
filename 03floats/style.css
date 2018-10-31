@@ -151,7 +151,7 @@ input[type="date"] {
   /*font-style: italic;*/
 }
 
-#Passengers {
+select {
   width: 70px;
   height: 42px;
   margin-right: 40px;
@@ -168,3 +168,5 @@ label {
   vertical-align: middle;
   margin-top: 13px;
 }
+
+
