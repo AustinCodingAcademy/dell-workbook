@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UX Atlantic Airline Site Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
 </head>
@@ -28,20 +29,20 @@
 
     </header>
     <main>
-        <section class="clearfix">
+        <div class="form-container">
 
             <nav>
-                <!--<button id="icons"><img src="img/plane-icon.png" class="imgicon"></button>                       
-                       <button id="icons"><img src="img/hotel-icon.png" class="imgicon"></button>
-                       <button id="icons"><img src="img/car-icon.png" class="imgicon"></button>-->
-
-                <li><a href="#">
-                <li class="fas fa-plane"> </li></a></li>
-                <li><a href="#">
-                <li class="fas fa-plane-bed"> </li> </a></li>
-                <li><a href="#">
-                <li class="far fa-calendar-car"> </li> </a></li>
-
+                <ul class="clearfix">
+                    <li><a href="#">
+                            <span style="font-size: 1em; color: white">
+                                <i class="fas fa-plane"> </i></a> </li>
+                    <li><a href="#">
+                            <span style="font-size: 1em; color: white">
+                                <i class="fas fa-bed"> </i> </a></li>
+                    <li><a href="#">
+                            <span style="font-size: 1em; color: white">
+                                <i class="fas fa-car"> </i> </a></li>
+                </ul>
             </nav>
 
 
@@ -69,7 +70,7 @@
                 </div>
             </form>
 
-        </section>
+        </div>
 
     </main>
 
