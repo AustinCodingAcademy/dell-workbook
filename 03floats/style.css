@@ -1,0 +1,83 @@
+
+header {
+    /* /* top: 0; */
+    width: 100%;
+    height: auto; 
+    background-color: #183A55;
+   }
+*{
+    box-sizing: border-box;
+}
+
+header .logo {
+    float: left;
+}
+header ul {
+    float: right;
+    margin-top: 30px;
+}
+
+header ul li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+   }
+
+header a { 
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a:hover {
+color: #03b5aa;
+}
+.clearfix:after { 
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+main {
+    background-image: url("./img/airline.jpg");
+     background-size: cover; 
+     height: 86vh;
+    margin: 0; 
+}
+
+section {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+
+section nav a {
+    width:33.3%;
+    float: left;
+    background-color: teal;
+    text-align: center;
+    padding: 10px 0; 
+    color : white;
+    border-right: 1px solid white;   
+}
+
+/* section nav li {
+    border-right: 1px solid white;
+} */
+
+section nav li:last-child a{
+    border-right:none;
+}
+section nav a:hover {
+    color: blue;
+    }
+section form {
+    padding: 10px;
+    background-color: #183A55;
+    color: white;
+}
