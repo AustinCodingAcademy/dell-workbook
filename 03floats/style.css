@@ -1,5 +1,5 @@
 header {
-  background-color: #183A55;
+  background-color: #183a55;
 }
 
 body {
@@ -19,7 +19,6 @@ header a {
 
 header a:hover {
   color: #0c9290;
-
 }
 
 .clearfix {
@@ -40,7 +39,6 @@ ul {
   margin-right: 5px;
   margin-top: 0px;
   line-height: 5;
-
 }
 
 li {
@@ -74,6 +72,7 @@ main {
   height: 60px;
   padding: 0px;
   float: left;
+  color: white;
 }
 
 button:hover {
@@ -82,7 +81,6 @@ button:hover {
 
 .plane {
   background-image: url(img/plane-icon.png);
-
 }
 
 .hotel {
@@ -91,28 +89,32 @@ button:hover {
 
 .car {
   background-image: url(img/car-icon.png);
+}
 
+.submit {
+  width: 435px;
+  margin-right: 0px;
+  font-size: 20px;
 }
 
 section form {
   padding: 10px;
   background-color: #123754;
   width: 460px;
-  height: 300px;
-
-
+  height: 360px;
+  color: white;
 }
 
 .row {
-  padding: 10px;
-  color: white;
+  padding: 15px;
+  color: gray;
   font-family: Arial, Helvetica, sans-serif;
   float: left;
 }
 
-section form .row>*:first-child {
+section form .row > *:first-child {
   float: left;
-
+  margin-right: 40px;
 }
 
 textarea {
@@ -120,27 +122,44 @@ textarea {
 }
 
 .resizeTextbox {
-  width: 200px;
-  height: 30px;
-  color: white
+  width: 190px;
+  height: 35px;
+  color: white;
 }
 
-input[type=text] {
+input[type="text"] {
   border: 2px solid white;
   border-radius: 4px;
   background-color: #123754;
   color: white;
 }
 
-input[type=date] {
+input[type="date"] {
   border: 2px solid white;
   border-radius: 4px;
   background-color: #123754;
 }
-
-
 
 ::placeholder {
+  color: gray;
+  text-align: left;
+  /*font-style: italic;*/
+}
+
+#Passengers {
+  width: 70px;
+  height: 42px;
+  margin-right: 40px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: #123754;
   color: white;
-  font-style: italic;
+}
+
+label {
+  color: white;
+  height: 42px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 13px;
 }
