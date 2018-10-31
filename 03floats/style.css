@@ -81,7 +81,7 @@ section > ul {
 }
 
 section > ul > li {
-  width: 33%;
+  width: 33.333333%;
   text-align: center;
   padding: 10px 0px;
   cursor: pointer;
