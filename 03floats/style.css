@@ -1,5 +1,7 @@
 header {
     background-color: #183a55;
+    position: fixed;
+    width: 100%;
 }
 
 header .logo {
@@ -21,8 +23,29 @@ header  a {
     color: white;
 }
 
+header a:hover {
+    color:#03b5aa;
+}
+
+a {
+    text-decoration: none;
+}
+
 .clearfix::after {
     content: '';
     clear: both;
     display: block;
+}
+
+main {
+    background-image: url(./img/airline.jpg);
+    background-size: cover;
+    height: 86vh;
+}
+
+section {
+    position: absolute;
+    left: 60px;
+    top: 160px;
+
 }
