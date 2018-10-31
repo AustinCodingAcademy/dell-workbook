@@ -107,7 +107,7 @@ section form {
 
 .row {
   padding: 15px;
-  color: gray;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   float: left;
 }
@@ -141,7 +141,7 @@ input[type="date"] {
 }
 
 ::placeholder {
-  color: gray;
+  color: white;
   text-align: left;
   /*font-style: italic;*/
 }
