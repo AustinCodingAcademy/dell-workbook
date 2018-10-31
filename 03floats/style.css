@@ -68,9 +68,6 @@ section nav a {
   border-right: 1px solid white;
 }
 
-section nav li {
-}
-
 section nav a:hover {
   background-color: blue;
 }
@@ -99,4 +96,32 @@ section form {
 
 section form .row > *:last-child {
   float: right;
+}
+
+input[type="date"] {
+  color: white;
+  background-color: #183a55;
+  border: 1px solid white;
+}
+
+input[type="text"] {
+  background-color: #183a55;
+  border: 1px solid white;
+}
+
+::placeholder {
+  color: white;
+  text-align: left;
+}
+
+.button {
+  width: 320px;
+  font-size: 20px;
+  background-color: teal;
+  border: none;
+  margin-right: 10px;
+}
+
+.submit {
+  color: white;
 }
