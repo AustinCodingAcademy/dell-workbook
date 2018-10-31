@@ -132,6 +132,7 @@ main .row2 {
 input[type="date"] {
   background-color: rgba(25, 58, 85, 1);
   border-color: white;
+  border-style: solid;
   color: white;
   padding: 8px 0px;
   border-radius: 10%;
