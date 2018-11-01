@@ -84,7 +84,8 @@ section nav button:first-child{
 form {
   background-color:#183a55; 
   padding: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   border-top-left-radius: 7px;
@@ -92,18 +93,9 @@ form {
 }
 .row {
   padding: 5px;
-  display: flex;
 }
 
-.row one input{
-  justify-content: space-between;
-}
-
-.row two input{
-  justify-content: space-between;
-}
-
-section form .row >*:last-child {
+section fogrm .row >*:last-child {
   float:right;
 }
 .row input {
@@ -126,6 +118,36 @@ section form .row >*:last-child {
   margin-left: 5px;
 }
 
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+.one input {
+  width: 130px;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two input {
+  width: 130px;
+}
+
+.three{
+  display: flex;
+  justify-content: space-between;
+}
+
+.three label{
+  width: 30%;
+}
+
+.row three select {
+  background-color: #183a55;
+}
+
 .four button {
   width: 100%;
   background-color: #0d67bd;
@@ -137,9 +159,10 @@ section form .row >*:last-child {
   border-top-right-radius: 3px;
   font-size: 14px;
   padding: 10px;
+  margin-top: 15px;
 }
 
-.three label{
-  width: 33%;
-}
-}
+
+
+
+
