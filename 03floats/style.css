@@ -86,18 +86,45 @@ section form {
   background-color: #183a55;
   color: white;
 }
-
 .row {
-  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: transparent;
+  color: white;
 }
 
-section form .row > * :last-child {
-  float: right;
+input[type="text"] {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  text-align: center;
 }
 
-button {
+input[type="date"] {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+select[passengers] {
+  background-color: transparent;
+  color: white;
+}
+
+input[type="button"] {
   background-color: #0d67bd;
   width: 100%;
   color: white;
   margin-right: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
 }
