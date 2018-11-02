@@ -1,3 +1,9 @@
 html{
     font-family: 'Muli', sans-serif;
 }
+
+main .article{
+    border-style: solid;
+    border-color: black;
+    margin: 15px;
+}
