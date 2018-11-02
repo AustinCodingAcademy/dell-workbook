@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -20,11 +20,11 @@ header ul li {
   margin: 30px;
 }
 header a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 header a:hover {
-    color: #557fa0;
+  color: #557fa0;
 }
 
 .clearfix::after {
@@ -34,82 +34,78 @@ header a:hover {
 }
 
 label {
-    float: left;
+  float: left;
 }
 
 .trip li {
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    padding: 30px;
-    
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  padding: 30px;
 }
 section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    min-width: 30px;
-    border: #183a55 solid;
-    margin: 10px;
-    padding: 10px;
-    height: 360px;
-    width: 350px;
-    background-color: #183a55;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  min-width: 30px;
+  border: #183a55 solid;
+  margin: 10px;
+  padding: 10px;
+  height: 360px;
+  width: 350px;
+  background-color: #183a55;
 }
 .icons {
-    display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-list-style-type: none;
-text-decoration: none;
-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 .calendar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .trip {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin: 0%;
 }
 .amountOfPeople {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 .tripType {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color:white
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 .button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
- 
 
 body {
-    background-image: url('./img/airline.jpg');
-    background-size: cover;
-    height: 100vh;
+  background-image: url("./img/airline.jpg");
+  background-size: cover;
+  height: 100vh;
 }
- 
