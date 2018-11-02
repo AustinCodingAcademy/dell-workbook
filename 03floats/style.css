@@ -40,9 +40,13 @@ a {
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
+}
+
+.navfix {
+  padding: 4px;
 }
 
 main {
@@ -94,7 +98,7 @@ section form {
 }
 
 .row {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .row input {
