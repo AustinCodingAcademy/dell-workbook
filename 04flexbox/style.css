@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-container-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
+}
