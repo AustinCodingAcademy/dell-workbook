@@ -23,16 +23,12 @@ div {
   box-shadow: 3px 3px 3px gray;
 }
 
-/*#randopic {
-    background-image: url(https://placeimg.com/640/480/any);
-}*/
-
-.Lorem {
+.lorem {
   height: auto;
   max-width: 100%
 }
 
-.card .Lorem {
+.card .lorem {
   flex: 1 0 178px;
 
 }
