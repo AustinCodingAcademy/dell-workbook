@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    border-style: solid;
+    border-color: lightgray;
+    box-shadow: 5px 5px black;
+    min-width: 576px;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 500px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    min-width: 26px;
+    max-width: 1000px;
+}
+
+.description {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hearts {
+    display: flex;
+}
+
+.read-more {
+    display: flex;
+}
