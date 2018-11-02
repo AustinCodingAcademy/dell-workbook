@@ -4,24 +4,26 @@
   border-color: lightgray;
   box-shadow: 5px 5px black;
   min-width: 576px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .pic {
-  width: 500px;
+  /* max-width: 575px; */
 }
 
 .text {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
-  min-width: 26px;
-  max-width: 1000px;
+  flex-wrap:wrap;
+  min-width: 400px;
+  flex-basis: 0px;
+  flex-grow: 3;
 }
 
 .description {
   display: flex;
-  flex-grow: 1;
 }
 
 .footer {
