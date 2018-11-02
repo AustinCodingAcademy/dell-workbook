@@ -6,4 +6,6 @@ main .article{
     border-style: solid;
     border-color: black;
     margin: 15px;
+    display: flex;
 }
+
