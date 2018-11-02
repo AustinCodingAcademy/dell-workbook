@@ -67,7 +67,7 @@ body{
 .flightschedule:hover{
   background-color:darkgrey;
 }
-.RegisterLogin{
+.registerlogin{
   float:right;
   border:none;
   background-color:#183a55;
@@ -76,7 +76,7 @@ body{
   margin-left:5px;
   margin-right:5px;
 }
-.RegisterLogin:hover{
+.registerlogin:hover{
   background-color:darkgrey;
 }
 .row { 
