@@ -83,14 +83,14 @@ ul {
   color: white;
   margin: 0%;
 }
-.amountOfPeople {
+.amountofpeople {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   color: white;
 }
-.tripType {
+.triptype {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
