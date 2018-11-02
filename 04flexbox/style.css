@@ -1,0 +1,39 @@
+body {
+    padding: 10px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div {
+    margin: 10px;
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    box-shadow: 3px 3px 3px gray;
+}
+
+/*#randopic {
+    background-image: url(https://placeimg.com/640/480/any);
+}*/
+
+.Lorem {
+    height: auto;
+    max-width: 100%
+
+}
+
+.card .Lorem {
+    flex: 1 0 178px;
+
+}
