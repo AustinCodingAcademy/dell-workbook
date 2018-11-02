@@ -1,0 +1,16 @@
+img {
+  padding: 10px;
+}
+div .like {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.flex-card {
+  font-family: sans-serif;
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 3px 5px 0px;
+  justify-content: space-between;
+}

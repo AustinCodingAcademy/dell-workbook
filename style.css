@@ -1,1 +1,8 @@
 /* You can style your links page here */
+a {
+  text-decoration: none;
+  color: #5d5d96;
+}
+h1:hover {
+  color: #9c9ab9;
+}

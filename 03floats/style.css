@@ -1,0 +1,59 @@
+/* Resets styling */
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body {
+  background-image: url("img/airline.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  /* display: block; */
+}
+
+i {
+  padding: 5px;
+}
+nav {
+  float: right;
+  font-family: Lucida Sans Unicode;
+  margin: 30px 20px 0px 0px;
+}
+.logo {
+  background-color: #193a55;
+  padding: 10px;
+  float: left;
+  width: 100%;
+  border-bottom: 1px white solid;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.travel ul {
+  background-color: #018d80;
+  position: absolute;
+  left: 60px;
+  top: 160px;
+}
+
+.travel ul li {
+  display: inline-block;
+  background-color: #018d80;
+  padding: 10px 40px 10px 40px;
+  border-width: 10px;
+  border-radius: 50%;
+}
+form {
+  background-color: #193a55;
+  position: absolute;
+  left: 60px;
+  top: 230px;
+  padding: 30px 10px 30px 10px;
+}
+form .row {
+  padding: 6px;
+}
