@@ -9,3 +9,29 @@ main .article{
     display: flex;
 }
 
+main .article .photo{
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.text{
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .article .text .description{
+    /* display: flex; */
+    justify-content: flex-start;
+}
+
+.text .hearts{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.text .readmore{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
