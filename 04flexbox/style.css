@@ -5,7 +5,7 @@
 body {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .container {
@@ -14,7 +14,6 @@ body {
   padding: 10px;
   box-shadow: 3px 3px 6px grey;
   flex-wrap: wrap;
-  align-content: flex-start;
   min-width: 325px;
 }
 
@@ -23,18 +22,19 @@ body {
 }
 
 .photo img {
-  max-width: 250px;
-  min-width: 250px;
-  max-height: 250px;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 .message {
   display: flex;
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 0px;
-  min-width: 153px;
+  min-width: 200px;
   flex-grow: 1;
 }
 
@@ -42,5 +42,4 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: flex-end;
 }
