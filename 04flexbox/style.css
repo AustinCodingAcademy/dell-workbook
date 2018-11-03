@@ -12,19 +12,17 @@ body {
   display: flex;
   min-height: 100%;
   padding: 10px;
-  box-shadow: 3px 3px 6px black;
+  box-shadow: 3px 3px 6px grey;
   flex-wrap: wrap;
   align-content: flex-start;
   min-width: 325px;
-
 }
+
 .photo {
   margin: 10px auto;
-
-
 }
 
-.photo img{
+.photo img {
   max-width: 250px;
   min-width: 250px;
   max-height: 250px;
