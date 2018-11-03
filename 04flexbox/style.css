@@ -1,9 +1,19 @@
-.flex-container {
+.card {
   display: flex;
+  height: 250px;
+  /* flex-shrink: 2; */
+  flex-wrap: wrap;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 2px 2px 2px 1px gray;
 }
 
-.flex-container-words {
+.content {
   display: flex;
+  min-width: 400px;
+  flex-basis: 0;
+  flex-grow: 3;
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
@@ -18,3 +28,18 @@
   color: blue;
   text-decoration: underline;
 }
+ 
+.image img{
+  height: 100%;
+} 
+
+.image{
+  display: flex;
+  flex: 1;
+}
+
+img{
+  width: auto;
+  height: auto;
+}
+
