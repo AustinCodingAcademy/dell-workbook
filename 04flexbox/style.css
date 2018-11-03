@@ -1,7 +1,6 @@
 .card {
   display: flex;
-  height: 250px;
-  /* flex-shrink: 2; */
+  min-height: 250px;
   flex-wrap: wrap;
   border: 1px;
   border-color: black;
@@ -10,9 +9,8 @@
 }
 
 .content {
-  display: flex;
   min-width: 400px;
-  flex-basis: 0;
+  flex-basis: 400px;
   flex-grow: 3;
   flex-direction: column;
   justify-content: space-between;
@@ -29,17 +27,14 @@
   text-decoration: underline;
 }
  
-.image img{
-  height: 100%;
-} 
-
 .image{
   display: flex;
   flex: 1;
+  height: 250px;
+  justify-content: center;
 }
 
 img{
-  width: auto;
-  height: auto;
+  height: 100%;
 }
 
