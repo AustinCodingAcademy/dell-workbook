@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  border-style: solid;
+  border-color: lightgray;
+  box-shadow: 5px 5px black;
+  min-width: 576px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.pic {
+  /* max-width: 575px; */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  flex-wrap:wrap;
+  min-width: 400px;
+  flex-basis: 0px;
+  flex-grow: 3;
+}
+
+.description {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hearts {
+  display: flex;
+}
+
+.read-more {
+  display: flex;
+}
