@@ -1,1 +1,41 @@
 /* You can style your links page here */
+.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+#really-big {
+  height: 400px;
+  width: 400px;
+  /* background-color: black; */
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow::after{
+  content: 'Hello!';
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 40px;
+}
+
+
+div > p {
+  background-color: orange;
+}
