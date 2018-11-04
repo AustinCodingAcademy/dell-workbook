@@ -1,33 +1,13 @@
 .card {
   display: flex;
-  min-height: 250px;
   flex-wrap: wrap;
+  min-height: 250px;
   border: 1px;
   border-color: black;
   border-style: solid;
   box-shadow: 2px 2px 2px 1px gray;
 }
 
-.content {
-  min-width: 400px;
-  flex-basis: 400px;
-  flex-grow: 3;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 16px;
-  display: flex;
-}
-
-.flex-container-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.read-more {
-  color: blue;
-  text-decoration: underline;
-}
- 
 .image{
   display: flex;
   flex: 1;
@@ -39,3 +19,23 @@ img{
   height: 100%;
 }
 
+.content {
+  display: flex;
+  min-width: 400px;
+  flex-basis: 400px;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
+}
+ 
