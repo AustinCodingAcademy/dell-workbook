@@ -1,6 +1,7 @@
 body {
   font-family: 'IBM Plex Serif', serif;
   font-size: 13px;
+  background-color: #c7ecee;
 }
 
 a{
@@ -8,13 +9,14 @@ a{
 }
 
 .card {
-  background: #fff;
+  background: #f5f6fa;
   border-radius: 2px;
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px;
+  margin: 30px;
 }
 
 .card {
@@ -39,14 +41,14 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 187px;
-  flex-basis: 45px;
+  min-width: 163px;
+  flex-basis: 0px;
   flex-grow: 3;
-  padding: 0px 10px 0px 10px;
 }
 
 
 .links {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
