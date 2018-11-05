@@ -1,31 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
 .card {
+  min-height: 250px;
+  min-width: 345px;
   display: flex;
-  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  margin: 2%;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px black;
+  padding: 15px 10px 0;
 }
 
-.image {
-  padding: 12px;
+.img-container {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 230px;
+  justify-content: center;
+  padding-bottom: 5px;
 }
 
-.text {
-  padding: 12px;
-  flex-shrink: 1;
+.content {
+  min-width: 230px;
+  flex-basis: 0;
+  flex-grow: 3;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.readmore {
-  /* width: 86px; */
-  padding: 5px;
-  align-self: flex-end;
-  flex-shrink: 0;
+img {
+  max-width: 285px;
 }
 
-.fb-like {
-  /* width:210px; */
-  padding: 5px;
-  align-self: flex-end;
-  justify-content: flex-start;
-  flex-shrink: 0;
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
 }
