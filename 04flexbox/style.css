@@ -56,10 +56,10 @@ img {
    */
 }
 
-.heart:first-child a { 
+.heart:first-child a {
   color: black;
   /* This is setting the heart as black */
- }
+}
 
 .read:last-child a {
   color: blue;
