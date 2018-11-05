@@ -28,8 +28,6 @@ main .article{
 .description{
     display: flex;
     align-items: stretch;
-    flex-basis: inherit;
-    flex-wrap: wrap;
     
 }
 
