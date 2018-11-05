@@ -1,48 +1,46 @@
-html{
-    font-family: 'Muli', sans-serif;
+html {
+  font-family: "Muli", sans-serif;
 }
 
-main .article{
-    border-style: solid;
-    border-color: black;
-    box-shadow: 3px;
-    margin: 15px;
-    display: flex;
-    flex-wrap: wrap;
+main .article {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.photo{
-    margin: 5px;
+.photo {
+  margin: 5px;
 }
 
-.text-container{
-    padding: 0px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    min-width: 150px;
-    flex: 0 0 40%;
+.text-container {
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-width: 226px;
+  flex: 0 0 40%;
 }
 
-.description{
-    display: flex;
-    align-items: stretch;
-    
+.description {
+  display: flex;
+  align-items: stretch;
 }
 
-.fun-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: nowrap;
+.fun-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
 }
 
-.hearts{ 
-    align-self: flex-start;
+.hearts {
+  align-self: flex-start;
 }
 
-.readmore{
-    align-self: flex-end;
+.readmore {
+  align-self: flex-end;
 }
-
