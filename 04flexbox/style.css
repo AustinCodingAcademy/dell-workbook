@@ -5,6 +5,7 @@ html{
 main .article{
     border-style: solid;
     border-color: black;
+    box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -16,15 +17,22 @@ main .article{
 
 .text{
     display: flex;
-    width: 400px;
+    width: 500px;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: baseline;
 }
 
 .hearts{ 
-    justify-content: flex-end;
-    align-items: flex-end;
+justify-content: flex-start;
 }
 
 .readmore{
-    align-self: flex-end;
+    justify-content: flex-end;
 }
 
