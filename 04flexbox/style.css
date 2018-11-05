@@ -51,11 +51,17 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  align-items: center;
   /* This is the icons container with settings used to align the items as needed
    */
 }
 
-a:-webkit-any-link {
+.heart:first-child a { 
+  color: black;
+  /* This is setting the heart as black */
+ }
+
+.read:last-child a {
   color: blue;
-  /* This overrides the default color of the link */
+  /* This overrides the default color to make the link blue */
 }
