@@ -46,9 +46,16 @@ img {
   flex-grow: 3;
 }
 
+.fa:hover {
+  color: red;
+}
 
 .links {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+}
+
+.links > a{
+  cursor: pointer;
 }
