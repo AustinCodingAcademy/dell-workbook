@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UX Airline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header>
+    <figure class="logo"><img src="img/logo.png" alt="UX Airline"></figure>
+      <nav>
+        <a href=""><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href=""><i class="fa fa-plane" aria-hidden="true"></i>Travel Deals</a>
+        <a href=""><i class="fa fa-clock-o" aria-hidden="true"></i>Flight Schedule</a>
+        <a href=""><i class="fa fa-sign-in" aria-hidden="true"></i>Register/Sign in</a>
+      </nav>
+    <section class="travel">
+      <ul>
+        <li><i class="fa fa-plane fa-2x" aria-hidden="true"></i></li>
+        <li><i class="fa fa-bed fa-2x" aria-hidden="true"></i></li>
+        <li><i class="fa fa-car fa-2x" aria-hidden="true"></i></li>
+      </ul>
+      <form>
+        <div class="row">
+          <input id="departure" type="text" placeholder="Depart">
+          <input id="arrival" type="text" placeholder="Arrive">
+        </div>
+        <div class="row">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="row">
+          <label for="select">Passengers</label>
+          <select id="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <label for="radio1">
+            <input id="radio1" name="radio" type="radio" class="radio" checked="checked">Round Trip</label>
+          <label for="radio2">
+            <input id="radio2" name="radio" type="radio" class="radio">One Way</label>
+        </div>
+        <input id="search" type="button" value="Search">
+
+      </form>
+
+
+
+    </div>
+
+  </header>
+
+
+</body>
+
+</html>
