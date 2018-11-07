@@ -7,7 +7,6 @@ body {
 }
 
 .card {
-  min-height: 250px;
   min-width: 345px;
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +16,7 @@ body {
 
 .img-container {
   display: flex;
-  flex-basis: 0;
-  flex-grow: 1;
+  flex: 0;
   height: 230px;
   justify-content: center;
   padding-bottom: 5px;
@@ -26,7 +24,7 @@ body {
 
 .content {
   min-width: 230px;
-  flex-basis: 0;
+  flex: 0;
   flex-grow: 3;
   padding: 0 20px 10px;
   display: flex;
