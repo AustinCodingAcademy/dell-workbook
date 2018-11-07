@@ -24,7 +24,7 @@ body {
   padding-bottom: 5px;
 }
 
-.mainContent {
+.content {
   padding: 0 20px 10px;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@ img{
   max-width: 285px;
 }
 
-.subContent {
+.actions {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
