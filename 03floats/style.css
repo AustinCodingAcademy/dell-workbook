@@ -1,65 +1,206 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-image: url("img/airline.jpg");
-  background-size: cover;
-  color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
-.top {
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+  height: 0;
+}
+
+/* Header */
+header {
   background-color: #193a55;
-  padding: 10px;
-  border-bottom: 1px white solid;
+  border-bottom: 1px solid #fff;
+  height: 85px;
+  padding-left: 60px;
+  padding-right: 100px;
 }
 
-.logo {
+header .logo {
   float: left;
 }
 
-.nav {
+header nav {
   float: right;
-  display: inline-block;
-  align-content: right;
-  font-family: Lucida Sans Unicode;
-  margin: 30px 20px 0px 0px;
 }
 
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
+header ul {
+  list-style: none;
+  margin-top: 32px;
 }
 
-i {
-  padding: 5px;
+header li {
+  float: left;
+  margin-right: 15px;
 }
 
-a {
-  color: white;
+header a {
+  color: #fff;
+  font-size: 14px;
   text-decoration: none;
+  transition: color 100ms ease-in-out;
 }
 
-.travel ul {
+header .active,
+header a:hover {
+  color: #018d80;
+  font-weight: bold;
+}
+
+header i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.fa-plane {
+  transform: rotate(-45deg);
+}
+
+/* Main Content */
+.content-main {
+  background: url("img/airline.jpg");
+  background-size: cover;
+  height: calc(100% - 85px);
+  padding: 80px;
+}
+
+/* Form & Tabset */
+.form-container {
+  background-color: #123754;
+  border-radius: 0 0 6px 6px;
+  margin: 0;
+  width: 32%;
+}
+
+.tabset {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.tabset li {
   background-color: #018d80;
-  position: absolute;
-  left: 60px;
-  top: 160px;
+  float: left;
+  transition: background-color 100ms ease-in-out;
+  width: 33.33333%;
 }
 
-.travel ul li {
+.tabset .active,
+.tabset li:hover {
+  background-color: #0063b7;
+}
+
+.tabset li:first-of-type {
+  border-top-left-radius: 4px;
+}
+
+.tabset li:last-of-type {
+  border-top-right-radius: 6px;
+}
+
+.tabset a {
   display: inline-block;
-  background-color: #018d80;
-  padding: 10px 40px 10px 40px;
-  border-width: 10px;
-  border-radius: 50%;
+  padding: 15px calc(50% - 12px);
+  width: 100%;
 }
+
+.tabset i {
+  color: #fff;
+  font-size: 24px;
+}
+
 form {
-  background-color: #193a55;
-  position: absolute;
-  left: 60px;
-  top: 230px;
-  padding: 30px 10px 30px 10px;
+  color: #fff;
+  font-size: 14px;
+  padding: 30px 20px 20px;
 }
-form .row {
-  padding: 6px;
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row > input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  width: calc(50% - 10px);
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  color: #fff;
+  height: 40px;
+  padding: 10px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input::placeholder {
+  color: #7b8799;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  float: right;
+  width: 35%;
+} 
+
+option {
+  color: #7b8799;
+}
+
+.form-row .form-group {
+  width: calc(50% - 10px);
+}
+
+.form-row > input:first-of-type,
+.form-row > .form-group:first-of-type {
+  float: left;
+}
+
+.form-row > input:last-of-type,
+.form-row > .form-group:last-of-type {
+  float: right;
+}
+
+.form-row .form-group:first-of-type label,
+.checkbox-group {
+  top: 12px;
+  position: relative;
+}
+
+.checkbox-group {
+  float: left;
+}
+
+.checkbox-group:first-of-type {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #0d67bd;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  width: 100%;
 }

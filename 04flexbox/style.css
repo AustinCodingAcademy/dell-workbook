@@ -11,8 +11,8 @@ article {
   display: flex;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #888888;
-  box-shadow: 5px 8px 5px #444444;
+  border: 1px solid #969696;
+  box-shadow: 2px 3px 5px #999999;
   flex-wrap: wrap;
 }
 
@@ -30,6 +30,8 @@ p {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 375px;

@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UX Airline</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Floats</title>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header class="top" clearfix>
-    <figure class="logo"><img src="img/logo.png" alt="UX Airline"></figure>
-      <ul class="nav">
-        <li><a href=""><i class="fa fa-home" aria-hidden="true" color="#018d80"></i>Home</a></li>
-        <li><a href=""><i class="fa fa-plane" aria-hidden="true"></i>Travel Deals</a></li>
-        <li><a href=""><i class="fa fa-clock-o" aria-hidden="true"></i>Flight Schedule</a></li>
-        <li><a href=""><i class="fa fa-sign-in" aria-hidden="true"></i>Register/Sign in</a></li>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="img/logo.png" alt="Site logo">
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li><i class="fas fa-home"></i><a href="#" class="active">Home</a></li>
+        <li><i class="fas fa-plane"></i><a href="#">Travel Deals</a></li>
+        <li><i class="far fa-clock"></i><a href="#">Flight Schedule</a></li>
+        <li><i class="fas fa-sign-out-alt"></i><a href="#">Register/Login</a></li>
       </ul>
-    </header>
-    <main>
-    <section class="travel">
-      <ul>
-        <li><i class="fa fa-plane fa-2x" aria-hidden="true"></i></li>
-        <li><i class="fa fa-bed fa-2x" aria-hidden="true"></i></li>
-        <li><i class="fa fa-car fa-2x" aria-hidden="true"></i></li>
-      </ul>
+    </nav>
+  </header>
+  <div class="content-main">
+    <div class="form-container">
+      <nav>
+        <ul class="tabset clearfix">
+          <li class="active"><a href="#"><i class="fas fa-plane"></i></a></li>
+          <li><a href="#"><i class="fas fa-bed"></i></a></li>
+          <li><a href="#"><i class="fas fa-car"></i></a></li>
+        </ul>
+      </nav>
       <form>
-        <div class="row">
-          <input id="departure" type="text" placeholder="Depart">
-          <input id="arrival" type="text" placeholder="Arrive">
+        <div class="form-row clearfix">
+          <input type="text" placeholder="Flying from">
+          <input type="text" placeholder="Flying to">
         </div>
-        <div class="row">
+        <div class="form-row clearfix">
           <input type="date">
           <input type="date">
         </div>
-        <div class="row">
-          <label for="select">Passengers</label>
-          <select id="select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <label for="radio1">
-            <input id="radio1" name="radio" type="radio" class="radio" checked="checked">Round Trip</label>
-          <label for="radio2">
-            <input id="radio2" name="radio" type="radio" class="radio">One Way</label>
+        <div class="form-row clearfix">
+          <div class="form-group clearfix">
+            <label for="passengers">Travelers</label>
+            <select name="passengers" id="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-group">
+              <input type="radio" id="return" name="options" value="return" checked />
+              <label for="return">Roundtrip</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="radio" id="one" name="options" value="one" />
+              <label for="one">One Way</label>
+            </div>
+          </div>
         </div>
-        <input id="search" type="button" value="Search">
-
+        <button type="submit">Search</button>
       </form>
-
-  </main>
-
-
+    </div>
+  </div>
 </body>
 
 </html>
