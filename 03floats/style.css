@@ -6,27 +6,34 @@ body {
   color: white;
 }
 
+.top {
+  background-color: #193a55;
+  padding: 10px;
+  border-bottom: 1px white solid;
+}
+
+.logo {
+  float: left;
+}
+
+.nav {
+  float: right;
+  display: inline-block;
+  align-content: right;
+  font-family: Lucida Sans Unicode;
+  margin: 30px 20px 0px 0px;
+}
+
 .clearfix:after {
-  content: "";
+  content: '';
+  display: block;
   clear: both;
-  /* display: block; */
 }
 
 i {
   padding: 5px;
 }
-nav {
-  float: right;
-  font-family: Lucida Sans Unicode;
-  margin: 30px 20px 0px 0px;
-}
-.logo {
-  background-color: #193a55;
-  padding: 10px;
-  float: left;
-  width: 100%;
-  border-bottom: 1px white solid;
-}
+
 a {
   color: white;
   text-decoration: none;
