@@ -29,11 +29,11 @@ h2{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas: 
-  "header header header header"
-  "card1  card1  card2  card2"
-  "card3  card3  card4  card5"
-  "card3  card3  card6  card6"
-  "card7  card8  card9  card10";
+    "header header header header"
+    "card1  card1  card2  card2"
+    "card3  card3  card4  card5"
+    "card3  card3  card6  card6"
+    "card7  card8  card9  card10";
 }
 
 .container {
