@@ -35,10 +35,10 @@ img {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "a a b b"
-  "c c d e"
-  "c c f f"
-  "g h i j"
+    "a a b b"
+    "c c d e"
+    "c c f f"
+    "g h i j"
 }
 .a {
   grid-area: a;
