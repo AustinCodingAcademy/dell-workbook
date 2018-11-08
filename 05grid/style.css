@@ -10,6 +10,78 @@ html {
     display: flex;
     flex-wrap: wrap;
   }
+  main .article2 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article3 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article4 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article5 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article6 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article7 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article8 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article9 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .article10 {
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   .photo {
     margin: 5px;
