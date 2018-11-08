@@ -2,7 +2,7 @@ html {
     font-family: "Muli", sans-serif;
   }
   
-  main .article {
+  main .article1 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
@@ -82,7 +82,7 @@ html {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .photo {
     margin: 5px;
   }
