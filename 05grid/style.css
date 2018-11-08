@@ -1,102 +1,98 @@
 html {
     font-family: "Muli", sans-serif;
   }
-  main{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-  }
   
-  main .article1 {
+  .article1 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container1;
+    grid-area: article1;
   }
-  main .article2 {
+  .article2 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container2;
+    grid-area: article2;
   }
-  main .article3 {
+  .article3 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container3;
+    grid-area: article3;
   }
-  main .article4 {
+  .article4 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container4;
+    grid-area: article4;
   }
-  main .article5 {
+  .article5 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container5;
+    grid-area: article5;
   }
-  main .article6 {
+  .article6 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container6;
+    grid-area: article6;
   }
-  main .article7 {
+  .article7 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container7;
+    grid-area: article7;
   }
-  main .article8 {
+  .article8 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container8;
+    grid-area: article8;
   }
-  main .article9 {
+  .article9 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container9;
+    grid-area: article9;
   }
-  main .article10 {
+  .article10 {
     border-style: solid;
     border-color: black;
     box-shadow: 3px;
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    grid-area: container10;
+    grid-area: article10;
   }
+
 
   .photo {
     margin: 5px;
@@ -132,3 +128,14 @@ html {
     align-self: flex-end;
   }
   
+  .parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "article1 article1 article2 article2"
+    "article3 article3 article4 article5"
+    "article3 article3 article6 article6"
+    "article7 article8 article9 article10";
+    
+    grid-gap: 10px;
+}
