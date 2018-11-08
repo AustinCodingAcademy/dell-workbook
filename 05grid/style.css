@@ -38,46 +38,46 @@ article {
   padding: 15px 10px 0;
 }
 
-.cardOne {
+.card-One {
   grid-area: cardOne;
 }
 
-.cardTwo {
+.card-Two {
   grid-area: cardTwo;
 }
 
 
-.cardThree {
+.card-Three {
   grid-area: cardThree;
 }
 
 
-.cardFour {
+.card-Four {
   grid-area: cardFour;
 }
 
-.cardFive {
+.card-Five {
   grid-area: cardFive;
 }
 
 
-.cardSix {
+.card-Six {
   grid-area: cardSix;
 }
 
-.cardSeven {
+.card-Seven {
   grid-area: cardSeven;
 }
 
-.cardEight {
+.card-Eight {
   grid-area: cardEight;
 }
 
-.cardNine{
+.card-Nine{
   grid-area: cardNine;
 }
 
-.cardTen {
+.card-Ten {
   grid-area: cardTen;
 }
 
