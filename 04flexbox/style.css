@@ -13,11 +13,6 @@
   flex-grow: 3;
   flex-basis: 0px;
   align-content: flex-start;
-  min-width: 400px;
-}
-
-#text{
-  padding: 10px;
 }
 
 img{
