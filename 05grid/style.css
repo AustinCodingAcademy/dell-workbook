@@ -1,1 +1,96 @@
+* {
+  box-sizing: border-box;
+}
 
+.MasterGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "one one two two"
+    "three three four five"
+    "three three six six"
+    "seven eight nine ten";
+  grid-gap: 20px;
+}
+
+body {
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  padding: 15px 10px 0;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px black;
+  min-width: 250px;
+}
+
+.containerOne {
+  grid-area: one;
+  }
+
+.containerTwo {
+  grid-area: two;
+  }
+
+.containerThree {
+  grid-area: three;
+  }
+
+.containerFour {
+  grid-area: four;
+  }
+
+.containerFive {
+  grid-area: five;
+  }
+
+.containerSix {
+  grid-area: six;
+  }
+
+.containerSeven {
+  grid-area: seven;
+  }
+
+.containerEight {
+  grid-area: eight;
+  }
+
+.containerNine {
+  grid-area: nine;
+  }
+
+.containerTen {
+  grid-area: ten;
+  }
+
+.img-container{
+  display: flex;
+  flex: 1;
+  max-height: 230px;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 5px;
+  }
+
+img {
+  height: 100%;
+  width: 100%;
+  }
+
+.text{
+min-width: 150px;
+flex: 1;
+flex-grow: 3;
+padding: 0 20px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  }
+
+.comments{
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+}
