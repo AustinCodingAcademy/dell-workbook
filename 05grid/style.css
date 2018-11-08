@@ -1,1 +1,98 @@
 
+main{
+  display:grid;
+  grid-template-columns: 1fr 1 fr 1fr 1 fr;
+  grid-template-rows: 1fr 1 fr 1fr 1 fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+  "card1 card1 card2 card2"
+  "card3 . card4 card5"
+  "card3 . card6 card6"
+  "card7 card8 card9 card10";
+}
+
+header *{
+  text-align: center;
+}
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  box-shadow: 2px 2px ;
+   }
+
+.image{
+  padding: 2px;
+  width: 200px;
+}
+
+.image img{
+  width: inherit;
+  /* height: 100%; */
+}
+
+.details{
+  /* height: fit-content; */
+  padding: 10px;
+  display:flex;
+  /* flex-flow: column wrap;
+  align-content: space-between; */
+  /*max-width: 576px;*/
+  flex-basis: 376px;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+.card:nth-child(1){
+  grid-area: card1;
+}
+
+.card:nth-child(2){
+  grid-area: card2;
+}
+
+.card:nth-child(3){
+  grid-area: card3;
+}
+
+
+.card:nth-child(4){
+  grid-area: card4;
+}
+
+.card:nth-child(5){
+  grid-area: card5;
+}
+
+.card:nth-child(6){
+  grid-area: card6;
+}
+
+.card:nth-child(7){
+  grid-area: card7;
+}
+
+.card:nth-child(8){
+  grid-area: card8;
+}
+
+.card:nth-child(9){
+  grid-area: card9;
+}
+
+.card:nth-child(10){
+  grid-area: card10;
+}
+
+

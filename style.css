@@ -1,1 +1,7 @@
 /* You can style your links page here */
+
+a {
+  color: blueviolet ;
+  cursor: cell;
+  text-decoration: overline;
+}
