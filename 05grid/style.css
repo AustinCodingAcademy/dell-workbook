@@ -114,9 +114,9 @@ h1, h2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "topleftboi topleftboi toprightboi toprightboi"
-  "middleleftbigboi middleleftbigboi middleleftsmallboi middlerightsmallboi"
-  "middleleftbigboi middleleftbigboi middlebottomwideboi middlebottomwideboi"
-  "bottomleftboi bottommiddleleftboi bottommiddlerightboi bottomrightboi";
+    "topleftboi topleftboi toprightboi toprightboi"
+    "middleleftbigboi middleleftbigboi middleleftsmallboi middlerightsmallboi"
+    "middleleftbigboi middleleftbigboi middlebottomwideboi middlebottomwideboi"
+    "bottomleftboi bottommiddleleftboi bottommiddlerightboi bottomrightboi";
 }
 
