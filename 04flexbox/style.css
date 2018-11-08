@@ -3,6 +3,7 @@ body {
 }
 
 img {
+  width: 320px;
   max-width: 100%;
   height: auto;
 }
@@ -23,12 +24,33 @@ div {
   box-shadow: 3px 3px 3px gray;
 }
 
-.lorem {
-  height: auto;
-  max-width: 100%
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 180px;
 }
 
-.card .lorem {
-  flex: 1 0 178px;
+.comment {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  
+}
+
+.lorem {
+  height: auto;
+  max-width: 100%;
+  
+}
+
+.comment > .like {
+  flex: 1;
+
+}
+
+.comment > .learnMore {
+  flex: 1;
+  align-items: flex-end;
 
 }
