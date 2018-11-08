@@ -16,7 +16,7 @@ body {
 
 .img-container {
   display: flex;
-  flex: 0;
+  flex: 1;
   height: 230px;
   justify-content: center;
   padding-bottom: 5px;
@@ -24,7 +24,7 @@ body {
 
 .content {
   min-width: 230px;
-  flex: 0;
+  flex: 1;
   flex-grow: 3;
   padding: 0 20px 10px;
   display: flex;
@@ -33,7 +33,7 @@ body {
 }
 
 img {
-  max-width: 285px;
+  height: 100%;
 }
 
 .actions {
