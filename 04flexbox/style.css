@@ -49,8 +49,7 @@ div {
 
 }
 
-.comment > .learnMore {
+.comment > .learnore {
   flex: 1;
-  align-items: flex-end;
 
 }
