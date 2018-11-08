@@ -19,7 +19,7 @@ body {
   padding: 20px;
 }
 
-.masterGrid {
+.mastergrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
