@@ -1,1 +1,107 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgb(109, 106, 106), 0 3px 6px rgb(116, 114, 114);
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+}
 
+/* .card:hover {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+} */
+
+body {
+  background-color: rgb(193, 204, 204);
+  font-family: "Spicy Rice", cursive;
+  grid-area: main;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header1 header1 header2 header2"
+    "large large short1 short2"
+    "large large wide wide"
+    "small1 small2 small3 small4";
+}
+
+.image {
+  display: flex;
+  height: 250px;
+  min-width: 250px;
+  flex: 1;
+}
+img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  display: block;
+}
+
+.rapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 176px;
+  /* flex-basis: 176px; */
+  flex: 1;
+  flex-grow: 3;
+  padding: 0 10px;
+}
+
+.links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+i:hover {
+  color: pink;
+}
+
+.card:nth-child(1) {
+  grid-area: header1;
+}
+
+.card:nth-child(2) {
+  grid-area: header2;
+}
+
+.card:nth-child(3) {
+  grid-area: large;
+}
+
+.card:nth-child(4) {
+  grid-area: short1;
+}
+
+.card:nth-child(5) {
+  grid-area: short2;
+}
+
+.card:nth-child(6) {
+  grid-area: wide;
+}
+
+.card:nth-child(7) {
+  grid-area: small1;
+}
+
+.card:nth-child(8) {
+  grid-area: small2;
+}
+
+.card:nth-child(9) {
+  grid-area: small3;
+}
+
+.card:nth-child(10) {
+  grid-area: small4;
+}
