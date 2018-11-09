@@ -24,10 +24,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "cardOne cardOne cardTwo cardTwo"
-  "cardThree cardThree cardFour cardFive"
-  "cardThree cardThree cardSix cardSix"
-  "cardSeven cardEight cardNine cardTen";
+      "cardOne cardOne cardTwo cardTwo"
+      "cardThree cardThree cardFour cardFive"
+      "cardThree cardThree cardSix cardSix"
+      "cardSeven cardEight cardNine cardTen";
   grid-gap: 20px;
 }
 
