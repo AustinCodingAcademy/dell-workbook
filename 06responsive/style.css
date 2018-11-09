@@ -137,6 +137,7 @@ i:hover {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "header1 header1"
       "header1 header1"
@@ -254,6 +255,7 @@ i:hover {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
     grid-template-areas:
       "header1 header1 header2 header2"
       "large large short1 short2"
