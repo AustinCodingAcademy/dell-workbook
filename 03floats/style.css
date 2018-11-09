@@ -2,10 +2,10 @@
   box-sizing: border-box
 }
 
-main {
+body {
   background-image: url(./img/airline.jpg);
   background-size: cover;
-  height: 84vh;
+  height: 100%;
 }
 
 header {
