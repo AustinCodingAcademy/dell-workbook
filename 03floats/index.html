@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <div class="navbar clearfix">
+    <div class="logo"><img src="./img/logo.png" alt="UX"> </div>
+  <ul>
+    <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="#about">Register/Login</a></li>
+    <li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#contact">Flight Schedule</a></li>
+    <li><i class="fa fa-plane" aria-hidden="true"></i><a href="#news">Travel Deals</a></li> 
+    <li><i class="fa fa-home" aria-hidden="true"></i><a class="active"  href="#home">Home</a></li>  
+  </ul>
+</div>
+<section>
+<ul>
+  <li ><div><i class="fa fa-car fa-3x" aria-hidden="true"></i></div></li>
+  <li><div><i class="fa fa-bed fa-3x" aria-hidden="true"></i></div></li>
+  <li><div><i class="fa fa-plane fa-3x" aria-hidden="true"></i></div></li>
+</ul>
+<form>
+  <div class="row">
+    <input placeholder="Depart" type="text">
+    <input placeholder="Arrive" type="text">
+  </div>
+  <div class="row">
+    <input type="date">
+    <input type="date">
+  </div>
+  <div class="row">
+    <label for="passengers">Passengers </label>
+    <select name="" id="passengers">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <label for="oneway"><input type="radio" id="oneway" name="flighttype" value="oneway">Return</label>
+    <label for="roundtrip"><input type="radio" id="roundtrip" name="flighttype" checked="checked" value="roundtrip">One Way</label>
+  </div>
+  <div class="row">
+    <input type="button" value="Search Flights">
+  </div>
+</form>
+</section> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1 {
+  color: blueviolet;
+  align-content: center;
+}
+
+body {
+  margin: 0px 200px;
+  font-family: 'comic sans ms';
+}
+
+.boxright
+{
+  vertical-align: top;
+  float: right;
+}
+
+.box
+{
+  display: inline-block;
+}
