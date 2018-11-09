@@ -1,8 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-size: xx-large;
   font-family: Arial;
   text-align: center;
@@ -24,10 +24,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "cardOne cardOne cardTwo cardTwo"
-    "cardThree cardThree cardFour cardFive"
-    "cardThree cardThree cardSix cardSix"
-    "cardSeven cardEight cardNine cardTen";
+  "cardOne cardOne cardTwo cardTwo"
+  "cardThree cardThree cardFour cardFive"
+  "cardThree cardThree cardSix cardSix"
+  "cardSeven cardEight cardNine cardTen";
   grid-gap: 20px;
 }
 
@@ -59,7 +59,6 @@ article {
   grid-area: cardFive;
 }
 
-
 .cardsix {
   grid-area: cardSix;
 }
@@ -72,7 +71,7 @@ article {
   grid-area: cardEight;
 }
 
-.cardnine{
+.cardnine {
   grid-area: cardNine;
 }
 
@@ -98,7 +97,7 @@ article {
   flex: 1;
 }
 
-img{
+img {
   height: 100%;
 }
 
@@ -120,13 +119,13 @@ img{
   visibility: hidden;
 }
 
-
 /* Smaller and down */
+
 @media (max-width: 576px) {
   .mastergrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
+    grid-template-areas: 
     "cardOne"
     "cardTwo"
     "cardThree"
@@ -139,32 +138,28 @@ img{
     "cardTen";
     grid-gap: 20px;
   }
-
   .mobile {
     visibility: visible;
     text-align: center;
   }
-
   .tablet {
     visibility: hidden;
   }
-
   .desktop {
     visibility: hidden;
   }
 }
 
 /* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
 
+@media (min-width: 576px) {
   body {
     max-width: 100%;
   }
-
   .mastergrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
+    grid-template-areas: 
     "cardOne"
     "cardTwo"
     "cardThree"
@@ -177,77 +172,68 @@ img{
     "cardTen";
     grid-gap: 20px;
   }
-
   .mobile {
     visibility: visible;
     text-align: center;
   }
-
   .tablet {
     visibility: hidden;
   }
-
   .desktop {
     visibility: hidden;
   }
 }
 
 /* Medium and up (Tablets) */
+
 @media (min-width: 768px) {
-  
   .mastergrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "cardOne cardOne"
-      "cardOne cardOne"
-      "cardTwo cardThree"
-      "cardFour cardFour"
-      "cardFive cardFive"
-      "cardFive cardFive"
-      "cardSix cardSeven"
-      "cardEight cardEight"
-      "cardNine cardTen";
+    "cardOne cardOne"
+    "cardOne cardOne"
+    "cardTwo cardThree"
+    "cardFour cardFour"
+    "cardFive cardFive"
+    "cardFive cardFive"
+    "cardSix cardSeven"
+    "cardEight cardEight"
+    "cardNine cardTen";
     grid-gap: 20px;
   }
-
   .tablet {
     visibility: visible;
     text-align: center;
   }
-
   .desktop {
     visibility: hidden;
   }
-
   .mobile {
     visibility: hidden;
   }
 }
 
 /* Large and up (Desktops) */
+
 @media (min-width: 992px) {
   .mastergrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "cardOne cardOne cardTwo cardTwo"
-      "cardThree cardThree cardFour cardFive"
-      "cardThree cardThree cardSix cardSix"
-      "cardSeven cardEight cardNine cardTen";
+    "cardOne cardOne cardTwo cardTwo"
+    "cardThree cardThree cardFour cardFive"
+    "cardThree cardThree cardSix cardSix"
+    "cardSeven cardEight cardNine cardTen";
     grid-gap: 20px;
   }
-
-  .desktop{
+  .desktop {
     visibility: visible;
   }
-
   .tablet {
     visibility: hidden;
   }
-
   .mobile {
     visibility: hidden;
   }
 }
-
