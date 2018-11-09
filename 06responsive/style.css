@@ -127,16 +127,16 @@ img{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-     "cardOne"
-     "cardTwo"
-     "cardThree"
-     "cardFour"
-     "cardFive"
-     "cardSix"
-     "cardSeven"
-     "cardEight"
-     "cardNine"
-     "cardTen";
+    "cardOne"
+    "cardTwo"
+    "cardThree"
+    "cardFour"
+    "cardFive"
+    "cardSix"
+    "cardSeven"
+    "cardEight"
+    "cardNine"
+    "cardTen";
     grid-gap: 20px;
   }
 
@@ -165,16 +165,16 @@ img{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-     "cardOne"
-     "cardTwo"
-     "cardThree"
-     "cardFour"
-     "cardFive"
-     "cardSix"
-     "cardSeven"
-     "cardEight"
-     "cardNine"
-     "cardTen";
+    "cardOne"
+    "cardTwo"
+    "cardThree"
+    "cardFour"
+    "cardFive"
+    "cardSix"
+    "cardSeven"
+    "cardEight"
+    "cardNine"
+    "cardTen";
     grid-gap: 20px;
   }
 
