@@ -22,18 +22,23 @@ h1 {
   text-align: center;
   padding: 1px;
 }
-/* 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
   grid-template-areas:
-    "header header header header"
-    "card1  card1  card2  card2"
-    "card3  card3  card4  card5"
-    "card3  card3  card6  card6"
-    "card7  card8  card9  card10";
-} */
+    "header"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+    "card9"
+    "card10";
+  }
 
 .container {
   display: flex;
@@ -114,26 +119,6 @@ card7 {
   grid-area: card10;
 }
 
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    grid-template-areas:
-      "header"
-      "card1"
-      "card2"
-      "card3"
-      "card4"
-      "card5"
-      "card6"
-      "card7"
-      "card8"
-      "card9"
-      "card10";
-    }
-}
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
