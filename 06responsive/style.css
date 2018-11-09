@@ -111,29 +111,19 @@ h1, h2{
   grid-area: bottomrightboi;
 }
 
-/* .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "topleftboi topleftboi toprightboi toprightboi"
-    "middleleftbigboi middleleftbigboi middleleftsmallboi middlerightsmallboi"
-    "middleleftbigboi middleleftbigboi middlebottomwideboi middlebottomwideboi"
-    "bottomleftboi bottommiddleleftboi bottommiddlerightboi bottomrightboi";
-} */
-
 .container{
   display: grid; /* Using the grid */
   grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
-  "topleftboi"
-  "toprightboi"
-  "middleleftbigboi"
-  "middleleftsmallboi"
-  "middlerightsmallboi"
-  "middlebottomwideboi"
-  "bottomleftboi"
-  "bottommiddleleftboi"
-  "bottommiddlerightboi"
-  "bottomrightboi";
+    "topleftboi"
+    "toprightboi"
+    "middleleftbigboi"
+    "middleleftsmallboi"
+    "middlerightsmallboi"
+    "middlebottomwideboi"
+    "bottomleftboi"
+    "bottommiddleleftboi"
+    "bottommiddlerightboi"
+    "bottomrightboi";
 }
 
 @media (min-width: 768px) {
@@ -162,5 +152,5 @@ h1, h2{
         "middleleftbigboi middleleftbigboi middleleftsmallboi middlerightsmallboi"
         "middleleftbigboi middleleftbigboi middlebottomwideboi middlebottomwideboi"
         "bottomleftboi bottommiddleleftboi bottommiddlerightboi bottomrightboi";
-   }
+  }
 }
