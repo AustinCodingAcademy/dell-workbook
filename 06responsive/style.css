@@ -46,7 +46,7 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   /* min-width: 375px; */
-  flex-basis: 1px;
+  flex-basis: 375px;
   flex-grow: 3;
 }
 
