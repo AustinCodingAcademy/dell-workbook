@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-
     min-height: 250px; 
     min-width: 345px; 
     display:flex;
