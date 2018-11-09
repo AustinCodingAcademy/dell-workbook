@@ -130,6 +130,7 @@ h1, h2{
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* the first column is 1 unit (fraction), the second column is 3 units */
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr 2fr;
     grid-template-areas: /* stack the components how you want them to appear in the columns */
       "topleftboi topleftboi" /* stretch header across both columns at the top */
       "topleftboi topleftboi"
