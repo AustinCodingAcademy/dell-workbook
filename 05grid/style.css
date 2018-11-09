@@ -6,17 +6,9 @@ body {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-/* .card  {
-    min-height: 250px;
-    min-width: 345px;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 3px 3px 3px 3px black;
-    padding: 15px 10px 0;
-  }
-  */
 .img-container {
   display: flex;
   flex-basis: 0;
@@ -35,6 +27,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.cont {
+  background: rgb(192, 219, 228);
+  min-height: 250px;
+  min-width: 345px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 3px 3px black;
+  padding: 15px 10px 0;
+}
 
 img {
   max-width: 300px;
@@ -49,8 +50,7 @@ img {
 
 .contain {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-areas:
@@ -65,92 +65,29 @@ img {
     "cardeigt cardnine";
 }
 .cardone {
-  background: rgb(192, 219, 228);
   grid-area: cardone;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardtwo {
-  background: rgb(192, 219, 228);
   grid-area: cardtwo;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardthree {
-  background: rgb(192, 219, 228);
   grid-area: cardthree;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardfour {
-  background: rgb(192, 219, 228);
   grid-area: cardfour;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardfive {
-  background-color: rgb(192, 219, 228);
   grid-area: cardfive;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardsix {
-  background: rgb(192, 219, 228);
   grid-area: cardsix;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardseven {
-  background-color: rgb(192, 219, 228);
   grid-area: cardseven;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardeight {
-  background: rgb(192, 219, 228);
   grid-area: cardeight;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
 .cardnine {
-  background: rgb(192, 219, 228);
   grid-area: cardnine;
-  min-height: 250px;
-  min-width: 345px;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 15px 10px 0;
 }
