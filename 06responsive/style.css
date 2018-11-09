@@ -16,7 +16,7 @@ h1 {
   padding: 8px;
 }
 
-h2 {
+* h2 {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
@@ -131,11 +131,8 @@ card7 {
       "card7"
       "card8"
       "card9"
-      "card10";}
-     #desktop{
-       height: 0px;
-       width: 0px;
-          }
+      "card10";
+    }
 }
 
 /* Medium and up (Tablets) */
