@@ -1,6 +1,5 @@
 /* You can style your links page here */
-.body {
-  color: blue;
+body {
   font-size: 12px;
-  
+  text-emphasis: bold;
 }
