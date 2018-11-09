@@ -102,10 +102,10 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     grid-template-areas:
-      "article1"
+      "article1   article1"
       "article2   article3"
       "article4   article5"
-      "article6"
+      "article6   article6"
       "article7   article8"
       "article9   article10";
   }
