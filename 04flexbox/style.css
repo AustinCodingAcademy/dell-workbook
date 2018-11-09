@@ -47,13 +47,12 @@ img {
   border-style: solid;
   border-color: lightgray;
   box-shadow: 5px 5px black;
-  min-width: 576px;
+  height: 250px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .pic {
-  /* max-width: 575px; */
   display: flex;
   flex: 1;
   height: 230px;
@@ -67,7 +66,7 @@ img {
   padding: 0px 10px;
   flex-wrap:wrap;
   min-width: 400px;
-  flex-basis: 0px;
+  flex-basis: 400px;
   flex-grow: 3;
 }
 
