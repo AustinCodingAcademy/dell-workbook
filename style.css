@@ -3,3 +3,6 @@ body {
   font-size: 20px;
   text-emphasis: strong;
 }
+body :-webkit-any-link {
+  color: blue;
+}
