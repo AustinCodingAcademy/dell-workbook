@@ -1,0 +1,26 @@
+body {
+  background-color: cornsilk;
+  background-image: url("https://goo.gl/gm4PKC");
+}
+h1 {
+  color: green;
+  background-color: orange;
+  font-size: 50px;
+  font-style: italic;
+  background-position: 10px;
+}
+div {
+  font-size: 20px;
+}
+
+span {
+  font-size: 12px;
+}
+
+p.small {
+  line-height: 1;
+}
+
+p.big {
+  line-height: 1.5;
+}

@@ -1,1 +1,22 @@
 /* You can style your links page here */
+a {
+  color: green;
+  cursor: pointer;
+  text-decoration: dashed;
+}
+.box {
+  height: 10px;
+  width: 10px;
+  border: 2px orange;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+a:hover {
+  font-size: "40";
+}
