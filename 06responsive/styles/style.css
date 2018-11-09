@@ -23,6 +23,11 @@ header p {
   text-align: center;
 }
 
+.viewport.tablet,
+.viewport.desktop {
+  display: none;
+}
+
 /* Card Styling */
 .card {
   background-color: #fff;
@@ -122,6 +127,15 @@ header p {
 }
 
 @media (min-width: 576px) {
+  .viewport.tablet {
+    display: block;
+  }
+
+  .viewport.mobile,
+  .viewport.desktop {
+    display: none;
+  }
+
   /* Grid Styling */
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -138,6 +152,12 @@ header p {
 }
 
 @media (min-width: 768px) {
+  .viewport.tablet {
+    display: none;
+  }
+  .viewport.desktop {
+    display: block;
+  }
   /* Grid Styling */
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
