@@ -1,16 +1,39 @@
-img {
+img{
+  display:flex;
+  padding:10px;
+}
+.image{
+  height:100%;
+}
+a{
+  align-self: flex-end;
+  margin: 10px;
+}
+.like {
+  display: flex;
+  position: absolute;
+  flex-direction:column;
+  align-self: flex-end;
   padding: 10px;
 }
-div .like {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+.description{
+  flex-wrap:wrap;
 }
+
 .flex-card {
-  font-family: sans-serif;
   display: flex;
+  font-family: sans-serif;
   padding: 10px;
   border: 1px solid black;
   box-shadow: 0px 3px 5px 0px;
+  flex-wrap: wrap;
+}
+.flex-description{
+  padding:10px;
+  display: flex;
+  flex-basis:0px;
+  flex-grow:3;
   justify-content: space-between;
+  flex-wrap: wrap;
+  min-width:200px;
 }
