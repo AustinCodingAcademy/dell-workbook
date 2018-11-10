@@ -38,7 +38,7 @@ h1 {
     "card8"
     "card9"
     "card10";
-  }
+}
 
 .container {
   display: flex;
@@ -119,7 +119,6 @@ card7 {
   grid-area: card10;
 }
 
-
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
   .grid {
@@ -129,8 +128,8 @@ card7 {
     grid-template-areas:
       "header header"
       "card1  card1"
-      "card2  card3" 
-      "card2  card4" 
+      "card2  card3"
+      "card2  card4"
       "card5  card5"
       "card6  card7"
       "card8  card7"
