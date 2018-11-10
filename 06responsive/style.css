@@ -28,7 +28,7 @@ h1 {
 }
 
 #phone {
-  display: inherits;
+  display: inherit;
 }
 #tv {
   display: none;
@@ -64,7 +64,7 @@ h1 {
   padding: 10px;
   box-shadow: 3px 3px 6px gray;
   flex-wrap: wrap;
-  min-width: 200px;
+  min-width: 225px;
   background-color: whitesmoke;
 }
 
@@ -150,7 +150,7 @@ card7 {
       "card2  card4"
       "card5  card5"
       "card6  card7"
-      "card8  card7"
+      "card8  card8"
       "card9  card10";
   }
 
@@ -180,14 +180,14 @@ card7 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
-      "header header header"
-      "card1  card1  card1"
-      "card2  card3  card3"
-      "card2  card4  card4"
-      "card5  card5  card6"
-      "card5  card5  card6"
-      "card7  card7  card7"
-      "card8  card9  card10";
+      "header  header  header"
+      "card1   card1   card1"
+      "card2   card3   card3"
+      "card2   card4   card4"
+      "card5   card5   card6"
+      "card5   card5   card6"
+      "card7   card8   card9"
+      "card10  card10  card10";
   }
 
   #desktop {
