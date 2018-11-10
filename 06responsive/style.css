@@ -22,6 +22,24 @@ h1 {
   text-align: center;
   padding: 1px;
 }
+
+#desktop {
+  display: none;
+}
+
+#phone {
+  display: inherits;
+}
+#tv {
+  display: none;
+}
+
+#tablet {
+  display: none;
+}
+#phone-landscape {
+  display: none;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -119,8 +137,8 @@ card7 {
   grid-area: card10;
 }
 
-/* Medium and up (Tablets) */
-@media (min-width: 768px) {
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,6 +152,58 @@ card7 {
       "card6  card7"
       "card8  card7"
       "card9  card10";
+  }
+
+  #desktop {
+    display: none;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+
+  #phone-landscape {
+    display: inherit;
+  }
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header header header"
+      "card1  card1  card1"
+      "card2  card3  card3"
+      "card2  card4  card4"
+      "card5  card5  card6"
+      "card5  card5  card6"
+      "card7  card7  card7"
+      "card8  card9  card10";
+  }
+
+  #desktop {
+    display: none;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: inherit;
+  }
+  #phone-landscape {
+    display: none;
   }
 }
 
@@ -150,19 +220,53 @@ card7 {
       "card3  card3  card6  card6"
       "card7  card8  card9  card10";
   }
+
+  #desktop {
+    display: inherit;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #phone-landscape {
+    display: none;
+  }
 }
 
 /* Extra Large and up (Wide Screen Desktops) */
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
-      "header header header header header"
-      "card1  card1  card2  card2  card3"
-      "card4  card4  card5  card5  card6"
-      "card4  card4  card7  card8  card8"
-      "card9  card9  card7  card10 card10";
+      "header header header header header header"
+      "card1  card1  card2  card2  card3  card3"
+      "card4  card4  card4  card5  card5  card6"
+      "card4  card4  card4  card7  card8  card6"
+      "card9  card9  card9  card10 card10 card10";
   }
-} */
+
+  #desktop {
+    display: none;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: inherit;
+  }
+
+  #tablet {
+    display: none;
+  }
+  #phone-landscape {
+    display: none;
+  }
+}
