@@ -117,7 +117,7 @@ div-grid{
       "card-9 card-10"
   }
 
-  #card-1{
+  #card-1, #card-5{
     min-height: 500px;
   }
 
