@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.planet {
+  margin: 50px auto;
+
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+.ring {
+  background-color: transparent;
+  border-style: dotted;
+  border-color: blueviolet;
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.planet.earth {
+  height: 240px;
+  width: 240px;
+
+
+}
+
+.earth .crust {
+  border-color: lightblue;
+  padding: 40px;  
+  border-width: 10px;
+  border-radius: 50%;
+
+
+}
+
+.earth .mantle {
+  padding: 30px;
+  border-width: 10px;
+  border-radius: 50%;
+
+}
+
+.earth .core {
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
+
+}
+
+.planet.mars {
+  height: 190px;
+  width: 190px;
+
+}
+
+.mars .crust {
+  border-color: tan;
+  padding: 25px;
+  border-width: 5px;
+  border-radius: 50%;
+}
+
+.mars .mantle {
+  padding: 25px;
+  border-width: 5px;
+  border-radius: 50%;
+
+}
+
+.mars .core {
+  padding: 25px;
+  border-width: 10px;
+  border-radius: 50%;
+
+}
+
+
+.planet.venus {
+  height: 220px;
+  width: 220px;
+
+}
+
+.venus .ring {
+  border-width: 10px;
+  transform: rotateX(100deg);
+  transform: skewY(35deg);
+}
+
+.venus .crust {
+  border-color: tan;
+  padding: 30px;
+  border-width: 10px;
+  border-radius: 50%;
+}
+
+.venus .mantle {
+  padding: 20px;
+  border-width: 5px;
+  border-radius: 50%;
+
+}
+
+.venus .core {
+  padding: 30px;
+  border-width: 5px;
+  border-radius: 50%;
+
+}

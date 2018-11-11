@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+</head>
+<body>
+  <header class="clearfix">
+    <div class="logo"><img src="./img/logo.png" alt="log" width="100%"></div>
+    <ul>
+      <li class="navbutton"><i class="fa fa-home" aria-hidden="true"></i><a href="#">  Home</a></li>
+      <li class="navbutton"><i class="fa fa-plane" aria-hidden="true"></i><a href="#">  Travel Deals</a></li>
+      <li class="navbutton"><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">  Flight Schedule</a></li>
+      <li class="navbutton"><i class="fa fa-sign-in" aria-hidden="true"></i><a href="#">  Register/Login</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section>
+    <form>
+
+      <nav>
+        <ul>
+            <li class="navbutton"><i class="fa fa-plane" aria-hidden="true"></i><a href="#"></a></li>
+            <li class="navbutton"><i class="fa fa-bed" aria-hidden="true"></i><a href="#"></a></li>
+            <li class="navbutton"><i class="fa fa-car" aria-hidden="true"></i><a href="#"></a></li>
+        </ul>
+      </nav>
+
+      <div class="row1">
+        <input class="airport" placeholder="Depart" type="text">
+        <input class="airport" placeholder="Arrive" type="text">
+      </div>
+
+      <div class="row2">
+        <input class="date" type="date">
+        <input class="date" type="date">
+      </div>
+      <div class="row"></div>
+
+      <div class="row3">
+        <p class="passenger">Passengers
+        <select class="passengermenu">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="radio" name="flight_type" value="first" checked="checked"> Return
+        <input type="radio" name="flight_type" value="second"> One-way </p>
+      </div>
+
+      <div>
+        <button class="button">Search Flights</button>
+      </div>
+
+
+    </form>
+    </section>
+
+  </main>
+
+
+</body>
+</html>
