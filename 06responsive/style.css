@@ -1,1 +1,161 @@
+/* Global Layout */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 3%;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+/* Card Layout  */
+.card {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px black;
+  background: #f2f2ea;
+}
+
+/* Grid Area Names */
+.card-one {
+  grid-area: card-one;
+}
+
+.card-two {
+  grid-area: card-two;
+}
+
+.card-three {
+  grid-area: card-three;
+}
+
+.card-four {
+  grid-area: card-four;
+}
+
+.card-five {
+  grid-area: card-five;
+}
+
+.card-six {
+  grid-area: card-six;
+}
+
+.card-seven {
+  grid-area: card-seven;
+}
+
+.card-eight {
+  grid-area: card-eight;
+}
+
+.card-nine {
+  grid-area: card-nine;
+}
+
+.card-ten {
+  grid-area: card-ten;
+}
+
+img {
+  margin: 1% 0 0 1%;
+  max-width: 50%;
+}
+
+/* Content Layout */
+.contents-container {
+  padding: 0 20px 10px;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 3;
+  flex-basis: 0;
+  justify-content: space-between;
+  /* min-width: 200px; */
+}
+
+.contents-container p {
+  padding: 5px;
+}
+
+.likes {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.likes a {
+  margin-right: 2%;
+}
+
+/* Extra Small and up (Portrait Phones) */
+/* 
+} */
+
+/* Small and up (Landscape Phones) */
+/* @media (min-width: 576px) { */
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "card-one"
+    "card-two"
+    "card-three"
+    "card-four"
+    "card-five"
+    "card-six"
+    "card-seven"
+    "card-eight"
+    "card-nine"
+    "card-ten";
+  margin: 20px;
+}
+/* } */
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      "card-one card-two"
+      "card-three card-four"
+      "card-five card-six"
+      "card-seven card-eight"
+      "card-nine card-ten";
+  }
+  h1,
+  h3 {
+    font-size: 50%;
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .grid {
+    width: 100%;
+    margin: 30px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      "card-one card-one card-two card-two"
+      "card-one card-one card-two card-two"
+      "card-three card-three card-four card-five"
+      "card-three card-three card-six card-six"
+      "card-seven card-eight card-nine card-ten";
+  }
+
+  .card-three img {
+    max-width: 50%;
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+}
