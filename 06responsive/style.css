@@ -131,12 +131,14 @@ html {
   .nav-container{
       grid-area: nav;
   }
+  
   .articles-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    
-    
-    
-    grid-gap: 10px;
-}
+      grid-area: articles;
+  }
+
+  .parent{
+      display: grid;
+      grid-template-areas: 
+      "nav"
+      "articles"
+  }
