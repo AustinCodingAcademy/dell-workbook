@@ -1,1 +1,163 @@
+body {
+  margin: 8px;
+}
+
+.card {
+  display: flex;
+  padding: 5px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.58);
+  border: 0.5px solid #00000038;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+}
+
+.article  {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 219px;
+} 
+
+.lorem {
+  flex-wrap: wrap;
+}
+
+.article-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header {
+  grid-area: header;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold; */
+}
+
+.title {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 37px;
+  padding: 7px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+   .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten";
+  }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "one one"
+      "one one"
+      "one one"
+      "one one"
+      "two three"
+      "two three"
+      "four four"
+      "five five"
+      "five five"
+      "five five"
+      "five five"
+      "six seven"
+      "six seven"
+      "eight eight"
+      "nine ten";
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+  .three .image {
+    width: 673px;
+  }
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "header header header header"
+      "one one two two"
+      "one one two two"
+      "three three four five"
+      "three three four five"
+      "three three four five"
+      "three three six six"
+      "seven eight nine ten"
+      "seven eight nine ten"
+      "seven eight nine ten";
+  }
+}
 
