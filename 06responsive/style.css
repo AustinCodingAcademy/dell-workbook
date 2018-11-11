@@ -128,7 +128,7 @@ html {
 }
 
 .nav-container {
-  text-align: center;
+  align-content: center;
   font-size: 40px;
   grid-area: nav;
 }
@@ -142,34 +142,33 @@ html {
   grid-template-areas:
     "nav"
     "articles";
-    grid-gap: 10px;
+  grid-gap: 10px;
 }
 
-
 @media (min-width: 576px) {
-    .parent{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "nav nav"
-        "article1 article1"
-        "article2 article3"
-        "article4 article4";
-        grid-gap: 10px;
-    }
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav nav"
+      "article1 article1"
+      "article2 article3"
+      "article4 article4";
+    grid-gap: 10px;
+  }
 }
 
 @media (min-width: 768px) {
-    .parent{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "nav nav nav nav"
-        "article1 article1 article2 article2"
-        "article3 article3 article4 article5"
-        "article3 article3 article6 article6"
-        "article7 article8 article9 article10";
-        
-        grid-gap: 10px;
-    }
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "article1 article1 article2 article2"
+      "article3 article3 article4 article5"
+      "article3 article3 article6 article6"
+      "article7 article8 article9 article10";
+
+    grid-gap: 10px;
+  }
 }
