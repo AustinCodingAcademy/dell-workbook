@@ -1,0 +1,170 @@
+header {
+  background-color: #183a55;
+}
+
+body {
+  background-color: white;
+}
+
+header .logo {
+  padding-left: 30px;
+  float: left;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header a:hover {
+  color: #0c9290;
+}
+
+.clearfix {
+  height: auto;
+  width: auto;
+  padding-right: 25px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  margin-right: 5px;
+  margin-top: 0px;
+  line-height: 5;
+}
+
+li {
+  display: inline;
+  float: left;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+main {
+  background-image: url(img/airline.jpg);
+  background-size: cover;
+  height: 85vh;
+  padding: 60px;
+  margin-top: 1px;
+}
+
+/*.button {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border: none;
+}*/
+
+.button {
+  background-color: teal;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 160px;
+  height: 60px;
+  padding: 0px;
+  float: left;
+  color: white;
+}
+
+button:hover {
+  background-color: #0063b7;
+}
+
+.plane {
+  background-image: url(img/plane-icon.png);
+}
+
+.hotel {
+  background-image: url(img/hotel-icon.png);
+}
+
+.car {
+  background-image: url(img/car-icon.png);
+}
+
+.submit {
+  width: 435px;
+  margin-right: 0px;
+  font-size: 20px;
+}
+
+section form {
+  padding: 10px;
+  background-color: #123754;
+  width: 460px;
+  height: 360px;
+  color: white;
+}
+
+.row {
+  padding: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+}
+
+section form .row > *:first-child {
+  float: left;
+  margin-right: 40px;
+}
+
+textarea {
+  width: 100px;
+}
+
+/*.resizeTextbox {
+  width: 190px;
+  height: 35px;
+  color: white;
+}*/
+
+input[type="text"] {
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: #123754;
+  color: white;
+  width: 190px;
+  height: 35px;
+}
+
+input[type="date"] {
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: #123754;
+  width: 190px;
+  height: 35px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  text-align: left;
+  /*font-style: italic;*/
+}
+
+select {
+  width: 70px;
+  height: 42px;
+  margin-right: 40px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: #123754;
+  color: white;
+}
+
+label {
+  color: white;
+  height: 42px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 13px;
+}
