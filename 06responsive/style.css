@@ -93,7 +93,7 @@ header {
 
 /* Small and up (Landscape Phones) */
 @media (min-width: 576px) {
-   .container {
+  .container {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 1fr;
