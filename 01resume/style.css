@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+  color:white;  
+}
+
+header {
+  text-align: center;
+}
+
+a.email {
+  text-decoration: none; color: white;
+}
+
+a.twitter {
+  text-decoration: none; color: white;
+}

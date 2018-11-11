@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flight Booker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img  class="logo" src="img/logo.png">
+
+    <div class="header-list">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/login-icon.png" alt="Register/Login">
+            Register/Login
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/schedule-icon.png" alt="Flight Schedule">
+            Flight Schedule
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/deal-icon.png" alt="Travel Deals">
+            Travel Deals
+          </a>
+        </li>
+        <li>
+          <a style="color: #1F707E;" href="#">
+            <img src="img/home-icon.png" alt="Home">Home
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <main>
+    <section>
+      <nav class="clearfix">
+        <button class="button flight"> 
+          <img src="img/plane-icon.png" alt="specify your flight details">
+        </button>
+        <button class="button hotel">
+          <img src="img/hotel-icon.png" alt="specify your hotel details">
+        </button>
+        <button class="button car">
+          <img src="img/car-icon.png" alt="Rental Car Options">
+        </button>
+      </nav>
+
+      <form>
+        <!-- Row 1 -- Depart/Arrive fields -->
+        <div class="row one">
+          <input class="main-login-input" placeholder="Depart" type="text">
+          <input class="main-login-input" placeholder="Arrive" type="text">
+        </div>
+
+        <!-- Row 2 -- Dates field -->
+        <div class="row two">
+          <input type="date">
+          <input type="date">
+        </div>
+
+        <!-- Row 3 -- # of Passengers and type of flight (Return/One-way) -->
+        <div class="row three clearfix">
+          <div class="float-passenger">
+            <label for="passengers">Passengers</label>
+            <select name="" id="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="flight-type-radio">
+            <input type="radio" name="flight-type" id="return" checked><label for="return">Return</label>
+            <input type="radio" name="flight-type" id="one-way"><label for="one-way">One Way</label>
+          </div>
+        </div>
+        <!-- Row 4 -- Search Flights (Submit Button) -->
+        <div class="row four">
+          <button class="search-button" type="submit" id="submit">
+            <label class="submit-button-text" for="submit">Search Flights</label>
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
