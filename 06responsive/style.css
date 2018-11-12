@@ -139,9 +139,13 @@ html {
 
 .parent {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "nav"
-    "articles";
+    "article1"
+    "article2"
+    "article3"
+    "article4";
   grid-gap: 10px;
 }
 
