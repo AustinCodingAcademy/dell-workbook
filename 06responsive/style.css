@@ -87,34 +87,34 @@ img {
   }
 }
 
-  @media (min-width: 768px) {
-    .card-grid {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "card1 card1"
-        "card1 card1"
-        "card2 card3"
-        "card4 card4"
-        "card5 card5"
-        "card5 card5"
-        "card6 card7"
-        "card8 card8"  
-        "card9 card10";
-    }
+@media (min-width: 768px) {
+  .card-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1"
+      "card1 card1"
+      "card2 card3"
+      "card4 card4"
+      "card5 card5"
+      "card5 card5"
+      "card6 card7"
+      "card8 card8"
+      "card9 card10";
   }
+}
 
-  /* Large and up (Desktops) */
-  @media (min-width: 992px) {
-    .card-grid {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-        "card1 card1 card2 card2"
-        "card3 card3 card4 card5"
-        "card3 card3 card6 card6"
-        "card7 card8 card9 card10";
-    }
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .card-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2 card2"
+      "card3 card3 card4 card5"
+      "card3 card3 card6 card6"
+      "card7 card8 card9 card10";
   }
+}
