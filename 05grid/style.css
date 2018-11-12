@@ -15,6 +15,8 @@ body {
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 15px 10px 0;
+  /* border: 1px solid rgba(255, 255, 255, 0.774); */
+  border-top: 1px solid rgba(196, 196, 196, 0.623);
 }
 
 .img-container {
@@ -58,13 +60,24 @@ img {
 
 header {
   grid-area: header;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 50px;
 }
+
+header h4 {
+  font-size: 20px;
+  padding: 5px;
+}
+
 .one {
   grid-area: card-1;
+  /* border-top: 1px solid rgba(196, 196, 196, 0.623); */
 }
 
 .two {
   grid-area: card-2;
+  /* border-top: 1px solid rgba(196, 196, 196, 0.623); */
 }
 
 .three {
