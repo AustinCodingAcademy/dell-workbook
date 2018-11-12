@@ -1,1 +1,120 @@
+.flexbox {
+  display: flex;
+  box-shadow: 0px 5px 20px 5px gray;
+  flex-basis: 400px;
+  flex-wrap: wrap;
+}
 
+.pic-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  flex-basis: 0px;
+  align-content: flex-start;
+}
+
+img {
+  padding: 10px;
+  height: 396px;
+  width: 317px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#card1 {
+  grid-area: card1;
+}
+
+#card2 {
+  grid-area: card2;
+}
+
+#card3 {
+  grid-area: card3;
+}
+
+#card4 {
+  grid-area: card4;
+}
+
+#card5 {
+  grid-area: card5;
+}
+
+#card6 {
+  grid-area: card6;
+}
+
+#card7 {
+  grid-area: card7;
+}
+
+#card8 {
+  grid-area: card8;
+}
+
+#card9 {
+  grid-area: card9;
+}
+
+#card10 {
+  grid-area: card10;
+}
+
+/* phone */
+@media (min-width: 576px) {
+  .card-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8"
+      "card9"
+      "card10";
+  }
+}
+
+  @media (min-width: 768px) {
+    .card-grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "card1 card1"
+        "card1 card1"
+        "card2 card3"
+        "card4 card4"
+        "card5 card5"
+        "card5 card5"
+        "card6 card7"
+        "card8 card8"  
+        "card9 card10";
+    }
+  }
+
+  /* Large and up (Desktops) */
+  @media (min-width: 992px) {
+    .card-grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "card1 card1 card2 card2"
+        "card3 card3 card4 card5"
+        "card3 card3 card6 card6"
+        "card7 card8 card9 card10";
+    }
+  }
