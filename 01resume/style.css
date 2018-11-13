@@ -1,0 +1,13 @@
+body {
+  margin: 75px;
+}
+
+div.a {
+  text-align: center;
+}
+
+.pix {
+  float: left;
+  padding-left: 70px;
+  /* margin-right: 50px; */
+}

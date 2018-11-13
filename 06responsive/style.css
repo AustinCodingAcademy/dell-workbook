@@ -1,1 +1,170 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 20px;
+}
+
+.card {
+  min-height: 250px;
+  min-width: 345px;
+  display: flex;
+  flex-wrap: wrap;
+  /* box-shadow: 1px 1px 1px black; */
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px 10px 0;
+  /* border: 1px solid rgba(255, 255, 255, 0.774); */
+  border-top: 1px solid rgba(196, 196, 196, 0.623);
+}
+
+.img-container {
+  display: flex;
+  /* flex-basis: 0; */
+  flex-grow: 1;
+  height: 230px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.content {
+  min-width: 230px;
+  flex-basis: 0;
+  flex-grow: 3;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 285px;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+
+header {
+  grid-area: header;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+header h4 {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.one {
+  grid-area: card-1;
+  /* border-top: 1px solid rgba(196, 196, 196, 0.623); */
+}
+
+.two {
+  grid-area: card-2;
+  /* border-top: 1px solid rgba(196, 196, 196, 0.623); */
+}
+
+.three {
+  grid-area: card-3;
+}
+
+.four {
+  grid-area: card-4;
+}
+
+.five {
+  grid-area: card-5;
+}
+
+.six {
+  grid-area: card-6;
+}
+
+.seven {
+  grid-area: card-7;
+}
+
+.eight {
+  grid-area: card-8;
+}
+
+.nine {
+  grid-area: card-9;
+}
+
+.ten {
+  grid-area: card-10;
+}
+
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "card-1"
+      "card-2"
+      "card-3"
+      "card-4" 
+      "card-5"
+      "card-6"
+      "card-7"
+      "card-8"
+      "card-9"
+      "card-10";
+  }
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "card-1 card-1"
+      "card-1 card-1"
+      "card-1 card-1"
+      "card-2 card-3"
+      "card-2 card-3"
+      "card-4 card-4"
+      "card-5 card-5"
+      "card-5 card-5"
+      "card-5 card-5"
+      "card-6 card-7"
+      "card-6 card-7"
+      "card-8 card-8"
+      "card-9 card-10";
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "card-1 card-1 card-2 card-2"
+      "card-3 card-3 card-4 card-5"
+      "card-3 card-3 card-6 card-6"
+      "card-7 card-8 card-9 card-10";
+  }
+  .img-container3 {
+    width: 66vh; 
+    height: auto;
+  }
+  .img3 {
+    max-width: 100%;
+  }
+}
