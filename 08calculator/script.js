@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   // You code here
 });
+
 function addNumber(num) {
   document.querySelector("#results").value += num;
 }

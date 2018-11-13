@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10%;
+}
+
 input {
   width: 119.5px;
-  margin-left: 2px
+  margin-left: 2px;
 }
+
+
 .button {
   border: 1px solid black;
   width: 26px;
