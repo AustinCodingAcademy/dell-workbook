@@ -1,1 +1,140 @@
+h1,
+h2 {
+  font-family: sans-serif;
+}
 
+/* Phone */
+@media (min-width: 576px) {
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card1"
+      "card1 card1"
+      "card1 card1"
+      "card2 card3"
+      "card2 card3"
+      "card4 card4"
+      "card5 card5"
+      "card5 card5"
+      "card5 card5"
+      "card6 card7"
+      "card6 card7"
+      "card8 card8"
+      "card9 card9"
+      "card9 card9"
+      "card9 card9"
+      "card10 card10";
+  }
+}
+
+/* Desktops */
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2 card2"
+      "card3 card3 card4 card5"
+      "card3 card3 card6 card6"
+      "card7 card8 card9 card10";
+  }
+}
+
+.flex-card {
+  display: flex;
+  align-content: space-between;
+  margin: 10px;
+  border: solid black 1px;
+  flex-wrap: wrap;
+  min-height: 250px;
+  min-width: 345px;
+}
+.flex-card:nth-child(1) {
+  grid-area: card1;
+}
+.flex-card:nth-child(2) {
+  grid-area: card2;
+}
+.flex-card:nth-child(3) {
+  grid-area: card3;
+}
+.flex-card:nth-child(4) {
+  grid-area: card4;
+}
+.flex-card:nth-child(5) {
+  grid-area: card5;
+}
+.flex-card:nth-child(6) {
+  grid-area: card6;
+}
+.flex-card:nth-child(7) {
+  grid-area: card7;
+}
+.flex-card:nth-child(8) {
+  grid-area: card8;
+}
+.flex-card:nth-child(9) {
+  grid-area: card9;
+}
+.flex-card:nth-child(10) {
+  grid-area: card10;
+}
+.main-div div {
+  flex-basis: 400px;
+}
+.image {
+  display: flex;
+  flex-basis: 0px;
+  flex-shrink: 1;
+  justify-content: center;
+}
+img {
+  display: flex;
+  padding: 10px;
+  max-width: 320px;
+}
+.image {
+  display: flex;
+  flex: 1;
+  height: 230px;
+}
+.single {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  flex-basis: 0px;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.text {
+  display: flex;
+  align-self: flex-start;
+}
+.bottom-text {
+  display: flex;
+  justify-content: space-between;
+}
