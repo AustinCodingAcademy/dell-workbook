@@ -37,6 +37,26 @@ header {
       "card9 card9"
       "card10 card10";
   }
+
+  main {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+  min-width: 2px;
+  flex-basis: 2px;
+  flex-grow: 2;
+  }
+
+  .img {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    height: 100%;
+    max-height: 200px;
+    width: auto;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -146,14 +166,9 @@ header {
   display: flex;
   flex: 1;
   padding: 10px;
-  height: 100%;
-  max-height: 200px;
-  width: auto;
+  width: 100%;
+  height: auto;
   justify-content: center;
-}
-
-img {
-  height: 100%;
 }
 
 main {
