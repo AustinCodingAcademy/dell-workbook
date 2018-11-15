@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  /* The is the overall padding setting  */
+}
+
+.container-all {
+  display: flex;
+  padding: 15px 10px 0;
+  box-shadow: 1px 1px 1px black;
+  flex-wrap: wrap;
+  min-width: 345px;
+  min-height: 250px;
+  /* This is the entire container. Updated to show the shadow,
+   and the size settings for the wrapping.   */
+}
+
+.container-picture {
+  display: flex;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-bottom: 5px;
+  height: 230px;
+  /*This is the container for the image. Along with the settings to 
+  allow it to grow*/
+}
+
+img {
+  max-width: 285px;
+
+  /* The image and its settings */
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  flex-basis: 0;
+  min-width: 230px;
+  padding: 0px 20px 10px;
+  /* This is the right side container with the text. These settings allow 
+  it to grow 3 times the size of the rest of the items when needed.  */
+}
+
+.container-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+  /* This is the icons container with settings used to align the items as needed
+   */
+}
+
+.heart:first-child a {
+  color: black;
+  /* This is setting the heart as black */
+}
+
+.read:last-child a {
+  color: blue;
+  /* This overrides the default color to make the link blue */
+}

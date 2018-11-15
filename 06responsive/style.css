@@ -1,1 +1,195 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 20px;
+  /* The is the overall padding setting  */
+}
+
+.container-all {
+  display: flex;
+
+  box-shadow: 1px 1px 1px 1px black;
+  flex-wrap: wrap;
+  min-width: 345px;
+
+  /* This is the entire container. Updated to show the shadow,
+   and the size settings for the wrapping.   */
+}
+
+.container-picture {
+  display: flex;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 10px;
+
+  /*This is the container for the image. Along with the settings to 
+  allow it to grow*/
+}
+
+img {
+  max-width: 350px;
+  max-height: 200px;
+  /* The image and its settings */
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  flex-basis: 0;
+  min-width: 230px;
+  padding: 0px 20px 10px;
+}
+
+.container-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.heart:first-child a {
+  color: black;
+}
+
+.read:last-child a {
+  color: blue;
+}
+header {
+  text-align: center;
+  font-family: Georgia;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card3 .container-all {
+  height: 620px;
+  width: 710px;
+  flex-direction: column;
+}
+.card3 .container-text {
+  justify-content: space-around;
+}
+.card3 .container-picture {
+  width: 700px;
+}
+.card3 img {
+  height: 460px;
+  width: 600px;
+}
+.card4 {
+  grid-area: card4;
+  height: 300px;
+}
+.card4 .container-all {
+  height: 400px;
+}
+.card4 .container-text {
+  height: 200px;
+}
+.card4 .container-picture {
+  padding: 5px;
+  height: 100px;
+}
+.card4 img {
+  height: 160px;
+}
+
+.card5 {
+  grid-area: card5;
+}
+.card5 .container-all {
+  height: 400px;
+}
+.card5 .container-text {
+  height: 200px;
+}
+.card5 .container-picture {
+  padding: 5px;
+  height: 100px;
+}
+.card5 img {
+  height: 160px;
+}
+.card6 {
+  grid-area: card6;
+}
+.card6 .container-all {
+  height: 200px;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
+}
+
+.card9 {
+  grid-area: card9;
+}
+
+.card10 {
+  grid-area: card10;
+}
+/* Mobile settings */
+.container {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-areas:
+    'card1'
+    'card2'
+    'card3'
+    'card4'
+    'card5'
+    'card6'
+    'card7'
+    'card8'
+    'card9'
+    'card10';
+}
+
+/* Tablet Settings  */
+@media (min-width: 768px) {
+  .container {
+    /* grid-gap: 20px; */
+    width: 50%;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-areas:
+      'card1 card2'
+      'card1 card2'
+      'card7 card8'
+      'card7 card8'
+      'card9 card10'
+      'card9 card10';
+  }
+}
+
+/* Desktop Settings  */
+@media (min-width: 992px) {
+  .container {
+    /* grid-gap: 20px; */
+    /* width: 75%; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-areas:
+      'card1 card1 card2 card2'
+      'card3 card3 card4 card5'
+      'card3 card3 card6 card6'
+      'card7 card8 card9 card10';
+  }
+}

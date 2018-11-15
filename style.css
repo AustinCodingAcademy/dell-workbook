@@ -1,1 +1,8 @@
 /* You can style your links page here */
+body {
+  font-size: 20px;
+  text-emphasis: strong;
+}
+body :-webkit-any-link {
+  color: blue;
+}
