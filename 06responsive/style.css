@@ -154,55 +154,55 @@ body{
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
-.parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "container1 container1"
-    "container1 container1"
-    "container2 container3"
-    "container4 container4"
-    "container5 container5"
-    "container6 container6"
-    "container6 container6"
-    "container7 container8"
-    "container9 container10";
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "container1 container1"
+      "container1 container1"
+      "container2 container3"
+      "container4 container4"
+      "container5 container5"
+      "container6 container6"
+      "container6 container6"
+      "container7 container8"
+      "container9 container10";
 
-  grid-gap: 10px;
+    grid-gap: 10px;
+
+    }
 
   }
-
-}
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
-.parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1 fr 1fr;
-  grid-template-areas: 
-    "container1 container1 container2 container2"
-    "container3 container3 container4 container5"
-    "container3 container3 container6 container6"
-    "container7 container8 container9 container10";
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1 fr 1fr;
+    grid-template-areas: 
+      "container1 container1 container2 container2"
+      "container3 container3 container4 container5"
+      "container3 container3 container6 container6"
+      "container7 container8 container9 container10";
 
-  grid-gap: 10px;
+    grid-gap: 10px;
+    }
+
   }
-
-}
 
 /* Extra Large and up (Wide Screen Desktops) */
 @media (min-width: 1200px) {
-.parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1 fr 1fr;
-  grid-template-areas: 
-    "container1 container1 container2 container2"
-    "container3 container3 container4 container5"
-    "container3 container3 container6 container6"
-    "container7 container8 container9 container10";
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1 fr 1fr;
+    grid-template-areas: 
+      "container1 container1 container2 container2"
+      "container3 container3 container4 container5"
+      "container3 container3 container6 container6"
+      "container7 container8 container9 container10";
 
-  grid-gap: 10px;
+    grid-gap: 10px;
+    }
+
   }
-
-}
 
