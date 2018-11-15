@@ -152,16 +152,16 @@ header {
   width: 100%;
   /* grid-template-columns: repeat(4, 1fr); */
   grid-template-areas:
-    "card1"
-    "card2"
-    "card3"
-    "card4"
-    "card5"
-    "card6"
-    "card7"
-    "card8"
-    "card9"
-    "card10";
+    'card1'
+    'card2'
+    'card3'
+    'card4'
+    'card5'
+    'card6'
+    'card7'
+    'card8'
+    'card9'
+    'card10';
 }
 
 /* Tablet Settings  */
@@ -171,12 +171,12 @@ header {
     width: 50%;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
-      "card1 card2"
-      "card1 card2"
-      "card7 card8"
-      "card7 card8"
-      "card9 card10"
-      "card9 card10";
+      'card1 card2'
+      'card1 card2'
+      'card7 card8'
+      'card7 card8'
+      'card9 card10'
+      'card9 card10';
   }
 }
 
@@ -187,9 +187,9 @@ header {
     /* width: 75%; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-areas:
-      "card1 card1 card2 card2"
-      "card3 card3 card4 card5"
-      "card3 card3 card6 card6"
-      "card7 card8 card9 card10";
+      'card1 card1 card2 card2'
+      'card3 card3 card4 card5'
+      'card3 card3 card6 card6'
+      'card7 card8 card9 card10';
   }
 }
