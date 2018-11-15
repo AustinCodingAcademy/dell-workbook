@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  
+
   function addNumber(num) {
     document.querySelector("#results").value += num;
   }
@@ -21,5 +21,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function deleteLast() {
     let current = document.querySelector("#results").value;
     document.querySelector("#results").value = current.slice(0, -1);
+  }
+
+  function subtractNumber(num){
+    document.querySelector("#results").value -= num;
+  }
+
+  function subtraction() {
+    document.querySelector("#results").value += "-";
+  }
+
+  function multiplyNumber(num) {
+    document.querySelector('#results').value *= num;
+  }
+
+  function multiply() {
+    document.querySelector("#results").value += "*";
+  }
+
+  function divideNumber(num) {
+    document.querySelector('#results').value /= num;
+  }
+
+  function divide() {
+    document.querySelector("#results").value += "/";
   }
 });
