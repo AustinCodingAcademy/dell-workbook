@@ -1,10 +1,10 @@
-var a = 1,
-var b = 2,
+var a = 1;
+var b = 2;
 var c = 3;
 
 (function firstFunction() {
-  var b = 5,
-    c = 6;
+  var b = 5;
+  var c = 6;
 
   (function secondFunction() {
     var b = 8;
