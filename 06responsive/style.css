@@ -40,12 +40,12 @@ header {
 
   main {
     display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px 30px 15px 30px;
-  min-width: 2px;
-  flex-basis: 2px;
-  flex-grow: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+    min-width: 2px;
+    flex-basis: 2px;
+    flex-grow: 2;
   }
 
   .img {
