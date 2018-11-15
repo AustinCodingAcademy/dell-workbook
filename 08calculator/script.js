@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function multiplyNumber(num) {
-    document.querySelector('#results').value *= num;
+    document.querySelector("#results").value *= num;
   }
 
   function multiply() {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function divideNumber(num) {
-    document.querySelector('#results').value /= num;
+    document.querySelector("#results").value /= num;
   }
 
   function divide() {
