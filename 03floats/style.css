@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #183a55;
+}
+header .logo {
+  float: left;
+}
+
+.logo img {
+  width: 100%;
+}
+header ul {
+  float:right;
+  margin-top: 25px;
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header ul li {
+  float:left;
+  list-style: none;
+  margin-left: 15px;
+}
+header a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #03b5aa;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+main {
+  background-image: url('./img/airline.jpg');
+  background-size: cover;
+  height: 86vh;
+  Margin-top: 1px;
+}
+section {
+  position: absolute;
+  left: 20px;
+  top: 120px;
+}
+section nav a {
+  float: left;
+  width: 33.3%;
+  background-color: #03b5aa;
+  text-align: center;
+}
+section nav a:hover {
+  background-color: #2a5ecb;
+}
+section nav li a img {
+  height: 30%;
+  width: 30%;
+  padding: 5px;
+}
+section nav li:last-child a {
+  border-right:none;
+  border-top-right-radius: 7px;
+}
+section nav li:first-child a {
+  border-top-left-radius: 7px;
+}
+section form {
+  padding: 10px;
+  padding-bottom: 40px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #183a55;
+}
+.row {
+  padding: 20px 0;
+}
+section form .row > *:last-child {
+  float: right;
+}
+section form .row > *:first-child {
+  float: left;
+}
+section form .row input {
+  background-color:  #183a55;
+  color: white;
+  padding: 10px;
+  width: 40%;
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+}
+section form .row3 > *:last-child {
+  float: right;
+}
+section form .row3 > *:first-child {
+  float: left;
+}
+section form .row3 label {
+  color: white;
+  margin: 5px;
+  padding: 10px;
+}
+section form .row3 select {
+  background-color:  #183a55;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  border-color: white;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/*Search Flights*/
+section form .row a {
+  float: left;
+  background-color: #03b5aa;
+  text-align: center;
+  color: white;
+  padding: 10px 130px 10px 130px;
+  margin: 5px 5px 5px 40px;
+  border-radius: 7px;
+}
+section form .row a:hover {
+  background-color: #2a5ecb;
+}
