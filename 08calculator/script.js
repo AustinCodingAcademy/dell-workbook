@@ -1,8 +1,14 @@
 'use strict';
 
-function addNumber(num) {
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+document.addNumber = function(num) {
   document.querySelector("#results").value += num;
 }
+
+document.querySelector('[data-number]').addEventListener('click', function() {
+  console.log(this.getAttribute('data-number'))
+})
 
 function clearResults() {
   document.querySelector("#results").value = "";
@@ -21,6 +27,4 @@ function deleteLast() {
   document.querySelector("#results").value = current.slice(0, -1);
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
- 
 });

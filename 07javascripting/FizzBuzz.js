@@ -4,7 +4,7 @@
 // 'FizzBuzz' if the number is divisible by three and five
 // the number itself if it is none of these
 
-for (i = 1; i <= 100; i++)
+for (var i = 1; i <= 100; i++)
 {
   if (i % ( 3 * 5) === 0) {
     console.log('FizzBuzz');
