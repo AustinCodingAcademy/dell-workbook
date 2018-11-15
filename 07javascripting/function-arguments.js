@@ -1,5 +1,5 @@
-function math (d, e, f){
-return (e * f) + d;
+function math(d, e, f) {
+  return (e * f) + d;
 }
 
-console.log(math(53,61,67));
+console.log(math(53, 61, 67));
