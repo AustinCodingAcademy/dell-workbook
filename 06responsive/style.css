@@ -1,1 +1,272 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+* h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 1px;
+}
+
+#desktop {
+  display: none;
+}
+
+#phone {
+  display: inherit;
+}
+#tv {
+  display: none;
+}
+
+#tablet {
+  display: none;
+}
+#phone-landscape {
+  display: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+    "card9"
+    "card10";
+}
+
+.container {
+  display: flex;
+  min-height: 100%;
+  padding: 10px;
+  box-shadow: 3px 3px 6px gray;
+  flex-wrap: wrap;
+  min-width: 225px;
+  background-color: whitesmoke;
+}
+
+.photo {
+  margin: 10px auto;
+}
+
+.photo img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.message {
+  display: flex;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 0px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 20px;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+card7 {
+  grid-area: card7;
+}
+
+.card8 {
+  grid-area: card8;
+}
+
+.card9 {
+  grid-area: card9;
+}
+
+.card10 {
+  grid-area: card10;
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header header"
+      "card1  card1"
+      "card2  card3"
+      "card2  card4"
+      "card5  card5"
+      "card6  card7"
+      "card8  card8"
+      "card9  card10";
+  }
+
+  #desktop {
+    display: none;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+
+  #phone-landscape {
+    display: inherit;
+  }
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header  header  header"
+      "card1   card1   card1"
+      "card2   card3   card3"
+      "card2   card4   card4"
+      "card5   card5   card6"
+      "card5   card5   card6"
+      "card7   card8   card9"
+      "card10  card10  card10";
+  }
+
+  #desktop {
+    display: none;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: inherit;
+  }
+  #phone-landscape {
+    display: none;
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header header header header"
+      "card1  card1  card2  card2"
+      "card3  card3  card4  card5"
+      "card3  card3  card6  card6"
+      "card7  card8  card9  card10";
+  }
+
+  #desktop {
+    display: inherit;
+  }
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #phone-landscape {
+    display: none;
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header header header header header header"
+      "card1  card1  card2  card2  card3  card3"
+      "card4  card4  card4  card5  card5  card6"
+      "card4  card4  card4  card7  card8  card6"
+      "card9  card9  card9  card10 card10 card10";
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #phone {
+    display: none;
+  }
+  #tv {
+    display: inherit;
+  }
+
+  #tablet {
+    display: none;
+  }
+  #phone-landscape {
+    display: none;
+  }
+}

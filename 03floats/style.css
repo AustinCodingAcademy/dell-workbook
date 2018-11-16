@@ -1,0 +1,137 @@
+header {
+  background-color: #193a55;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100%;
+  height: 90px;
+}
+
+body {
+  background-image: url(./img/airline.jpg);
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+header a {
+  color: #c9ced1;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+header a:hover {
+  color: #0e7581;
+}
+
+header .logo {
+  float: left;
+}
+.menu {
+  float: right;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+.menu li {
+  display: inline;
+  margin: 5px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.reservation li {
+  background-color: #018d80;
+  color: white;
+  border: none;
+  width: 33.3%;
+  height: 50px;
+  float: left;
+  text-align: center;
+  margin: 0;
+  border-left-color: white;
+  border-left-style: solid;
+  border-width: 0px;
+}
+.reservation .plane {
+  background-color: #0d67bd;
+  border-top-left-radius: 5px;
+}
+.reservation .car {
+  border-top-right-radius: 5px;
+}
+
+form {
+  margin-left: 75px;
+  margin-top: 75px;
+  width: 400px;
+  height: 330px;
+  background-color: #193a55;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input[type="text"] {
+  background-color: #193a55;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c9ced1;
+  border-radius: 3px;
+  height: 40px;
+  padding-left: 5px;
+  width: 150px;
+  text-indent: 3px;
+  margin-right: 25px;
+}
+
+input[type="date"] {
+  background-color: #193a55;
+  margin-right: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c9ced1;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 5px;
+  width: 150px;
+  text-indent: 3px;
+  color: white;
+}
+
+input[type="radio"] {
+  border-style: none;
+  border-width: 0px;
+  margin-left: 3px;
+}
+
+.select {
+  margin-right: 25px;
+  margin-left: 15px;
+  padding: 10px;
+  border-style: solid;
+  background-color: #193a55;
+  border-color: #c9ced1;
+  border-radius: 5px;
+  width: 50px;
+  color: #c9ced1;
+}
+
+.row {
+  color: white;
+  margin-top: 20px;
+  padding-left: 27px;
+}
+button {
+  width: 350px;
+  background-color: #0d67bd;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
+  color: white;
+}
