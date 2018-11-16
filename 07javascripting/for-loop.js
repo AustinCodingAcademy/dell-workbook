@@ -1,8 +1,7 @@
-var total=0;
-var limit=10;
-for(var i=0; i<limit;i++)
+var total = 0;
+var limit = 10;
+for (var i = 0; i < limit; i++) 
 {
-    total= total + i;
+  total = total + i;
 }
-
 console.log(total);
