@@ -1,10 +1,11 @@
 input {
     width: 119.5px;
     margin-left: 2px
-  }
-  .button {
+}
+
+.button {
     border: 1px solid black;
     width: 26px;
     text-align: center;
     cursor: pointer;
-  }
+}

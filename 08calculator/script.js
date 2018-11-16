@@ -21,7 +21,7 @@ function subtraction() {
   document.querySelector("#results").value += "-";
 }
 
-function multiply (){
+function multiply() {
   document.querySelector("#results").value += "*";
 }
 
@@ -29,7 +29,7 @@ function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
 
-function divide(){
+function divide() {
   document.querySelector("#results").value += "/";
 }
 
