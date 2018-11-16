@@ -1,14 +1,8 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-
-document.addNumber = function(num) {
+function addNumber(num) {
   document.querySelector("#results").value += num;
 }
-
-document.querySelector('[data-number]').addEventListener('click', function() {
-  console.log(this.getAttribute('data-number'))
-})
 
 function clearResults() {
   document.querySelector("#results").value = "";
@@ -16,6 +10,22 @@ function clearResults() {
 
 function addition() {
   document.querySelector("#results").value += "+";
+}
+
+function minus(){
+  document.querySelector("#results").value += "-";
+}
+
+function multiply(){
+  document.querySelector("#results").value += "*";
+}
+
+function divide(){
+  document.querySelector("#results").value += "/";
+}
+
+function plusminus(){
+  document.querySelector("#results").value = -document.querySelector("#results").value;
 }
 
 function equals() {
@@ -27,4 +37,5 @@ function deleteLast() {
   document.querySelector("#results").value = current.slice(0, -1);
 }
 
-});
+document.addEventListener("DOMContentLoaded", function(event) { 
+})
