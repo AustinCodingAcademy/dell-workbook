@@ -1,1 +1,94 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-container {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 230px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.content {
+  min-width: 230px;
+  flex-basis: 0;
+  flex-grow: 2;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont {
+  background: rgb(192, 219, 228);
+  min-height: 250px;
+  min-width: 345px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 3px 3px black;
+  padding: 15px 10px 0;
+}
+
+img {
+  max-width: 300px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  color: black;
+}
+
+.contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-areas:
+    "cardone cardone"
+    "cardtwo cardthree"
+    "cardtwo cardthree"
+    "cardfour cardfour"
+    "cardfive cardsix"
+    "cardfive cardsix"
+    "cardseven cardseven"
+    "cardeight cardnine"
+    "cardeigt cardnine";
+}
+.cardone {
+  grid-area: cardone;
+}
+.cardtwo {
+  grid-area: cardtwo;
+}
+.cardthree {
+  grid-area: cardthree;
+}
+.cardfour {
+  grid-area: cardfour;
+}
+.cardfive {
+  grid-area: cardfive;
+}
+.cardsix {
+  grid-area: cardsix;
+}
+.cardseven {
+  grid-area: cardseven;
+}
+.cardeight {
+  grid-area: cardeight;
+}
+.cardnine {
+  grid-area: cardnine;
+}
+ 
