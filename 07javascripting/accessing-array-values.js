@@ -1,2 +1,2 @@
-let food = ['apple', 'pizza', 'pear'];
+let food = ["apple", "pizza", "pear"];
 console.log(food[1]);
