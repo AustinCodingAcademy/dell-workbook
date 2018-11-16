@@ -1,1 +1,143 @@
+header {
+  text-align: center;
+}
 
+.page {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 4, 1fr;
+  grid-template-areas:
+    "card1 card1 card2 card2"
+    "card3 card3 card4 card5"
+    "card3 card3 card6 card6"
+    "card7 card8 card9 card10";
+}
+
+.card1 {
+  grid-area: card1;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  grid-area: card2;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card3 {
+  grid-area: card3;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card4 {
+  grid-area: card4;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card5 {
+  grid-area: card5;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card6 {
+  grid-area: card6;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card7 {
+  grid-area: card7;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card8 {
+  grid-area: card8;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card9 {
+  grid-area: card9;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card10 {
+  grid-area: card10;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  height: 100%;
+  max-height: 200px;
+  width: auto;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+  min-width: 200px;
+  flex-basis: 200px;
+  flex-grow: 2;
+}
+
+h2 {
+  width: 100%;
+  margin: 0px;
+}
+
+h6 {
+  width: 100%;
+  margin: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,400 @@
+body {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.planet {
+  margin: 200px auto;
+}
+
+.dwarfplanet {
+  margin: 200px auto;
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+.rings {
+  Background-color: transparent;
+  border-style: solid;
+}
+
+.surfacewrap {
+  background-color: transparent;
+  border-style: solid;
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.planet.mercury {
+  width: 100px;
+  height: 100px;
+}
+
+.mercury .crust {
+  border-width: 3px;
+  padding: 2px;  
+  width: 100%;
+  height: 100%;
+  border-color: grey;
+}
+
+.mercury .mantle {
+  border-width: 7px;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.mercury .core {
+  border-width: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;  
+}
+
+.mercury .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 50px;
+  bottom: 50px;
+  width: 100px;
+  height: 100px;  
+  border-color: grey;
+  box-shadow: inset 15px -20px 0px rgb(109, 109, 109);
+}
+
+.planet.venus {
+  width: 300px;
+  height: 300px;
+}
+
+.venus .crust {
+  border-width: 10px;
+  padding: 15px;  
+  width: 100%;
+  height: 100%;
+  border-color: palegoldenrod;
+}
+
+.venus .mantle {
+  border-width: 25px;
+  padding: 15px;
+  width: 100%;
+  height: 100%;  
+}
+
+.venus .core {
+  border-width: 25px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;    
+}
+
+.venus .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 120px;
+  bottom: 120px;
+  width: 300px;
+  height: 300px;  
+  border-color: palegoldenrod;
+  box-shadow: inset 70px -60px 0px rgb(218, 212, 156);
+}
+
+.planet.earth {
+  width: 350px;
+  height: 350px;
+}
+
+.earth .crust {
+  border-width: 10px;
+  padding: 10px;  
+  width: 100%;
+  height: 100%;
+  border-color: blue;
+}
+
+.earth .mantle {
+  border-width: 40px;
+  padding: 60px;
+  width: 100%;
+  height: 100%;  
+}
+
+.earth .core {
+  border-width: 30px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;    
+}
+
+.earth .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 170px;
+  bottom: 170px;
+  width: 350px;
+  height: 350px;  
+  border-color: blue;
+  box-shadow: inset 80px -70px 0px rgb(0, 0, 230);
+}
+
+.planet.mars {
+  width: 280px;
+  height: 280px;
+}
+
+.mars .crust {
+  border-width: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;  
+  border-color: firebrick;
+}
+
+.mars .mantle {
+  border-width: 45px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;  
+}
+
+.mars .core {
+  border-width: 20px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;  
+}
+
+.mars .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 140px;
+  bottom: 140px;
+  width: 280px;
+  height: 280px;  
+  border-color: firebrick;
+  box-shadow: inset 60px -50px 0px rgb(148, 29, 29);
+}
+
+.planet.jupiter {
+  width: 950px;
+  height: 950px;
+}
+
+.jupiter .crust {
+  border-width: 60px;
+  padding: 80px;
+  width: 100%;
+  height: 100%;  
+  border-color: peru;
+}
+
+.jupiter .mantle {
+  border-width: 50px;
+  padding: 90px;
+  width: 100%;
+  height: 100%;  
+}
+
+.jupiter .core {
+  border-width: 60px;
+  padding: 50px;
+  width: 100%;
+  height: 100%;  
+}
+
+.jupiter .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 390px;
+  bottom: 390px;
+  width: 950px;
+  height: 950px;  
+  border-color: peru;
+  box-shadow: inset 200px -220px 0px rgb(179, 117, 55);
+}
+
+.planet.saturn {
+  width: 750px;
+  height: 750px;
+}
+
+.saturn .crust {
+  border-width: 55px;
+  padding: 100px;
+  width: 100%;
+  height: 100%;  
+  border-color: peachpuff;
+}
+
+.saturn .mantle {
+  border-width: 30px;
+  padding:110px;
+  width: 100%;
+  height: 100%;  
+}
+
+.saturn .core {
+  border-width: 40px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;  
+}
+
+.saturn .rings{
+  width: 1500px;
+  height: 500px;
+  border-radius: 50%;
+  -ms-transform: rotate(45deg);  /* IE 9 */
+  -webkit-transform: rotate(45deg);  /* Safari */
+  transform: rotate(45deg);
+  position: relative;
+  right: 755px;
+  bottom: 240px;
+  border: 100px solid sandybrown;
+  box-shadow: 0px -20px 0px rgb(190, 128, 73);
+}
+
+.saturn .surfacewrap {
+  border-width: 0px;
+  position: inherit;
+  left: 300px;
+  bottom: 230px;  
+  width: 750px;
+  height: 750px;  
+  border-color: peachpuff;
+  box-shadow: inset 0px -220px 0px rgb(230, 196, 167);  
+}
+
+.planet.uranus {
+  width: 550px;
+  height: 550px;
+}
+
+.uranus .crust {
+  border-width: 80px;
+  padding: 40px;
+  width: 100%;
+  height: 100%;  
+  border-color: lightskyblue;
+}
+
+.uranus .mantle {
+  border-width: 30px;
+  padding:65px;
+  width: 100%;
+  height: 100%;  
+}
+
+.uranus .core {
+  border-width: 40px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;  
+}
+
+.uranus .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 275px;
+  bottom: 275px;
+  width: 550px;
+  height: 550px;  
+  border-color: lightskyblue;
+  box-shadow: inset 130px -110px 0px rgb(122, 185, 224);  
+}
+
+.planet.neptune {
+  width: 530px;
+  height: 530px;
+}
+
+.neptune .crust {
+  border-width: 120px;
+  padding: 40px;
+  width: 100%;
+  height: 100%;  
+  border-color: skyblue;
+}
+
+.neptune .mantle {
+  border-width: 20px;
+  padding:45px;
+  width: 100%;
+  height: 100%;  
+}
+
+.neptune .core {
+  border-width: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;  
+}
+
+.neptune .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 265px;
+  bottom: 265px;
+  width: 530px;
+  height: 530px;  
+  border-color: skyblue;
+  box-shadow: inset 110px -110px 0px rgb(118, 180, 204);
+}
+
+.dwarfplanet.pluto {
+  width: 20px;
+  height: 20px;
+}
+
+.pluto .crust {
+  border-width: 4px;
+  padding: 3px;
+  width: 100%;
+  height: 100%;
+  border-color: sandybrown;
+}
+
+.pluto .core {
+  border-width: 1px;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.pluto .surfacewrap {
+  border-width: 0px;
+  position: relative;
+  right: 9px;
+  bottom: 9px;
+  width: 20px;
+  height: 20px;
+  border-color: sandybrown;
+  box-shadow: inset 2px -5px 0px rgb(221, 149, 87);
+}

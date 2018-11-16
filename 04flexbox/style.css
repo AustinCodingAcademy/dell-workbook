@@ -1,0 +1,45 @@
+.card {
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px grey;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  height: 100%;
+  width: auto;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+  min-width: 400px;
+  flex-basis: 400px;
+  flex-grow: 2;
+}
+
+h2 {
+  width: 100%;
+  margin: 0px;
+}
+
+h6 {
+  width: 100%;
+  margin: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
