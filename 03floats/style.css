@@ -1,0 +1,194 @@
+body{
+  background-image: url("./img/airline.jpg");
+  /* background-size: 100% 100%;  */
+  background-color:white;
+  background-repeat: no-repeat;
+  background-position:center;
+  width :100%;
+  height: 100vh;
+  margin: 0px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8pt;
+}
+
+.top{
+  background-image: url("./img/logo.png");
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  content :"";
+  display: block;
+  height : 100px;
+  background-color:#183a55;
+  margin-bottom: 10px;
+
+
+}
+
+.nav{
+  color:white;
+}
+
+.home{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  height: 100px;
+  color:white;
+  margin-left:5px;
+  margin-right:15px;
+  /* margin-top: 33px; */
+}
+.home:hover{
+  background-color:darkgrey;
+}
+.traveldeals{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  height: 100px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.traveldeals:hover{
+  background-color:darkgrey;
+}
+.flightschedule{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  color:white;
+  height: 100px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.flightschedule:hover{
+  background-color:darkgrey;
+}
+.registerlogin{
+  float:right;
+  border:none;
+  background-color:#183a55;
+  height: 100px;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+}
+.registerlogin:hover{
+  background-color:darkgrey;
+}
+.row { 
+  content: "";
+  clear: both;
+  display: block;
+}
+
+section {
+  background-color: #183a55;
+  
+}
+
+.box{
+  width: 340px;
+  height: 260px;
+  margin-top:200px;
+  margin-left:50px;
+  background-color: #183a55;
+  border-radius: 2px;
+}
+
+.flight{
+  background-color:#0d67bd;
+  border:none;
+  width:111px;
+  margin-bottom:10px;
+  border-top-left-radius: 2px;
+}
+.flight:hover{
+  background-color: darkgrey;
+}
+
+.hotel{
+  background-color:#0a8c84;
+  border:none;
+  width:110px;
+  margin-bottom:10px;
+}
+.hotel:hover{
+  background-color: darkgrey;
+}
+.car{
+  background-color:#0a8c84;
+  border:none;
+  width:113px;
+  margin-bottom:10px;
+  border-top-right-radius: 2px;
+  margin-right:0px;
+}
+.car:hover{
+  background-color: darkgrey;
+}
+
+.depart{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-top:14px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+
+}
+.arrive{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-top:14px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.row3{
+  /* margin-right:10px;
+  margin-left:10px; */
+  margin: 0px;
+}
+.passengers{
+  margin-left:20px;
+  margin-top:20px;
+  width: 100px;
+}
+#select{
+  margin-right:70px;
+}
+.date{
+  width: 140px;
+  height: 25px;
+  margin-left:20px;
+  margin-top:14px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.radio{
+  margin-top:14px;
+  margin-left:10px;
+}
+
+.search{
+  background-color: #0d67bd;
+  border:none;
+  width: 310px;
+  height:36px;
+  margin-right: 10px;
+  margin-left:10px;
+  margin-top:14px;
+  margin-bottom:10px;
+  color:white;
+}
+.search:hover{
+  background-color:darkgrey;
+}
