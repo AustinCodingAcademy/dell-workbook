@@ -1,1 +1,160 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 20px;
+}
+
+.container {
+  /* min-height: 250px; 
+        min-width: 345px;  */
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px 1px black;
+  padding: 15px 10px 0;
+}
+
+/* .card3 {
+        display: flex;
+    } */
+
+.img {
+  display: flex;
+  flex: 1;
+  height: 130px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+img {
+  max-width: 150px;
+}
+
+.text {
+  min-width: 230px;
+  flex: 1;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  /* align-self: row; */
+  flex: 1;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.card7 {
+  grid-area: card7;
+}
+.card8 {
+  grid-area: card8;
+}
+.card9 {
+  grid-area: card9;
+}
+.card10 {
+  grid-area: card10;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  /* display: flex; 
+         justify-content: center;  */
+  /* flex: 1; */
+}
+
+/* .h2{
+        grid-area: h2;
+        /* display: flex;
+        justify-content: center; */
+/* } */
+
+/* .section{
+        min-height: calc(100vh - 54px);
+        grid-area: section;
+    } */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header "
+    "card1 "
+    "card2 "
+    "card3 "
+    "card4 "
+    "card5 "
+    "card6 "
+    "card7 "
+    "card8 "
+    "card9 "
+    "card10 ";
+}
+
+@media (min-width: 576px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "header header "
+      "card1 card1 "
+      "card2 card3"
+      "card4 card4"
+      "card5 card5"
+      "card6 card7"
+      "card8 card8"
+      "card9 card10";
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 100vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "header header header header"
+      "card1 card1 card2 card2"
+      "card3 card3 card4 card5"
+      "card3 card3 card6 card6"
+      "card7 card8 card9 card10";
+  }
+}

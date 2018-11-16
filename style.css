@@ -1,1 +1,10 @@
 /* You can style your links page here */
+* {
+    box-sizing: border-box;
+    }
+
+body {
+    display:flex;
+    background-color: aliceblue;
+    justify-content: row;    
+}
