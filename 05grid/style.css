@@ -1,1 +1,140 @@
+html {
+  font-family: "Muli", sans-serif;
+}
 
+.article1 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article1;
+}
+.article2 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article2;
+}
+.article3 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article3;
+}
+.article4 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article4;
+}
+.article5 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article5;
+}
+.article6 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article6;
+}
+.article7 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article7;
+}
+.article8 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article8;
+}
+.article9 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article9;
+}
+.article10 {
+  border-style: solid;
+  border-color: black;
+  box-shadow: 3px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: article10;
+}
+
+.photo {
+  margin: 5px;
+}
+
+.text-container {
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-width: 226px;
+  flex: 0 0 40%;
+}
+
+.description {
+  display: flex;
+  align-items: stretch;
+}
+
+.fun-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.hearts {
+  align-self: flex-start;
+}
+
+.readmore {
+  align-self: flex-end;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "article1 article1 article2 article2"
+    "article3 article3 article4 article5"
+    "article3 article3 article6 article6"
+    "article7 article8 article9 article10";
+
+  grid-gap: 10px;
+}
