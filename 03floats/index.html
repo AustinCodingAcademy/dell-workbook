@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Linking the style.css sheet to my page as well as adding a bootstrap element and font awesome icons -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniela Villarreal Float Project</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Daniela Villarreal">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+    <ul>
+      <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+      <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>Travel Deals</a></li>
+      <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Flight Schedule</a></li>
+      <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Register/Login</a></li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <nav>
+        <ul class="clearfix">
+          <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <form>
+        <div class="row">
+          <input placeholder="Depart" type="text">
+          <input placeholder="Arrive" type="text">
+        </div>
+        </br>
+        <div class="row">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="row">
+          <label for="passengers">Passengers </label>
+          <select name="" id="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <input class=radioDisplay type="radio" name="flight-type" id="" /> Return
+          <input class=radioDisplay type="radio" name="flight-type" id="" /> One-Way
+        </div>
+        </div>
+        <div class="row">
+          <button type="submit">Search Flights</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

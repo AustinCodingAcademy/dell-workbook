@@ -1,1 +1,108 @@
+*{
+  box-sizing: border-box;
+}
 
+h1{
+  font-size: xx-large;
+  font-family: Arial;
+  text-align: center;
+}
+
+h2{
+  font-size: medium;
+  font-family: Arial;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+body {
+  padding: 20px;
+}
+
+.mastergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "cardOne cardOne cardTwo cardTwo"
+    "cardThree cardThree cardFour cardFive"
+    "cardThree cardThree cardSix cardSix"
+    "cardSeven cardEight cardNine cardTen";
+  grid-gap: 20px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-shadow: 1px 1px 1px black;
+  padding: 15px 10px 0;
+}
+
+.cardone {
+  grid-area: cardOne;
+}
+
+.cardtwo {
+  grid-area: cardTwo;
+}
+
+.cardthree {
+  grid-area: cardThree;
+}
+
+.cardfour {
+  grid-area: cardFour;
+}
+
+.cardfive {
+  grid-area: cardFive;
+}
+
+
+.cardsix {
+  grid-area: cardSix;
+}
+
+.cardseven {
+  grid-area: cardSeven;
+}
+
+.cardeight {
+  grid-area: cardEight;
+}
+
+.cardnine{
+  grid-area: cardNine;
+}
+
+.cardten {
+  grid-area: cardTen;
+}
+
+.img-container {
+  display: flex;
+  flex: 1;
+  max-height: 200px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.content {
+  padding: 0 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 230px;
+  flex-grow: 3;
+  flex: 1;
+}
+
+img{
+  height: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}

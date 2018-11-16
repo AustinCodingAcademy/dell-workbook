@@ -1,0 +1,37 @@
+/* CSS Styling to achieve the appearance I desire */
+
+.title {
+  font-size: xxx-large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: Verdana;
+  color:black;
+}
+
+.subContent {
+  font-size: large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: Verdana;
+  color:black;
+}
+
+.contentTitle {
+  font-size: x-large;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: Verdana;
+  color:black;
+}
+
+.subContentTitle {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: larger;
+  font-family: Verdana;
+  color:black;
+}
+
+.jumbotron {
+  background-color: mistyrose !important;
+}

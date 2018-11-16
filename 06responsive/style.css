@@ -1,1 +1,239 @@
+* {
+  box-sizing: border-box;
+}
 
+h1 {
+  font-size: xx-large;
+  font-family: Arial;
+  text-align: center;
+}
+
+p {
+  font-size: large;
+  font-family: Arial;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+body {
+  padding: 20px;
+  max-width: 100%;
+}
+
+.mastergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "cardOne cardOne cardTwo cardTwo"
+    "cardThree cardThree cardFour cardFive"
+    "cardThree cardThree cardSix cardSix"
+    "cardSeven cardEight cardNine cardTen";
+  grid-gap: 20px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-shadow: 1px 1px 1px black;
+  padding: 15px 10px 0;
+}
+
+.cardone {
+  grid-area: cardOne;
+}
+
+.cardtwo {
+  grid-area: cardTwo;
+}
+
+.cardthree {
+  grid-area: cardThree;
+}
+
+.cardfour {
+  grid-area: cardFour;
+}
+
+.cardfive {
+  grid-area: cardFive;
+}
+
+.cardsix {
+  grid-area: cardSix;
+}
+
+.cardseven {
+  grid-area: cardSeven;
+}
+
+.cardeight {
+  grid-area: cardEight;
+}
+
+.cardnine {
+  grid-area: cardNine;
+}
+
+.cardten {
+  grid-area: cardTen;
+}
+
+.img-container {
+  display: flex;
+  flex: 1;
+  max-height: 200px;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.content {
+  padding: 0 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 230px;
+  flex-grow: 3;
+  flex: 1;
+}
+
+img {
+  height: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.tablet {
+  visibility: hidden;
+}
+
+.desktop {
+  visibility: hidden;
+}
+
+.mobile {
+  visibility: hidden;
+}
+
+/* Smaller and down */
+
+@media (max-width: 576px) {
+  .mastergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "cardOne"
+      "cardTwo"
+      "cardThree"
+      "cardFour"
+      "cardFive"
+      "cardSix"
+      "cardSeven"
+      "cardEight"
+      "cardNine"
+      "cardTen";
+    grid-gap: 20px;
+  }
+  .mobile {
+    visibility: visible;
+    text-align: center;
+  }
+  .tablet {
+    visibility: hidden;
+  }
+  .desktop {
+    visibility: hidden;
+  }
+}
+
+/* Small and up (Landscape Phones) */
+
+@media (min-width: 576px) {
+  body {
+    max-width: 100%;
+  }
+  .mastergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "cardOne"
+      "cardTwo"
+      "cardThree"
+      "cardFour"
+      "cardFive"
+      "cardSix"
+      "cardSeven"
+      "cardEight"
+      "cardNine"
+      "cardTen";
+    grid-gap: 20px;
+  }
+  .mobile {
+    visibility: visible;
+    text-align: center;
+  }
+  .tablet {
+    visibility: hidden;
+  }
+  .desktop {
+    visibility: hidden;
+  }
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .mastergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "cardOne cardOne"
+      "cardOne cardOne"
+      "cardTwo cardThree"
+      "cardFour cardFour"
+      "cardFive cardFive"
+      "cardFive cardFive"
+      "cardSix cardSeven"
+      "cardEight cardEight"
+      "cardNine cardTen";
+    grid-gap: 20px;
+  }
+  .tablet {
+    visibility: visible;
+    text-align: center;
+  }
+  .desktop {
+    visibility: hidden;
+  }
+  .mobile {
+    visibility: hidden;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  .mastergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cardOne cardOne cardTwo cardTwo"
+      "cardThree cardThree cardFour cardFive"
+      "cardThree cardThree cardSix cardSix"
+      "cardSeven cardEight cardNine cardTen";
+    grid-gap: 20px;
+  }
+  .desktop {
+    visibility: visible;
+  }
+  .tablet {
+    visibility: hidden;
+  }
+  .mobile {
+    visibility: hidden;
+  }
+}
