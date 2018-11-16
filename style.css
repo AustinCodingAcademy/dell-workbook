@@ -6,6 +6,5 @@
 body {
     display:flex;
     background-color: aliceblue;
-    justify-content: row;
-    
+    justify-content: row;    
 }
