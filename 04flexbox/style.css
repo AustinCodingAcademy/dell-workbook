@@ -1,0 +1,40 @@
+body {
+  margin: 10px;
+  
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 20px 10px 0;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 1px black;
+  }
+
+.img, img {
+    height: 100%;
+  }
+
+.details {
+  min-width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  align-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  flex-grow: 3;
+  }
+
+  .text{
+    padding: 10px;
+  }
+
+.comments{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+

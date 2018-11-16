@@ -1,0 +1,169 @@
+
+
+.clearfix:after { 
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
+header {
+  background-color: #183a55;
+  border-bottom: 1px solid white;
+  
+}
+.logo {
+  float: left;
+}
+ul {
+  /* float: right; */
+  list-style: none;
+  margin: 0px;
+  padding-top: 36px;
+  padding-right: 100px;
+  overflow: hidden; 
+}
+li a {
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+  list-style: none;
+}
+main {
+  background-image: url(./img/airline.jpg);
+  background-size: cover;
+  height: 86vh;
+}
+
+section {
+  margin-left: 50px;
+  padding-top: 50px;
+}
+
+nav button {
+float:left;
+border: none;
+background-color: #088b85;
+width: 33.3%;
+text-align: center;
+border-right: 1px solid white;
+}
+
+nav button:hover{
+  background-color: #0d67bd;
+}
+
+button img {
+  height: 30px;
+  margin: 10px;
+}
+
+.three {
+  color:white;
+}
+
+section {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+section nav button:last-child{
+  border-right: none;
+  border-top-right-radius: 3px;
+}
+section nav button:first-child{
+  border-top-left-radius: 3px;
+}
+form {
+  background-color:#183a55; 
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.row {
+  padding: 5px;
+}
+
+section fogrm .row >*:last-child {
+  float:right;
+}
+.row input {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #183a55;
+  color: white;
+  padding: 5px;
+  border-color: white;
+  border-style: solid;
+  font-size: 10px;
+}
+.row input:first-child {
+  margin-right: 5px;
+}
+
+.row input:last-child {
+  margin-left: 5px;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+.one input {
+  width: 130px;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two input {
+  width: 130px;
+}
+
+.three{
+  display: flex;
+  justify-content: space-between;
+}
+
+.three label{
+  width: 30%;
+  align-self: flex-start;
+}
+
+.row three select {
+  background-color: #183a55;
+}
+
+.four button {
+  width: 100%;
+  background-color: #0d67bd;
+  color: white;
+  border: none;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+
+
+
+
