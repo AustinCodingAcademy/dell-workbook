@@ -15,3 +15,17 @@
 #announce-winner {
   font-size: 50px;
 }
+
+.disc {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
