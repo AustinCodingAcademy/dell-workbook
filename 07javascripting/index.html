@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascripting Project</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta description="Javascripting" />
+    <meta name="Victor C" content="07 Javascript Problems" />
+
+    <style>
+      .container {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hello Code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="introduction"
+      ></script>
+      <div id="introduction">console.log('hello');</div>
+    </div>
+
+    <!-- Array code -->
+    <div class="container">
+      <script src="https://embed.runkit.com" data-element-id="array"></script>
+      <div id="array">
+        var pizzaToppings = ["tomato sauce", "cheese", "pepperoni"];
+        console.log(pizzaToppings);
+      </div>
+    </div>
+
+    <!-- Accessing Array code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="accessing-array"
+      ></script>
+      <div id="accessing-array">
+        var food = ["apple", "pizza", "pear"]; console.log(food[1]);;
+      </div>
+    </div>
+
+    <!-- Array filtering code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="array-filtering"
+      ></script>
+      <div id="array-filtering">
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; var filtered =
+        numbers.filter(function(number) { return number % 2 === 0; });
+        console.log(filtered);
+      </div>
+    </div>
+
+    <!-- for-loop code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="for-loop"
+      ></script>
+      <div id="for-loop">
+        var total = 0; var limit = 10; for (var i = 0; i < limit; i++) { total =
+        total + i; } console.log(total);
+      </div>
+    </div>
+
+    <!-- function-argument -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="function-arg"
+      ></script>
+      <div id="function-arg">
+        function math(a, b, c) { return b * c + a; } console.log(math(53, 61,
+        67));
+      </div>
+    </div>
+
+    <!-- functions -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="functions"
+      ></script>
+      <div id="functions">
+        function eat(food) { return food + " tasted really good."; }
+        console.log(eat("bananas"));
+      </div>
+    </div>
+
+    <!-- if-statement code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="if-statement"
+      ></script>
+      <div id="if-statement">
+        var fruit = "orange"; var n = fruit.length; if (n > 5) {
+        console.log("The fruit name has more than five characters."); } else {
+        console.log("The fruit name has five characters or less."); }
+      </div>
+    </div>
+
+    <!-- looping thru code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="loop-thru"
+      ></script>
+      <div id="loop-thru">
+        pets = ["cat", "dog", "rat"]; for (var i = 0; i < 3; i++) { pets[i] =
+        pets[i] + "s"; } console.log(pets);
+      </div>
+    </div>
+
+    <!-- numbers code -->
+    <div class="container">
+      <script src="https://embed.runkit.com" data-element-id="numbers"></script>
+      <div id="numbers">var example = "123456789"; console.log(example);</div>
+    </div>
+
+    <!-- numbers-to string code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="num-to-string"
+      ></script>
+      <div id="num-to-string">
+        var n = 128; n = n.toString(); console.log(n);
+      </div>
+    </div>
+
+    <!-- object properties code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="obj-prop"
+      ></script>
+      <div id="obj-prop">
+        var food = { types: "only pizza" }; console.log(food.types);
+      </div>
+    </div>
+
+    <!-- object code -->
+    <div class="container">
+      <script src="https://embed.runkit.com" data-element-id="obj1"></script>
+      <div id="obj1">
+        var pizza = { toppings: ["cheese", "sauce", "pepperoni"], crust:
+        "deepdish" , serves: 2 }; console.log(pizza);
+      </div>
+    </div>
+
+    <!-- revising-strings code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="rev-string"
+      ></script>
+      <div id="rev-string">
+        var pizza = "pizza is alright"; pizza = pizza.replace("alright",
+        "wonderful"); console.log(pizza);
+      </div>
+    </div>
+
+    <!-- rounding-numbers code -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="round-num"
+      ></script>
+      <div id="round-num">
+        var roundUp = 1.5; rounded = Math.round(roundUp); console.log(rounded);
+      </div>
+    </div>
+
+    <!-- scope solution -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="scope-sol"
+      ></script>
+      <div id="scope-sol">
+        var a = 1, b = 2, c = 3; (function firstFunction() { var b = 5, c = 6;
+        (function secondFunction() { var b = 8; console.log("a: " + a + ", b: "
+        + b + ", c: " + c); (function thirdFunction() { var a = 7, c = 9;
+        (function fourthFunction() { var a = 1, c = 8; })(); })(); })(); })();
+      </div>
+    </div>
+
+    <!-- string-length sol -->
+    <div class="container">
+      <script
+        src="https://embed.runkit.com"
+        data-element-id="str-length"
+      ></script>
+      <div id="str-length">
+        var example = "example string"; console.log(example.length);
+      </div>
+    </div>
+
+    <!-- string code -->
+    <div class="container">
+      <script src="https://embed.runkit.com" data-element-id="strg"></script>
+      <div id="strg">
+        var example = "example string"; console.log(example.length);var
+        someString = "this is a string"; console.log(someString);
+      </div>
+    </div>
+
+    <!-- variables code -->
+    <div class="container">
+      <script src="https://embed.runkit.com" data-element-id="varr"></script>
+      <div id="varr">var example = "some string"; console.log(example);</div>
+    </div>
+  </body>
+</html>
