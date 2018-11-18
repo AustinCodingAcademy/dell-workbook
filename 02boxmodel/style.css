@@ -1,0 +1,105 @@
+html {
+  background: url(https://wi-images.condecdn.net/image/B1NZW376pxM/crop/1620/f/space_11.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*body {
+  background-color: black;
+}
+*/
+
+h1 {
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.planet {
+  margin: 50px auto;
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: brown;
+  /* border-color depends on planet! */
+  border-style: solid;
+}
+
+/*
+    planet height and width => height and width
+    inner-layers => padding;
+    outer-layers => border-width;
+    make it round => border-radius;
+  */
+
+.planet.earth {
+  height: 480px;
+  width: 480px;
+}
+
+.earth .crust {
+  border-color: azure;
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+  border-width: 10px;
+  border-radius: 50%;
+}
+
+.earth .mantle {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
+}
+
+.earth .core {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 50%;
+}
+
+.planet.mars {
+  height: 300px;
+  width: 300px;
+}
+
+.mars .crust {
+  border-color: blueviolet;
+  padding: 30px;
+  border-width: 20px;
+  border-radius: 50%;
+}
+
+.mars .mantle {
+  padding: 50px;
+  border-width: 10;
+  border-radius: 50%;
+}
+
+.mars .core {
+  padding: 50px;
+  border-width: 10;
+  border-radius: 50%;
+}
