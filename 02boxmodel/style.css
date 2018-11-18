@@ -1,0 +1,321 @@
+body {
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.core {
+  background-color: yellow;
+  border-color: orange;
+  border-style: solid;
+}
+
+.mantle {
+  background-color: orangered;
+  border-color: red;
+  border-style: solid;
+}
+
+.crust {
+  background-color: white;
+  /* border-color depends on planet! */
+}
+
+/*
+  planet height and width => height and width
+  inner-layers => padding;
+  outer-layers => border-width;
+  make it round => border-radius;
+*/
+
+.orbital-neptune {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 85%;
+  height: 80%;
+  border: 1px dotted white;
+}
+
+.rotate-neptune {
+  animation: orbit 40s linear infinite;
+}
+@keyframes orbit-neptune {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.planet.neptune {
+  width: 120px;
+  height: 120px;
+}
+
+.neptune .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.neptune .mantle {
+  padding: 10px;
+  border-width: 20px;
+}
+
+.neptune .core {
+  padding: 10px;
+  border-width: 20px;
+}
+
+.orbital-uranus {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 75%;
+  height: 70%;
+  border: 1px dotted white;
+}
+
+.rotate-uranus {
+  animation: orbit 35s linear infinite;
+}
+
+.planet.uranus {
+  width: 140px;
+  height: 140px;
+}
+
+.uranus .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.uranus .mantle {
+  padding: 30px;
+  border-width: 20px;
+}
+
+.uranus .core {
+  padding: 10px;
+  border-width: 10px;
+}
+
+.orbital-saturn {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  width: 65%;
+  height: 60%;
+  border: 1px dotted white;
+}
+
+.rotate-saturn {
+  animation: orbit 30s linear infinite;
+}
+
+.planet.saturn {
+  width: 160px;
+  height: 160px;
+}
+
+.saturn .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.saturn .mantle {
+  padding: 10px;
+  border-width: 40px;
+}
+
+.saturn .core {
+  padding: 10px;
+  border-width: 20px;
+}
+
+.orbital-jupiter {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 55%;
+  height: 50%;
+  border: 1px dotted white;
+}
+
+.rotate-jupiter {
+  animation: orbit 25s linear infinite;
+}
+
+.planet.jupiter {
+  width: 180px;
+  height: 180px;
+}
+
+.jupiter .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.jupiter .mantle {
+  padding: 20px;
+  border-width: 30px;
+}
+
+.jupiter .core {
+  padding: 20px;
+  border-width: 20px;
+}
+
+.orbital-mars {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  width: 45%;
+  height: 40%;
+  border: 1px dotted white;
+}
+
+.rotate-mars {
+  animation: orbit 20s linear infinite;
+}
+
+.planet.mars {
+  width: 60px;
+  height: 60px;
+}
+
+.mars .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.mars .mantle {
+  padding: 5px;
+  border-width: 10px;
+}
+
+.mars .core {
+  padding: 10px;
+  border-width: 5px;
+}
+
+.orbital-earth {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  width: 30%;
+  height: 30%;
+  border: 1px dotted white;
+}
+
+.rotate-earth {
+  animation: orbit 15s linear infinite;
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.planet.earth {
+  width: 100px;
+  height: 100px;
+}
+
+.earth .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.earth .mantle {
+  padding: 10px;
+  border-width: 20px;
+}
+
+.earth .core {
+  padding: 10px;
+  border-width: 10px;
+}
+
+.orbital-venus {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  width: 20%;
+  height: 20%;
+  border: 1px dotted white;
+}
+
+.rotate-venus {
+  animation: orbit 10s linear infinite;
+}
+
+.planet.venus {
+  width: 80px;
+  height: 80px;
+}
+
+.venus .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.venus .mantle {
+  padding: 10px;
+  border-width: 10px;
+}
+
+.venus .core {
+  padding: 10px;
+  border-width: 10px;
+}
+
+.orbital-mercury {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  width: 10%;
+  height: 10%;
+  border: 1px dotted white;
+}
+
+.rotate-mercury {
+  animation: orbit 5s linear infinite;
+}
+
+.planet.mercury {
+  width: 40px;
+  height: 40px;
+}
+
+.mercury .crust {
+  box-shadow: 0px 0px 100px rgba(153, 204, 255, 0.8);
+}
+
+.mercury .mantle {
+  padding: 5px;
+  border-width: 5px;
+}
+
+.mercury .core {
+  padding: 6px;
+  border-width: 4px;
+}
+
+.orbital-sun {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 20px;
+  height: 20px;
+}
+
+.rotate-sun {
+  animation: orbit 60s linear infinite;
+}
+
+.sun {
+  background-color: yellow;
+  padding: 10px;
+  border: 10px solid yellow;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./img/logo.png" />
+      </a>
+    </div>
+    <div class="navigation">
+      <nav>
+        <ul class="main-nav">
+          <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+          <li><a href=""><i class="fas fa-plane slanted"></i>Travel Deals</a></li>
+          <li><a href=""><i class="fas fa-clock"></i>Flight Schedule</a></li>
+          <li><a href=""><i class="fas fa-user"></i>Register/Login</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- main area -->
+
+  <main>
+    <section class="flight-content">
+      <div class="top-tabs">
+        <nav class="top-slider">
+          <ul class="selection-tabs">
+            <li><a href="#"><i class="fas fa-plane slanted"></i></a></li>
+            <li><a href="#"><i class="fas fa-bed"></i></a></li>
+            <li><a href="#"><i class="fas fa-car"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="flight-details" class="flight-details">
+        <div class="row">
+          <label for="depart-city">
+            <input id="depart-city" type="text" name="depart-city" placeholder="Departure City" />
+          </label>
+
+          <label for="arrive-city">
+            <input id="arrive-city" type="text" name="depart-city" placeholder="Arrival City" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label for="depart-date">
+            <input id="depart-date" type="date" min="10-28-2018" name="depart-date" placeholder="Departure Date" />
+          </label>
+
+          <label for="arrive-date">
+            <input id="arrive-date" type="date" min="10-28-2018" name="arrive-date" placeholder="Arrival Date" />
+          </label>
+        </div>
+
+        <div class="multi-row">
+          <label for="passengers">Passengers
+            <select name="passengers" id="passengers">
+              <option value="1" selected="selected">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </label>
+
+          <label for="one-way">
+            <input id="one-way" name="trip-way" type="radio" class="one-way" />One Way
+          </label>
+
+          <label for="round-trip">
+            <input id="round-trip" name="trip-way" type="radio" class="round-trip" />Round Trip
+          </label>
+        </div>
+
+        <div class="row with-submit">
+          <button type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+
+      <div id="flight-content" class="hotel-content">
+
+      </div>
+
+      <div id="rental-content" class="rental-content">
+
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
