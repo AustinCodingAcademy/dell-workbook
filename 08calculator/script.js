@@ -25,18 +25,21 @@ function multuply() {
 }
 
 function changesign() {
-    console.log(document.querySelector("#results").value);
+  console.log(document.querySelector("#results").value);
 
-  if (document.querySelector("#results").value >0){
-    document.querySelector("#results").value= "-" +document.querySelector("#results").value;
-  }else {
-    document.querySelector("#results").value= "+" +document.querySelector("#results").value;
+  if (document.querySelector("#results").value > 0) {
+    document.querySelector("#results").value =
+      "-" + document.querySelector("#results").value;
+  } else {
+    document.querySelector("#results").value =
+      "+" + document.querySelector("#results").value;
   }
-
 }
 
 function equals() {
-  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+  document.querySelector("#results").value = eval(
+    document.querySelector("#results").value
+  );
 }
 
 function deleteLast() {
