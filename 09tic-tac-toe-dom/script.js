@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  var color = 'black';
+  var style = 'o';
 
   document.querySelectorAll('[data-cell]').forEach(function (cell) {
     cell.addEventListener('click', addObject);
@@ -13,14 +13,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelectorAll('[data-cell]').forEach(function (cell) {
       cell.innerHTML = "";
     })
+
+    style = 'o';
   }
 
   function addObject() {
     if (!this.firstChild) {
-      this.insertAdjacentHTML('afterbegin', `<div class="disc ${color}"></div>`);
-      color = (color === 'black') ? 'red' : 'black';
+      this.insertAdjacentHTML('afterbegin', `<div class="disc ${style}">${style}</div>`);
+      checkWinner;
+      style = (style === 'o') ? 'x' : 'o';
     }
   }
 
-  
+  function checkWinner(){
+    var cellContainsValue = document.querySelectorAll('[data-cell]').forEach(function(cell){
+      if (cell.firstChild){
+        console.log(cell.nodeValue);
+        return cell.nodeValue;
+      }
+    })
+    console.log('cellContainsValue = ' + cellContainsValue);
+  }
 });

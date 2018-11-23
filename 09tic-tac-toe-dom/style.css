@@ -16,16 +16,18 @@
   font-size: 50px;
 }
 
+.o {
+  font-style: red;  
+}
+
+.x{
+  font-display: black;
+}
+
 .disc {
-  height: 98px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
   width: 98px;
-  border-radius: 50%;
-}
-
-.red {
-  background-color: red;
-}
-
-.black {
-  background-color: black;
+  height: 98px;
+  border-radius: 5px;
 }
