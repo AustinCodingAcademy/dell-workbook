@@ -5,22 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="board">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+  <div class="total">
+    <div id="board">
+      <div class="A-X" data-cell="0">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="B-X" data-cell="1">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="C-X" data-cell="2">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="A-Y" data-cell="3">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="B-Y" data-cell="4">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="C-Y" data-cell="5">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="A-Z" data-cell="6">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="B-Z" data-cell="7">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+      <div class="C-Z" data-cell="8">
+        <!-- <i class="far fa-circle"></i>
+        <i class="fas fa-times"></i> -->
+      </div>
+    </div>
+    <div id="announce-winner"></div>
+    <button id="clear" onclick="clearBoard()">Clear Board</button>
+  </div>  
   <script src="./script.js"></script>
 </body>
 </html>
