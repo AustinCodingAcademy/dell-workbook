@@ -62,30 +62,30 @@ function clearBoard() {
 
 function determineWinner() {
   let winningSymbol;
-  // 1) if class A, B, or C all have the same innerHTML
-  // 2) if class 1, 2, or 3 all have the same inner HTML
+  // 1) if class a, b, or c all have the same innerHTML
+  // 2) if class x, y, or z all have the same inner HTML
   // 3) if both class 1, 2, 3 & A, B, C in order or reverse order, but must be order!
 
   // ------------------- diagnol victory -----------------------------
 
   // X wins diagnolly: '/'
   if (
-    document.querySelector(".A-Z").innerHTML === "X" &&
-    document.querySelector(".B-Y").innerHTML === "X" &&
-    document.querySelector(".C-X").innerHTML === "X"
+    document.querySelector(".a-z").innerHTML === "X" &&
+    document.querySelector(".b-y").innerHTML === "X" &&
+    document.querySelector(".c-x").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B.Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins diagnolly: '/'
   if (
-    document.querySelector(".A-Z").innerHTML === "O" &&
-    document.querySelector(".B-Y").innerHTML === "O" &&
-    document.querySelector(".C-X").innerHTML === "O"
+    document.querySelector(".a-z").innerHTML === "O" &&
+    document.querySelector(".b-y").innerHTML === "O" &&
+    document.querySelector(".c-x").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
@@ -93,22 +93,22 @@ function determineWinner() {
 
   // X wins diagnolly: '\'
   if (
-    document.querySelector(".A-X").innerHTML === "X" &&
-    document.querySelector(".B-Y").innerHTML === "X" &&
-    document.querySelector(".C-Z").innerHTML === "X"
+    document.querySelector(".a-x").innerHTML === "X" &&
+    document.querySelector(".b-y").innerHTML === "X" &&
+    document.querySelector(".c-z").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins diagnolly: '\'
   if (
-    document.querySelector(".A-X").innerHTML === "O" &&
-    document.querySelector(".B-Y").innerHTML === "O" &&
-    document.querySelector(".C-Z").innerHTML === "O"
+    document.querySelector(".a-x").innerHTML === "O" &&
+    document.querySelector(".b-y").innerHTML === "O" &&
+    document.querySelector(".c-z").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
@@ -118,66 +118,66 @@ function determineWinner() {
 
   // X wins vertically on first column: '1st | X'
   if (
-    document.querySelector(".A-X").innerHTML === "X" &&
-    document.querySelector(".A-Y").innerHTML === "X" &&
-    document.querySelector(".A-Z").innerHTML === "X"
+    document.querySelector(".a-x").innerHTML === "X" &&
+    document.querySelector(".a-y").innerHTML === "X" &&
+    document.querySelector(".a-z").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".A-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".a-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins vertically on first column: '1st | O'
   if (
-    document.querySelector(".A-X").innerHTML === "O" &&
-    document.querySelector(".A-Y").innerHTML === "O" &&
-    document.querySelector(".A-Z").innerHTML === "O"
+    document.querySelector(".a-x").innerHTML === "O" &&
+    document.querySelector(".a-y").innerHTML === "O" &&
+    document.querySelector(".a-z").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".A-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".a-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // X wins vertically on second column: '2nd | X'
   if (
-    document.querySelector(".B-X").innerHTML === "X" &&
-    document.querySelector(".B-Y").innerHTML === "X" &&
-    document.querySelector(".B-Z").innerHTML === "X"
+    document.querySelector(".b-x").innerHTML === "X" &&
+    document.querySelector(".b-y").innerHTML === "X" &&
+    document.querySelector(".b-z").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins vertically on second column: '2nd | O'
   if (
-    document.querySelector(".B-X").innerHTML === "O" &&
-    document.querySelector(".B-Y").innerHTML === "O" &&
-    document.querySelector(".B-Z").innerHTML === "O"
+    document.querySelector(".b-x").innerHTML === "O" &&
+    document.querySelector(".b-y").innerHTML === "O" &&
+    document.querySelector(".b-z").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B.Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // X wins vertically on third column: '3rd | X'
   if (
-    document.querySelector(".C-X").innerHTML === "X" &&
-    document.querySelector(".C-Y").innerHTML === "X" &&
-    document.querySelector(".C-Z").innerHTML === "X"
+    document.querySelector(".c-x").innerHTML === "X" &&
+    document.querySelector(".c-y").innerHTML === "X" &&
+    document.querySelector(".c-z").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".C-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".c-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins vertically on third column: '3rd | O'
   if (
-    document.querySelector(".C-X").innerHTML === "O" &&
-    document.querySelector(".C-Y").innerHTML === "O" &&
-    document.querySelector(".C-Z").innerHTML === "O"
+    document.querySelector(".c-x").innerHTML === "O" &&
+    document.querySelector(".c-y").innerHTML === "O" &&
+    document.querySelector(".c-z").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".C-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".c-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
@@ -187,66 +187,66 @@ function determineWinner() {
 
   // X wins horizontally on first row: '1st --- X'
   if (
-    document.querySelector(".A-X").innerHTML === "X" &&
-    document.querySelector(".B-X").innerHTML === "X" &&
-    document.querySelector(".C-X").innerHTML === "X"
+    document.querySelector(".a-x").innerHTML === "X" &&
+    document.querySelector(".b-x").innerHTML === "X" &&
+    document.querySelector(".c-x").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B-X").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-x").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins horizontally on first row: '1st --- O'
   if (
-    document.querySelector(".A-X").innerHTML === "O" &&
-    document.querySelector(".B-X").innerHTML === "O" &&
-    document.querySelector(".C-X").innerHTML === "O"
+    document.querySelector(".a-x").innerHTML === "O" &&
+    document.querySelector(".b-x").innerHTML === "O" &&
+    document.querySelector(".c-x").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B-X").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-x").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // X wins horizontally on second row: '2nd --- X'
   if (
-    document.querySelector(".A-Y").innerHTML === "X" &&
-    document.querySelector(".B-Y").innerHTML === "X" &&
-    document.querySelector(".C-Y").innerHTML === "X"
+    document.querySelector(".a-y").innerHTML === "X" &&
+    document.querySelector(".b-y").innerHTML === "X" &&
+    document.querySelector(".c-y").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins horizontally on second row: '2nd --- O'
   if (
-    document.querySelector(".A-Y").innerHTML === "O" &&
-    document.querySelector(".B-Y").innerHTML === "O" &&
-    document.querySelector(".C-Y").innerHTML === "O"
+    document.querySelector(".a-y").innerHTML === "O" &&
+    document.querySelector(".b-y").innerHTML === "O" &&
+    document.querySelector(".c-y").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B-Y").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-y").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // X wins horizontally on third row: '3rd --- X'
   if (
-    document.querySelector(".A-Z").innerHTML === "X" &&
-    document.querySelector(".B-Z").innerHTML === "X" &&
-    document.querySelector(".C-Z").innerHTML === "X"
+    document.querySelector(".a-z").innerHTML === "X" &&
+    document.querySelector(".b-z").innerHTML === "X" &&
+    document.querySelector(".c-z").innerHTML === "X"
   ) {
-    let winningSymbol = document.querySelector(".B-Z").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-z").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
   }
   // O wins horizontally on third row: '3rd --- O'
   if (
-    document.querySelector(".A-Z").innerHTML === "O" &&
-    document.querySelector(".B-Z").innerHTML === "O" &&
-    document.querySelector(".C-Z").innerHTML === "O"
+    document.querySelector(".a-z").innerHTML === "O" &&
+    document.querySelector(".b-z").innerHTML === "O" &&
+    document.querySelector(".c-z").innerHTML === "O"
   ) {
-    let winningSymbol = document.querySelector(".B-Z").innerHTML; //you can add a error checker here later
+    let winningSymbol = document.querySelector(".b-z").innerHTML; //you can add a error checker here later
     document.querySelector("#announce-winner").innerHTML =
       "Player " + winningSymbol + " Wins";
     return;
