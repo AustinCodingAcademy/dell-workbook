@@ -1,6 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function (event) {
+  // To-Do: How do I get rid of the following public variables? 
   var style = 'o';
   var selectedOCells = [];
   var selectedXCells = [];
@@ -10,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   })
 
   document.querySelector('#clear').addEventListener("click", clear);
-
 
   function clear() {
     style = 'o';
@@ -42,16 +42,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (checkedCells > 2) {
         checkWinner(this);
       }
-
       style = (style === 'o') ? 'x' : 'o';
     }
   }
 
   function addSelectedCellToArray(clickedCell) {
-    if (style === 'o') {
+    if (clickedCell.querySelector("div").innerHTML === 'o') {
       selectedOCells.push(clickedCell.getAttribute("data-cell"));
       return selectedOCells;
-    } else if (style === 'x') {
+    } else if (clickedCell.querySelector("div").innerHTML === 'x') {
       selectedXCells.push(clickedCell.getAttribute("data-cell"));
       return selectedXCells;
     }
@@ -62,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var filteredWinnerPos = getAllWinnerPos(clickedCell);
 
     var selectedValues = selectedOCells;
-    if (style === 'x') {
+    if (clickedCell.querySelector("div").innerHTML === 'x') {
       selectedValues = selectedXCells;
     }
 
     for (let i = 0; i < filteredWinnerPos.length; i++) {
       if (selectedValues.includes(filteredWinnerPos[i].pos1) & selectedValues.includes(filteredWinnerPos[i].pos2) & selectedValues.includes(filteredWinnerPos[i].pos3)) {
-        endGame();
+        endGame(clickedCell);
         break;
       }
     }
@@ -82,9 +81,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     return filteredWinnerPos;
   }
 
-  function endGame() {
+  function endGame(clickedCell) {
     var announceWinner = document.querySelector("#announce-winner");
-    var capStyle = style.toUpperCase();
-    announceWinner.insertAdjacentHTML('afterbegin', `<div>Congrats ${capStyle} user</div>`);
+    
+    if(announceWinner.innerHTML === "")
+    {
+      var capStyle = clickedCell.querySelector("div").innerHTML.toUpperCase();
+      announceWinner.insertAdjacentHTML('afterbegin', `<div>Congrats ${capStyle} user</div>`);  
+    }
   }
 });
