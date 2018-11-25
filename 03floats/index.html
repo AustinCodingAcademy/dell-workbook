@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo"><img src="./img/logo.png" alt="logo"></div>
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Home</a></li>
+            <li><i class="fa fa-plane" aria-hidden="true"></i><a href="#">Travel Deals</a></li>
+            <li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">Flight Schedule</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="#">Register/Login</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a></i></li>
+                    <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </nav>
+            <form>
+                <div class="row">
+                    <input class="column" placeholder="Depart" type="text">
+                    <input class="column" placeholder="Arrive" type="text">
+                </div>
+                <div class="row">
+                    <input class="column" type="date">
+                    <input class="column" type="date">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label class="passenger" for="passengers">Passengers</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="5">4</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <input type="radio" name="return" value="return" checked="true">
+                        <label>Return</label>
+                        <input type="radio" name="Oneway" value="Oneway">
+                        <label>Oneway</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Search Flights</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
