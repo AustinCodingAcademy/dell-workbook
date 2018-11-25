@@ -1,110 +1,110 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card {
-    min-width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 1px 1px 1px black;
-    padding: 15px 10px 0;
+  min-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px black;
+  padding: 15px 10px 0;
 }
 
 .rowcard {
-    min-width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 1px 1px 1px black;
-    padding: 15px 10px 0;
-    flex-direction: column;
+  min-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px black;
+  padding: 15px 10px 0;
+  flex-direction: column;
 }
 
 .img-container {
-    display: flex;
-    flex: 1;
-    height: 100px;
-    justify-content: center;
-    padding-bottom: 5px;
+  display: flex;
+  flex: 1;
+  height: 100px;
+  justify-content: center;
+  padding-bottom: 5px;
 }
 
 .content {
-    min-width: 100px;
-    flex: 1;
-    flex-grow: 3;
-    padding: 0 20px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-width: 100px;
+  flex: 1;
+  flex-grow: 3;
+  padding: 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
-    height: 100%;
+  height: 100%;
 }
 
 .actions {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .parent {
-    display: grid;
+  display: grid;
     /*Define the width of your columns*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-areas: "firstcard firstcard secondcard secondcard" "thirdcard thirdcard   fourthcard    fifthcard" "thirdcard  thirdcard   sixthcard    sixthcard" "seventhcard eighthcard  ninethcard tenthcard";
-    grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-areas: "firstcard firstcard secondcard secondcard" "thirdcard thirdcard   fourthcard    fifthcard" "thirdcard  thirdcard   sixthcard    sixthcard" "seventhcard eighthcard  ninethcard tenthcard";
+  grid-gap: 10px;
 }
 
 .parent div {
-    display: flex;
+  display: flex;
 }
 
 .firstcard {
-    grid-area: firstcard;
+  grid-area: firstcard;
 }
 
 .secondcard {
-    grid-area: secondcard;
+  grid-area: secondcard;
 }
 
 .thirdcard {
-    grid-area: thirdcard;
+  grid-area: thirdcard;
 }
 
 .fourthcard {
-    grid-area: fourthcard;
+  grid-area: fourthcard;
 }
 
 .fifthcard {
-    grid-area: fifthcard;
+  grid-area: fifthcard;
 }
 
 .sixthcard {
-    grid-area: sixthcard;
+  grid-area: sixthcard;
 }
 
 .seventhcard {
-    grid-area: seventhcard;
+  grid-area: seventhcard;
 }
 
 .eighthcard {
-    grid-area: eighthcard;
+  grid-area: eighthcard;
 }
 
 .ninethcard {
-    grid-area: ninethcard;
+  grid-area: ninethcard;
 }
 
 .tenthcard {
-    grid-area: tenthcard;
+  grid-area: tenthcard;
 }
