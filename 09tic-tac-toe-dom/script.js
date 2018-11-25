@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   function clear() {
+    style = 'o';
+    selectedOCells = [];
+    selectedXCells = [];
     document.querySelectorAll('[data-cell]').forEach(function (cell) {
       cell.innerHTML = "";
     })
-    style = 'o';
     document.querySelector('#announce-winner').innerHTML = "";
   }
 
