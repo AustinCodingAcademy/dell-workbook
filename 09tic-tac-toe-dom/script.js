@@ -6,7 +6,6 @@
 // - font-awesome icons for X/O
 // - show draw when all squares fill up with no winner
 // 
-
 const initialClickCount = 2;
 let clickCount = initialClickCount;
 let symbol;
