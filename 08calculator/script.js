@@ -31,6 +31,11 @@ function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
 
+function posNeg() {
+  let changeValue = document.querySelector("#results").value;
+  document.querySelector("#results").value = changeValue * -1;
+}
+
 function deleteLast() {
   let current = document.querySelector("#results").value;
   document.querySelector("#results").value = current.slice(0, -1);
