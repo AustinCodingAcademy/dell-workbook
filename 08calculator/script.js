@@ -1,8 +1,7 @@
-'use strict';
+"use strict";
 
 // document.addEventListener("DOMContentLoaded", function(event) {
- 
- 
+
 // });
 
 function addNumber(num) {
@@ -18,7 +17,9 @@ function addition() {
 }
 
 function equals() {
-  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+  document.querySelector("#results").value = eval(
+    document.querySelector("#results").value
+  );
 }
 
 function deleteLast() {
@@ -39,5 +40,6 @@ function division() {
 }
 
 function plusorminus() {
-  document.querySelector("#results").value = -(document.querySelector("#results").value);
+  document.querySelector("#results").value = -document.querySelector("#results")
+    .value;
 }
