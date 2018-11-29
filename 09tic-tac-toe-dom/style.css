@@ -1,4 +1,5 @@
 #board {
+  padding: 20px;
   width: 300px;
   height: 300px;
   display: grid;
@@ -14,4 +15,26 @@
 
 #announce-winner {
   font-size: 50px;
+}
+
+.red {
+  display: flex;
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  background-image: url("o.png");
+  background-size: cover;
+  align-self: center;
+}
+
+.black {
+  display: flex;
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  background-image: url("x.png");
+  background-size: cover;
+  align-self: center;
 }
