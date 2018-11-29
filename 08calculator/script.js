@@ -26,24 +26,24 @@ document.addEventListener("DOMContentLoaded", function(event){
     })
   })
 
-function addNumber(num) {
+  function addNumber(num) {
   document.querySelector("#results").value += num;
 }
 
-function clearResults() {
+  function clearResults() {
   document.querySelector("#results").value = "";
 }
 
-function equals() {
+  function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
 
-function deleteLast() {
+  function deleteLast() {
   let current = document.querySelector("#results").value;
   document.querySelector("#results").value = current.slice(0, -1);
 }
 
-function signSwitchAction(num) {
+  function signSwitchAction(num) {
   document.querySelector("#results").value *= -1;
 }
 
