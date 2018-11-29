@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       else if (text == '*') {
         multiplication();
       }
+    
       else {
         addNumber(text);
       }
