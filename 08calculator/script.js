@@ -1,8 +1,28 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  // You code here
-});
+  document.querySelectorAll('.buttom').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      let text = event.target.innerHTML;
+      if (text == '=') {
+        equals();
+      }
+      else if (text == '+') {
+        addition();
+      }
+      else if (text == '/') {
+        division();
+      }
+      else if (text == '*') {
+        multiplication();
+      }
+      else {
+        addNumber(text);
+      }
+      }
+    })
+  })
+})
 
 function addNumber(num) {
   document.querySelector("#results").value += num;
