@@ -1,8 +1,20 @@
 'use strict';
-/*
-document.addEventListener("DOMContentLoaded", function(event) {
-  // You code here
-});*/
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  document.querySelectorAll('.button').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      let text = event.target.innerHTML;
+      if (text ==='=') {
+        equals()
+      } else if (text === 'Clear'){
+        clearResults();
+      } else if (text === 'Delete'){
+        deleteLast();
+      } else {
+        addNumber(text);
+      }
+    })
+  })
 
 
 function addNumber(num) {
@@ -37,3 +49,4 @@ function deleteLast() {
   let current = document.querySelector("#results").value;
   document.querySelector("#results").value = current.slice(0, -1);
 }
+})
