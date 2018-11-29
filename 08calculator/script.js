@@ -27,6 +27,10 @@ function multiplication() {
 function division() {
   document.querySelector("#results").value += '/';
 }
+
+function plusMinus(){
+  document.querySelector("#results").value = eval(document.querySelector("#results").value * -1);
+}
 function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
