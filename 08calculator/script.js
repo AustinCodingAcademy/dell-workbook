@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       else {
         addNumber(text);
       }
-    }
     })
   })
+})
 
 
 function addNumber(num) {
@@ -42,7 +42,7 @@ function subtraction() {
 }
 
 function multiplication() {
-  document.querySelector("results").value += "*";
+  document.querySelector("#results").value += "*";
 }
 
 function division() {
