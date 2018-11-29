@@ -2,8 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
   var style = 'o';
-  var selectedOCells = [];
-  var selectedXCells = [];
 
   document.querySelectorAll('[data-cell]').forEach( cell =>
     cell.addEventListener('click', addObject)
@@ -13,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function clear() {
     style = 'o';
-    selectedOCells = [];
-    selectedXCells = [];
     document.querySelectorAll('[data-cell]').forEach(function (cell) {
       cell.innerHTML = "";
     })
@@ -37,35 +33,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function addObject() {
     if (!this.firstChild) {
       this.insertAdjacentHTML('afterbegin', style);
-      var checkedCells = addSelectedCellToArray(this).length;
-      if (checkedCells > 2) {
+      var matchingCheckedCellNumbers = selectedCellNumbers(this).length;
+      if (matchingCheckedCellNumbers > 2) {
         checkWinner(this);
       }
       style = (style === 'o') ? 'x' : 'o';
     }
   }
 
-  function addSelectedCellToArray(clickedCell) {
-    if (clickedCell.innerHTML === 'o') {
-      selectedOCells.push(clickedCell.getAttribute("data-cell"));
-      return selectedOCells;
-    } else if (clickedCell.innerHTML === 'x') {
-      selectedXCells.push(clickedCell.getAttribute("data-cell"));
-      return selectedXCells;
-    }
-    return [];
+  function selectedCellNumbers(clickedCell) {
+    return [].slice.call(document.querySelectorAll('[data-cell]')).filter(cell => {
+      if(clickedCell.innerHTML === cell.innerHTML)
+        return cell;
+    }).map(cell => cell.getAttribute("data-cell"));
   }
 
   function checkWinner(clickedCell) {
     var filteredWinnerPositions = getAllWinnerPos(clickedCell);
-
-    var selectedCellValues = selectedOCells;
-    if (clickedCell.innerHTML === 'x') {
-      selectedCellValues = selectedXCells;
-    }
+    var matchingSelectedStyleCellNumbers = selectedCellNumbers(clickedCell);
 
     filteredWinnerPositions.some(winnerPosition => {
-      if (selectedCellValues.includes(winnerPosition.pos1) & selectedCellValues.includes(winnerPosition.pos2) & selectedCellValues.includes(winnerPosition.pos3)) {
+      if (matchingSelectedStyleCellNumbers.includes(winnerPosition.pos1) & matchingSelectedStyleCellNumbers.includes(winnerPosition.pos2) & matchingSelectedStyleCellNumbers.includes(winnerPosition.pos3)) {
         endGame(clickedCell);
         return true;
       }
@@ -83,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function endGame(clickedCell) {
     var announceWinner = document.querySelector("#announce-winner");
-    
     if(announceWinner.innerHTML === "")
     {
       var capStyle = clickedCell.innerHTML.toUpperCase();
