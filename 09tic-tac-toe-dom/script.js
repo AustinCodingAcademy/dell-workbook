@@ -1,14 +1,13 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  // To-Do: How do I get rid of the following public variables? 
   var style = 'o';
   var selectedOCells = [];
   var selectedXCells = [];
 
-  document.querySelectorAll('[data-cell]').forEach(function (cell) {
-    cell.addEventListener('click', addObject);
-  })
+  document.querySelectorAll('[data-cell]').forEach( cell =>
+    cell.addEventListener('click', addObject)
+  )
 
   document.querySelector('#clear').addEventListener("click", clear);
 
@@ -37,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   function addObject() {
     if (!this.firstChild) {
-      this.insertAdjacentHTML('afterbegin', `<div class="disc ${style}">${style}</div>`);
+      this.insertAdjacentHTML('afterbegin', style);
       var checkedCells = addSelectedCellToArray(this).length;
       if (checkedCells > 2) {
         checkWinner(this);
@@ -47,10 +46,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function addSelectedCellToArray(clickedCell) {
-    if (clickedCell.querySelector("div").innerHTML === 'o') {
+    if (clickedCell.innerHTML === 'o') {
       selectedOCells.push(clickedCell.getAttribute("data-cell"));
       return selectedOCells;
-    } else if (clickedCell.querySelector("div").innerHTML === 'x') {
+    } else if (clickedCell.innerHTML === 'x') {
       selectedXCells.push(clickedCell.getAttribute("data-cell"));
       return selectedXCells;
     }
@@ -58,27 +57,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function checkWinner(clickedCell) {
-    var filteredWinnerPos = getAllWinnerPos(clickedCell);
+    var filteredWinnerPositions = getAllWinnerPos(clickedCell);
 
-    var selectedValues = selectedOCells;
-    if (clickedCell.querySelector("div").innerHTML === 'x') {
-      selectedValues = selectedXCells;
+    var selectedCellValues = selectedOCells;
+    if (clickedCell.innerHTML === 'x') {
+      selectedCellValues = selectedXCells;
     }
 
-    for (let i = 0; i < filteredWinnerPos.length; i++) {
-      if (selectedValues.includes(filteredWinnerPos[i].pos1) & selectedValues.includes(filteredWinnerPos[i].pos2) & selectedValues.includes(filteredWinnerPos[i].pos3)) {
+    filteredWinnerPositions.some(winnerPosition => {
+      if (selectedCellValues.includes(winnerPosition.pos1) & selectedCellValues.includes(winnerPosition.pos2) & selectedCellValues.includes(winnerPosition.pos3)) {
         endGame(clickedCell);
-        break;
+        return true;
       }
-    }
+    });
   }
 
   function getAllWinnerPos(clickedCell) {
     var clickedValue = clickedCell.getAttribute("data-cell");
-    var filteredWinnerPos = getWinnerPositions().filter(function (winnerPos) {
+    var filteredWinnerPositions = getWinnerPositions().filter(winnerPos => {
       return clickedValue === winnerPos.pos1 || clickedValue === winnerPos.pos2 || clickedValue === winnerPos.pos3;
     });
-    return filteredWinnerPos;
+
+    return filteredWinnerPositions;
   }
 
   function endGame(clickedCell) {
@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
     if(announceWinner.innerHTML === "")
     {
-      var capStyle = clickedCell.querySelector("div").innerHTML.toUpperCase();
-      announceWinner.insertAdjacentHTML('afterbegin', `<div>Congrats ${capStyle} user</div>`);  
+      var capStyle = clickedCell.innerHTML.toUpperCase();
+      announceWinner.insertAdjacentHTML('afterbegin', `<div style="font-size: 38px;color: red;margin: 8px;">Winner: "${capStyle}" User</div>`);  
     }
   }
 });

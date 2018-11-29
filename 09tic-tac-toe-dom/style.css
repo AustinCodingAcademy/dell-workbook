@@ -15,19 +15,3 @@
 #announce-winner {
   font-size: 50px;
 }
-
-.o {
-  font-style: red;  
-}
-
-.x{
-  font-display: black;
-}
-
-.disc {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-weight: bold;
-  width: 98px;
-  height: 98px;
-  border-radius: 5px;
-}
