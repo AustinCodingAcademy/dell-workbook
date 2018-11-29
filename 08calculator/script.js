@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function(event) {
   // You code here
@@ -25,14 +25,18 @@ function multiplication() {
 }
 
 function division() {
-  document.querySelector("#results").value += '/';
+  document.querySelector("#results").value += "/";
 }
 
-function plusMinus(){
-  document.querySelector("#results").value = eval(document.querySelector("#results").value * -1);
+function plusMinus() {
+  document.querySelector("#results").value = eval(
+    document.querySelector("#results").value * -1
+  );
 }
 function equals() {
-  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+  document.querySelector("#results").value = eval(
+    document.querySelector("#results").value
+  );
 }
 
 function deleteLast() {
