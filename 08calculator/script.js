@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       else {
         addNumber(text);
       }
-      }
+    }
     })
   })
-  )
+
 
 function addNumber(num) {
   document.querySelector("#results").value += num;
