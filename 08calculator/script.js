@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     })
   })
-})
+  )
 
 function addNumber(num) {
   document.querySelector("#results").value += num;
