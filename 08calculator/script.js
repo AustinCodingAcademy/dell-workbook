@@ -1,7 +1,6 @@
 function addNumber(num) {
   document.querySelector("#results").value += num;
 }
-
 function clearResults() {
   document.querySelector("#results").value = "";
 }
@@ -17,6 +16,19 @@ function multiplication() {
 }
 function division() {
   document.querySelector("#results").value += "/";
+}
+
+function opposite() {
+  let sign = Math.sign(document.querySelector("#results").value);
+  console.log(sign);
+  if (sign == -1) {
+    document.querySelector("#results").value = Math.abs(
+      document.querySelector("#results").value
+    );
+  } else if (sign == 1) {
+    document.querySelector("#results").value =
+      document.querySelector("#results").value * -1;
+  }
 }
 
 function equals() {
