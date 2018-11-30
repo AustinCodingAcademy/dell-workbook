@@ -4,17 +4,17 @@ document.addEventListener("DocContentLoaded", (event) => {
   let player = 'X';
   document.querySelectorAll('[data-cell]').forEach(cell => {
     cell.addEventListener('click', (event) => {
-      if (!event.target.innerHTML){
+      if (!event.target.innerHTML) {
         event.target.innerHTML = player;
         checkforWin();
         player = (player === 'X') ? 'O' : 'X';
       }
-      
-      
+
+
     });
   });
 
-  function checkforWin(){
+  function checkforWin() {
     const winningCombos = [
       [0, 1, 2],
       [3, 4, 5],
@@ -30,14 +30,14 @@ document.addEventListener("DocContentLoaded", (event) => {
 
     winningCombos.forEach((combo) => {
       didPlayerWin = (didPlayerWin || (
-        document.querySelector ('[data-dell="${combo[0]}"]').innerHTML === player &&
-        document.querySelector ('[data-dell="${combo[1]}"]').innerHTML === player &&
-        document.querySelector ('[data-dell="${combo[2]}"]').innerHTML === player
+        document.querySelector('[data-dell="${combo[0]}"]').innerHTML === player &&
+        document.querySelector('[data-dell="${combo[1]}"]').innerHTML === player &&
+        document.querySelector('[data-dell="${combo[2]}"]').innerHTML === player
       ));
     });
 
 
-    /* -- older brute force way
+    /* -- older brute force way use to turn in assignment
     if(
       (document.querySelector('[data-cell="0"]') === player.innerHTML && document.querySelector('[data-cell="1"]') === player.innerHTML && document.querySelector('[data-cell="0"]') === player.innerHTML) ||
       (document.querySelector('[data-cell="0"]') === player.innerHTML && document.querySelector('[data-cell="1"]') === player.innerHTML && document.querySelector('[data-cell="0"]') === player.innerHTML) ||
@@ -51,11 +51,11 @@ document.addEventListener("DocContentLoaded", (event) => {
 
     )*/
     if (didPlayerWin) {
-      console.log('Player ${player} Wins!' );
+      console.log('Player ${player} Wins!');
       return $true;
     }
     return false;
-    
+
   }
-  
+
 });
