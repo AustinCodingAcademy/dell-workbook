@@ -124,11 +124,12 @@ img {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-      "card-one card-two"
-      "card-three card-four"
-      "card-five card-six"
-      "card-seven card-eight"
-      "card-nine card-ten";
+      "card-one card-one"
+      "card-two card-three "
+      "card-four card-five"
+      "card-six card-seven"
+      "card-eight card-nine"
+      "card-ten card-ten";
   }
   h1,
   h3 {
