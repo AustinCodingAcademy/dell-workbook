@@ -29,7 +29,9 @@ function flip() {
 }
 
 function equals() {
-  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+  document.querySelector("#results").value = eval(
+    document.querySelector("#results").value
+  );
 }
 
 function deleteLast() {
