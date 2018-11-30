@@ -30,8 +30,7 @@ winningMoves.forEach((combo) => {
   didPlayerWin = didPlayerWin || (
     document.querySelector('[data-cell="${combo[0]}"]').innerHTML === color &&
     document.querySelector('[data-cell="${combo[1]}"]').innerHTML === color &&
-    document.querySelector('[data-cell="${combo[2]}"]').innerHTML === color &&
-    );
+    document.querySelector('[data-cell="${combo[2]}"]').innerHTML === color && )
 });
 
 
