@@ -15,3 +15,18 @@
 #announce-winner {
   font-size: 50px;
 }
+
+.shape {
+  height: 50px;
+  width: 50px;
+}
+
+.x {
+  /* x stuff here */
+  background-color: black;
+}
+
+.o {
+  /* o stuff here */
+  background-color: red;
+}
