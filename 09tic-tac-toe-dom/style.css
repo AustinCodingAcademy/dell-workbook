@@ -12,6 +12,19 @@
   text-align: center;
 }
 
+.disc {
+  height: 80px;
+  width: 80px;
+}
+
+.one{
+  background-color: red;
+}
+
+.two{ 
+  background-color: blue;
+}
+
 #announce-winner {
   font-size: 50px;
 }
