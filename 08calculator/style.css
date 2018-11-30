@@ -1,0 +1,11 @@
+input {
+  width: 237px;
+  margin-left: 2px;
+}
+.button {
+  border: 1px solid black;
+  padding: 15px;
+  width: 26px;
+  text-align: center;
+  cursor: pointer;
+}
