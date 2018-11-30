@@ -25,9 +25,10 @@ function addNumber(num) {
 }
 
 function equals() {
-  document.querySelector("#result").value = eval(
-    document.querySelector("#result").value
-  );
+  let current = document.querySelector("#result").value;
+  if (current != "") {
+    document.querySelector("#result").value = eval(current);
+  }
 }
 
 function clearResults() {
@@ -41,6 +42,5 @@ function deleteLast() {
 
 function changeSign() {
   let current = document.querySelector("#result").value;
-  var lastNumber = current.slice(0, -1);
-  document.querySelector("#result").value;
+  document.querySelector("#result").value = -1 * current;
 }
