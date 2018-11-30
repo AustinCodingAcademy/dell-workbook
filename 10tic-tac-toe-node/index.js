@@ -23,8 +23,10 @@ function printBoard() {
   console.log('2 ' + board[2].join(' | '));
 }
 
+let Booblean = false;
+
 function horizontalWin() {
-  // Your code here
+  
 }
 
 function verticalWin() {
@@ -39,16 +41,18 @@ function checkForWin() {
   // Your code here
 }
 
-function ticTacToe(row, column) {
-  // Your code here
+function ticTacToe(row, column, player) {
+  console.log('******* Row :', row, ' column: ' ,column, '******')
+  board[row][column] = player;
 }
 
 function getPrompt() {
   printBoard();
+  playerTurn = (playerTurn === '😘') ? '🙄' : '😘 ';
   console.log("It's Player " + playerTurn + "'s turn.");
   rl.question('row: ', (row) => {
     rl.question('column: ', (column) => {
-      ticTacToe(row, column);
+      ticTacToe(row, column, playerTurn);
       getPrompt();
     });
   });
