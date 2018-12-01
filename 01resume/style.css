@@ -1,0 +1,42 @@
+h1 {
+  color: blue;
+  margin: 0;
+  font-family: courier;
+}
+h2 {
+  color: black;
+  margin: 0;
+  font-family: courier;
+}
+h3 {
+  color: black;
+  margin: 0;
+  font-family: courier;
+}
+h4 {
+  color: black;
+  margin: 0;
+  font-family: courier;
+}
+h5 {
+  color: black;
+  margin: 0;
+  font-family: courier;
+}
+h6 {
+  color: black;
+  margin: 0;
+  font-family: courier;
+}
+hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+}
+body {
+  background-color: antiquewhite;
+  padding: 0 300px 0 300px;
+}
+ul {
+  font-family: courier;
+}

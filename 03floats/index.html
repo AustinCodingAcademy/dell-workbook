@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo"> <img src="./img/logo.png" alt="logo"></div>
+        <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>Travel Date</a></li>
+            <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>Shcedule Flight</a></li>
+            <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Register/Login</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+            <form>
+                <div class="row">
+                    <input placeholder="depart" type="text" />
+                    <input placeholder="arrive" type="text" />
+                </div>
+                <div class="row">
+                    <input type="date" />
+                    <input type="date" />
+                </div>
+                <div class="row">
+                    <label for="passengers">passengers</label>
+                    <select name="" id="passengers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <input type="radio" name="flight-type" id="one-way"> One-way
+                    <input type="radio" name="flight-type" id="round"> Round Trip
+                </div>
+                <div class="row">
+                    <button class="button submit">Search</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

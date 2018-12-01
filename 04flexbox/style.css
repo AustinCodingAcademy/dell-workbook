@@ -1,0 +1,26 @@
+body {
+  margin: 10px;
+}
+.container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  margin: 10px;
+  max-width: auto;
+  height: auto;
+  width: 320px;
+  border: pink solid;
+}
+
+.content {
+  margin: 5px;
+  height: auto;
+  max-width: 100%;
+  flex: 1 0 120px;
+  border: black solid;
+}
