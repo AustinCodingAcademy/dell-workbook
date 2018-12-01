@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", (funny) => {
   document.querySelectorAll('.button').forEach((button) => {    
     button.addEventListener('click', function(event) {      
       let text = event.target.innerHTML;
-      console.log(text);
       if (text === '=') {
         equals();
       } else if (text === 'Delete'){
