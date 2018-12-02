@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", event => {
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
       event.target.innerHTML = player;
+     // checkForWinner();
       player = player === "X" ? "O" : "X";
     });
   });
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", event => {
     // 6,4,2 = winner
 
     for (x = 0; x < 8; x++) {
-      document.querySelector('[data-cell="$x"]').innerHTML;
+      document.querySelector('[data-cell="0"]').innerHTML;
     }
   }
 });
