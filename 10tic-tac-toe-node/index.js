@@ -40,7 +40,8 @@ function checkForWin() {
 }
 
 function ticTacToe(row, column) {
-  // Your code here
+  console.log('*********', 'row:', row, 'column:', column,'**********');
+  board[row][column] = 'X';
 }
 
 function getPrompt() {
