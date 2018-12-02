@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", event => {
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
       event.target.innerHTML = player;
-      checkForWinner();
+      if (checkForWinner()) {
+        let wehaveawinner = document.querySelector('#announce-winner');
+        wehaveawinner.insertAdjacentText('beforeend',`WINNER`)
+      }
+      
       player = player === "X" ? "O" : "X";
     });
   });
@@ -15,6 +19,7 @@ document.addEventListener("DOMContentLoaded", event => {
     for (var x = 0; x <= 8; x++) {
       document.querySelector(`[data-cell="${x}"]`).innerHTML = " ";
     }
+    location = location;
   });
 
   function checkForWinner() {
