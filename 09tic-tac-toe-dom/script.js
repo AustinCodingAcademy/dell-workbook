@@ -2,18 +2,18 @@
 
 console.log("Connected");
 
-document.addEventListener("DOMContentLoaded", function(evt) {
+document.addEventListener("DOMContentLoaded", function (evt) {
   var player = "X";
   // ClearBoard button event handler
-  document.querySelector("#clear").addEventListener("click", function(evt) {
-    document.querySelector("#announce-winner").innerHTML = "";
-    document.querySelectorAll("[data-cell]").forEach(function(el) {
-      el.innerHTML = " ";
-    });
-  }), // end of Clear Board button event handler
+  document.querySelector("#clear").addEventListener("click", function (evt) {
+      document.querySelector("#announce-winner").innerHTML = "";
+      document.querySelectorAll("[data-cell]").forEach(function (el) {
+        el.innerHTML = " ";
+      });
+    }), // end of Clear Board button event handler
     // player move on data-cell
-    document.querySelectorAll("[data-cell]").forEach(function(cell) {
-      cell.addEventListener("click", function(evt) {
+    document.querySelectorAll("[data-cell]").forEach(function (cell) {
+      cell.addEventListener("click", function (evt) {
         evt.target.innerHTML = player;
         checkForWinner();
         player = player === "X" ? "O" : "X";
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", function(evt) {
       [6, 4, 2]
     ];
 
-    const didPlayerWin = winningCombos.some(function(combo) {
+    const didPlayerWin = winningCombos.some(function (combo) {
       return (
         document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML ===
-          player &&
+        player &&
         document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML ===
-          player &&
+        player &&
         document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
       );
     });
