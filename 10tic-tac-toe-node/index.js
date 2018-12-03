@@ -25,19 +25,32 @@ function printBoard() {
 
 function horizontalWin() {
   // Your code here
+  board[row][column] = [0, 1, 2] && [3, 4, 5] && [6, 7, 8];
 }
 
 function verticalWin() {
   // Your code here
+  board[row][column] = [0, 3, 6] && [1, 4, 7] && [2, 5, 8];
 }
 
 function diagonalWin() {
   // Your code here
+  board[row][column] = [0, 4, 8] && [2, 4, 6];
 }
 
-function checkForWin() {
+function checkForWin(row, column) {
   // Your code here
-  board = 
+  let didPlayerWin = false;
+  board.forEach(combo => {
+    didPlayerWin =
+      didPlayerWin ||
+      (document.querySelector(${combo[0]).innerHTML ===
+        player &&
+        document.querySelector(${combo[1]).innerHTML ===
+          player &&
+        document.querySelector(${combo[2]).innerHTML ===
+          player);
+  });
 }
 
 function ticTacToe(row, column) {
