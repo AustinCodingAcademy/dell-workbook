@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (cell.innerHTML === ""){
         cell.innerHTML = player;
-    } //only allows empty cell to be updated
+      } //only allows empty cell to be updated
     });
 
     checkWin ();

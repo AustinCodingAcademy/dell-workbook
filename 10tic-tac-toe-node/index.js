@@ -64,13 +64,13 @@ function diagonalWin() {
 
 function checkForWin() {
   // Your code here
-    if ( horizontalWin() || verticalWin() || diagonalWin()){
-      return true;
+  if ( horizontalWin() || verticalWin() || diagonalWin()){
+    return true;
+  }
+    else {
+      return false;
     }
-      else {
-        return false;
-      }
-    }
+  }
   
 function ticTacToe(row, column) {
   // Your code here
@@ -90,8 +90,8 @@ function getPrompt() {
   if (checkForWin()) {
     console.log(
       "Congratulations Player " + playerTurn + "!!!  You have won the game!!"
-          );
-      return false;
+    );
+    return false;
   } else {
     console.log("It's Player " + playerTurn + "'s turn.");
     rl.question("row: ", row => {
@@ -100,7 +100,7 @@ function getPrompt() {
         getPrompt();
       });
     });
-   }
+  }
 }
 
 // Tests

@@ -5,21 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", event => {
       let text = event.target.innerHTML;
       switch (text) {
-        case "=":
-          equals();
-          break;
-        case "Delete":
-          deleteLast();
-          break;
-        case "Clear":
-          clearResults();
-          break;
-        case "+/-":
-          changeSign();
-          break;
-        default:
-          addNumber(text);
-          break;
+      case "=":
+        equals();
+        break;
+      case "Delete":
+        deleteLast();
+        break;
+      case "Clear":
+        clearResults();
+        break;
+      case "+/-":
+        changeSign();
+        break;
+      default:
+        addNumber(text);
+        break;
       }
     })
   );
