@@ -44,11 +44,11 @@ function checkForWin(row, column) {
   board.forEach(combo => {
     didPlayerWin =
       didPlayerWin ||
-      (document.querySelector(${combo[0]).innerHTML ===
+      (document.querySelector(`${combo[0]}`).innerHTML ===
         player &&
-        document.querySelector(${combo[1]).innerHTML ===
+        document.querySelector(`${combo[1]}`).innerHTML ===
           player &&
-        document.querySelector(${combo[2]).innerHTML ===
+        document.querySelector(`${combo[2]}`).innerHTML ===
           player);
   });
 }
