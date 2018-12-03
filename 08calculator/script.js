@@ -1,46 +1,60 @@
-"use strict";
+'use strict';
 
-function addNumber(num) {
-  document.querySelector("#results").value += num;
-}
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.button').forEach((button) => {
+    button.addEventListener('click', (evt) => {
+      let text = evt.target.innerHTML;
+      
+      switch (text) {
+      case "=":
+        equals();
+        break;
 
-function clearResults() {
-  document.querySelector("#results").value = "";
-}
+      case "Clear":
+        clearResults();
+        break;
 
-function addition() {
-  document.querySelector("#results").value += "+";
-}
+      case "Delete":
+        deleteLast();
+        break;
 
-function subtraction() {
-  document.querySelector("#results").value += "-";
-}
+      case "+/-":
+        negation();
+        break;
 
-function multiplication() {
-  document.querySelector("#results").value += "*";
-}
+      default:
+        addNumber(text);
+        break;
+      }
+    })
+  })
 
-function division() {
-  document.querySelector("#results").value += "/";
-}
-
-function equals() {
-  if (document.querySelector("#results").value) {
-    document.querySelector("#results").value = eval(
-      document.querySelector("#results").value
-    );
+  function equals() {
+    if (document.querySelector("#results").value) {
+      document.querySelector("#results").value = eval(
+        document.querySelector("#results").value
+      );
+    }
   }
-}
 
-function deleteLast() {
-  let current = document.querySelector("#results").value;
-  document.querySelector("#results").value = current.slice(0, -1);
-}
-
-function negation() {
-  var current = document.querySelector("#results").value;
-  if (eval(current) !== NaN) {
-    equals();
-    current = '-'.concat(current); 
+  function addNumber(num) {
+    document.querySelector("#results").value += num;
   }
-}
+
+  function clearResults() {
+    document.querySelector("#results").value = "";
+  }
+
+  function deleteLast() {
+    let current = document.querySelector("#results").value;
+    document.querySelector("#results").value = current.slice(0, -1);
+  }
+
+  function negation() {
+    var current = document.querySelector("#results").value;
+    if (eval(current) !== NaN) {
+      equals();
+      document.querySelector("#results").value = '-'.concat(document.querySelector("#results").value);
+    }
+  }
+});
