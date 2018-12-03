@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   document.querySelectorAll('#clear').forEach((button)=> {
     button.addEventListener('click', function(event) {
-        clear();
+      clear();
     });
   });
 
