@@ -29,12 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function checkForWin() {
     const didPlayerWin = winningCombos.some(combo => {
       return combo.every(cell => {
-        document.querySelector(`[data-cell="${cell}"]`).innerHTML === player
+        return document.querySelector(`[data-cell="${cell}"]`).innerHTML === player;
       })
     });
-  
+
     if (didPlayerWin) {
-      console.log(player);
+      document.querySelector("#announce-winner").innerHTML = `Player ${player} wins!`;
+      document.querySelector("#board").setAttribute("style",  "pointer-events: none");
     } else {
       player = player === "X" ? "O" : "X";
     }
@@ -44,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#clear").addEventListener("click", () => {
     cells.forEach(cell => {
       cell.innerHTML = null;
-      player = 1;
+      player = "X";
+      document.querySelector("#announce-winner").innerHTML = "";
+      document.querySelector("#board").setAttribute("style",  "pointer-events: unset");
     })
   });
 })
