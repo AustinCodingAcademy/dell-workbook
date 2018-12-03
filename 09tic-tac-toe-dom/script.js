@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     ]
 
     const didPlayerWin = winningCombos.some((combo) => {
-        return (
+      return (
         document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player &&
          document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML === player &&
          document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
