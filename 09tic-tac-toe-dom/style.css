@@ -11,6 +11,28 @@
   font-size: 80px;
   text-align: center;
 }
+/* 
+.disc {
+  height:99px;
+  width: 99px;
+  border-radius: 45px;
+} */
+
+/*  
+.X {
+  height:99px;
+  width:99px;
+  border-radius:45px;
+  background-color: red;
+}
+
+.O {
+  height:99px;
+  width: 99px;
+  border-radius: 45px;
+  background-color: black;
+} */
+
 
 #announce-winner {
   font-size: 50px;
