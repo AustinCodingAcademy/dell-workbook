@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", event => {
   let turn = "x";
   let xList = [];
   let oList = [];
+  let gameDone = false;
   document.querySelector("#clear").addEventListener("click", event => {
     turn = "x";
     xList = [];
     oList = [];
+    gameDone = false;
     document.querySelectorAll("[data-cell]").forEach(clearCell => {
       clearCell.innerHTML = "";
     });
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", event => {
   });
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
+      if (gameDone) return;
       if (event.target.innerHTML === "x" || event.target.innerHTML === "o")
         return;
       if (turn === "x") {
@@ -28,6 +31,7 @@ document.addEventListener("DOMContentLoaded", event => {
       }
       let winner = checkForWin(xList, oList);
       if (winner) {
+        gameDone=true;
         document
           .querySelector("#announce-winner")
           .insertAdjacentHTML("afterbegin", `The winner is ${winner}`);
