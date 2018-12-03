@@ -17,6 +17,18 @@ document.addEventListener("DOMContentLoaded", event => {
   document.querySelectorAll("#clear").forEach(button => {
     button.addEventListener("click", event => {
       clear();
+      function clear() {
+        (document.querySelector('[data-cell="0"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="1"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="2"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="3"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="4"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="5"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="6"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="7"]').innerHTML = "") ;
+        (document.querySelector('[data-cell="8"]').innerHTML = "") ;
+         
+      }
     });
   });
 
@@ -53,19 +65,6 @@ document.addEventListener("DOMContentLoaded", event => {
     return false;
   }
 
-  function clear() {
-    if (
-      document.querySelector('[data-cell="0"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="1"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="2"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="3"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="4"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="5"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="6"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="7"]').innerHTML !== "" ||
-      document.querySelector('[data-cell="8"]').innerHTML !== ""
-    ) {
-      document.querySelectorAll("data-cell").innerHTML = "";
-    }
-  }
+  
+  
 });
