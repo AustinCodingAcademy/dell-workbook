@@ -29,7 +29,7 @@ function horizontalWin() {
       board[i][0] != " "
     ) {
       console.log("****row " + i + " row win ****");
-      // return true;
+      return true;
     }
   }
 }
@@ -45,28 +45,33 @@ function verticalWin() {
       board[0][i] != " "
     ) {
       console.log("****column " + i + " column win ****");
-      // return true;
+      return true;
     }
   }
 }
 
 function diagonalWin() {
   // Your code here
-  if(board[1][1] != " " &&
-     (board[0][0] === board[1][1] &&   board[1][1] === board[2][2] ||
-  board[0][2] === board[1][1] &&   board[1][1] === board[2][0] ))
-  {
+  if (
+    board[1][1] != " " &&
+    ((board[0][0] === board[1][1] && board[1][1] === board[2][2]) ||
+      (board[0][2] === board[1][1] && board[1][1] === board[2][0]))
+  ) {
     console.log("****diagonal  win ****");
+    return true;
   }
 }
 
 function checkForWin() {
   // Your code here
-  return horizontalWin() ||   verticalWin() ||   diagonalWin();
-
-
-}
-
+    if ( horizontalWin() || verticalWin() || diagonalWin()){
+      return true;
+    }
+      else {
+        return false;
+      }
+    }
+  
 function ticTacToe(row, column) {
   // Your code here
   if (board[row][column] === " ") {
@@ -77,19 +82,25 @@ function ticTacToe(row, column) {
       playerTurn = "X";
     }
   }
-
-  checkForWin();
 }
 
 function getPrompt() {
   printBoard();
-  console.log("It's Player " + playerTurn + "'s turn.");
-  rl.question("row: ", row => {
-    rl.question("column: ", column => {
-      ticTacToe(row, column);
-      getPrompt();
+
+  if (checkForWin()) {
+    console.log(
+      "Congratulations Player " + playerTurn + "!!!  You have won the game!!"
+          );
+      return false;
+  } else {
+    console.log("It's Player " + playerTurn + "'s turn.");
+    rl.question("row: ", row => {
+      rl.question("column: ", column => {
+        ticTacToe(row, column);
+        getPrompt();
+      });
     });
-  });
+   }
 }
 
 // Tests
