@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document.querySelectorAll('[data-cell]').forEach(cell => {
     cell.addEventListener('click', (event) => {
       
+      
       if (!event.target.innerHTML){
         event.target.innerHTML = player;
       }
       
-
       if (winCheck()) {
         document.querySelector("#announce-winner").innerHTML = `Player ${player} Wins!`;
       }
@@ -41,14 +41,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
     ]
 
     const didPlayerWin = winningCombos.some((combo) => {
-       return (
-         document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player &&
+        return (
+        document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player &&
          document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML === player &&
          document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
-       );
+      );
     });
 
-    
+    if (didPlayerWin) {
+      console.log(`Player ${player} Wins!`);
+      return true;
+    }
+    return false;
   }
 
 });
