@@ -10,7 +10,6 @@ var a = 1, b = 2, c = 3;
             var a = 7, c = 9;
             (function fourthFunction(){
                 var a = 1, c = 8;
-
             })();
         })();
     })();
