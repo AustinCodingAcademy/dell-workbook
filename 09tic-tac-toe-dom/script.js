@@ -18,19 +18,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   });
 
-//   document.querySelector("#clear") => {
-//       clear.addEventListener("click",event => {
-//         document.querySelectorAll("[data-cell]").forEach(cell => {
-//             event.target.innerHTML = ""  ;
-//         }
-//       })
-//   }
-
+  //   document.querySelector("#clear") => {
+  //       clear.addEventListener("click",event => {
+  //         document.querySelectorAll("[data-cell]").forEach(cell => {
+  //             event.target.innerHTML = ""  ;
+  //         }
+  //       })
+  //   }
 });
-function myFunction(){
- //document.querySelectorAll("[data-cell]").forEach(cell => {
+function myFunction() {
+  //document.querySelectorAll("[data-cell]").forEach(cell => {
   let p = document.querySelectorAll("[data-cell]");
-  for(let i=0; i<p.length;i++){
-  p[i].innerHTML = "";
-  } 
+  for (let i = 0; i < p.length; i++) {
+    p[i].innerHTML = "";
+  }
 }
