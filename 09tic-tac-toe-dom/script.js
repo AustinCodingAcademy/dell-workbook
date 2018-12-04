@@ -1,27 +1,28 @@
-"use strict";
+'use strict'
 
-console.log("Connected");
+console.log('Connected')
 
-document.addEventListener("DOMContentLoaded", function (evt) {
-  var player = "X";
+document.addEventListener('DOMContentLoaded', function (evt) {
+  var player = 'X'
   // ClearBoard button event handler
-  document.querySelector("#clear").addEventListener("click", function (evt) {
-      document.querySelector("#announce-winner").innerHTML = "";
-      document.querySelectorAll("[data-cell]").forEach(function (el) {
-        el.innerHTML = " ";
-      });
-    }), // end of Clear Board button event handler
-    // player move on data-cell
-    document.querySelectorAll("[data-cell]").forEach(function (cell) {
-      cell.addEventListener("click", function (evt) {
-        evt.target.innerHTML = player;
-        checkForWinner();
-        player = player === "X" ? "O" : "X";
-      });
-      //end of foreach loop for player move
-    });
+  document.querySelector('#clear').addEventListener('click', function (evt) {
+    document.querySelector('#announce-winner').innerHTML = ''
+    document.querySelectorAll('[data-cell]').forEach(function (el) {
+      el.innerHTML = ' '
+    })
+  }),
+  // end of Clear Board button event handler
+  // player move on data-cell
+  document.querySelectorAll('[data-cell]').forEach(function (cell) {
+    cell.addEventListener('click', function (evt) {
+      evt.target.innerHTML = player
+      checkForWinner()
+      player = player === 'X' ? 'O' : 'X'
+    })
+    // end of foreach loop for player move
+  })
 
-  function checkForWinner() {
+  function checkForWinner () {
     const winningCombos = [
       [0, 1, 2],
       [3, 4, 5],
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function (evt) {
       [2, 5, 8],
       [0, 4, 8],
       [6, 4, 2]
-    ];
+    ]
 
     const didPlayerWin = winningCombos.some(function (combo) {
       return (
@@ -40,16 +41,16 @@ document.addEventListener("DOMContentLoaded", function (evt) {
         document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML ===
         player &&
         document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
-      );
-    });
+      )
+    })
 
     if (didPlayerWin) {
       document.querySelector(
-        "#announce-winner"
-      ).innerHTML = `Congrats. Player ${player} wins`;
-      return true;
+        '#announce-winner'
+      ).innerHTML = `Congrats. Player ${player} wins`
+      return true
     }
-    return false;
+    return false
   }
   // end of document event handler.
-});
+})
