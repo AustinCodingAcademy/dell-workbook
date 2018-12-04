@@ -1,0 +1,13 @@
+input {
+  width: 163px;
+  margin-left: 2px
+}
+
+.button {
+  border: 1px solid black;
+  width: 36px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(163, 230, 207);
+  cursor: pointer;
+}

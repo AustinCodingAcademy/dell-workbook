@@ -28,7 +28,8 @@ function horizontalWin() {
 }
 
 function verticalWin() {
-  // Your code here
+  if ((board[0][0] === playerTurn) && (board[1][0] === playerTurn) && (board[2][0] === playerTurn));
+  console.log(`Player ${playerTurn} Wins`);
 }
 
 function diagonalWin() {
@@ -40,9 +41,11 @@ function checkForWin() {
 }
 
 function ticTacToe(row, column) {
-  // Your code here
+  console.log('row', row, 'column', column);
+  board[row][column] = playerTurn;
+  // below is the toggle function
+  playerTurn = playerTurn === 'X' ? 'O' : 'X';
 }
-
 function getPrompt() {
   printBoard();
   console.log("It's Player " + playerTurn + "'s turn.");
