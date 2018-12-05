@@ -2,6 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", event => {
   let player = "X";
+  document.querySelector("#clear").addEventListener("click", event => 
+      clearBoard()
+    );
+
   document.querySelectorAll("[data-cell]").forEach((cell) => {
     cell.addEventListener("click", event => {
       if (!event.target.innerHTML) {
@@ -46,6 +50,6 @@ document.addEventListener("DOMContentLoaded", event => {
   }
 
   function clearBoard() {
-    document.getElementById("board").innerHTML = "";
+    document.querySelectorAll('[data-cell]').forEach(function(boardcell) {boardcell.innerHTML=""});
   }
 });
