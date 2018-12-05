@@ -28,18 +28,18 @@ function horizontalWin() {
 }
 
 function verifyMatch(row) {
-  return (row[0] === row[1] && row[1] === row[2] && row[2] === row[0] && row[0] !== ' ');
+  return (row[0] === row[1] && row[1] === row[2] && row[2] === row[0] && row[0] === playerTurn);
 }
 
 function verticalWin() {
-  return ((board[0][0] === board[1][0] && board[1][0] === board[2][0] && board[0][0] === board[2][0] && board[0][0] !== ' ')
-    || (board[0][1] === board[1][1] && board[1][1] === board[2][1] && board[0][1] === board[2][1] && board[0][1] !== ' ')
-    || (board[0][2] === board[1][2] && board[1][2] === board[2][2] && board[0][2] === board[2][2] && board[0][2] !== ' '));
+  return ((board[0][0] === board[1][0] && board[1][0] === board[2][0] && board[0][0] === board[2][0] && board[0][0] === playerTurn)
+    || (board[0][1] === board[1][1] && board[1][1] === board[2][1] && board[0][1] === board[2][1] && board[0][1] === playerTurn)
+    || (board[0][2] === board[1][2] && board[1][2] === board[2][2] && board[0][2] === board[2][2] && board[0][2] === playerTurn));
 }
 
 function diagonalWin() {
-  return ((board[0][0] === board[1][1] && board[1][1] === board[2][2] && board[0][0] === board[2][2] && board[1][1] !== ' ')
-    || (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[2][0] === board[0][2] && board[1][1] !== ' '));
+  return ((board[0][0] === board[1][1] && board[1][1] === board[2][2] && board[0][0] === board[2][2] && board[1][1] === playerTurn)
+    || (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[2][0] === board[0][2] && board[1][1] === playerTurn));
 }
 
 function checkForWin() {
