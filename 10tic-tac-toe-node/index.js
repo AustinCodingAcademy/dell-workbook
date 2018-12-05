@@ -12,7 +12,8 @@ let board = [
   [' ', ' ', ' ']
 ];
 
-let playerTurn = 'X';
+let playerTurn = '😼';
+
 
 function printBoard() {
   console.log('   0  1  2');
@@ -24,35 +25,49 @@ function printBoard() {
 }
 
 function horizontalWin() {
-  // Your code here
+  const hCombos=[
+    [[0,0,0],[0,1,2]],
+    [[1,1,1],[0,1,2]],
+    [[2,2,2],[0,1,2]]
+  ]
+
+  const hWin = hCombos.some(combo =>{
+    return combo.every(cell => {
+      board[cell][cell] === playerTurn;
+    })
+  });
 }
 
 function verticalWin() {
   // Your code here
 }
 
+
 function diagonalWin() {
   // Your code here
 }
 
 function checkForWin() {
-  // Your code here
+  if (horizontalWin()){
+    console.log(`Player ${player} won horizontally`);
+  }
 }
 
 function ticTacToe(row, column) {
-  // Your code here
+  board[row][column] = playerTurn;
+  checkForWin(row, column);
 }
 
 function getPrompt() {
   printBoard();
-  console.log("It's Player " + playerTurn + "'s turn.");
+  playerTurn = (playerTurn === '😼') ? '😐' : '😼';
+  console.log("It's Player " + playerTurn + " 's turn.");
   rl.question('row: ', (row) => {
     rl.question('column: ', (column) => {
       ticTacToe(row, column);
       getPrompt();
     });
   });
-
 }
 
 
