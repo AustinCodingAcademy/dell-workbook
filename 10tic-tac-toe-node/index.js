@@ -24,7 +24,26 @@ function printBoard() {
 }
 
 function horizontalWin() {
-  // Your code here
+  const horizonmoves = [
+    [[0,0],[0,1],[0,2]],
+    [[1,0],[1,1],[2,2]],
+    [[2,0],[2,1],[2,2]]
+  ]
+
+  const didPlayerWin = horizonmoves.some((combo) => {
+    return (
+    combo[0] === playerTurn && 
+    combo[1] === playerTurn && 
+    combo[2] === playerTurn );
+  }) 
+
+  if (didPlayerWin) {
+    console.log('Win');
+    return true;
+  } return false; 
+
+
+
 }
 
 function verticalWin() {
@@ -40,7 +59,13 @@ function checkForWin() {
 }
 
 function ticTacToe(row, column) {
-  // Your code here
+  console.log('**********Row: ' , row, 'column:', column, '**********')
+  board[row][column] = playerTurn;
+  if (playerTurn === 'X') {
+    playerTurn = 'O';
+  } else {
+    playerTurn = 'X'
+  }
 }
 
 function getPrompt() {
