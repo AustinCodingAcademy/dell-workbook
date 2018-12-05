@@ -2,18 +2,18 @@
 
 document.addEventListener("DOMContentLoaded", event => {
   let player = "X";
-  document.querySelector("#clear").addEventListener("click", event => 
-      clearBoard()
-    );
+  document
+    .querySelector("#clear")
+    .addEventListener("click", event => clearBoard());
 
-  document.querySelectorAll("[data-cell]").forEach((cell) => {
+  document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
       if (!event.target.innerHTML) {
         event.target.innerHTML = player;
         checkForWin();
         player = player === "X" ? "O" : "X";
       } else {
-        clearBoard()
+        clearBoard();
       }
     });
   });
@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", event => {
   }
 
   function clearBoard() {
-    document.querySelectorAll('[data-cell]').forEach(function(boardcell) {boardcell.innerHTML=""});
+    document.querySelectorAll("[data-cell]").forEach(function(boardcell) {
+      boardcell.innerHTML = "";
+    });
   }
 });
