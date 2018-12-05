@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", event => {
         addListener(event, cell);
       }
       else {
-        alert("Game over! Please Clear Board to start again."};
-      
+        alert("Game over! Please Clear Board to start again.");
+      }
     });
    
   });
