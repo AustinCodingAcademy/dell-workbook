@@ -4,45 +4,38 @@ document.addEventListener("DOMContentLoaded", event => {
   // Your Code Here
   let player = "X";
   document.querySelectorAll("[data-cell]").forEach(cell => {
-    
     cell.addEventListener("click", function(event) {
-      if (document.querySelector(
-            "#announce-winner"
-          ).innerHTML === '')
-      {
+      if (document.querySelector("#announce-winner").innerHTML === "") {
         addListener(event, cell);
-      }
-      else {
+      } else {
         alert("Game over! Please Clear Board to start again.");
       }
     });
-   
   });
-  
-function addListener(event, cell){
-  let content = event.target.innerHTML;
-      if (!content && player === "X") {
-        event.target.innerHTML = "X";
-        if (checkForWin()) {
-          document.querySelector(
-            "#announce-winner"
-          ).innerHTML = `Player ${player} Won`;          
-          cell.removeEventListener('click');
-          console.log(document.querySelector('#announce-winner').innerHTML);
-           
-        }
-        player = "O";
-      } else if (!content && player === "O") {
-        event.target.innerHTML = "O";
-        if (checkForWin()) {
-          document.querySelector(
-            "#announce-winner"
-          ).innerHTML = `Player ${player} Win`;
-          cell.removeEventListener('click');
-        }
-        player = "X";
+
+  function addListener(event, cell) {
+    let content = event.target.innerHTML;
+    if (!content && player === "X") {
+      event.target.innerHTML = "X";
+      if (checkForWin()) {
+        document.querySelector(
+          "#announce-winner"
+        ).innerHTML = `Player ${player} Won`;
+        cell.removeEventListener("click");
+        console.log(document.querySelector("#announce-winner").innerHTML);
       }
-}
+      player = "O";
+    } else if (!content && player === "O") {
+      event.target.innerHTML = "O";
+      if (checkForWin()) {
+        document.querySelector(
+          "#announce-winner"
+        ).innerHTML = `Player ${player} Win`;
+        cell.removeEventListener("click");
+      }
+      player = "X";
+    }
+  }
 
   function checkForWin() {
     const winScenario = [
