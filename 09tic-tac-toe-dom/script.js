@@ -3,17 +3,33 @@
 document.addEventListener("DOMContentLoaded", event => {
   // Your Code Here
   let player = "X";
-
   document.querySelectorAll("[data-cell]").forEach(cell => {
+    
     cell.addEventListener("click", function(event) {
-      let content = event.target.innerHTML;
+      if (document.querySelector(
+            "#announce-winner"
+          ).innerHTML === '')
+      {
+        addListener(event, cell);
+      }
+      else {
+        alert("Game over! Please Clear Board to start again."};
+      
+    });
+   
+  });
+  
+function addListener(event, cell){
+  let content = event.target.innerHTML;
       if (!content && player === "X") {
         event.target.innerHTML = "X";
         if (checkForWin()) {
           document.querySelector(
             "#announce-winner"
-          ).innerHTML = `Player ${player} Won`;
-          cell.removeEventListener("click", event);
+          ).innerHTML = `Player ${player} Won`;          
+          cell.removeEventListener('click');
+          console.log(document.querySelector('#announce-winner').innerHTML);
+           
         }
         player = "O";
       } else if (!content && player === "O") {
@@ -22,13 +38,11 @@ document.addEventListener("DOMContentLoaded", event => {
           document.querySelector(
             "#announce-winner"
           ).innerHTML = `Player ${player} Win`;
-          cell.removeEventListener("click", arguments.callee, false);
-          "click", event;
+          cell.removeEventListener('click');
         }
         player = "X";
       }
-    });
-  });
+}
 
   function checkForWin() {
     const winScenario = [
@@ -47,8 +61,6 @@ document.addEventListener("DOMContentLoaded", event => {
       var firstCell = '[data-cell="' + single[0] + '"]';
       var secondCell = '[data-cell="' + single[1] + '"]';
       var thirdCell = '[data-cell="' + single[2] + '"]';
-
-      //console.log(document.querySelector(firstCell).innerHTML + " " + document.querySelector(secondCell).innerHTML + " " + document.querySelector(thirdCell).innerHTML);
 
       if (
         document.querySelector(firstCell).innerHTML == player &&
