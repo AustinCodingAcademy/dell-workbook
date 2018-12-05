@@ -32,34 +32,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
       );
     });
 
-    if (didPlayerWin) {
-      alert(`Player ${player} Wins!`);
-      return true;
-    }
-    return false;
-  }
-  //   const winningCombos = [
-  //     [0, 1, 2],
-  //     [3, 4, 5],
-  //     [6, 7, 8],
-  //     [0, 3, 6],
-  //     [1, 4, 7],
-  //     [2, 5, 8],
-  //     [0, 4, 8],
-  //     [6, 4, 2]
-  //   ];
-
   //   const didPlayerWin = winningCombos.some((combo) => {
   //     return combo.every(cell => {
   //       document.querySelector(`[data-cell="${cell}"]`).innerHTML === player
   //     })
   //   });
 
-  //   if (didPlayerWin) {
-  //     console.log(`Player ${player} wins!`);
-  //     return true;
-  //   }
-  //   return false;
-  // }
+    if (didPlayerWin) {
+      alert(`Player ${player} Wins!`);
+      return true;
+    }
+    return false;
+  }
 
 });
