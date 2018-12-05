@@ -2,8 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", event => {
   let player = "X";
-  document
-    .querySelector("#clear")
+  document.querySelector("#clear")
     .addEventListener("click", event => clearBoard());
 
   document.querySelectorAll("[data-cell]").forEach(cell => {
