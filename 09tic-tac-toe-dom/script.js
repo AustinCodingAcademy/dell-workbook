@@ -2,13 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
   // Your Code Here
-  let player = "X";
+  let player = "👌";
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
       if (!event.target.innerHTML) {
         event.target.innerHTML = player;
         checkForWin();
-        player = player === "X" ? "O" : "X";
+        player = player === "👌" ? "🍆" : "👌";
       }
     });
   });
