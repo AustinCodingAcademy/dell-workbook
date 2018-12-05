@@ -1,39 +1,27 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", event => {
-  // Your Code Here
   let player = "X";
+
   document.querySelectorAll("[data-cell]").forEach(cell => {
-    cell.addEventListener("click", function(event) {
-      if (document.querySelector("#announce-winner").innerHTML === "") {
-        addListener(event, cell);
-      } else {
-        alert("Game over! Please Clear Board to start again.");
-      }
-    });
+    cell.addEventListener("click", onClick);
   });
 
-  function addListener(event, cell) {
-    let content = event.target.innerHTML;
-    if (!content && player === "X") {
-      event.target.innerHTML = "X";
+  function onClick(event) {
+    if (!event.target.innerHTML) {
+      event.target.innerHTML = player;
       if (checkForWin()) {
         document.querySelector(
           "#announce-winner"
         ).innerHTML = `Player ${player} Won`;
-        cell.removeEventListener("click");
-        console.log(document.querySelector("#announce-winner").innerHTML);
+        document.querySelectorAll("[data-cell]").forEach(cell => {
+          cell.removeEventListener("click", onClick, false);
+        });
+      } else if (checkForTie()) {
+        console.log("Tie");
+      } else {
+        player = player === "X" ? "O" : "X";
       }
-      player = "O";
-    } else if (!content && player === "O") {
-      event.target.innerHTML = "O";
-      if (checkForWin()) {
-        document.querySelector(
-          "#announce-winner"
-        ).innerHTML = `Player ${player} Win`;
-        cell.removeEventListener("click");
-      }
-      player = "X";
     }
   }
 
@@ -62,10 +50,16 @@ document.addEventListener("DOMContentLoaded", event => {
       ) {
         //console.log("Player "+ player + " wins.");
         done = true;
-        return done;
       }
     });
     return done;
+  }
+
+  function checkForTie() {
+    var dataCellArray = Array.prototype.slice.call(
+      document.querySelectorAll("[data-cell]")
+    );
+    return dataCellArray.every(single => single.innerHTML);
   }
 
   document.querySelector("#clear").addEventListener("click", function(event) {
