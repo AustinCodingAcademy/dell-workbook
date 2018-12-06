@@ -44,14 +44,18 @@ function checkForWin() {
   if (!stacks.a.length && !stacks.c.length) {
     var i;
     for (i = 0; i <= stacks.length.b - 1; i++) {
-      if (stacks.length.b[i] > stacks.length.b[i + 1]) return true;
-      else return false;
+      if (stacks.length.b[i] > stacks.length.b[i + 1]){
+        return true;
+      } 
+      return false;
     }
   } else if (!stacks.a.length && !stacks.b.length) {
     var i;
     for (i = 0; i <= stacks.length.c - 1; i++) {
-      if (stacks.length.c[i] > stacks.length.c[i + 1]) return true;
-      else return false;
+      if (stacks.length.c[i] > stacks.length.c[i + 1]){
+        return true;
+      } 
+      return false;
     }
   }
 }
