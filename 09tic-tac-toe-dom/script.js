@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         event.target.innerHTML = player;
         checkForWin();
         player = (player === '😼') ? '😐' : '😼';
+        
       }
     })
   })
