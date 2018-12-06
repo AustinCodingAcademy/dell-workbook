@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         this.innerHTML = player;
         if (checkForWin() == true) {
           console.log("Player " + player + " Wins!");
+          document.getElementById("announce-winner").innerHTML = "Player "+ player + " is the winner!";
         }
         if (checkForFull() == true) {
           console.log("It's a draw!");
