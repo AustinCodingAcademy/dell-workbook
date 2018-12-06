@@ -28,9 +28,9 @@ function movePiece(startStack, endStack) {
 }
 
 function isLegal(startStack, endStack) {
-  var firstVal = stacks.startStack[stacks[startStack].length - 1];
+  var firstVal = stacks[startStack][stacks[startStack].length - 1];
   if (!stacks[endStack].length) {
-    var secondVal = stacks.startStack[stacks[endStack].length - 1];
+    var secondVal = stacks[startStack][[endStack].length - 1];
   } else {
     var secondVal = 0;
   }
