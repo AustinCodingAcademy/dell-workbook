@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", event => {
 
     document.querySelectorAll("[data-cell]").forEach(cell => {
       cell.innerHTML = "";
+      cell.addEventListener("click", onClick);
     });
   });
 });
