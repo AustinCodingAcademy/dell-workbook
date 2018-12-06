@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-let stacks = {
+var stacks = {
   a: [4, 3, 2, 1],
   b: [],
   c: []
@@ -24,9 +24,15 @@ function movePiece() {
 
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  var startStackLength = stacks[startStack].length;
+  var endStackLength = stacks[endStack].length;
+  if (stacks[startStack][startStackLength - 1] > stacks[endStack][endStackLength - 1]) {
+    console.log("***This is an illegal move***");
+    return false;
+  }
 
+  return true;
 }
 
 function checkForWin() {
@@ -35,8 +41,8 @@ function checkForWin() {
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  if (isLegal(startStack, endStack))
+    stacks[endStack].push(stacks[startStack].pop());
 }
 
 function getPrompt() {
