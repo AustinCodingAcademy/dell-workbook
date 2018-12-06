@@ -21,7 +21,9 @@ function printStacks() {
 
 function movePiece(startStack, endStack) {
   var hold = stacks[startStack].pop();
-  if (isLegal(startStack, endStack) == true) stacks[endStack].push(hold);
+  if (isLegal(startStack, endStack) == true) {
+    stacks[endStack].push(hold);
+  }
   else stacks[startStack].push(hold);
 }
 
@@ -41,23 +43,9 @@ function isLegal(startStack, endStack) {
 }
 
 function checkForWin() {
-  if (!stacks.a.length && !stacks.c.length) {
-    var i;
-    for (i = 0; i <= stacks.length.b - 1; i++) {
-      if (stacks.length.b[i] > stacks.length.b[i + 1]){
-        return true;
-      } 
-      return false;
-    }
-  } else if (!stacks.a.length && !stacks.b.length) {
-    var i;
-    for (i = 0; i <= stacks.length.c - 1; i++) {
-      if (stacks.length.c[i] > stacks.length.c[i + 1]){
-        return true;
-      } 
-      return false;
-    }
-  }
+  if (stacks.b.length == 4 || stacks.c.length == 4)
+  return true;
+  else return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
