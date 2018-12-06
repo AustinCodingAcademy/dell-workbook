@@ -36,6 +36,7 @@ function isLegal(startStack, endStack) {
   }
 
   if (firstVal > secondVal) {
+    console.log("******** it's too big! *********)
     return false;
   } else {
     return true;
