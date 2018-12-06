@@ -26,21 +26,21 @@ function printBoard() {
 
 function horizontalWin() {
   const hCombos=[
-   [ 
-    [0,0],
-    [0,1],
-    [0,2] 
-  ],
-  [
-    [1,0],
-    [1,1],
-    [1,2]
-  ],
-  [
-    [2,0],
-    [2,1],
-    [2,2]
-  ]
+    [ 
+      [0,0],
+      [0,1],
+      [0,2] 
+    ],
+    [
+      [1,0],
+      [1,1],
+      [1,2]
+    ],
+    [
+      [2,0],
+      [2,1],
+      [2,2]
+    ]
   ];
 
   return hCombos.some(combo => {
@@ -55,52 +55,53 @@ function horizontalWin() {
 function verticalWin() {
   const vCombos=[
     [ 
-     [0,0],
-     [1,0],
-     [2,0] 
-   ],
-   [
-     [0,1],
-     [1,1],
-     [2,1]
-   ],
-   
-     [0,2],
-     [1,2],
-     [2,2]
-   ];
+      [0,0],
+      [1,0],
+      [2,0] 
+    ],
+    [
+      [0,1],
+      [1,1],
+      [2,1]
+    ],
+    [
+      [0,2],
+      [1,2],
+      [2,2]
+    ]
+  ];
  
-   return vCombos.some(combo => {
-     return (
-       board[combo[0][0]][combo[0][1]] === playerTurn &&
-       board[combo[1][0]][combo[1][1]]=== playerTurn &&
-       board[combo[2][0]][combo[2][1]] === playerTurn
-       )
-   });
+  return vCombos.some(combo => {
+    return (
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[1][0]][combo[1][1]]=== playerTurn &&
+      board[combo[2][0]][combo[2][1]] === playerTurn
+    )
+  });
 }
 
 
 function diagonalWin() {
   const dCombos=[
     [ 
-     [0,0],
-     [1,1],
-     [2,2] 
-   ],
-   [
-     [0,2],
-     [1,1],
-     [2,0]
-   ]
-   ];
+      [0,0],
+      [1,1],
+      [2,2] 
+    ],
+    [
+      [0,2],
+      [1,1],
+      [2,0]
+    ]
+  ];
  
-   return dCombos.some(combo => {
-     return (
-       board[combo[0][0]][combo[0][1]] === playerTurn &&
-       board[combo[1][0]][combo[1][1]]=== playerTurn &&
-       board[combo[2][0]][combo[2][1]] === playerTurn
-       )
-   });
+  return dCombos.some(combo => {
+    return (
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[1][0]][combo[1][1]]=== playerTurn &&
+      board[combo[2][0]][combo[2][1]] === playerTurn
+    )
+  });
 }
 
 function checkForWin() {

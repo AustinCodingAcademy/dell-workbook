@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
       [6, 4, 2]
     ];
 
-    let didPlayerWin = false;
-    winningCombos.forEach((combo) => {
-      didPlayerWin = didPlayerWin || (document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player && 
-      document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML === player && 
-      document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
-      );
-    });
+    // let didPlayerWin = false;
+    // winningCombos.forEach((combo) => {
+    //   didPlayerWin = didPlayerWin || (document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player && 
+    //   document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML === player && 
+    //   document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
+    //   );
+    // });
 
-  //   const didPlayerWin = winningCombos.some((combo) => {
-  //     return combo.every(cell => {
-  //       document.querySelector(`[data-cell="${cell}"]`).innerHTML === player
-  //     })
-  //   });
+    const didPlayerWin = winningCombos.some((combo) => {
+      return combo.every(cell => {
+        return (document.querySelector(`[data-cell="${cell}"]`).innerHTML === player)
+      })
+    });
 
     if (didPlayerWin) {
       alert(`Player ${player} Wins!`);
