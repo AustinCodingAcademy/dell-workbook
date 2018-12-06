@@ -24,7 +24,31 @@ function printBoard() {
 }
 
 function horizontalWin() {
-  // Your code here
+  const winningCombos = [
+    [
+      [0, 0],
+      [0, 1],
+      [0, 2]
+    ],
+    [
+      [1, 0],
+      [1, 1],
+      [1, 2]
+    ],
+    [
+      [2, 0],
+      [2, 1],
+      [2, 2]
+    ]
+  ]
+
+  return winningCombos.some(combo => {
+    return (
+      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+      board[combo[2][0]][board[combo[2][1]]] === playerTurn
+    )
+  })
 }
 
 function verticalWin() {
@@ -36,12 +60,13 @@ function diagonalWin() {
 }
 
 function checkForWin() {
-  // Your code here
+  return horizontalWin() || verticalWin() || verticalWin();
 }
 
 function ticTacToe(row, column) {
   console.log('*********', 'row:', row, 'column:', column,'**********');
   board[row][column] = 'X';
+  console.log(checkForWin());
 }
 
 function getPrompt() {
