@@ -23,8 +23,7 @@ function movePiece(startStack, endStack) {
   var hold = stacks[startStack].pop();
   if (isLegal(startStack, endStack) == true) {
     stacks[endStack].push(hold);
-  }
-  else stacks[startStack].push(hold);
+  } else stacks[startStack].push(hold);
 }
 
 function isLegal(startStack, endStack) {
@@ -36,7 +35,7 @@ function isLegal(startStack, endStack) {
   }
 
   if (firstVal > secondVal) {
-    console.log("******** it's too big! *********)
+    console.log("******** it's too big! *********");
     return false;
   } else {
     return true;
@@ -46,8 +45,7 @@ function isLegal(startStack, endStack) {
 function checkForWin() {
   if (stacks.b.length == 4 || stacks.c.length == 4) {
     return true;
-  }
-  else return false;
+  } else return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
