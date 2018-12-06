@@ -15,7 +15,7 @@ let board = [
 let playerTurn = 'X';
 
 function printBoard() {
-  console.log('   0  1  2');
+  console.log('   0   1   2');
   console.log('0 ' + board[0].join(' | '));
   console.log('  ---------');
   console.log('1 ' + board[1].join(' | '));
@@ -26,7 +26,17 @@ function printBoard() {
 let Booblean = false;
 
 function horizontalWin() {
-  
+  let winArray =
+  [0,0,0],
+  [1,1,1],
+  [2,2,2];
+
+  var i;
+  for (i = 0; i < row.length -1; i++) {
+    // check board[winArray];
+  }
+
+
 }
 
 function verticalWin() {
@@ -48,8 +58,8 @@ function ticTacToe(row, column, player) {
 
 function getPrompt() {
   printBoard();
-  playerTurn = (playerTurn === '😘') ? '🙄' : '😘 ';
-  console.log("It's Player " + playerTurn + "'s turn.");
+  playerTurn = (playerTurn === '😘 ') ? '🙄' : '😘 ';
+  console.log("It's Player " + playerTurn + " 's turn.");
   rl.question('row: ', (row) => {
     rl.question('column: ', (column) => {
       ticTacToe(row, column, playerTurn);
