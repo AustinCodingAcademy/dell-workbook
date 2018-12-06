@@ -41,7 +41,7 @@ function isLegal(startStack, endStack) {
 }
 
 function checkForWin() {
-  if (stacks.b.length === 4 ) {
+  if (stacks.b.length === 4) {
     return true;
   } else {
     return false;

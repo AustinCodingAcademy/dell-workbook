@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   });
 
-  document.querySelector('#clear').addEventListener('click', function() {
+  document.querySelector("#clear").addEventListener("click", function() {
     document.querySelectorAll("[data-cell]").forEach(cell => {
       cell.innerHTML = "";
     });
-  })
+  });
 });
