@@ -33,13 +33,13 @@ function verifyMatch(row) {
 
 function verticalWin() {
   return ((board[0][0] === board[1][0] && board[1][0] === board[2][0] && board[0][0] === board[2][0] && board[0][0] === playerTurn)
-    || (board[0][1] === board[1][1] && board[1][1] === board[2][1] && board[0][1] === board[2][1] && board[0][1] === playerTurn)
-    || (board[0][2] === board[1][2] && board[1][2] === board[2][2] && board[0][2] === board[2][2] && board[0][2] === playerTurn));
+       || (board[0][1] === board[1][1] && board[1][1] === board[2][1] && board[0][1] === board[2][1] && board[0][1] === playerTurn)
+       || (board[0][2] === board[1][2] && board[1][2] === board[2][2] && board[0][2] === board[2][2] && board[0][2] === playerTurn));
 }
 
 function diagonalWin() {
   return ((board[0][0] === board[1][1] && board[1][1] === board[2][2] && board[0][0] === board[2][2] && board[1][1] === playerTurn)
-    || (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[2][0] === board[0][2] && board[1][1] === playerTurn));
+       || (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[2][0] === board[0][2] && board[1][1] === playerTurn));
 }
 
 function checkForWin() {
@@ -51,11 +51,28 @@ function checkForWin() {
 }
 
 function ticTacToe(row, column) {
+  if (!areValuesValid(row, column))
+    return;
+
   if (board[row][column] === ' ') {
     board[row][column] = playerTurn;
     checkForWin();
     playerTurn = playerTurn === 'X' ? 'O' : 'X';
   }
+}
+
+function areValuesValid(row, column){
+  if (row > 2 || row < 0){
+    console.log("***Row has to be an integer value between 0-2***");
+    return false;
+  }
+
+  if (column > 2 || column < 0){
+    console.log("***Column has to be an integer value between 0-2***");
+    return false;
+  }
+
+  return true;
 }
 
 function getPrompt() {
