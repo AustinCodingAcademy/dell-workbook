@@ -20,15 +20,15 @@ function printStacks() {
 }
 
 function movePiece(startStack, endStack) {
-  var hold = stacks.startStack.pop();
-  if (isLegal(startStack, endStack) == true) stacks.endStack.push(hold);
-  else stacks.startStack.push(hold);
+  var hold = stacks[startStack].pop();
+  if (isLegal(startStack, endStack) == true) stacks[endStack].push(hold);
+  else stacks[startStack].push(hold);
 }
 
 function isLegal(startStack, endStack) {
-  var firstVal = stacks.startStack.length - 1;
-  if (!stacks.endStack.length) {
-    var secondVal = stacks.endStack.length - 1;
+  var firstVal = stacks[startStack].length - 1;
+  if (!stacks[endStack].length) {
+    var secondVal = stacks[endStack].length - 1;
   } else {
     var secondVal = 0;
   }
