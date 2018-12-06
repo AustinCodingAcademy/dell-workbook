@@ -26,43 +26,93 @@ function printBoard() {
 
 function horizontalWin() {
   const hCombos=[
-    [[0],[0,1,2]],
-    [[1],[0,1,2]],
-    [[2],[0,1,2]]
+   [ 
+    [0,0],
+    [0,1],
+    [0,2] 
+  ],
+  [
+    [1,0],
+    [1,1],
+    [1,2]
+  ],
+  [
+    [2,0],
+    [2,1],
+    [2,2]
   ]
+  ];
 
-  let didPlayerWin = false;
-  hCombos.forEach((row,col) => {
-    didPlayerWin = didPlayerWin || (board[row[0]][col[0]] === playerTurn && 
-    board[row[0]][col[1]] === playerTurn && 
-    board[row[0]][col[2]] === playerTurn
-    );
+  return hCombos.some(combo => {
+    return (
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[1][0]][combo[1][1]]=== playerTurn &&
+      board[combo[2][0]][combo[2][1]] === playerTurn
+      )
   });
-
-  if (didPlayerWin) {
-    return true;
-  }
 }
 
 function verticalWin() {
-  // Your code here
+  const vCombos=[
+    [ 
+     [0,0],
+     [1,0],
+     [2,0] 
+   ],
+   [
+     [0,1],
+     [1,1],
+     [2,1]
+   ],
+   
+     [0,2],
+     [1,2],
+     [2,2]
+   ];
+ 
+   return vCombos.some(combo => {
+     return (
+       board[combo[0][0]][combo[0][1]] === playerTurn &&
+       board[combo[1][0]][combo[1][1]]=== playerTurn &&
+       board[combo[2][0]][combo[2][1]] === playerTurn
+       )
+   });
 }
 
 
 function diagonalWin() {
-  // Your code here
+  const dCombos=[
+    [ 
+     [0,0],
+     [1,1],
+     [2,2] 
+   ],
+   [
+     [0,2],
+     [1,1],
+     [2,0]
+   ]
+   ];
+ 
+   return dCombos.some(combo => {
+     return (
+       board[combo[0][0]][combo[0][1]] === playerTurn &&
+       board[combo[1][0]][combo[1][1]]=== playerTurn &&
+       board[combo[2][0]][combo[2][1]] === playerTurn
+       )
+   });
 }
 
 function checkForWin() {
-  horizontalWin();
-  verticalWin();
-  diagonalWin();
+  if( horizontalWin || verticalWin || diagonalWin){
+    return true;
+  };
 }
 
 function ticTacToe(row, column) {
   board[row][column] = playerTurn;
-  playerTurn = (playerTurn === 'X') ? 'O' : 'X';
   checkForWin();
+  playerTurn = (playerTurn === 'X') ? 'O' : 'X';
 }
 
 function getPrompt() {

@@ -24,9 +24,11 @@ function movePiece() {
 
 }
 
-function isLegal() {
-  // Your code here
-
+function isLegal(startStack, endStack) {
+  if(stacks[endStack].length === 0 || (stacks[endStack][stacks[endStack].length -1] > stacks[startStack][stacks[startStack].length -1])){
+    return true;
+  }
+  return console.log('Cannot perform move. Starting stack is larger than ending stack');
 }
 
 function checkForWin() {
@@ -35,8 +37,11 @@ function checkForWin() {
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  if (isLegal(startStack, endStack)){
+    let lastOfStack = stacks[startStack].pop();
+    console.log(lastOfStack);
+    stacks[endStack].push(lastOfStack);
+  }
 }
 
 function getPrompt() {
