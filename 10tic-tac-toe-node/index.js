@@ -13,13 +13,6 @@ let board = [
 ];
 
 let playerTurn = 'X';
-// let counter = 0;
-// console.log("counter = ",counter);
-// if (counter % 2 === 0 ){
-//   playerTurn = 'X';
-// } else {
-//   playerTurn = 'O';
-// }
 
 function printBoard() {
   console.log('   0  1  2');
