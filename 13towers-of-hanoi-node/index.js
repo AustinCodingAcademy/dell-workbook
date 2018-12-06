@@ -24,8 +24,16 @@ function movePiece() {
 
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  const firstVal = stack.startStack.pop();
+  const secondVal = stack.endStack.pop();
+  logic = false;
+  if(firstVal > secondVal)
+  logic = false;
+  else{
+    stack.endStack.push(secondVal);
+    stack.endStack.push(firstVal);
+  }
 
 }
 
@@ -35,8 +43,8 @@ function checkForWin() {
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  // const hold = stack.startStack.pop();
+  // stack.endStack.push(hold);
 }
 
 function getPrompt() {
