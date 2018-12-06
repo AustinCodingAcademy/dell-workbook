@@ -25,20 +25,30 @@ function movePiece() {
 }
 
 function isLegal(startStack, endStack) {
-  const firstVal = stack.startStack.pop();
-  const secondVal = stack.endStack.pop();
-  logic = false;
-  if(firstVal > secondVal)
-  logic = false;
+  var firstVal = stacks.startStack.pop();
+  if (!stacks.endStack.length){
+    var secondVal = stacks.endstack.length-1;
+  }
   else{
-    stack.endStack.push(secondVal);
-    stack.endStack.push(firstVal);
+    var secondVal = 0;
+  }
+
+  if(firstVal > secondVal) {
+    return false;
+  }
+  else{
+    logic = true;
+    stacks.endStack.push(firstVal);
   }
 
 }
 
 function checkForWin() {
-  // Your code here
+  var i;
+  for(i = 0; i <= stacks.length.b -1; i++) {
+    if(stacks.length.b[i] > stacks.length.b[i+1])
+  }
+
 
 }
 
