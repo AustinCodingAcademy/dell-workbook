@@ -64,7 +64,7 @@ function checkForWin() {
   {
     for (i = 0 ; i < stacks.b.length; i ++){
       if (stacks.b[i] === win[i] ){
-       match = true;
+        match = true;
       } else {
         match = false; 
         break;
@@ -74,7 +74,7 @@ function checkForWin() {
     if (!match){
       for (i = 0 ; i < stacks.c.length; i ++){
         if (stacks.c[i] === win[i] ){
-         match = true;
+          match = true;
         } else {
           match = false; 
           break;
