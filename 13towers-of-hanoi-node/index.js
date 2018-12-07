@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-let stacks = {
+var stacks = {
   a: [4, 3, 2, 1],
   b: [],
   c: []
@@ -36,7 +36,7 @@ function checkForWin() {
 
 function towersOfHanoi(startStack, endStack) {
   // Your code here
-
+  console.log(startStack, endStack);
 }
 
 function getPrompt() {
