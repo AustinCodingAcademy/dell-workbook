@@ -29,7 +29,7 @@ function movePiece() {
   let block = 0;
   if (isLegal()) {
     block = stacks[fromStack].pop();
-    console.log("number = " + block);
+    //console.log("number = " + block);
     stacks[toStack].push(block);
   }
 }
@@ -41,11 +41,11 @@ function isLegal() {
     stacks[toStack][stacks[toStack].length - 1] <
     stacks[fromStack][stacks[fromStack].length - 1]
   ) {
-    console.log("islegal = false");
+    //console.log("islegal = false");
     rc = false;
   } else {
     if (stacks[fromStack].length >= 1) {
-      console.log("islegal = true");
+      //console.log("islegal = true");
       rc = true;
     } else {
       rc = false;
@@ -58,7 +58,37 @@ function isLegal() {
 function checkForWin() {
   // Your code here
   let match = false;
+  let i = 0;
 
+  if (stacks.b.length === win.length || stacks.c.length === win.length)
+  {
+    for (i = 0 ; i < stacks.b.length; i ++){
+      if (stacks.b[i] === win[i] ){
+       match = true;
+      } else {
+        match = false; 
+        break;
+      }
+    };
+    
+    if (!match){
+      for (i = 0 ; i < stacks.c.length; i ++){
+        if (stacks.c[i] === win[i] ){
+         match = true;
+        } else {
+          match = false; 
+          break;
+        }
+      };
+      
+    }
+
+  } else{
+    match = false;
+    
+  }
+
+  return match;
 
 
   stacks.b.forEach(function(bElement) {
@@ -86,7 +116,7 @@ function towersOfHanoi(startStack, endStack) {
 
 function getPrompt() {
   printStacks();
-  console.log(checkForWin());
+
   if (!checkForWin()) {
     rl.question("start stack: ", startStack => {
       rl.question("end stack: ", endStack => {
