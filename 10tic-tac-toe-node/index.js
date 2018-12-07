@@ -73,9 +73,6 @@ function getPrompt() {
   });
 
 }
-
-
-
 // Tests
 
 if (typeof describe === 'function') {
