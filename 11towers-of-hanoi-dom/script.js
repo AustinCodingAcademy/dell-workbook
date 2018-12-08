@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let playerTurn = '1';
   let beginStack;
   let endStack;
+  let moveCount = 0;
+  let startStack = '';
 
   document.querySelectorAll("[data-stack]").forEach(cell => cell.addEventListener('click', selectObject));
 
@@ -17,10 +19,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     if (playerTurn === '1') {
       beginStack = this;
+      if (startStack === '')
+        startStack = this.getAttribute("data-stack");
     } else if (playerTurn === '2') {
       endStack = this;
-      if (beginStack !== '')
-        movePiece()
+      if (Object.is(beginStack, endStack))
+        return;
+
+      if (beginStack !== '') {
+        movePiece();
+        if (checkForWin()) {
+          document.querySelector("#announce-game-won").innerHTML = "Congrats! You Win The Game. <br>Move Count:" + moveCount;
+          moveCount = 0;
+          startStack = '';
+        } else {
+          document.querySelector("#announce-game-won").innerHTML = "Move Count:" + moveCount;
+        }
+      }
     }
 
     playerTurn = playerTurn === '1' ? '2' : '1';
@@ -29,7 +44,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function movePiece() {
     if (isLegalMove()) {
       endStack.appendChild(getLastElement(beginStack));
+      moveCount++;
     }
+  }
+
+  function checkForWin() {
+    if ((endStack.querySelectorAll("[data-block]").length === 4) && endStack.getAttribute("data-stack") !== startStack)
+      return true;
+
+    return false;
   }
 
   function isLegalMove() {
@@ -38,12 +61,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     if (hasEmptyChild(endStack))
       return true;
-    
-    if ( parseInt((getLastElement(beginStack)).getAttribute("data-block")) > parseInt((getLastElement(endStack)).getAttribute("data-block"))) {
+
+    if (getLastElementValue(beginStack) > getLastElementValue(endStack)) {
       return false;
     }
 
     return true;
+  }
+
+  function getLastElementValue(element) {
+    return parseInt((getLastElement(element)).getAttribute("data-block"));
   }
 
   function hasEmptyChild(element) {
