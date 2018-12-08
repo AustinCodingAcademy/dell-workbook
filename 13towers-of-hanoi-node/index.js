@@ -13,6 +13,8 @@ var stacks = {
   c: []
 };
 
+var originalStack = '';
+
 function printStacks() {
   console.log("a: " + stacks.a);
   console.log("b: " + stacks.b);
@@ -27,7 +29,6 @@ function isLegal(startStack, endStack) {
   var startStackLength = stacks[startStack].length;
   var endStackLength = stacks[endStack].length;
   if (stacks[startStack][startStackLength - 1] > stacks[endStack][endStackLength - 1]) {
-    console.log("***This is an illegal move***");
     return false;
   }
 
@@ -35,22 +36,27 @@ function isLegal(startStack, endStack) {
 }
 
 function checkForWin() {
-  if (stacks.b.length === 4 || stacks.c.length === 4){
-    console.log("Congrats!! You won the game!");
+  if ((stacks.a.length === 4 || stacks.b.length === 4 || stacks.c.length === 4) && stacks[originalStack].length === 0)
     return true;
-  }
   return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
-  if(stacks[startStack] === undefined || stacks[endStack] === undefined){
+  if (stacks[startStack] === undefined || stacks[endStack] === undefined) {
     console.log("***Please select stacks from 'a', 'b', or 'c'***");
     return;
   }
 
-  if (isLegal(startStack, endStack)){
+  if (isLegal(startStack, endStack)) {
+    if (originalStack === '')
+      originalStack = startStack;
     movePiece(startStack, endStack);
-    checkForWin();
+    if (checkForWin()) {
+      console.log("Congrats, you won the game");
+      originalStack = '';
+    }
+  } else {
+    console.log("***This is an illegal move***");
   }
 }
 
