@@ -19,16 +19,15 @@ function printStacks() {
   console.log("c: " + stacks.c);
 }
 
-function movePiece(pushdValue, endStack) {
-  // Your code here
-  stacks[endStack].push(pushdValue);
-  //push to end stack
+function movePiece(startStack, endStack) {
+  stacks[endStack].push(stacks[startStack].pop());
 }
 
-function isLegal(popdValue, pushdValue) {
-  if (popdValue > pushdValue) {
+function isLegal(sendingStackValue, recievingStackHigestValue) {
+  if (recievingStackHigestValue === 0) {
     return true;
-  } else if (popdValue === pushdValue) {
+  }
+  if (sendingStackValue >= recievingStackHigestValue) {
     return false;
   }
   return true;
@@ -42,26 +41,29 @@ function checkForWin() {
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-  let popdValue = stacks[startStack];
-  popdValue = popdValue.pop();
-  let pushdValue = stacks[endStack];
-  if (pushdValue.length === 0) {
-    pushdValue = 0;
+  // Pull the value of the first choice (sending stack)
+  let sendingStackValue = stacks[startStack][stacks[startStack].length - 1];
+  let recievingStackHigestValue = 0;
+
+  // Assign the reciving stack value to recieving stack
+  if (stacks[endStack].length === 0) {
+    recievingStackHigestValue = 0;
   } else {
-    pushdValue = pushdValue[pushdValue.length - 1];
+    recievingStackHigestValue = stacks[endStack][stacks[endStack].length - 1];
   }
 
-  //if isLegal
-  if (isLegal(popdValue, pushdValue)) {
+  //check for legal move and if it is valid move the piece as indicated.
+  //if it is not legal move report an error.
+  if (isLegal(sendingStackValue, recievingStackHigestValue)) {
     // move piece
-    movePiece(popdValue, endStack);
+    movePiece(startStack, endStack);
 
+    checkForWin();
     //else
-    //report error and ask for new input
-    //check for win
+    //report error, reset the move and ask for new input
   } else {
-    nconsole.log("error!!!!!!!!");
+    console.log("Bad Move cannot move " + startStack + " to " + endStack);
+    return false;
   }
 }
 
