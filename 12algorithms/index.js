@@ -15,11 +15,47 @@ for (let i = 0; i < 1000; i++) {
 }
 
 function bubbleSort(arr) {
-  // Your code here
+  let sort = true;
+
+  while(sort){
+    sort = false;
+    for(let i = 0; i < arr.length; i++ ){
+      if(arr[i] > arr[i+1]){
+        let temp = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = temp;
+        sort = true;
+      }
+    }
+  }
+
+  return arr;
 }
 
 function mergeSort(arr) {
-  // Your code here
+  if(arr.length < 2){
+    return arr;
+  }
+
+  const midIdx = arr.length / 2;
+  const arr1 = mergeSort(arr.slice(0, midIdx));
+  const arr2 = mergeSort(arr.slice(midIdx));
+
+  const sortedArr = [];
+  while(arr1.length && arr2.length){
+    if(arr1[0] < arr2[0]){
+      sortedArr.push(arr1.shift());
+    } else {
+      sortedArr.push(arr2.shift());
+    }
+  }
+
+  if(arr1.length)
+  {
+    sortedArr = sortedArr.concat(arr1);
+  }
+
+  return sortedArr;
 }
 
 function binarySearch(arr, item) {
