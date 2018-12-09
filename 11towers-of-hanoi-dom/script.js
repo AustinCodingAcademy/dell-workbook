@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let beginStack;
   let endStack;
   let moveCount = 0;
-  let startStack = '';
+  let startStackDetail = {};
 
   document.querySelectorAll("[data-stack]").forEach(cell => cell.addEventListener('click', selectObject));
 
@@ -19,8 +19,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     if (playerTurn === '1') {
       beginStack = this;
-      if (startStack === '')
-        startStack = this.getAttribute("data-stack");
+      if (Object.keys(startStackDetail).length === 0) {
+        startStackDetail["startStackLine"] = this.getAttribute("data-stack");
+        startStackDetail["startStackNumberElements"] = (this.querySelectorAll("[data-block]")).length;
+
+        console.log(startStackDetail);
+      }
     } else if (playerTurn === '2') {
       endStack = this;
       if (Object.is(beginStack, endStack))
@@ -31,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (checkForWin()) {
           document.querySelector("#announce-game-won").innerHTML = "Congrats! You Win The Game. <br>Move Count:" + moveCount;
           moveCount = 0;
-          startStack = '';
+          startStackDetail = {};
         } else {
           document.querySelector("#announce-game-won").innerHTML = "Move Count:" + moveCount;
         }
@@ -49,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function checkForWin() {
-    if ((endStack.querySelectorAll("[data-block]").length === 4) && endStack.getAttribute("data-stack") !== startStack)
+    if ((endStack.querySelectorAll("[data-block]").length === startStackDetail["startStackNumberElements"]) && endStack.getAttribute("data-stack") !== startStackDetail["startStackLine"])
       return true;
 
     return false;
