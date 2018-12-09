@@ -19,24 +19,42 @@ function printStacks() {
   console.log("c: " + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
-
+function movePiece(fromStack, toStack) {
+  // pop the top element from fromStack and push it into the toStack
+  const disc = stacks[fromStack].pop();
+  stacks[toStack].push(disc);
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(fromStack, toStack) {
+  // check that a valid move occurs when a small disc(numbers) follows a larger disc(number)
+  const fromStackValue = stacks[fromStack];
+  const toStackValue = stacks[toStack];
 
+
+  if ((fromStackValue.length < 1) || (fromStackValue[fromStackValue.length - 1] > toStackValue[toStackValue.length - 1])) {
+    return false;
+  }
+
+  return true;
 }
 
 function checkForWin() {
-  // Your code here
+  // if stacks b or c is equal to initial stacks a array, then there is a winner. 
+  const winningCombo = JSON.stringify([4, 3, 2, 1]);
 
+  if (winningCombo === JSON.stringify(stacks['b']) || (winningCombo === JSON.stringify(stacks['c']))) {
+    console.log("Congrats!. You won! ");
+    return true;
+  }
+  return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  //  if the move is legal then proceed to move the item and check for a winner each time
+  if (isLegal(startStack, endStack)) {
+    movePiece(startStack, endStack);
+    checkForWin();
+  }
 }
 
 function getPrompt() {
