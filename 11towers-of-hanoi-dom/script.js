@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (stacks[startStack] < endIndexstacks[endStack]) {
       return true;
     }else {
-    console.log("Invalid Move!");
-    document.querySelector("#announce-game-won").innerHTML = "INVALID MOVE!";
-    startStack = "";
-    endStack = "";
-    return false;
+      console.log("Invalid Move!");
+      document.querySelector("#announce-game-won").innerHTML = "INVALID MOVE!";
+      startStack = "";
+      endStack = "";
+      return false;
     }
   }
 
