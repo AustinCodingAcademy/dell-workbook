@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (funny) => {
   })
 
   function changeSign(){
-    document.querySelector("#results").value = "-" + document.querySelector("#results").value;
+    document.querySelector("#results").value *= -1;
   }
   
   function addNumber(num) {

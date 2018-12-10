@@ -15,8 +15,22 @@ for (let i = 0; i < 1000; i++) {
 }
 
 function bubbleSort(arr) {
-  // Your code here
-}
+  for (let i=0; i< arr.length; i++){
+    if (arr[i] > arr[i + 1]) {
+      let temp = arr[i]
+      arr[i] = arr[i+1];
+      arr[i+1] = temp;
+    }
+    if(i === (arr.length -1)){
+      for(let j=0; j< arr.length; j++){
+        if (arr[j] > arr[j + 1]) {
+          i = -1;
+        }
+      }
+     }
+   }
+  return arr;
+  }
 
 function mergeSort(arr) {
   // Your code here
