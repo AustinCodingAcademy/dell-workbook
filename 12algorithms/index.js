@@ -58,7 +58,6 @@ function mergeSort(arr) {
     } else {
       sortedArr.push(arr2.shift())
     }
-    console.log(sortedArr)
   }
   if (arr1.length) {
     Array.push.apply(sortedArr, arr1)
