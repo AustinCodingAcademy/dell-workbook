@@ -14,35 +14,46 @@ let stacks = {
 };
 
 function printStacks() {
-  console.log("a: " + stacks.a);
-  console.log("b: " + stacks.b);
-  console.log("c: " + stacks.c);
+  console.log('a: ' + stacks.a);
+  console.log('b: ' + stacks.b);
+  console.log('c: ' + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
-
-}
-
-function isLegal() {
-  // Your code here
-
-}
-
-function checkForWin() {
-  // Your code here
-
+function movePiece(startStack, endStack) {
+  let block = stacks[startStack].pop(); //grab '1' from prop startStack, let block equal '1'
+  stacks[endStack].push(block); //add '1' to prop endStack
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
+  if (isLegal) {
+    movePiece();
+  } else {
+    console.log('Choose another move');
+  }
+}
 
+function isLegal(startStack, endStack) {
+  let startLastIndex = stacks[startStack.length - 1];
+  let startLastItem = stacks[startStack][startLastIndex];
+  let endLastIndex = stacks[endStack.length - 1];
+  let endLastItem = stacks[endStack][endLastIndex];
+
+  if (startLastItem < endLastItem) return true;
+  if (endStack.length - 1 === 0) return true;
+}
+
+//big thing on top of little = false, little thing on top of big thing = true,
+
+function checkForWin() {
+  if (endStack.length === 4) {
+    return true;
+  }
 }
 
 function getPrompt() {
   printStacks();
-  rl.question('start stack: ', (startStack) => {
-    rl.question('end stack: ', (endStack) => {
+  rl.question('start stack: ', startStack => {
+    rl.question('end stack: ', endStack => {
       towersOfHanoi(startStack, endStack);
       getPrompt();
     });
@@ -52,7 +63,6 @@ function getPrompt() {
 // Tests
 
 if (typeof describe === 'function') {
-
   describe('#towersOfHanoi()', () => {
     it('should be able to move a block', () => {
       towersOfHanoi('a', 'b');
@@ -86,9 +96,6 @@ if (typeof describe === 'function') {
       assert.equal(checkForWin(), false);
     });
   });
-
 } else {
-
   getPrompt();
-
 }
