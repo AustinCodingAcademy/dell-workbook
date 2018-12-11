@@ -28,18 +28,19 @@ function isLegal(startStack, endStack) {
   if(stacks[endStack].length === 0 || (stacks[endStack][stacks[endStack].length -1] > stacks[startStack][stacks[startStack].length -1])){
     return true;
   }
-  return console.log('Cannot perform move. Starting stack is larger than ending stack');
+  return false;
 }
 
 function checkForWin() {
-  // Your code here
-
+  if(stacks.b.length === 4 || stacks.c.length === 4) {
+    return true;
+  }
+  return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
   if (isLegal(startStack, endStack)){
     let lastOfStack = stacks[startStack].pop();
-    console.log(lastOfStack);
     stacks[endStack].push(lastOfStack);
   }
 }
