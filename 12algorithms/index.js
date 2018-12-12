@@ -16,10 +16,42 @@ for (let i = 0; i < 1000; i++) {
 
 function bubbleSort(arr) {
   // Your code here
+  var len = arr.length;    
+  for (var i = 0; i < len ; i++) {
+    for(var j = 0 ; j < len - i - 1; j++){
+      if (arr[j] > arr[j + 1]) {
+        var temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
 }
 
 function mergeSort(arr) {
   // Your code here
+  if (arr.length < 2) {
+    return arr;
+  }
+  const midIdx = arr.length / 2;
+  const arr1 = mergeSort(arr.slice(0, midIdx));
+  const arr2 = mergeSort(arr.slice(midIdx));
+
+  const sortedArr = [];
+  while (arr1.length && arr2.length) {
+    if (arr1[0] < arr2[0]) {
+      sortedArr.push(arr1.shift())
+    } else {
+      sortedArr.push(arr2.shift())
+    }
+  }
+  if(arr1.length) {
+    sortedArr.push.apply(arr1)
+  } else {
+    sortedArr.push.apply(arr2)
+  }
+  return sortedArr;
 }
 
 function binarySearch(arr, item) {
