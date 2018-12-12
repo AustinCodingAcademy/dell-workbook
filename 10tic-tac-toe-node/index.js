@@ -79,6 +79,11 @@ function checkForWin() {
 function ticTacToe(row, column) {
   // Your code here
   board[row][column] = playerTurn;
+  checkForWin();
+  if (checkForWin()) {
+    console.log("****** Player " + playerTurn + " has won! ******");
+  }
+  playerTurn = (playerTurn === 'X') ? 'O' : 'X';
 }
 
 function getPrompt() {
@@ -88,10 +93,6 @@ function getPrompt() {
     rl.question('column: ', (column) => {
       ticTacToe(row, column);
       getPrompt();
-      if (checkForWin()) {
-        console.log("Player " + playerTurn + "won!");
-      }
-      playerTurn = playerTurn === "X" ? "O" : "X";
     });
   });
 
