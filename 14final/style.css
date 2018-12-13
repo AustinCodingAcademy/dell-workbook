@@ -1,0 +1,17 @@
+img {
+  animation: rotation 10s infinite linear;
+  width: 50%;
+  height: 50%;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+h1 {
+  color: brown;
+  font-family: sans-serif;
+}
