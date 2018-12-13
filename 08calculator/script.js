@@ -1,37 +1,58 @@
-function addNumber(num) {
-  document.querySelector("#results").value += num;
-}
+"use strict";
 
-function clearResults() {
-  document.querySelector("#results").value = "";
-}
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelectorAll(".button").forEach(button => {
+    button.addEventListener("click", function(event) {
+      let text = event.target.innerHTML;
+      if (text === "=") {
+        equals();
+      } else if (text === "Delete") {
+        deleteLast();
+      } else if (text === "Clear") {
+        clearResults();
+      } else if (text === "+/-") {
+        flip();
+      } else {
+        addNumber(text);
+      }
+    });
+  });
 
-function addition() {
-  document.querySelector("#results").value += "+";
-}
-function sub() {
-  document.querySelector("#results").value += "-";
-}
-function multiply() {
-  document.querySelector("#results").value += "*";
-}
+  function addNumber(num) {
+    document.querySelector("#results").value += num;
+  }
 
-function divide() {
-  document.querySelector("#results").value += "/";
-}
+  function clearResults() {
+    document.querySelector("#results").value = "";
+  }
 
-function flip() {
-  document.querySelector("#results").value =
-    -1 * document.querySelector("#results").value;
-}
+  // function addition() {
+  //   document.querySelector("#results").value += "+";
+  // }
+  // function sub() {
+  //   document.querySelector("#results").value += "-";
+  // }
+  // function multiply() {
+  //   document.querySelector("#results").value += "*";
+  // }
 
-function equals() {
-  document.querySelector("#results").value = eval(
-    document.querySelector("#results").value
-  );
-}
+  // function divide() {
+  //   document.querySelector("#results").value += "/";
+  // }
 
-function deleteLast() {
-  let current = document.querySelector("#results").value;
-  document.querySelector("#results").value = current.slice(0, -1);
-}
+  function flip() {
+    document.querySelector("#results").value =
+      -1 * document.querySelector("#results").value;
+  }
+
+  function equals() {
+    document.querySelector("#results").value = eval(
+      document.querySelector("#results").value
+    );
+  }
+
+  function deleteLast() {
+    let current = document.querySelector("#results").value;
+    document.querySelector("#results").value = current.slice(0, -1);
+  }
+});
