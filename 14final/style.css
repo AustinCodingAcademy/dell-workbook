@@ -1,5 +1,5 @@
-.shaq { 
-    height: 200px;
+img { 
+    height: 250px;
     width: 200px;
     animation: spin 4s linear infinite;
 }
