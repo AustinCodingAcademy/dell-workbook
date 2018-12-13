@@ -1,0 +1,11 @@
+.shaq { 
+    height: 200px;
+    width: 200px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    100% {
+        transform: rotate(360deg);
+    }
+}
