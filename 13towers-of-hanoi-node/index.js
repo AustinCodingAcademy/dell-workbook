@@ -19,13 +19,19 @@ function printStacks() {
   console.log("c: " + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
+function movePiece(startStack, endStack) { 
+  let block = stacks[startStack].pop(); //removed from array
+  stacks[endStack].push(block); //add '1' to property b
 
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  let startLastIndex = stacks[startStack].length - 1;
+  let startLastItem = stacks[startStack][startLastIndex];
+  let endLastIndex = stacks[endStack].length - 1;
+  let endLastItem = stacks[endStack][endLastIndex];
+  if (startLastItem < endLastItem)
+    return true;
 
 }
 
@@ -35,7 +41,10 @@ function checkForWin() {
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
+  if (isLegal(startStack, endStack)) {
+    movePiece(startStack, endStack);
+  }
+
 
 }
 

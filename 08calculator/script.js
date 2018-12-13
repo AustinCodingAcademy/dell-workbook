@@ -6,14 +6,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
       let text = event.target.innerHTML;
       if (text === '=') {
         equals();
-      } else {
+      } 
+      else if (text === '+') {
+        addition();
+      }
+       else if (text === 'Clear') {
+        clearResults ();
+      }
+        else if (text === '-') {
+        subtraction ();
+      }
+        else if (text === '*') {
+        multiplication ();
+      }
+
+        else if (text === '/') {
+        division ();
+      }
+
+      else if (text === 'Delete') {
+        deleteLast ();
+      }
+        else {
         addNumber(text);
-      }
-      } else {
-      clearResults(" ");
-      }
-      } else {
-    deleteLast(text);
       }
     });
   });
@@ -24,6 +39,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   function clearResults() {
     document.querySelector("#results").value = "";
+  }
+
+  function addition() {
+  document.querySelector("#results").value += "+";
+}
+
+  function subtraction() {
+    document.querySelector("#results").value += "-";
+  }
+
+  function multiplication() {
+    document.querySelector("#results").value += "*";
+  }
+
+  function division() {
+    document.querySelector("#results").value += "/";
   }
 
   function equals() {

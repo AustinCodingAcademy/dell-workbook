@@ -14,8 +14,33 @@ for (let i = 0; i < 1000; i++) {
   arr.push(getRandomInt(0, 1000));
 }
 
+// arr = [2, 1, 3, 8, 1]
+function swap(firstIdx, secondIdx, arr) {
+  let temp =  arr[firstIdx];
+  arr[firstIdx] = arr[secondIdx];
+  arr[secondIdx] = temp;
+}
 function bubbleSort(arr) {
-  // Your code here
+  let counter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let sorted = true;
+    // this is the code that runs through all
+    for (let j = 0; j < arr.length; j++) {
+      counter++;
+      if (arr[j] > arr(j + 1) {
+        swap(j, j + 1, arr);
+    }
+    if (arr[i] > arr[i + 1]) {
+      sorted = false;
+      swap(i, i + 1, arr);
+    }
+    if (sorted) {
+      break;
+    }
+  }
+  }
+
+  return arr;
 }
 
 function mergeSort(arr) {
