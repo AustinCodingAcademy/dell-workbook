@@ -20,23 +20,45 @@ function printStacks() {
 }
 
 function movePiece() {
+
+
   // Your code here
+  
+  
 
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  let startTop = stacks[startStack][stacks[startStack].length-1];
+  let endTop = stacks[endStack][stacks[endStack].length-1];
+  if(startTop > endTop){
+    return false;
+  }else{
+    return true;
+  }
+  
+
+  
+    
+  
 
 }
 
 function checkForWin() {
+  if( stacks.a == [] && stacks.b == [4,3,2,1] && stacks.c == []){
+    return true;
+    
+  }else if(stacks.a ==[1] && stacks.b ==[4,3,2,1] && stacks.c == []){
+    return false;
+  }
   // Your code here
 
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  // Your code here 
+  stacks[endStack].push(stacks[startStack].pop())
+ 
 }
 
 function getPrompt() {
