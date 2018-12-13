@@ -59,25 +59,28 @@ function mergeSort(arr) {
   return sortedArr;
 }
 
-function binarySearch(arr, item) {
-  let targetPos = Math.floor(arr.length / 2);
-  let previousPos = arr.length;
-  let sliceLength = targetPos;
-  
-  while (sliceLength > 0) {
-    if (arr[targetPos] === item) {
-      return targetPos;
-    } else if (arr[targetPos] > item) {
-      previousPos = targetPos;
-      targetPos = Math.floor(targetPos / 2);
-      sliceLength = Math.floor(sliceLength / 2);
-    } else if (arr[targetPos] < item) {
-      previousPos = previousPos > targetPos ? previousPos : targetPos;
-      sliceLength = Math.floor(sliceLength / 2);
-      targetPos = Math.floor((targetPos + previousPos) / 2);
-    }
-  }
+function binarySearch(arr, itemValue) {
+  let leftPos = 0;
+  let rightPos = arr.length;
+  let target;
+  let sliceLength = rightPos - leftPos;
 
+  while(sliceLength > 0){
+    target = Math.floor((leftPos + rightPos) / 2);
+    sliceLength = rightPos - leftPos;
+
+    if (arr[target] === itemValue) {
+      sliceLength = -1;
+      return target;
+    } else if (arr[target] < itemValue) { // go -> side
+      leftPos = target;
+    } else if (arr[target] > itemValue) { // go <- side
+      rightPos = target;
+    }
+
+    if(sliceLength === (rightPos - leftPos))
+      sliceLength = -1;
+  }
   return false;
 }
 
@@ -106,14 +109,14 @@ if (typeof describe === 'function') {
   });
 
   describe('#binarySearch()', () => {
-    it('should return the index of given item if sorted array contains it', () => {
-      const idx = binarySearch([0, 1, 2, 3, 4], 3);
-      assert.equal(idx, 3);
-    });
-    it('should return false if item not in sorted array', () => {
-      const idx = binarySearch([1, 2, 3, 4], 5);
-      assert.equal(idx, false);
-    });
+     it('should return the index of given item if sorted array contains it', () => {
+       const idx = binarySearch([1, 2, 3, 4], 3);
+       assert.equal(idx, 2);
+     });
+     it('should return false if item not in sorted array', () => {
+       const idx = binarySearch([1, 2, 3, 4], 5);
+       assert.equal(idx, false);
+     });
   });
 
 } else {
