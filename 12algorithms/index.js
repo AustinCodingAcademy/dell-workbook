@@ -28,7 +28,7 @@ function bubbleSort(arr) {
     }
   }
   if (sorted){
-    break;
+    return;
   }
 }
 console.log(`I touched ${counter} things!`);

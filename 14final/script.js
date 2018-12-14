@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector('#currentMoney').innerHTML = currentCost;
   })
 
-   document.querySelector('#addDrink').addEventListener('click', () => {
+  document.querySelector('#addDrink').addEventListener('click', () => {
     
     if(currentCost >= 20){
       currentCost -= 20;
