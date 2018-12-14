@@ -9,6 +9,7 @@ const rl = readline.createInterface({
 let board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]];
 
 let playerTurn = "X";
+let winner = false;
 
 function printBoard() {
   console.log("   0  1  2");
@@ -70,17 +71,20 @@ function ticTacToe(row, column) {
 
 function getPrompt() {
   printBoard();
-  console.log("It's Player " + playerTurn + "'s turn.");
-  rl.question("row: ", row => {
-    rl.question("column: ", column => {
-      ticTacToe(row, column);
-      getPrompt();
-      if (checkForWin()) {
-        console.log("PLayer " + playerTurn + " won");
-      }
-      playerTurn = playerTurn === "X" ? "O" : "X";
+  if (!winner) {
+    console.log("It's Player " + playerTurn + "'s turn.");
+    rl.question("row: ", row => {
+      rl.question("column: ", column => {
+        ticTacToe(row, column);
+        getPrompt();
+        if (checkForWin()) {
+          winner = true;
+          console.log("PLayer " + playerTurn + " won");
+        }
+        playerTurn = playerTurn === "X" ? "O" : "X";
+      });
     });
-  });
+  }
 }
 
 // Tests
