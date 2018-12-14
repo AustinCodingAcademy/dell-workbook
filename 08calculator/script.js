@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.querySelector("#results").value = "";
   }
   function negativeAction() {
-      document.querySelector("#results").value *= -1;}
+    document.querySelector("#results").value *= -1;}
   function deleteLast() {
     let current = document.querySelector("#results").value;
     document.querySelector("#results").value = current.slice(0, -1);
