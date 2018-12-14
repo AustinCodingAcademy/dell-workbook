@@ -38,9 +38,31 @@ function bubbleSort(arr) {
     console.log(`I touched ${counter} things!`);
     return arr;
 
-
+// const arr = [4, 5, 7, 8, 9, 0, 9, 1];
 function mergeSort(arr) {
-  // Your code here
+  //base case
+  if (arr.length < 2) {
+    return arr;
+  } 
+  const midIdx = Math.floor(arr.length / 2 -1); // 4
+  const arr1 = mergeSort(arr.slice(0, midIdx));
+  const arr2 = mergeSort(arr.slice(midIdx));
+
+  const sortedArr = [];
+  while (arr1.length && arr2.length) {
+    if (arr1[0] < arr2[0]) {
+      sortedArr.push(arr1.shift());
+    } else {
+      sortedArr.push(arr2.shift());
+    }
+    if (arr1.length) {
+      Array.push.apply(sortedArr, arr1)
+    } else {
+      Array.push.apply(sortedArr, arr2)
+    }
+    return sortedArr;
+  }
+  
 }
 
 function binarySearch(arr, item) {
