@@ -49,13 +49,13 @@ wanted both of them to have margins to push away from each other
   
 }
 
-.earth .crust {
-  border-color: blue;
-  height: 100%;
-  width: 100%;
-  border-width: 10px;
-  padding: 8px;
-  border-radius: 50%;
+  .earth .crust {
+    border-color: blue;
+    height: 100%;
+    width: 100%;
+    border-width: 10px;
+    padding: 8px;
+    border-radius: 50%;
 }
 
 .earth .mantle {
