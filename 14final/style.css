@@ -1,7 +1,12 @@
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  color: white;
+}
 img {
+  margin: 10px;
   animation: rotation 10s infinite linear;
-  width: 50%;
-  height: 50%;
+  max-width: 200px;
 }
 @keyframes rotation {
   from {
@@ -12,6 +17,24 @@ img {
   }
 }
 h1 {
-  color: brown;
-  font-family: sans-serif;
+  color: white;
+  font-family: calibri;
 }
+button{
+  border-radius: 40px;
+  border: 3px solid white;
+  font-size: 14px;
+  min-width: 150px;
+  max-width: 250px;
+  background: none;
+  vertical-align: middle;
+  margin: 1em;
+  padding: 1em 2em;
+}
+button:hover{
+  background-color: white;
+}
+button:active{
+  background-color: white;
+}
+
