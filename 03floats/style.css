@@ -48,12 +48,12 @@ section {
 }
 
 nav button {
-float:left;
-border: none;
-background-color: #088b85;
-width: 33.3%;
-text-align: center;
-border-right: 1px solid white;
+  float:left;
+  border: none;
+  background-color: #088b85;
+  width: 33.3%;
+  text-align: center;
+  border-right: 1px solid white;
 }
 
 nav button:hover{
