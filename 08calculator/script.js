@@ -7,30 +7,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
       if (text === '=') {
         equals();
       } 
-        else if (text === 'Delete') {
-          deleteLast();}
-        else if (text === '+/-') {
-          negativeAction(); }
-        else if (text === 'Clear') {
-          clearResults();
-        }
+      else if (text === 'Delete') {
+        deleteLast();}
+      else if (text === '+/-') {
+        negativeAction(); }
+      else if (text === 'Clear') {
+        clearResults();
+      }
       else {
         addNumber(text);
       }
-  })
+    })
   });
   function addNumber(num) {
     document.querySelector("#results").value += num;}
   function equals() {
     document.querySelector("#results").value = eval(document.querySelector("#results").value);
-    }
+  }
   function clearResults() {
-      document.querySelector("#results").value = "";
-    }
+    document.querySelector("#results").value = "";
+  }
   function negativeAction() {
       document.querySelector("#results").value *= -1;}
   function deleteLast() {
     let current = document.querySelector("#results").value;
     document.querySelector("#results").value = current.slice(0, -1);
-    }
+  }
 });

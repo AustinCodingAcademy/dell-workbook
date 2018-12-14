@@ -33,26 +33,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
           [6, 4, 2]
         ]
         const didPlayerWin = winningCombos.some((combo) => {
-        return (
+          return (
             document.querySelector(`[data-cell="${combo[0]}"]`).innerHTML === player && 
             document.querySelector(`[data-cell="${combo[1]}"]`).innerHTML === player && 
             document.querySelector(`[data-cell="${combo[2]}"]`).innerHTML === player
           );
-      });
-      if (didPlayerWin) {
-        console.log(`Player ${player} Wins!`);
-        return true;
+        });
+        if (didPlayerWin) {
+          console.log(`Player ${player} Wins!`);
+          return true;
         }
         return false; 
       }
 
       document.querySelector('#clear').addEventListener('click', (event) => {
-      document.querySelectorAll('[data-cell]').forEach(cell => {
-      cell.innerHTML = "";
-     })
-    
-        
-  })
-  })
+        document.querySelectorAll('[data-cell]').forEach(cell => {
+          cell.innerHTML = "";
+        })  
+      })
+    })
   })
 });

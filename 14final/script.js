@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('#fries').addEventListener('click', () => {
     if (count >= 10) {
-    count -= 10;
-    delta += 1;
-    document.querySelector(".counter").innerHTML = count;
+      count -= 10;
+      delta += 1;
+      document.querySelector(".counter").innerHTML = count;
     }
   });
 

@@ -55,10 +55,10 @@ function towersOfHanoi(startStack, endStack) {
   // Your code here
   if (isLegal(startStack, endStack)) {
     movePiece(startStack, endStack);
- } 
- if(checkForWin()){
-   return true;
- }
+  } 
+  if(checkForWin()){
+    return true;
+  }
 
 }
 
