@@ -32,7 +32,7 @@ function bubbleSort(arr) {
   }
 }
 console.log(`I touched ${counter} things!`);
-return arr;
+
 
 // const arr = [4, 5, 7, 8, 9, 0, 9, 1]
 function mergeSort(arr) {
