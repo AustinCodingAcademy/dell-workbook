@@ -14,16 +14,42 @@ for (let i = 0; i < 1000; i++) {
   arr.push(getRandomInt(0, 1000));
 }
 
+function swap (indxOne, indxTwo, arr){
+  let temp = arr[indxOne];
+  arr[indxOne]= arr[indxTwo];
+  arr[indxTwo]= temp;
+}
+
 function bubbleSort(arr) {
-  // Your code here
+  let counter = 0;
+  for (let i=0; i < arr.length -1; i++){
+    let sorted = true;
+    for (let j=0; j < arr.length -1; j++){
+      counter ++;
+      if (arr[j] > arr[j+1]){
+        sorted = false;
+        swap(j, j+1, arr);
+      }
+    }
+    if (sorted){
+      break;
+    }
+  }
 }
 
 function mergeSort(arr) {
   // Your code here
+  if (arr.length < 2) {
+    return arr;
+  }
+  const midIdx = Math.floor(arr.length /2)  //4
+  const arr1 = mergeSort(arr.slice (0,midIdx))
 }
 
 function binarySearch(arr, item) {
-  // Your code here
+  // Your code here extra credit
+  
+
 }
 
 // Tests

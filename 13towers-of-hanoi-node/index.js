@@ -23,7 +23,14 @@ function movePiece(startStack, endStack) {
   stacks[endStack].push(stacks[startStack].pop());
 }
 
-function isLegal(sendingStackValue, recievingStackHigestValue) {
+function isLegal(startStack, endStack) {
+  let sendingStackValue = stacks[startStack][stacks[startStack].length - 1];
+  let recievingStackHigestValue = 0;
+  if (stacks[endStack].length === 0) {
+    recievingStackHigestValue = 0;
+  } else {
+    recievingStackHigestValue = stacks[endStack][stacks[endStack].length - 1];
+  }
   if (recievingStackHigestValue === 0) {
     return true;
   }
@@ -46,15 +53,16 @@ function towersOfHanoi(startStack, endStack) {
   let recievingStackHigestValue = 0;
 
   // Assign the reciving stack value to recieving stack
-  if (stacks[endStack].length === 0) {
-    recievingStackHigestValue = 0;
-  } else {
-    recievingStackHigestValue = stacks[endStack][stacks[endStack].length - 1];
-  }
+  // if (stacks[endStack].length === 0) {
+  //   recievingStackHigestValue = 0;
+  // } else {
+  //   recievingStackHigestValue = stacks[endStack][stacks[endStack].length - 1];
+  // }
 
   //check for legal move and if it is valid move the piece as indicated.
   //if it is not legal move report an error.
-  if (isLegal(sendingStackValue, recievingStackHigestValue)) {
+  //if (isLegal(sendingStackValue, recievingStackHigestValue)) {
+  if (isLegal(startStack, endStack)) {
     // move piece
     movePiece(startStack, endStack);
 
