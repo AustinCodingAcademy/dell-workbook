@@ -1,0 +1,33 @@
+#burger {
+  height: 30%;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#currentMoney {
+  width: 250px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

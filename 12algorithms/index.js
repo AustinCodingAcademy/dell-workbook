@@ -14,22 +14,60 @@ for (let i = 0; i < 1000; i++) {
   arr.push(getRandomInt(0, 1000));
 }
 
+let counter = 0;
 function bubbleSort(arr) {
   // Your code here
   for (j = 0; j < arr.length; j++) {
+    let sorted = true;
     for (i = 0; i < arr.length; i++) {
-      if (arr[i] > arr[i + 1]) {
-        let temp = arr[i]
-        arr[i] = arr[i + 1];
-        arr[i + 1] = temp;
-      }
+      counter++;
+    }
+    if(arr[i] > arr[i+1]){
+      sorted = false;
+      swap (i,j+1, arr);
     }
   }
+  if (sorted){
+    break;
+  }
 }
+console.log(`I touched ${counter} things!`);
+return arr;
 
+// const arr = [4, 5, 7, 8, 9, 0, 9, 1]
 function mergeSort(arr) {
   // Your code here
+  if (arr.length < 2){
+    return arr;
+  }
+  const midIdx = Math.florr(arr.length / 2); //4
+  const arr1 = mergeSort(arr.slice(0, midIdx));
+  const arr2 = mergeSort(arr.slice(midIdx));
+
+  const sortedArr = [];
+
+  while(arr1.length && arr2.length) {
+    if (arr1[0] < arr2[0]){
+      sortedArr.push(arr1.shift());
+    }
+    else {
+      sortedArr.push(arr2.shift());
+    }
+    console.log(sortedArr);
+  }
+
+  if (arr1.length) {
+    sortedArr.push.apply(sortedArr, arr1);
+  }
+  else {
+    sortedArr.push.apply(sortedArr, arr2);
+  }
+
+  return sortedArr;
 }
+
+// .pop() ==> .shift()
+// .push() ==> .unshift()
 
 function binarySearch(arr, item) {
   // Your code here
