@@ -47,14 +47,3 @@ img {
   padding-top: 10px;
 
 }
-.separatorLeft, .separatorRight
-{
-	width:16px;
-	height:100%;
-	background:url(img/panelVertical.png?v=2) repeat-y;
-	background:url(img/panelGradientTop.png) no-repeat top left,url(img/panelGradientBottom.png) no-repeat bottom left,url(img/panelVertical.png?v=2) repeat-y;
-	position:absolute;
-	top:0px;
-	bottom:0px;
-	z-index:100;
-}
