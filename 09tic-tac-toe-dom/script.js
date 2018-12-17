@@ -1,5 +1,5 @@
 "use strict";
- document.addEventListener("DOMContentLoaded", event => {
+document.addEventListener("DOMContentLoaded", event => {
   // Your Code Here
   let player = "❌";
   document.querySelectorAll("[data-cell]").forEach(cell => {
@@ -9,11 +9,10 @@
         //checkForWin();
         player = player === "❌" ? "✔️" : "❌";
         //checkForWin();
-
       }
     });
   });
-   function checkForWin() {
+  function checkForWin() {
     if (
       (document.querySelector('[data-cell="0"]').innerHTML === player &&
         document.querySelector('[data-cell="1"]').innerHTML &&
@@ -46,36 +45,3 @@
     return false;
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

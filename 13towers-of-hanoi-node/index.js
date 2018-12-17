@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const assert = require('assert');
-const readline = require('readline');
+const assert = require("assert");
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -20,51 +20,37 @@ function printStacks() {
 }
 
 function movePiece() {
-
-
   // Your code here
-  
-  
-
 }
 
 function isLegal(startStack, endStack) {
-  let startTop = stacks[startStack][stacks[startStack].length-1];
-  let endTop = stacks[endStack][stacks[endStack].length-1];
-  if(startTop > endTop){
+  let startTop = stacks[startStack][stacks[startStack].length - 1];
+  let endTop = stacks[endStack][stacks[endStack].length - 1];
+  if (startTop > endTop) {
     return false;
-  }else{
+  } else {
     return true;
   }
-  
-
-  
-    
-  
-
 }
 
 function checkForWin() {
-  if( stacks.a == [] && stacks.b == [4,3,2,1] && stacks.c == []){
+  if (stacks.a == [] && stacks.b == [4, 3, 2, 1] && stacks.c == []) {
     return true;
-    
-  }else if(stacks.a ==[1] && stacks.b ==[4,3,2,1] && stacks.c == []){
+  } else if (stacks.a == [1] && stacks.b == [4, 3, 2, 1] && stacks.c == []) {
     return false;
   }
   // Your code here
-
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here 
-  stacks[endStack].push(stacks[startStack].pop())
- 
+  // Your code here
+  stacks[endStack].push(stacks[startStack].pop());
 }
 
 function getPrompt() {
   printStacks();
-  rl.question('start stack: ', (startStack) => {
-    rl.question('end stack: ', (endStack) => {
+  rl.question("start stack: ", startStack => {
+    rl.question("end stack: ", endStack => {
       towersOfHanoi(startStack, endStack);
       getPrompt();
     });
@@ -73,44 +59,40 @@ function getPrompt() {
 
 // Tests
 
-if (typeof describe === 'function') {
-
-  describe('#towersOfHanoi()', () => {
-    it('should be able to move a block', () => {
-      towersOfHanoi('a', 'b');
+if (typeof describe === "function") {
+  describe("#towersOfHanoi()", () => {
+    it("should be able to move a block", () => {
+      towersOfHanoi("a", "b");
       assert.deepEqual(stacks, { a: [4, 3, 2], b: [1], c: [] });
     });
   });
 
-  describe('#isLegal()', () => {
-    it('should not allow an illegal move', () => {
+  describe("#isLegal()", () => {
+    it("should not allow an illegal move", () => {
       stacks = {
         a: [4, 3, 2],
         b: [1],
         c: []
       };
-      assert.equal(isLegal('a', 'b'), false);
+      assert.equal(isLegal("a", "b"), false);
     });
-    it('should allow a legal move', () => {
+    it("should allow a legal move", () => {
       stacks = {
         a: [4, 3, 2, 1],
         b: [],
         c: []
       };
-      assert.equal(isLegal('a', 'c'), true);
+      assert.equal(isLegal("a", "c"), true);
     });
   });
-  describe('#checkForWin()', () => {
-    it('should detect a win', () => {
+  describe("#checkForWin()", () => {
+    it("should detect a win", () => {
       stacks = { a: [], b: [4, 3, 2, 1], c: [] };
       assert.equal(checkForWin(), true);
       stacks = { a: [1], b: [4, 3, 2], c: [] };
       assert.equal(checkForWin(), false);
     });
   });
-
 } else {
-
   getPrompt();
-
 }
