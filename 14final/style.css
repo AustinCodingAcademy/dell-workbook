@@ -1,24 +1,24 @@
 .square {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-  }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
 
-  #slow{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+#slow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
