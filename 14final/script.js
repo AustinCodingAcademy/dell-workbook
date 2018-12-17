@@ -41,7 +41,7 @@ function wagonSpeedCheck() {
 
 function updateReport() {
   wagonSpeedCheck();
-  document.querySelector("#currentTotal").innerText = Math.floor(
+  document.querySelector("#currenttotal").innerText = Math.floor(
     data.totalCurrent
   );
   document.querySelector("#rps").innerText = (data.totalRPS / 70.4).toFixed(3);
