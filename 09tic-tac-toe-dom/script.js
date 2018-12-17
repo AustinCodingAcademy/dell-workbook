@@ -1,4 +1,5 @@
 "use strict";
+let matrix = [["", "", ""], ["", "", ""], ["", "", ""]];
 document.addEventListener("DOMContentLoaded", event => {
   // Your Code Here
   let player = "❌";
@@ -6,42 +7,55 @@ document.addEventListener("DOMContentLoaded", event => {
     cell.addEventListener("click", event => {
       if (!event.target.innerHTML) {
         event.target.innerHTML = player;
-        //checkForWin();
+        let pos = cell.attributes["data-cell"].value;
+        matrix[Math.floor(pos / 3)][pos % 3] = player;
+        console.log(matrix);
+        checkForWin();
         player = player === "❌" ? "✔️" : "❌";
         //checkForWin();
       }
     });
   });
   function checkForWin() {
-    if (
-      (document.querySelector('[data-cell="0"]').innerHTML === player &&
-        document.querySelector('[data-cell="1"]').innerHTML &&
-        document.querySelector('[data-cell="2"]').innerHTML) ||
-      (document.querySelector('[data-cell="3"]').innerHTML === player &&
-        document.querySelector('[data-cell="4"]').innerHTML &&
-        document.querySelector('[data-cell="5"]').innerHTML) ||
-      (document.querySelector('[data-cell="6"]').innerHTML === player &&
-        document.querySelector('[data-cell="7"]').innerHTML &&
-        document.querySelector('[data-cell="8"]').innerHTML) ||
-      (document.querySelector('[data-cell="0"]').innerHTML === player &&
-        document.querySelector('[data-cell="3"]').innerHTML &&
-        document.querySelector('[data-cell="6"]').innerHTML) ||
-      (document.querySelector('[data-cell="1"]').innerHTML === player &&
-        document.querySelector('[data-cell="4"]').innerHTML &&
-        document.querySelector('[data-cell="7"]').innerHTML) ||
-      (document.querySelector('[data-cell="2"]').innerHTML === player &&
-        document.querySelector('[data-cell="5"]').innerHTML &&
-        document.querySelector('[data-cell="8"]').innerHTML) ||
-      (document.querySelector('[data-cell="0"]').innerHTML === player &&
-        document.querySelector('[data-cell="4"]').innerHTML &&
-        document.querySelector('[data-cell="8"]').innerHTML) ||
-      (document.querySelector('[data-cell="6"]').innerHTML === player &&
-        document.querySelector('[data-cell="4"]').innerHTML &&
-        document.querySelector('[data-cell="2"]').innerHTML)
-    ) {
-      console.log(`Player ${player} Wins!`);
-      return true;
+    console.log(matrix[0][0]);
+
+    let paths = [];
+    for (let i = 0; i < matrix.length; i++) {
+      let row = [];
+      let column = [];
+      for (let j = 0; j < matrix.length; j++) {
+        row.push(matrix[i][j]);
+        column.push(matrix[j][i]);
+      }
+      paths.push(row.join(""));
+      paths.push(column.join(""));
     }
-    return false;
+
+    paths.push(matrix[0][0] + matrix[1][1] + matrix[2][2]);
+    paths.push(matrix[2][0] + matrix[1][1] + matrix[0][2]);
+
+    if (paths.includes("❌❌❌")) {
+      setTimeout(function() {
+        alert("*********❌ WINS*********");
+        reload();
+      }, 100);
+    } else if (paths.includes("✔️✔️✔️")) {
+      setTimeout(function() {
+        alert("*********✔️ WINS*********");
+        reload();
+      }, 100);
+    } else if (!matrix.flat().includes("")) {
+      setTimeout(function() {
+        alert("********Its a Tie!*********");
+        reload();
+      }, 100);
+    }
+  }
+
+  function reload() {
+    matrix = [["", "", ""], ["", "", ""], ["", "", ""]];
+    document.querySelectorAll("[data-cell]").forEach(cell => {
+      cell.innerHTML = "";
+    });
   }
 });

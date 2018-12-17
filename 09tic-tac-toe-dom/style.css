@@ -15,3 +15,8 @@
 #announce-winner {
   font-size: 50px;
 }
+
+#board > div {
+  width: 120px;
+  height: 120px;
+}
