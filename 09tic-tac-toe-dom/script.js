@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-cell]").forEach(cell => {
       cell.innerHTML = "";
     });
+    document.getElementById("announce-winner").innerHTML = "";
   };
 
   document.querySelectorAll("[data-cell]").forEach(cell => {
@@ -22,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
           player = "X";
         }
       } else {
+        document.getElementById("announce-winner").innerHTML =
+          "Congratulations Player " + player + "!! You won!!";
+
         console.log("Congratulations Player " + player + "!! You won!!");
       }
     });
