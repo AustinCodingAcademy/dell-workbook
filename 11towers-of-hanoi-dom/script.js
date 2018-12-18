@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let item = stacks[startStack].pop();
     stacks[endStack].push(item);
     let movingItem = document.querySelector(`[data-block="${item}"]`);
+    document.querySelector("#announce-game-won").innerHTML = "";
     // first time using removeChild and appendChild...
     document.querySelector(`[data-stack="${startStack}"]`).removeChild(document.querySelector(`[data-block="${item}"]`));
     document.querySelector(`[data-stack="${endStack}"]`).appendChild(movingItem);
@@ -60,10 +61,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var startIndex = stacks[startStack].length - 1;
     var endIndex = stacks[endStack].length - 1;
 
-    if (endIndex < 1) {
+    if (stacks[startStack].length === 0) {
+      console.log("startStack === 0");
+      return false;
+    }
+    if (stacks[endStack].length === 0) {
+      console.log("endStack === 0");
       return true;
     }
-    if (stacks[startStack] < endIndexstacks[endStack]) {
+    if (
+      Number(stacks[startStack][startIndex]) < Number(stacks[endStack][endIndex])) {
+        console.log("Number area");
       return true;
     }else {
       console.log("Invalid Move!");
