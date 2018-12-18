@@ -19,35 +19,36 @@ function printStacks() {
   console.log('c: ' + stacks.c);
 }
 
-function movePiece(startStack, endStack) {
-  let block = stacks[startStack].pop(); //grab '1' from prop startStack, let block equal '1'
-  stacks[endStack].push(block); //add '1' to prop endStack
-}
-
-function towersOfHanoi(startStack, endStack) {
-  if (isLegal) {
-    movePiece();
-  } else {
-    console.log('Choose another move');
-  }
-}
-
 function isLegal(startStack, endStack) {
-  let startLastIndex = stacks[startStack.length - 1];
+  let startLastIndex = stacks[startStack][stacks[startStack].length - 1];
   let startLastItem = stacks[startStack][startLastIndex];
-  let endLastIndex = stacks[endStack.length - 1];
+  let endLastIndex = stacks[endStack][stacks[endStack].length - 1];
   let endLastItem = stacks[endStack][endLastIndex];
 
-  if (startLastItem < endLastItem) return true;
-  if (endStack.length - 1 === 0) return true;
+  if (startLastIndex < endLastIndex || !endLastIndex) {
+    //if the first row is less than the second row, true. If the second row is empty, true
+    return true;
+  }
+  return false;
 }
 
 //big thing on top of little = false, little thing on top of big thing = true,
 
 function checkForWin() {
-  if (endStack.length === 4) {
+  if (stacks.b.length === 4 || stacks.c.length === 4) {
+    //If stack b has four items or stack c has four items then game over since all items must be stacked in order
+    console.log(' the game');
     return true;
+  } else {
+    return false;
   }
+}
+
+function towersOfHanoi(startStack, endStack) {
+  if (isLegal(startStack, endStack)) {
+    stacks[endStack].push(stacks[startStack].pop()); //grab '1' from startStack, add it to endStack only if the startStack item is smaller than the endstack item, or if endStack is empty
+  }
+  checkForWin();
 }
 
 function getPrompt() {
