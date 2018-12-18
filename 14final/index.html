@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>EGGS CLICKER GAME</title>
+    <link rel="icon" href="./eggsGame.jpg" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Dashboard - it shows eggs counts -->
+      <div class="display dashboard">
+        <h2>DASHBOARD</h2>
+        <p>Eggs Count: <span id="eggs_counter">0</span> 🥚</p>
+        <button id="start_game">
+          <p>Click Here</p>
+          <img src="./ClickEggs.jpg" alt="" />
+        </button>
+        <button id="reset_game">Reset Game</button>
+      </div>
+
+      <!-- my assets - it shows the player assets -->
+      <div class="display">
+        <div class="container">
+          <h2>My Assets</h2>
+          <button class="myassets">
+            BREAD 🍞 : <span id="asst_breads">0</span>
+          </button>
+          <button class="myassets">
+            CAKE 🎂 : <span id="asst_cake">0</span>
+          </button>
+          <button class="myassets">
+            BAKERY 🏪: <span id="asst_bakery">0</span>
+          </button>
+        </div>
+
+        <!-- myDeals  - it shows the player's deals/offer -->
+        <div class="container">
+          <h2>My Deals</h2>
+          <button class="mydeals" id="mydeals_breads">BREAD ($10) 🍞</button>
+          <button class="mydeals" id="mydeals_cake">CAKE ($50) 🎂</button>
+          <button class="mydeals" id="mydeals_bakery">Bakery ($200)🏪</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jscript lint -->
+    <script src="./script.js"></script>
+  </body>
+</html>
