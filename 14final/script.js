@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", event => {
   // document.querySelector("#fun").addEventListener("click", event => {slowDown());
   document.querySelectorAll('.button').forEach((button) => {
     button.addEventListener("click", event => {
-    let text = event.target.innerHTML;
-    console.log (text);
+      let text = event.target.innerHTML;
+      console.log (text);
       if (text === "Fun") {
         slowDown();
-        } else if (text === "Dizzy") {
-          speedUp();
-        } else {
-          speedBarf()
+      } else if (text === "Dizzy") {
+        speedUp();
+      } else {
+        speedBarf()
       }
     })
   })
