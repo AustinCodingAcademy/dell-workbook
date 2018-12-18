@@ -1,16 +1,28 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('#slow').addEventListener('click', () => {
-    const currentSpeed = document.querySelector('.square').style.animationDuration;
-    document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) + 1}s`;
+  let speedUpRate = 1;
+  let speedUpperRate = 25;
+
+  document.querySelector('#fast').addEventListener('click', () => {
+    speedUp(speedUpRate);
   });
 
-  document.querySelector('#slower').addEventListener('click', () => {
-    const currentSpeed = document.querySelector('.square').style.animationDuration;
-    document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) + 10}s`;
+  document.querySelector('#faster').addEventListener('click', () => {
+    speedUp(speedUpperRate);
   });
 
-  // To get current animation speed in DOM
-  // getComputedStyle(document.querySelector('.square')).animationDuration;
+  function speedUp(speed)
+  {
+    const currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
+    if (currentSpeed === '0s') {
+      document.querySelector('.square').style.animationDuration = "100000s";
+    } else if (Number(currentSpeed.split('s')[0]) - speed <= 0) {
+      speedUpRate /= 10;
+      speedUpperRate /= 10;
+      document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) - speed/10}s`;
+    } else{
+      document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) - speed}s`;
+    }
+  }
 });

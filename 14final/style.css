@@ -1,15 +1,23 @@
 .square{
   height: 200px;
-  width: 200px;
-  background-color: blue;
+  max-width: 200px;
   animation-name: spin;
-  animation-duration: 1s;
+  animation-duration: 0ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+img{
+  height: 200px;
+  border-radius: 50%;
 }
 
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
+}
+
+button{
+  margin: 2em 2px;
 }
