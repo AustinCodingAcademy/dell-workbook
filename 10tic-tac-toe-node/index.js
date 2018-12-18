@@ -22,7 +22,9 @@ function printBoard() {
 
 function horizontalWin() {
   for (var i = 0; i < board.length; i++) {
+    //for loop says continue each time i fits the profile of starting at 0 and ending with the length of the board or 2
     if (
+      // for loop to check that if any of those combos have a matching entry at the same time, that entry player has won
       board[i][0] === playerTurn &&
       board[i][1] === playerTurn &&
       board[i][2] === playerTurn
@@ -35,7 +37,9 @@ function horizontalWin() {
 
 function verticalWin() {
   for (var i = 0; i < board.length; i++) {
+    //for loop says continue each time i fits the profile of starting at 0 and ending with the length of the board or 2
     if (
+      // for loop to check that if any of those combos have a matching entry at the same time, that entry player has won
       board[0][i] === playerTurn &&
       board[1][i] === playerTurn &&
       board[2][i] === playerTurn
@@ -47,6 +51,7 @@ function verticalWin() {
 }
 
 function diagonalWin() {
+  // for loop to check that if any of the below two combos have a matching entry at the same time, that entry player has won
   if (
     board[0][0] === playerTurn &&
     board[1][1] === playerTurn &&
@@ -65,6 +70,7 @@ function diagonalWin() {
 }
 
 function checkForWin() {
+  //if the any combos labeled with these function titles return true, then return that player has one
   if (horizontalWin || verticalWin || diagonalWin) {
     console.log(`Player ${playerTurn} wins`);
     return true;
@@ -72,10 +78,11 @@ function checkForWin() {
 }
 
 function ticTacToe(row, column) {
-  console.log('row:', row, 'column:', column);
-  board[row][column] = playerTurn;
-  playerTurn = playerTurn === 'X' ? 'O' : 'X';
-  console.log(checkForWin());
+  //explains how the game should work
+  console.log('row:', row, 'column:', column); //returns the titles row and columns
+  board[row][column] = playerTurn; //definition of the varible playerTurn, whenever the player enters the the loacation of where they want to place a marker
+  playerTurn = playerTurn === 'X' ? 'O' : 'X'; //if the player adds a X marker, then the next turn should place a O marker
+  console.log(checkForWin()); //after each move, the game needs to check for a win and return the statement here
 }
 
 function getPrompt() {
