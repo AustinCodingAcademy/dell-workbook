@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     if (
       Number(stacks[startStack][startIndex]) < Number(stacks[endStack][endIndex])) {
-        console.log("Number area");
+      console.log("Number area");
       return true;
     }else {
       console.log("Invalid Move!");
