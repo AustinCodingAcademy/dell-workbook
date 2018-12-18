@@ -21,28 +21,32 @@ function printStacks() {
 
 function movePiece(startStack, endStack) {
   // Your code here
-  var item = stacks[startStack].pop();
+  let item = stacks[startStack].pop();
   stacks[endStack].push(item);
 }
 
 function isLegal(startStack, endStack) {
   // Your code here
-  var startIndex = stacks[startStack].length - 1;
-  var endIndex = stacks[endStack].length - 1;
+  let startIndex = stacks[startStack][stacks[startStack].length - 1];
+  let endIndex = stacks[endStack][stacks[endStack].length - 1];
 
-  if (endIndex < 1) {
-    return true;
-  } else if (startIndex < endIndex) {
-    return true;
-  } else {
-    console.log("Invalid Move! Try Again...");
+  if (endIndex < startIndex) {
     return false;
+
+  } else {
+    if (stacks[startStack].length >= 1) {
+      console.log("This is legal");
+      return true;
+    } else {
+      console.log("Invalid Move! Try Again...");
+      return false;
+    }
   }
 }
 
 function checkForWin() {
   // Your code here
-  if(stacks.b.length === 4) {
+  if(stacks.b.length === 4 || stacks.c.length === 4) {
     console.log("You Won! Congrats!");
     return true;
   }else {
