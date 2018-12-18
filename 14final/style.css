@@ -1,0 +1,62 @@
+/* .square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+} */
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+    color: blue;  
+}
+
+img {
+    max-height: 250px;
+    width: auto;
+    border-radius: 50%;
+  }
+
+button {
+    margin-top:15%;
+    margin-bottom:0%;
+    margin: 24px 2px;
+    border: none;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#navbuttons {
+text-align: center;
+padding-top: 120px
+}
+
+.image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    /* Padding: 5px; */
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
