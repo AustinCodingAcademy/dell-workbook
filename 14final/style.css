@@ -1,0 +1,16 @@
+#crown {
+  /* height: 200px;
+  width: 200px; */
+  border: 5px solid blueviolet;
+  background-color: red;
+}
+
+img {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: 100;
+  animation-timing-function: linear;
+}
+
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg)}}; 
