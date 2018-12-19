@@ -15,3 +15,39 @@
 #announce-winner {
   font-size: 50px;
 }
+
+
+/* #board {
+  display: flex;
+}
+.column {
+  width: 50px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-right: 1px solid #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.disc {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.row {
+  clear: both;
+} */
