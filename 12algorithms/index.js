@@ -20,23 +20,25 @@ function swap(firstIdx, secondIdx, arr) {
         arr[secondIdx] = temp;
 }
 let counter = 0;
+
 function bubbleSort(arr) {
   
-  for (let j=0; j<arr.length -1; j++) {}
+  for (let j=0; j<arr.length -1; j++) {
     let sorted = true;
     for (i=0; i< arr.length -1; i++){
       counter ++;
       if (arr[i] > arr[i + 1]) {
         sorted = false;
         swap(i, j +1, arr);
-        }
-      }
-      if (sorted) {
-        return;
       }
     }
-    console.log(`I touched ${counter} things!`);
-    return arr;
+    if (sorted) {
+      return;
+    }
+  }
+  console.log(`I touched ${counter} things!`);
+  return arr;
+}
 
 // const arr = [4, 5, 7, 8, 9, 0, 9, 1];
 function mergeSort(arr) {
