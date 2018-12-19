@@ -1,15 +1,20 @@
 .square {
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    animation-name: spin;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+  /* background-image: url("./wheel_share.jpg"); */
+}
+
+img {
+  max-width: 300px;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
