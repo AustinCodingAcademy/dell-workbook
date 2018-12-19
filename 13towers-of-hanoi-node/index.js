@@ -43,7 +43,7 @@ function isLegal(arraya, arrayb) {
     return true;
   }
   // console.log("illegal, dest is smaller than source");
-  return;
+  return false;
 }
 
 function checkForWin() {
