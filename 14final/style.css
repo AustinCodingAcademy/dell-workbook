@@ -1,23 +1,66 @@
 .square{
   height: 200px;
   max-width: 200px;
-  animation-name: spin;
-  animation-duration: 0ms;
-  animation-timing-function: linear;
+  animation-name: shake;
+  animation-duration: 0s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin: 2em;
+}
+
+#dryUpSpeed{
+  color: red;
+  font-size: 20px;
+  margin-left: 54px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 24px;
+  width: 162px;
+}
+
+#currentTotal {
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 27px;
+  margin-left: 53px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 img{
   height: 200px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+body{
+  background-image: url('grass.jpg');
+  background-size: cover;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-10deg); }
+  20% { transform: translate(-3px, 0px) rotate(10deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(10deg); }
+  50% { transform: translate(-1px, 2px) rotate(-10deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-10deg); }
+  80% { transform: translate(-1px, -1px) rotate(10deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-10deg); }
+}
+
+#buttons{
+  margin-left: 54px;
+  /* margin-top: 20px; */
 }
 
 button{
-  margin: 2em 2px;
+  margin-top:10px;
 }

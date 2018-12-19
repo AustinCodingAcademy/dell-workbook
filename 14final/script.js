@@ -1,28 +1,51 @@
 'use strict';
 
+//  import { compileFunction } from "vm";
+
 document.addEventListener('DOMContentLoaded', () => {
-  let speedUpRate = 1;
-  let speedUpperRate = 25;
+  var data = {
+    speedUpRate: 1,
+    speedUpperRate: 25,
+    originalSpeed: 1000
+  };
 
-  document.querySelector('#fast').addEventListener('click', () => {
-    speedUp(speedUpRate);
+  setInterval(goGo, 1000);
+
+  document.querySelector('#dog').addEventListener('click', () => {
+    speedUp(data.speedUpRate);
+    // console.log(getComputedStyle(document.querySelector('.square')).animationDuration);
   });
 
-  document.querySelector('#faster').addEventListener('click', () => {
-    speedUp(speedUpperRate);
+  document.querySelector('#shake').addEventListener('click', () => {
+    speedUp(data.speedUpRate);
   });
 
-  function speedUp(speed)
-  {
+  document.querySelector('#shakeMore').addEventListener('click', () => {
+    speedUp(data.speedUpperRate);
+  });
+
+  function goGo() {
+    speedUp(1);
+  }
+
+  function speedUp(speed) {
     const currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
     if (currentSpeed === '0s') {
-      document.querySelector('.square').style.animationDuration = "100000s";
+      document.querySelector('.square').style.animationDuration = `${data.originalSpeed}s`;
     } else if (Number(currentSpeed.split('s')[0]) - speed <= 0) {
-      speedUpRate /= 10;
-      speedUpperRate /= 10;
-      document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) - speed/10}s`;
-    } else{
+      data.speedUpRate /= 10;
+      data.speedUpperRate /= 10;
+      document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) - speed / 10}s`;
+    } else {
       document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) - speed}s`;
     }
+    updateReport();
+  }
+
+  function updateReport() {
+    let currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
+    // console.log(1/getComputedStyle(document.querySelector('.square')).animationDuration);
+    document.querySelector('#currentTotal').innerText = Math.floor(data.originalSpeed - currentSpeed.split('s')[0]);
+    document.querySelector('#dus').innerText = (1 / Number(currentSpeed.split('s')[0])).toFixed(3);
   }
 });
