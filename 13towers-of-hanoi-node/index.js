@@ -34,11 +34,7 @@ function isLegal(startStack, endStack) {
 }
 
 function checkForWin() {
-  if (stacks.a == [] && stacks.b == [4, 3, 2, 1] && stacks.c == []) {
-    return true;
-  } else if (stacks.a == [1] && stacks.b == [4, 3, 2, 1] && stacks.c == []) {
-    return false;
-  }
+  return stacks.b.length === 4;
   // Your code here
 }
 

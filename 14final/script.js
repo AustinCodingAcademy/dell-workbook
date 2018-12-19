@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .animationDuration;
     document.querySelector(".square").style.animationDuration = `${Number(
       currentSpeed.split("s")[0]
-    ) + 10}s`;
+    ) + 5}s`;
   });
 });
