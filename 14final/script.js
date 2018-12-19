@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  document.querySelector('#ice cream').addEventListener('click', () => {
+  document.querySelector('#ice-cream').addEventListener('click', () => {
     if (count >= 1000) {
       count -= 1000;
       document.querySelector(".counter").innerHTML = count;

@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.MasterGrid{
+.master-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -25,43 +25,43 @@ article {
   min-width: 250px;
 }
 
-.containerOne {
+.container-one {
   grid-area: one;
 }
 
-.containerTwo {
+.container-two {
   grid-area: two;
 }
 
-.containerThree {
+.container-three {
   grid-area: three;
 }
 
-.containerFour {
+.container-four {
   grid-area: four;
 }
 
-.containerFive {
+.container-five {
   grid-area: five;
 }
 
-.containerSix {
+.container-six {
   grid-area: six;
 }
 
-.containerSeven {
+.container-seven {
   grid-area: seven;
 }
 
-.containerEight {
+.container-eight {
   grid-area: eight;
 }
 
-.containerNine {
+.container-nine {
   grid-area: nine;
 }
 
-.containerTen {
+.container-ten {
   grid-area: ten;
 }
 
