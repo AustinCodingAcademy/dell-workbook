@@ -25,8 +25,9 @@ function division() {
 }
 
 function flip() {
-  document.querySelector("#results").value += "*(-1)";
+  document.querySelector("#results").value = document.querySelector("#results").value * -1;
 }
+
 
 function equals() {
   document.querySelector("#results").value = eval(
