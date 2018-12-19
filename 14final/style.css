@@ -118,23 +118,8 @@ button {
       "clickcoin  actions  jewels"
       "clickcoin  actions  jewels";
   }
-  }
+}
 
-   #desktop {
-    display: none;
-  }
-  #phone {
-    display: none;
-  }
-  #tv {
-    display: none;
-  }
-  #tablet {
-    display: inherit;
-  }
-  #phone-landscape {
-    display: none;
-  }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
@@ -149,21 +134,6 @@ button {
       "clickcoin  actions  jewels  jewels";
   }
 
-  #desktop {
-    display: inherit;
-  }
-  #phone {
-    display: none;
-  }
-  #tv {
-    display: none;
-  }
-  #tablet {
-    display: none;
-  }
-  #phone-landscape {
-    display: none;
-  }
 }
 
 /* Extra Large and up (Wide Screen Desktops) */
@@ -180,22 +150,4 @@ button {
   }
 
 
-
-  #desktop {
-    display: none;
-  }
-
-  #phone {
-    display: none;
-  }
-  #tv {
-    display: inherit;
-  }
-
-  #tablet {
-    display: none;
-  }
-  #phone-landscape {
-    display: none;
-  }
 }
