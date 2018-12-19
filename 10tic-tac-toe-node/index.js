@@ -36,7 +36,7 @@ function horizontalWin() {
       board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
       board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
       board[combo[2][0]][board[combo[2][1]]] === playerTurn 
-      )
+    )
   })
   
   // //Other way to check 
@@ -62,7 +62,7 @@ function verticalWin() {
       board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
       board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
       board[combo[2][0]][board[combo[2][1]]] === playerTurn 
-      )
+    )
   })
   // Your code here
 }
@@ -79,7 +79,7 @@ function diagonalWin() {
       board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
       board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
       board[combo[2][0]][board[combo[2][1]]] === playerTurn 
-      )
+    )
   })
   // Your code here
 }

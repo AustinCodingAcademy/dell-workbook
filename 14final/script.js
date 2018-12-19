@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () =>  {
   // })
 
 
-    document.querySelector('#Fast').addEventListener('click', () => {
+  document.querySelector('#Fast').addEventListener('click', () => {
     const currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
     document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) + (-.25)}s`
   })
