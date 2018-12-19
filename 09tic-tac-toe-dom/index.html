@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div id="board">
     <div data-cell="0"></div>
@@ -19,8 +21,11 @@
     <div data-cell="7"></div>
     <div data-cell="8"></div>
   </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+  <div id="announce-winner">
+    <h3></h3>
+  </div>
+  <button id="clear" onclick="clearBoard()">Clear Board</button>
   <script src="./script.js"></script>
 </body>
+
 </html>
