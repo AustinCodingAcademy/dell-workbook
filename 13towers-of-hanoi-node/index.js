@@ -95,7 +95,7 @@ if (typeof describe === "function") {
       stacks = { a: [], b: [4, 3, 2, 1], c: [] };
       assert.equal(checkForWin(), true);
       stacks = { a: [1], b: [4, 3, 2], c: [] };
-      assert.equal(checkForWin(), false);node
+      assert.equal(checkForWin(), false);
     });
   });
 } else {
