@@ -4,18 +4,19 @@
   padding: 25px;
   height: 500px;
 }
-
+/* style for the entire container */
 img#square {
   height: 300px;
   width: 300px;
 }
-
+/* style for the image */
 #square {
   animation-name: spin;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+/* style for the initial movement of the image */
 
 button {
   height: 100px;
@@ -27,8 +28,11 @@ button {
   color: white;
   font-size: 30px;
 }
+/* style for the buttons on the game */
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
+/* style for the way the image spins */

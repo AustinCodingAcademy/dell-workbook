@@ -1,43 +1,30 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // let spinSpeed = document.querySelector('#square').style.animationDuration;
-  // let spinFast = `${Number(spinSpeed.split('s')[0]) - 10}`;
+  //allows all of the html to load before starting the js
 
-  // document.querySelector('.button').addEventListener('click', () => {
-  //   const currentSpeed = document.querySelector('#square').style
-  //     .animationDuration;
-  //   document.querySelector('#spinSpeed').innerText = animationDuration;
-
-  // function spinnerGame () {
-  //   var spin = '100s';
-  //   var spinFast =
-  // }
   document.querySelector('#reset').addEventListener('click', () => {
+    //tells the game to listen and do the following when the reset button is clicked
     const currentSpeed = document.querySelector('#square').style
-      .animationDuration;
-    document.querySelector('#square').style.animationDuration = '1s';
+      .animationDuration; //sets the variable to the speed of the spinning
+    document.querySelector('#square').style.animationDuration = '1s'; //sets the spinning speed back to 1s to complete a full rotation
   });
 
-  // function slowHalf() {
-  //   document.querySelector('#square').style.animationDuration *= .5;
-
-  // }
   document.querySelector('#slow').addEventListener('click', () => {
+    //tells the game to listen and do the following when the slow button is clicked
     const currentSpeed = document.querySelector('#square').style
-      .animationDuration;
+      .animationDuration; //sets the variable to the speed of the spinning
     document.querySelector('#square').style.animationDuration = `${Number(
       currentSpeed.split('s')[0]
-    ) + 5}s`;
+    ) + 5}s`; //increases the speed if the spinning by 5s with each click
   });
 
   document.querySelector('#slower').addEventListener('click', () => {
+    //tells the game to listen and do the following when the slow button is clicked
     const currentSpeed = document.querySelector('#square').style
-      .animationDuration;
+      .animationDuration; //sets the variable to the speed of the spinning
     document.querySelector('#square').style.animationDuration = `${Number(
       currentSpeed.split('s')[0]
-    ) + 15}s`;
+    ) + 15}s`; //increases the speed if the spinning by 15s with each click
   });
 });
-
-// });
