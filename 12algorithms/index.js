@@ -16,8 +16,8 @@ for (let i = 0; i < 1000; i++) {
 
 function swap(firstIdx, secondIdx, arr) {
   let temp = arr[firstIdx]
-        arr[firstIdx] = arr[secondIdx];
-        arr[secondIdx] = temp;
+  arr[firstIdx] = arr[secondIdx];
+  arr[secondIdx] = temp;
 }
 let counter = 0;
 
