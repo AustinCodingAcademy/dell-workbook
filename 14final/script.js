@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("buy_jewels").onclick = function(e) {
+  document.getElementById("buy-jewels").onclick = function(e) {
     if (taxes >= jewelCost) {
       console.log("taxes " + taxes);
       console.log("jewelCost " + ruled);
@@ -42,7 +42,7 @@ function updateJewels() {
   document.querySelector("#crown2").style["display"] = "inline";
   document.getElementById("taxescollected").placeholder = "$ " + taxes;
   document.getElementById("kingdomsruled").placeholder = ruled;
-  document.getElementById("jewel_cost").placeholder = "$ " + jewelCost;
+  document.getElementById("jewel-cost").placeholder = "$ " + jewelCost;
 }
 
 function updateWarCost() {
@@ -53,5 +53,5 @@ function updateWarCost() {
   console.log("ruled " + ruled);
   document.getElementById("taxescollected").placeholder = "$ " + taxes;
   document.getElementById("kingdomsruled").placeholder = ruled;
-  document.getElementById("war_cost").placeholder = "$ " + warCost;
+  document.getElementById("war-cost").placeholder = "$ " + warCost;
 }
