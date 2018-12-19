@@ -2,10 +2,12 @@ body {
   background-image: url("images/background.png");
   background-size: cover;
   color: white;
+  padding: 200px;
 }
-img {
+.cookie {
   margin: 10px;
-  animation: rotation 10s infinite linear;
+  animation: rotation infinite linear;
+  animation-duration: 25s;
   max-width: 200px;
 }
 @keyframes rotation {
@@ -17,12 +19,13 @@ img {
   }
 }
 h1 {
-  color: white;
+  color: whitesmoke;
   font-family: calibri;
 }
 button{
   border-radius: 40px;
   border: 3px solid white;
+  color: white;
   font-size: 14px;
   min-width: 150px;
   max-width: 250px;
@@ -32,9 +35,9 @@ button{
   padding: 1em 2em;
 }
 button:hover{
-  background-color: white;
+  background-color: rgb(192, 228, 175);
 }
 button:active{
-  background-color: white;
+  background-color: rgb(192, 228, 175);
 }
 
