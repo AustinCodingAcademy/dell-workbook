@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="script" href="./script.js">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Crown Spin</h1>
-  <img src="./images/crown1.jpg" id="crown"/>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crown Jewels</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <h1 id="title">Crown Jewels</h1>
+        <h2 id="howto1">Click the coin to collect taxes.</h2>
+        <h2 id="howto2">Collect taxes to buy crown jewels.</h2>
+        <h2 id="howto3">
+          Conquer neighboring kingdoms to collect more taxes with each click.
+        </h2>
+      </header>
+
+      <div class="container clickcoin">
+        <img
+          src="images/poundsterling.jpg"
+          id="coin"
+          alt="Click coin to collect taxes"
+        />
+      </div>
+
+      <div class="container actions">
+        <h3 class="container row">
+          Taxes Collected:
+          <input
+            type="text"
+            placeholder="Taxes Collected"
+            id="taxescollected"
+          />
+        </h3>
+        <h3 class="container row">
+          Kingdoms Ruled:
+          <input type="text" placeholder="1" id="kingdomsruled" />
+        </h3>
+        <!-- <label for="Taxes Collected"></label> -->
+
+        <h3 class="container row">
+          <button id="war">Conquer Kingdom</button>
+          <input type="text" placeholder="$ 50" id="war_cost" />
+        </h3>
+        <h3 class="container row">
+          <button id="buy_jewels">Buy Crown Jewels</button>
+          <input type="text" placeholder="$ 150" id="jewel_cost" />
+        </h3>
+      </div>
+      <div class="container jewels">
+        <img src="./images/crown1.jpg" id="crown1" />
+        <img src="./images/crown2.jpg" id="crown2" />
+      </div>
+    </div>
+  </body>
 </html>

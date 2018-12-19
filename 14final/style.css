@@ -1,16 +1,103 @@
-#crown {
-  /* height: 200px;
-  width: 200px; */
-  border: 5px solid blueviolet;
-  background-color: red;
+* {
+  box-sizing: border-box;
+  background-color: bisque;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 20px;
+}
+
+.row .container {
+  display: flex;
+  padding: 20px;
+  min-width: 300px;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-size: 40px;
+  text-shadow: 1px 1px grey;
+  text-align: center;
+  padding: 8px;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "clickcoin  actions  jewels";
 }
 
 img {
+  height: 200px;
+  width: 200px;
+  border: 5px solid blueviolet;
+  margin: 20px;
+}
+
+input {
+  border-style: none;
+  text-align: right;
+  width: 150px;
+}
+
+button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  width: 150px;
+  height: 20px;
+  border: 1px solid gray;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.clickcoin {
+  padding: 5px;
+}
+
+#coin {
   animation-name: spin;
   animation-duration: 3s;
   animation-iteration-count: 100;
   animation-timing-function: linear;
+  border-radius: 50%;
 }
 
+.jewels {
+  grid-area: jewels;
+}
 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg)}}; 
+.actions {
+  grid-area: actions;
+}
+
+.clickcoin {
+  grid-area: clickcoin;
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
