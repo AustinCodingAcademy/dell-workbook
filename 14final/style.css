@@ -1,0 +1,34 @@
+.game {
+  margin: auto;
+  width: 30%;
+  padding: 25px;
+  height: 500px;
+}
+
+img#square {
+  height: 300px;
+  width: 300px;
+}
+
+#square {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+button {
+  height: 100px;
+  width: 350px;
+  border-radius: 15px;
+  border: 5px;
+  background-color: black;
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
