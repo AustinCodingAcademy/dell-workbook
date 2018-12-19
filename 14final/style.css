@@ -135,7 +135,6 @@ button {
   #phone-landscape {
     display: none;
   }
-}
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
