@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+header {
+  background-color: #193a55;
+  position: fixed;
+  width: 100%;
+}
+
+header .logo {
+  float: left;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+header ul {
+  float: right;
+  margin-top: 20px;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: #03b5aa;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+main {
+  background-image: url("./img/airline.jpg");
+  background-size: cover;
+  height: 94vh;
+  padding: 100px;
+}
+
+section {
+  position: absolute;
+  left: 60px;
+  top: 160px;
+  border-radius: 2px;
+}
+
+section nav a {
+  float: left;
+  width: 33.3%;
+  background-color: teal;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  border-right: 1px solid white;
+}
+
+section nav a:hover {
+  background-color: blue;
+}
+
+section nav li:last-child a {
+  border-right: none;
+  border-top-right-radius: 7px;
+}
+
+section nav li:first-child a {
+  border-top-left-radius: 7px;
+}
+
+section form {
+  padding: 10px;
+  background-color: #193a55;
+  color: white;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.row {
+  padding: 10px;
+  width: 100%;
+}
+
+section form .row > *:last-child {
+  float: right;
+}
+
+input {
+  background-color: #193a55;
+  border-color: white;
+  border-style: solid;
+  padding: 10px;
+  color: white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+button {
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+select {
+  background-color: #193a55;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+input[type="radio"] {
+  align-content: center;
+}
+
+input[type="radio"] > *:last-child {
+  float: right;
+}
+
+input {
+  margin: 10px;
+}

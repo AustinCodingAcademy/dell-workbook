@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Airline
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="./img/logo.png" alt="Logo.">
+    </div>
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-plane" aria-hidden="true"></i> Travel Deals</a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-clock" aria-hidden="true"></i> Flight Schedule</a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-sign-in" aria-hidden="true"></i> Register / Login</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+
+    <section>
+      <nav>
+        <!-- <button></button>
+            <button></button>
+            <button></button> -->
+        <ul class="clearfix">
+          <li>
+            <a href="#">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-bed" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-car" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form>
+
+        <div class="row">
+          <input type="text" placeholder="Depart">
+          <input type="text" placeholder="Arrive">
+        </div>
+        <div class="row">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="row">
+          <label for="passengers">Passengers</label>
+          <select id="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <input type="radio" name="flight-type" checked="checked"> One-way
+          <input type="radio" name="flight-type"> Round Trip
+        </div>
+        <div class="clearfix">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+</body>
+
+</html>
