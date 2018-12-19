@@ -1,5 +1,7 @@
 "use strict";
 
+// this is the original code:
+
 // document.addEventListener("DOMContentLoaded", event => {
 //   var turn = "x";
 //   document.querySelectorAll("[data-cell]").forEach(cell => {
