@@ -8,19 +8,73 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let arr = [];
+let arr = [50,2,324,123,3,64,93];
 
-for (let i = 0; i < 1000; i++) {
-  arr.push(getRandomInt(0, 1000));
+// for (let i = 0; i < 1000; i++) {
+//   arr.push(getRandomInt(0, 1000));
+// }
+bubbleSort(arr);
+mergeSort(arr);
+function swap(firstIdx, secondIdx, arr) {
+  let temp = arr[firstIdx];
+  arr[firstIdx] = arr[secondIdx];
+  arr[secondIdx] = temp;
+
 }
 
 function bubbleSort(arr) {
+  let sorted = true;
+  for (let j=0; j<arr.length; j++){
+      for (let i=0; i< arr.length-1; i++){
+          console.log(sorted)
+          if (arr[i] > arr[i + 1]) {
+              sorted = false;
+              swap(i, i+1,arr)
+              console.log(arr);
+          } else {
+              sorted = true;
+          }
+      }
+  }
+  console.log(arr);
+  return(arr);
   // Your code here
 }
 
 function mergeSort(arr) {
   // Your code here
+
+  for (let i =0; i<arr.length/2; i++){
+    if (arr.length <2) {
+      return arr;
+    }
+    const split = Math.floor(arr.length/2);
+    const firstArray = arr.slice(0,split);
+    const secondArray = arr.slice(split);
+    console.log("firstArray: ", firstArray)
+    console.log("secondtArray: ",secondArray);
+    const arr1 = mergeSort(firstArray);
+    const arr2 = mergeSort(secondArray);
+    
+    const sortedArray=[];
+    while (arr1.length && arr2.length) {
+      if (arr1[0] < arr2[0]) {
+        sortedArray.push(arr1.shift())
+      } else {
+        sortedArray.push(arr2.shift())
+      }
+    }
+    if (arr1.length) {
+      sortedArray.push.apply(arr1);
+    } else {
+      sortedArray.push.apply(arr2)
+    }
+
+    //.pop ===> shift()
+    //.push ===> unshift()
+  }
 }
+
 
 function binarySearch(arr, item) {
   // Your code here
