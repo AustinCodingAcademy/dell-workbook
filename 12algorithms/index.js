@@ -14,13 +14,58 @@ for (let i = 0; i < 1000; i++) {
   arr.push(getRandomInt(0, 1000));
 }
 
+function swap(i,j,array) {
+  let temp = array[i];
+  array[i] = array[j];
+  array[j] = array[i];
+}
+
 function bubbleSort(arr) {
-  // Your code here
+  for (let i = 0; i<arr.length-1; i++){
+    let sorted = true;
+    for (let j=0; j<arr.length-1;j++){
+      if (arr[j] > arr[j+1]){
+        sorted = false;
+        swap(j,j+1,arr);
+      }
+    }
+    if (sorted) {
+      break;
+    }
+  }
 }
 
 function mergeSort(arr) {
-  // Your code here
+  if (arr.length<2){
+    return arr;
+  }
+  const midIdx = Math.floor(arr.length/2);
+  const arr1=mergeSort(arr.slice(0,midIdx));
+  const arr2=mergeSort(arr.slice(midIdx));
+
+  const sortedArr = [];
+  while (arr.length && arr2.length) {
+    if (arr1[0] < arr2[0]) {
+      sortedArr.push(arr1.shift());
+    } else {
+      sortedArr.push(arr2.shfit());
+    }
+  }
+
+  if (arr1.length) {
+    Array.push.apply(sortedArr,arr1);
+    //or you can use this
+    //sortedArr = sortArr.concat(arr1);
+  } else {
+    Array.push.apply(sortedArr,arr2);
+  }
+  return sortedArr;
+
 }
+
+
+// .pop() ==> .shift()
+// .push() ==> .unshift()
 
 function binarySearch(arr, item) {
   // Your code here

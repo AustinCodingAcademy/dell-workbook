@@ -26,35 +26,66 @@ function printBoard() {
 function horizontalWin() {
   const horizonmoves = [
     [[0,0],[0,1],[0,2]],
-    [[1,0],[1,1],[2,2]],
+    [[1,0],[1,1],[1,2]],
     [[2,0],[2,1],[2,2]]
   ]
 
-  const didPlayerWin = horizonmoves.some((combo) => {
-    return (
-    combo[0] === playerTurn && 
-    combo[1] === playerTurn && 
-    combo[2] === playerTurn );
-  }) 
-
-  if (didPlayerWin) {
-    console.log('Win');
-    return true;
-  } return false; 
-
-
-
+  let horizontalWin = false;
+  horizonmoves.forEach(combo => {
+    horizontalWin = horizontalWin || (
+      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+      )
+  })
+  
+  // //Other way to check 
+  // return horizonmoves.some(combo => {
+  //   return (
+    // board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+    // board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+    // board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+    // )
+  // }) 
 }
 
 function verticalWin() {
+  const verticalmoves = [
+    [[0,0],[1,0],[2,0]],
+    [[0,1],[1,1],[2,1]],
+    [[0,2],[1,2],[2,2]]
+  ]
+
+  let verticalWin = false;
+  verticalmoves.forEach(combo => {
+    verticalWin = verticalWin || (
+      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+      )
+  })
   // Your code here
 }
 
 function diagonalWin() {
+  const diagonallmoves = [
+    [[0,0],[1,1],[2,2]],
+    [[2,0],[1,1],[0,2]]
+  ]
+
+  let diagonalWin = false;
+  diagonallmoves.forEach(combo => {
+    diagonalWin = diagonalWin || (
+      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+      )
+  })
   // Your code here
 }
 
 function checkForWin() {
+  return horizontalWin() || verticalWin() || diagonalWin();
   // Your code here
 }
 
