@@ -2,10 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", event => {
 
-  // document.querySelectorAll('.button').forEach((button) => {
-  //   button.addEventListener('click', function(event) {
-
-  // document.querySelector("#fun").addEventListener("click", event => {slowDown());
+// Listen for a button being clicke on...either Fun, Dizzy or Puke.
   document.querySelectorAll('.button').forEach((button) => {
     button.addEventListener("click", event => {
       let text = event.target.innerHTML;
@@ -20,6 +17,8 @@ document.addEventListener("DOMContentLoaded", event => {
     })
   })
 
+// current speed is captured and the speed is slowed down by 1
+// if game has reached zero and is stopped, this function will restart the game
   function slowDown() {
     const currentSpeed = getComputedStyle(document.querySelector(".image")).animationDuration;
     console.log("current speed" + currentSpeed);
@@ -28,6 +27,8 @@ document.addEventListener("DOMContentLoaded", event => {
     document.querySelector("#make-comment").innerHTML = "Slow is good!";
   }
 
+  // current speed is captured and speed is increased by 1
+  // if zero is reached, game stops
   function speedUp() {
     const currentSpeed = getComputedStyle(document.querySelector(".image")).animationDuration;
     console.log("current speed" + currentSpeed);
@@ -36,6 +37,8 @@ document.addEventListener("DOMContentLoaded", event => {
     document.querySelector("#make-comment").innerHTML = "Getting Dizzy!";
   }
 
+  // current speed is captured and speed is increased by 2
+  // if zero is reached, game stops
   function speedBarf() {
     const currentSpeed = getComputedStyle(document.querySelector(".image")).animationDuration;
     console.log("current speed" + currentSpeed);
