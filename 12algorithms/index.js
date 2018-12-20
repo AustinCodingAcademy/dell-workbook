@@ -17,8 +17,8 @@ for (let i = 0; i < 10; i++) {
 // arr = [2, 1, 3, 7, 8, 9];
 function swap(firstIdx, secondIdx, arr) {
   let temp = arr[firstIdx];
-  arr[firstIdx] = arr[secondIdx];
-  arr[secondIdx] = temp;
+arr[firstIdx] = arr[secondIdx];
+arr[secondIdx] = temp;
 }
 
 // Bubble sort is not a good way to sort because it
