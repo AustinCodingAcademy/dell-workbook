@@ -1,1 +1,143 @@
+div[class^="card"] {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 250px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 2px 2px 2px 1px gray;
+}
 
+.image{
+  display: flex;
+  flex: 1;
+  height: 250px;
+  justify-content: center;
+}
+
+img{
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  min-width: 300px;
+  flex-basis: 300px;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
+}
+ 
+.card-1{
+  grid-area: card-1;
+}
+
+.card-2{
+  grid-area: card-2;
+}
+
+.card-3{
+  grid-area: card-3;
+}
+
+.card-4{
+  grid-area: card-4;
+}
+
+.card-5{
+  grid-area: card-5;
+}
+
+.card-6{
+  grid-area: card-6;
+}
+
+.card-7{
+  grid-area: card-7;
+}
+
+.card-8{
+  grid-area: card-8;
+}
+
+.card-9{
+  grid-area: card-9;
+}
+
+.card-10{
+  grid-area: card-10;
+}
+
+div-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "card-1"
+    "card-2"
+    "card-3"
+    "card-4"
+    "card-5"
+    "card-6"
+    "card-7"
+    "card-8"
+    "card-9"
+    "card-10"
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .div-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "card-1 card-1"
+      "card-1 card-1"
+      "card-2 card-3"
+      "card-2 card-3"
+      "card-4 card-4"
+      "card-5 card-5"
+      "card-5 card-5"
+      "card-6 card-7"
+      "card-6 card-7"
+      "card-8 card-8"
+      "card-9 card-10"
+      "card-9 card-10"
+  }
+
+  #card-1, #card-5{
+    min-height: 500px;
+  }
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .div-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "card-1 card-1 card-2 card-2"
+      "card-3 card-3 card-4 card-5"
+      "card-3 card-3 card-6 card-6"
+      "card-7 card-8 card-9 card-10"
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}

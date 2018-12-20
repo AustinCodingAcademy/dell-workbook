@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i><span class="preselected-home"> Home</span></a></li>
+      <li><a href="#"><i class="fa fa-plane"></i><span> Travel Deals</span></a></li>
+      <li><a href="#"><i class="fa fa-clock"></i><span> Flight Schedule</span></a></li>
+      <li><a href="#"><i class="fas fa-sign-in-alt"></i><span> Register/Login</span></a></li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <nav>
+        <ul class="clearfix">
+          <li><a href="#" class="preselected-plane"><i class="fas fa-plane"></i></a></li>
+          <li><a href="#"><i class="fas fa-bed"></i></a></li>
+          <li><a href="#"><i class="fas fa-car"></i></a></li>
+        </ul>
+      </nav>
+      <form>
+        <div class="row grid">
+          <input type="text" value="Depart">
+          <input type="text" value="Arrive">
+        </div>
+        <div class="row grid">
+          <input type="date">
+          <input type="date">
+        </div>
+        <div class="row grid">
+          <span>
+            <label for="passengers">Passengers</label>
+            <select name="" id="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </span>
+          <span class="form-radio">
+            <input type="radio" name="flight-type" value="Return" checked="checked"><span>Return</span>
+            <input type="radio" name="flight-type" value="One-Way"><span>One-Way</span>
+          </span>
+        </div>
+        <div class="row form-button">
+          <button>Search Flight</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>

@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 250px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 2px 2px 2px 1px gray;
+}
+
+.image{
+  display: flex;
+  flex: 1;
+  height: 250px;
+  justify-content: center;
+}
+
+img{
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  min-width: 300px;
+  flex-basis: 300px;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-more {
+  color: blue;
+  text-decoration: underline;
+}

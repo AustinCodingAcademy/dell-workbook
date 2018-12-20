@@ -7,11 +7,13 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-let stacks = {
+var stacks = {
   a: [4, 3, 2, 1],
   b: [],
   c: []
 };
+
+var originalStackInfo = {};
 
 function printStacks() {
   console.log("a: " + stacks.a);
@@ -19,24 +21,52 @@ function printStacks() {
   console.log("c: " + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
-
+function movePiece(startStack, endStack) {
+  stacks[endStack].push(stacks[startStack].pop());
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  var startStackLength = stacks[startStack].length;
+  var endStackLength = stacks[endStack].length;
+  if (stacks[startStack][startStackLength - 1] > stacks[endStack][endStackLength - 1]) {
+    return false;
+  }
 
+  return true;
 }
 
 function checkForWin() {
-  // Your code here
-
+  if ((stacks.a.length === originalStackInfo["startStackNumber"]
+    || stacks.b.length === originalStackInfo["startStackNumber"]
+    || stacks.c.length === originalStackInfo["startStackNumber"])
+    && stacks[originalStackInfo["startStackLine"]].length === 0) {
+    return true;
+  }
+  return false;
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
+  if (stacks[startStack] === undefined || stacks[endStack] === undefined) {
+    console.log("***Please select stacks from 'a', 'b', or 'c'***");
+    return;
+  }
 
+  if(startStack === endStack)
+    return;
+
+  if (isLegal(startStack, endStack)) {
+    if (Object.keys(originalStackInfo).length === 0) {
+      originalStackInfo["startStackLine"] = startStack;
+      originalStackInfo["startStackNumber"] = stacks[startStack].length;
+    }
+    movePiece(startStack, endStack);
+    if (checkForWin()) {
+      console.log("Congrats, you won the game");
+      originalStackInfo = {};
+    }
+  } else {
+    console.log("***This is an illegal move***");
+  }
 }
 
 function getPrompt() {
