@@ -19,8 +19,8 @@ h2 {
 }
 
 img {
-  max-height: 250px;
-  width: auto;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 

@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", event => {
     })
   })
 
-// current speed is captured and the speed is slowed down by 1
-// if game has reached zero and is stopped, this function will restart the game
+  // current speed is captured and the speed is slowed down by 1
+  // if game has reached zero and is stopped, this function will restart the game
   function slowDown() {
     const currentSpeed = getComputedStyle(document.querySelector(".image")).animationDuration;
     console.log("current speed" + currentSpeed);
