@@ -4,7 +4,7 @@ let taxes = 0;
 let ruled = 1;
 let jewelsOwned = 1;
 let warCost = 50 * ruled;
-let jewelCost = 15;
+let jewelCost = 150;
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function updateJewels() {
   taxes = taxes - jewelCost;
-  jewelCost = ruled * jewelsOwned * 10;
+  jewelCost = ruled * jewelsOwned * 150;
   jewelsOwned = jewelsOwned + 1;
 
   displayCrowns ();
