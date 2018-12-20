@@ -1,0 +1,89 @@
+#pup {
+  display: flex;
+  align-content: center;
+  grid-area: main;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;
+  padding-left: 50px;
+  padding-top: 50px;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* background-color:blue; */
+  /* animation: spin 20s linear infinite; */
+  /* animation-name: spin; */
+  /* animation-duration: 1s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: linear; */
+  /* animation-duration: '100s'; */
+}
+
+body{
+  font-family:sans-serif;
+}
+
+img {
+  transition: all 3s;
+  transition-timing-function: linear;
+}
+aside {
+  grid-area: aside;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "main aside"
+  "info info"
+}
+header {
+  grid-area: header;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#currentTotal {
+  width: 150px;
+  height: 50px;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 48px;
+  background-color: #eb94d0;
+  color: white;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+.image{
+  margin-bottom: 100px;
+}
+
+.button {
+  background: #eb94d0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: white;
+  font-size: 15spx;
+  padding: 19px;
+  margin:8px;
+  border: 1px;
+}
+#buttons {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
