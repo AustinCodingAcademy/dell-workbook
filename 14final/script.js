@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speedUp(data.speedUpRate);
   });
 
-  document.querySelector('#shakeMore').addEventListener('click', () => {
+  document.querySelector('#shake-more').addEventListener('click', () => {
     speedUp(data.speedUpperRate);
   });
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateReport() {
     let currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
     // console.log(1/getComputedStyle(document.querySelector('.square')).animationDuration);
-    document.querySelector('#currentTotal').innerText = Math.floor(data.originalSpeed - currentSpeed.split('s')[0]);
+    document.querySelector('#current-total').innerText = Math.floor(data.originalSpeed - currentSpeed.split('s')[0]);
     document.querySelector('#dus').innerText = (1 / Number(currentSpeed.split('s')[0])).toFixed(3);
   }
 });
