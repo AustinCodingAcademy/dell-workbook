@@ -8,7 +8,7 @@
   margin: 2em;
 }
 
-#dryUpSpeed{
+#dry-up-speed{
   color: red;
   font-size: 20px;
   margin-left: 54px;
@@ -17,16 +17,15 @@
   border-radius: 3px;
   border: 1px solid black;
   height: 24px;
-  width: 162px;
+  width: 200px;
 }
 
-#currentTotal {
-  width: 150px;
+#current-total {
+  width: 200px;
   height: 50px;
   border: 1px solid black;
   text-align: center;
   font-size: 48px;
-  margin-top: 27px;
   margin-left: 53px;
   background-color: white;
   border-radius: 3px;
@@ -34,7 +33,8 @@
 
 img{
   height: 200px;
-  /* border-radius: 50%; */
+  border-radius: 42%;
+  width: 240px;
 }
 
 body{
@@ -58,9 +58,9 @@ body{
 
 #buttons{
   margin-left: 54px;
-  /* margin-top: 20px; */
 }
 
 button{
   margin-top:10px;
+  width: 200px;
 }
