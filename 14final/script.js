@@ -5,7 +5,7 @@ var UID = {
   getNew: function(){
 	  this._current++;
 	  return this._current;
-	}
+  }
 };
 
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
