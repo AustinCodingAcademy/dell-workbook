@@ -31,33 +31,33 @@ function bubbleSort(arr) {
       break;
     }
   }
-  console.log(counter)
   return arr;
 }
 
-arr = [4,5,7,8,9,0,9,1];
+// arr = [4,5,7,8,9,0,9,1];
 function mergeSort(arr) {
-  if (arr.length < 2) return arr;
-
-  const midIdx = Math.floor(arr.length / 2); //4
+  if (arr.length < 2) {
+    return arr;
+  }
+  const midIdx = Math.floor(arr.length / 2); // 4
   const arr1 = mergeSort(arr.slice(0, midIdx));
   const arr2 = mergeSort(arr.slice(midIdx));
 
   const sortedArr = [];
-  while (arr1.length && arr2.length){
+  while (arr1.length && arr2.length) {
     if (arr1[0] < arr2[0]) {
-      sortedArr.push(arr1.shift());
+      sortedArr.push(arr1.shift())
     } else {
-      sortedArr.push(arr2.shift());
+      sortedArr.push(arr2.shift())
     }
   }
-  // console.log(arr1);
-  // console.log(arr2);
+
   if (arr1.length) {
-    sortedArr.push.apply(arr1);
+    Array.prototype.push.apply(sortedArr, arr1)
   } else {
-    sortedArr.push.apply(arr2);
+    Array.prototype.push.apply(sortedArr, arr2)
   }
+  console.log(sortedArr)
   return sortedArr;
 }
 
