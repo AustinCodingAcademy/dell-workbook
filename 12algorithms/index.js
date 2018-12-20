@@ -69,7 +69,7 @@ function mergeSort(arr) {
   } else {
     sortedArr = [...sortedArr, ...arr2];
   }
-    return sortedArr;
+  return sortedArr;
 
   // if (arr1.length) {
   //   Array.push.apply(sortedArr, arr1);
@@ -99,7 +99,7 @@ function binarySearch(alist, item) {
     currentIndex = Math.floor((minIndex + maxIndex) / 2);
     currentElement = alist[currentIndex];
     if (currentElement === item) {
-        return currentElement;
+      return currentElement;
     } else if (item > currentElement) {
       minIndex = currentIndex + 1;
     } else {
