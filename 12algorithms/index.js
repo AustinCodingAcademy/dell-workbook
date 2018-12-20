@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const assert = require('assert');
+const assert = require("assert");
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -25,9 +25,9 @@ function swap(firstIdx, secondIdx, arr) {
 // takes n2 number of times items need to be touched
 function bubbleSort(arr) {
   let counter = 0;
-  for (let i = 0; i < arr.length -1; i++) {
+  for (let i = 0; i < arr.length - 1; i++) {
     let sorted = true;
-    for (let j=0; j < arr.length -1; j++) {
+    for (let j = 0; j < arr.length - 1; j++) {
       counter++;
       console.log(arr[j], arr[j + 1]);
       if (arr[j] > arr[j + 1]) {
@@ -39,7 +39,7 @@ function bubbleSort(arr) {
       break;
     }
   }
-  console.log(`Took me ${counter} times!`)
+  console.log(`Took me ${counter} times!`);
   return arr;
 }
 // console.log(arr);
@@ -51,7 +51,7 @@ function mergeSort(arr) {
   if (arr.length < 2) {
     return arr;
   }
- 
+
   const midIndex = Math.floor(arr.length / 2); // 4
   const arr1 = mergeSort(arr.slice(0, midIndex));
   const arr2 = mergeSort(arr.slice(midIndex));
@@ -84,70 +84,61 @@ function mergeSort(arr) {
 // .pop() ==> .shift()
 // .push() ==> .unshift()
 
-// arr = [7, 5, 2, 8, 6, 0, 9, 1];
+arr = [1, 2, 3, 4];
+let item = 3;
 // Binary search splits array in to and compares to target item
-function binarySearch(alist, item) {
+function binarySearch(arr, item) {
   // Your code here
   let minIndex = 0;
-  let maxIndex = alist.length - 1;
-  let currentIndex;
-  let currentElement;
-  // let item;
+  let maxIndex = arr.length - 1;
+  let middle = Math.floor((minIndex + maxIndex) / 2);
 
-  while (minIndex <= maxIndex) {
-    // currentIndex = Math.ceil((minIndex + maxIndex) / 2);
-    currentIndex = Math.floor((minIndex + maxIndex) / 2);
-    currentElement = alist[currentIndex];
-    if (currentElement === item) {
-      return currentElement;
-    } else if (item > currentElement) {
-      minIndex = currentIndex + 1;
+  while (arr[middle] !== item && minIndex <= maxIndex) {
+    if (item < arr[middle]) {
+      maxIndex = middle - 1;
     } else {
-      maxIndex = currentIndex -1;
+      minIndex = middle + 1;
     }
-    // return -1;
+    middle = Math.floor((minIndex + maxIndex) / 2);
   }
+  return arr[middle] !== item ? false : middle;
 }
-// console.log(binarySearch(alist));
-// console.log(binarySearch(alist));
+console.log(arr);
+console.log(item);
 
 // Tests
 
-if (typeof describe === 'function') {
-
+if (typeof describe === "function") {
   function comparator(a, b) {
     if (Number(a) < Number(b)) return -1;
     if (Number(a) > Number(b)) return 1;
     return 0;
   }
 
-  describe('#bubbleSort()', () => {
-    it('should sort array', () => {
+  describe("#bubbleSort()", () => {
+    it("should sort array", () => {
       const sorted = bubbleSort(arr);
       assert.deepEqual(sorted, arr.sort(comparator));
     });
   });
 
-  describe('#mergeSort()', () => {
-    it('should sort array', () => {
+  describe("#mergeSort()", () => {
+    it("should sort array", () => {
       const sorted = mergeSort(arr);
       assert.deepEqual(sorted, arr.sort(comparator));
     });
   });
 
-  describe('#binarySearch()', () => {
-    it('should return the index of given item if sorted array contains it', () => {
+  describe("#binarySearch()", () => {
+    it("should return the index of given item if sorted array contains it", () => {
       const idx = binarySearch([1, 2, 3, 4], 3);
       assert.equal(idx, 2);
     });
-    it('should return false if item not in sorted array', () => {
+    it("should return false if item not in sorted array", () => {
       const idx = binarySearch([1, 2, 3, 4], 5);
       assert.equal(idx, false);
     });
   });
-
 } else {
-
-  console.log('Run the tests!')
-
+  console.log("Run the tests!");
 }
