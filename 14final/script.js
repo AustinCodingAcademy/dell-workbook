@@ -3,8 +3,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   var data = {
     regularSpeed: 1,
-    speedUpRate: 10,
-    speedUpperRate: 50,
+    speedUpRate: 2,
+    speedUpperRate: 10,
     originalSpeed: 1000,
     currentTotal: 0,
     rate: 10
