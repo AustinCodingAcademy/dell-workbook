@@ -7,7 +7,7 @@ let warCost = 50; //holds cost to wage war to win another kingdom
 let jewelCost = 150; //holds cost to buy next crowns.
 let startGame = 0; //used to initialize game when form first opens
 let maxJewels = 30; //max number of jewels that can be purchased
-let numberKingdoms = 5; //max number of kingdoms in the world
+let numberKingdoms = 195; //max number of kingdoms in the world
 
 //listener to form events
 document.addEventListener("DOMContentLoaded", () => {
@@ -56,7 +56,7 @@ function updateJewels() {
   //updates the form to reflect changes to jewels and taxes.
 
   taxes = taxes - jewelCost;
-  jewelCost = 1; //ruled * jewelsOwned * 150;
+  jewelCost = ruled * jewelsOwned * 150;
   jewelsOwned = jewelsOwned + 1;
   updateForm();
 }
@@ -118,7 +118,7 @@ function initializeForm() {
   ruled = 1;
   jewelsOwned = 1;
   warCost = 50;
-  jewelCost = 1; //150;
+  jewelCost = 150;
 
   //re-enables buy jewels button if user already won and clears win msg
   document.getElementById("maxjewel").innerHTML = "";

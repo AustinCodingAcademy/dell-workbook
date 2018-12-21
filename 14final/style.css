@@ -77,6 +77,7 @@ input {
   text-align: right;
   width: 150px;
   color: black;
+ 
 }
 
 button {
@@ -103,7 +104,7 @@ button {
 #coin {
   animation-name: spin;
   animation-duration: 3s;
-  animation-iteration-count: 100;
+  animation-iteration-count: 10000;
   animation-timing-function: linear;
   border-radius: 50%;
 }
