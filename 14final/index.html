@@ -18,7 +18,8 @@
   </head>
   <body>
     <div class="grid">
-      <header>
+      <header> 
+        <!-- Title of game plus instructions -->
         <h1 id="title">Crown Jewels</h1>
         <h2 id="howto1">Click the coin to collect taxes.</h2>
         <h2 id="howto2">Collect taxes to buy crown jewels.</h2>
@@ -26,8 +27,9 @@
           Conquer neighboring kingdoms to collect more taxes with each click.
         </h2>
       </header>
-
+ 
       <div class="container clickcoin">
+        <!-- Clickcoin section contains the object ot be clicked -->
         <img
           src="images/poundsterling.jpg"
           id="coin"
@@ -35,6 +37,7 @@
         />
       </div>
 
+      <!-- Actions sections keeps track of clicks and lets user buy stuff -->
       <div class="container actions">
         <h3 class="container row">
           Taxes Collected:
@@ -46,19 +49,24 @@
         </h3>
         <h3 class="container row">
           Kingdoms Ruled:
-          <input type="text" placeholder="1" id="kingdomsruled" />
+          <input type="text" placeholder="" id="kingdomsruled" />
         </h3>
 
         <h3 class="container row">
           <button id="war">Conquer Kingdom</button>
-          <input type="text" placeholder="$ 50" id="war-cost" />
+          <input type="text" placeholder="" id="war-cost" />
         </h3>
         <h3 class="container row">
           <button id="buy-jewels">Buy Crown Jewels</button>
-          <input type="text" placeholder="$ 150" id="jewel-cost" />
+          <input type="text" placeholder="" id="jewel-cost" />
+        </h3>
+        <h3 class="container row">
+          <button id="reset">Start Over</button>
         </h3>
       </div>
       <div class="container jewels">
+        <!-- Jewels section shows crowns purchased -->
+        <div></div>
           <img src="./images/crown30.jpg" id="crown30" />
           <img src="./images/crown29.jpg" id="crown29" />
           <img src="./images/crown28.jpg" id="crown28" />

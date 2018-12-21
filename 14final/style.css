@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: bisque;
+  background-color: lavenderblush;
   text-align: center;
 }
 
@@ -9,13 +9,7 @@ header {
   margin-bottom: 20px;
 }
 
-.row .container {
-  display: flex;
-  padding: 20px;
-  min-width: 300px;
-  flex-direction: row;
-}
-
+/* sets the style for the text */
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-variant: small-caps;
@@ -35,10 +29,11 @@ h2 {
 
 h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  padding: 3px;
+  padding: 5px;
 }
+/* using a grid so that I can change layout based on screensize */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -51,6 +46,7 @@ h3 {
     "jewels";
 }
 
+/* sets the style for all images */
 img {
   height: 200px;
   width: 200px;
@@ -58,28 +54,43 @@ img {
   margin: 20px;
 }
 
+/* using flex for action section to make row alignment easier */
+.row  {
+  display: flex;
+  min-width: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* sets style for onscreen inputs and buttons  */
+
 input {
   border-style: none;
   text-align: right;
   width: 150px;
+  color: black;
 }
 
 button {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
-  width: 150px;
-  height: 20px;
+  font-size: 16px;
+  width: 170px;
+  height: 30px;
   border: 1px solid gray;
   box-shadow: 3px 3px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  color: black;
 }
 
+
+/* puts padding around the coin to not hit the text */
 .clickcoin {
-  padding: 5px;
+  padding: 25px;
 }
 
+/* makes coing spin and round */
 #coin {
   animation-name: spin;
   animation-duration: 3s;
@@ -88,6 +99,13 @@ button {
   border-radius: 50%;
 }
 
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* defines grid area for layout purposes.  */
 .jewels {
   grid-area: jewels;
 }
@@ -99,14 +117,8 @@ button {
 .clickcoin {
   grid-area: clickcoin;
 }
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 
-
-
+/* layouts based on screensize  */
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
   .grid {
@@ -120,7 +132,6 @@ button {
   }
 }
 
-
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
   .grid {
@@ -133,7 +144,6 @@ button {
       "clickcoin  actions  jewels  jewels"
       "clickcoin  actions  jewels  jewels";
   }
-
 }
 
 /* Extra Large and up (Wide Screen Desktops) */
@@ -148,6 +158,4 @@ button {
       "clickcoin  actions  actions  jewels  jewels  jewels"
       "clickcoin  actions  actions  jewels  jewels  jewels";
   }
-
-
 }

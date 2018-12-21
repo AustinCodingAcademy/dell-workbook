@@ -5,13 +5,17 @@ let ruled = 1;
 let jewelsOwned = 1;
 let warCost = 50 * ruled;
 let jewelCost = 150;
-
+let startGame = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (!startGame) {
+    initializeForm();
+  }
+
   document.getElementById("coin").onclick = function(e) {
-    taxes = taxes + 1 * ruled;
+    taxes = taxes + (1 * ruled * jewelsOwned);
     console.log("taxes " + taxes);
-    document.getElementById("taxescollected").placeholder = "$ " + taxes;
+    updateForm();
   };
 
   document.getElementById("war").onclick = function(e) {
@@ -28,33 +32,30 @@ document.addEventListener("DOMContentLoaded", () => {
       updateJewels();
     }
   };
-  displayCrowns();
+
+  document.getElementById("reset").onclick = function(e) {
+    initializeForm();
+  };
+  
 });
 
 function updateJewels() {
   taxes = taxes - jewelCost;
   jewelCost = ruled * jewelsOwned * 150;
   jewelsOwned = jewelsOwned + 1;
-
-  displayCrowns ();
-  document.getElementById("taxescollected").placeholder = "$ " + taxes;
-  document.getElementById("kingdomsruled").placeholder = ruled;
-  document.getElementById("jewel-cost").placeholder = "$ " + jewelCost;
+  updateForm();
 }
 
 function updateWarCost() {
   ruled = ruled + 1;
   taxes = taxes - warCost;
   warCost = ruled * 50;
-  document.getElementById("taxescollected").placeholder = "$ " + taxes;
-  document.getElementById("kingdomsruled").placeholder = ruled;
-  document.getElementById("war-cost").placeholder = "$ " + warCost;
+  updateForm();
 }
-
 
 function displayCrowns() {
   let i = 1;
-  console.log("load crowns "+ jewelsOwned);
+  console.log("load crowns " + jewelsOwned);
 
   for (i = 1; i <= 30; i++) {
     if (i <= jewelsOwned) {
@@ -63,4 +64,24 @@ function displayCrowns() {
       document.querySelector("#crown" + i).style["display"] = "none";
     }
   }
+}
+
+function initializeForm() {
+  startGame = 1;
+  taxes = 0;
+  ruled = 1;
+  jewelsOwned = 1;
+  warCost = 50 
+  jewelCost = 150;
+
+  updateForm();
+  
+}
+
+function updateForm() {
+  document.getElementById("taxescollected").placeholder = "$ " + taxes + "K";
+  document.getElementById("kingdomsruled").placeholder = ruled;
+  document.getElementById("war-cost").placeholder = "$ " + warCost + "K";
+  document.getElementById("jewel-cost").placeholder = "$ " + jewelCost + "K";
+  displayCrowns();
 }
