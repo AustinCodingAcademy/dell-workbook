@@ -16,6 +16,18 @@ for (let i = 0; i < 1000; i++) {
 
 function bubbleSort(arr) {
   // Your code here
+  for (let i = 0; i < arr.length; i++) {
+    let sorted = true;
+    for (let j = 0; j < arr.length; j++) {
+      if(arr[j] > arr[j + 1]) {
+        sorted = false;
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
 }
 
 function mergeSort(arr) {
@@ -62,7 +74,7 @@ if (typeof describe === 'function') {
   });
 
 } else {
-
+  console.log(bubbleSort(arr));
   console.log('Run the tests!')
 
 }
