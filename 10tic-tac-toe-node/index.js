@@ -44,7 +44,7 @@ function horizontalWin() {
   //Other way to check 
   return horizonmoves.some(combo => {
     return (
-    board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
     board[combo[1][0]][combo[1][1]] === playerTurn &&
     board[combo[2][0]][combo[2][1]] === playerTurn 
     )
