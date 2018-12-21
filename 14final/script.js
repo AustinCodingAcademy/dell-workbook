@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let lives = 3;
   let totalPoints = 0;
   let level = 1;
-  let pointsToNextLevel = 500;
+  let pointsToNextLevel = 200;
   let animationDuration = 15;
   let maxInterval = 5000;
   
@@ -87,27 +87,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Remove dot after animation duration
     setTimeout(() => {
-      if (dotElement) {
+      if (dots[dot.id]) {
         dotElement.remove();
         lives--;
-        document.querySelector('.lives').innerHTML = lives;
+        if (lives !== 0 && lives > 0 ) {
+          document.querySelector('.lives').innerHTML = lives;
+        } else if (lives === 0) {
+          endGame();
+        }
       }
-    }, 15000);
+    }, animationDuration * 1000);
 
     // Add click handler to dots
     dotElement.addEventListener('click', () => {
       dotElement.remove();
+      dots = dots.filter(item => item.id === dot.id);
       totalPoints += dotValues[dot.size];
       document.querySelector('.total-points').innerHTML = totalPoints;
 
       if (totalPoints >= pointsToNextLevel) {
         level++;
-        pointsToNextLevel += 500;
+        pointsToNextLevel += 200;
         document.querySelector('.level').innerHTML = level;
-        animationDuration -= 5;
+        animationDuration -= 1;
         maxInterval -= 500;
       }
     })
+  }
+
+  function endGame() {
+    document.querySelector('.lives').innerHTML = lives;
+    document.querySelector('.game-over').style.display = 'flex';
   }
 
 });

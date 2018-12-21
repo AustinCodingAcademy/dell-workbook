@@ -120,3 +120,22 @@ header h1 {
   height: 60px;
   width: 60px;
 }
+
+.game-over {
+  align-items: center;
+  background-color: #EF5B5B;
+  color: #fffff7;
+  display: none;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: calc(100% + 30px);
+  z-index: 500;
+}
+
+.game-over h1 {
+  margin-bottom: 0;
+}
