@@ -30,55 +30,66 @@ function horizontalWin() {
     [[2,0],[2,1],[2,2]]
   ]
 
-  let horizontalWin = false;
-  horizonmoves.forEach(combo => {
-    horizontalWin = horizontalWin || (
-      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
-      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
-      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
-    )
-  })
+  // let horizontalWin = false;
+  // horizonmoves.forEach(combo => {
+  //   horizontalWin = horizontalWin || (
+  //     board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+  //     board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+  //     board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+  //   )
+  // })
+
+  // return horizontalWin;
   
-  // //Other way to check 
-  // return horizonmoves.some(combo => {
-  //   return (
-    // board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
-    // board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
-    // board[combo[2][0]][board[combo[2][1]]] === playerTurn 
-    // )
-  // }) 
+  //Other way to check 
+  return horizonmoves.some(combo => {
+    return (
+    board[combo[0][0]][combo[0][1]] === playerTurn &&
+    board[combo[1][0]][combo[1][1]] === playerTurn &&
+    board[combo[2][0]][combo[2][1]] === playerTurn 
+    )
+  }) 
 }
 
 function verticalWin() {
+  console.log("VerticalTestRan");
   const verticalmoves = [
     [[0,0],[1,0],[2,0]],
     [[0,1],[1,1],[2,1]],
     [[0,2],[1,2],[2,2]]
   ]
 
-  let verticalWin = false;
-  verticalmoves.forEach(combo => {
-    verticalWin = verticalWin || (
-      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
-      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
-      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+  return verticalmoves.some(combo => {
+    return (
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[1][0]][combo[1][1]] === playerTurn &&
+      board[combo[2][0]][combo[2][1]] === playerTurn
     )
   })
+
+  // let verticalWin = false;
+  // verticalmoves.forEach(combo => {
+  //   verticalWin = verticalWin || (
+  //     board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
+  //     board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
+  //     board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+  //   )
+  // })
+
+  // return verticalWin;
   // Your code here
 }
 
 function diagonalWin() {
-  const diagonallmoves = [
+  const diagonalmoves = [
     [[0,0],[1,1],[2,2]],
     [[2,0],[1,1],[0,2]]
   ]
-
-  let diagonalWin = false;
-  diagonallmoves.forEach(combo => {
-    diagonalWin = diagonalWin || (
-      board[combo[0][0]][board[combo[0][1]]] === playerTurn &&
-      board[combo[1][0]][board[combo[1][1]]] === playerTurn &&
-      board[combo[2][0]][board[combo[2][1]]] === playerTurn 
+  return diagonalmoves.some(combo => {
+    return (
+      board[combo[0][0]][combo[0][1]] === playerTurn &&
+      board[combo[1][0]][combo[1][1]] === playerTurn &&
+      board[combo[2][0]][combo[2][1]] === playerTurn 
     )
   })
   // Your code here
