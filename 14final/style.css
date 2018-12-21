@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body,html {
+  background:#e1e1e1;
+  height:100%;
+  font-family:Arial;
+}
+
+.info {
+  text-align:center;
+  margin:20px auto 0;
+  font-size:16px;
+}
+
+.info button {
+  font-size:16px;
+  padding:4px 10px;
+}
+
+.info p {
+  display:inline-block;
+  margin:0 35px;
+}
+
+.info span {
+  font-weight:bold;
+}
+
+
+.biggrid{  
+  background: gray url(http://1.bp.blogspot.com/-frMkFJCorzU/UMUk1b9I-II/AAAAAAAAA0Q/jn_ER0E3S9E/s1600/REINDEER+PATTERN+V2+03.png) repeat 0 0;  
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 1000px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.grid {
+  display:grid;   
+  position: absolute;
+  left:50%;
+  margin-left:-244px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-gap: 74px;
+  transform:scale(0.8)
+}
+
+.grid-cell {
+  background-color:#3f4c6b;
+  width:120px;
+ height:120px;
+  border-radius:50%;
+  overflow:hidden;
+  transition: background-color 0.2s ease-in;
+}
+
+.active {
+  background-color:#3ac6f4;
+  cursor:pointer;
+}
+
+.whacked {
+  background-color:#3af468;
+}
+
+
+/**********
+CSS Santa by https://codepen.io/alikhalilifar
+**********/
+.santa {
+ width:120px;
+ height:120px;
+ transform:translateY(136px);
+  transition: transform 0.22s linear;
+}
+
+.active .santa {
+  transform:translateY(26px);
+  transition: transform 0.2s ease;
+}
+
+.santa .hat {
+ width: 64px;
+ height: 31px;
+ border-radius: 200px 200px 0 0;
+ background: #ef4753;
+ margin: 0 auto;
+ top: -11px;
+ position: relative;
+ left: 5px;
+ z-index:20;
+}
+
+.santa .hat:after {
+ width: 60px;
+ height: 15px;
+ border-radius: 20px;
+ content: "";
+ display: block;
+ background: white;
+ position: relative;
+ top: 22px;
+ left: -3px;
+}
+
+.santa .face {
+ width: 54px;
+ height: 57px;
+ background: white;
+ border-radius: 0px 0px 50px 50px;
+ margin: 0 auto;
+ position: relative;
+ z-index: 20;
+ top: -6px;
+}
+
+.santa .face .eyes {
+ background-color:#f1ddd5;
+ width:45px;
+ height:15px;
+ margin:0 auto;
+ position:relative;
+ left:-1px;
+ text-align: center;
+ top:4px;
+ padding-top: 0px;
+}
+
+.santa .face .eyes:after, righteye {
+ width: 8px;
+ height: 6px;
+ background-color: transparent;
+ box-shadow: 0px -2px #793623;
+ content: "";
+ display:inline-block;
+ margin:0 auto;
+ border-radius: 50%;   
+  transition: all 0.16s ease;
+}
+
+.whacked .santa .face .eyes:after, righteye {
+  background-color: #793623;
+  box-shadow: none;
+}
+
+.santa .face .eyes:before, lefteye {
+ width: 8px;
+ height: 6px;
+ background: transparent;
+ box-shadow: 0px -2px #793623;
+ content: "";
+ display:inline-block;
+ margin:0 auto;
+ border-radius: 50%;
+ margin-right:5px;   
+  transition: all 0.16s ease;
+}
+
+.whacked .santa .face .eyes:before, lefteye {
+  background-color: #793623;
+  box-shadow: none;
+}
+
+.santa .mouth {
+ background:#a31f2b;
+ border-radius:50%;
+ width:6px;
+ height:6px;
+ position:absolute;
+ bottom:20px;
+ right:17px;
+  transition: right 0.16s ease;
+}
+
+.whacked .santa .mouth {
+  right:23px;
+}
+
+.santa .body {
+ width: 93px;
+ height: 84px;
+ background: #ef4753;
+ border-radius: 90px 90px 0px 0px;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ margin: 0 auto;
+ text-align:center;
+ z-index:10;
+  transition: transform 0.16s ease;
+}
+
+.whacked .santa .body {
+  transform:rotate(16deg);
+}
+
+.santa .body:after {
+ width: 5px;
+ height: 5px;
+ background: white;
+ border-radius: 50%;
+ display: inline-block;
+ position: absolute;
+ top: 68px;
+ z-index: 50;
+ content: "";
+ left: 0;
+ right: 0;
+ margin: 0 auto;
+}
+
+.santa .body:before {
+ width: 5px;
+ height: 5px;
+ background: white;
+ border-radius: 50%;
+ display: inline-block;
+ position: absolute;
+ top: 55px;
+ z-index: 50;
+ content: "";
+ left: 0;
+ right: 0;
+ margin: 0 auto;
+}
+
+.santa .hat .hat-end {
+ width: 13px;
+ height: 32px;
+ content: "";
+ background: #ef4753;
+ display: inline-block;
+ position: absolute;
+ right: 0px;
+ top: 15px;
+ border-radius: 0px 11px 0px 0px;
+  transition: transform 0.16s ease;
+}
+
+
+.whacked .santa .hat .hat-end {
+  transform: rotate(-14deg);
+}
+
+.santa .hat .hat-end:after {
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ background: white;
+ content: "";
+ display: inline-block;
+ top: 30px;
+ position: absolute;
+ left: 0px;
+ z-index: 11;
+}
+
+.dirty-overflow {
+ overflow: hidden;
+ width: 120px;
+ height: 76px;
+ border-radius: 0px 0px 105px 105px;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+}
+
+@-webkit-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: -400px 0; }
+}
