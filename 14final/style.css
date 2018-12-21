@@ -1,26 +1,3 @@
-body {
-  background-image: url("images/background.png");
-  background-size: cover;
-  color: white;
-  padding: 200px;
-}
-.cookie {
-  margin: 10px;
-  animation: rotation infinite linear;
-  animation-duration: 25s;
-}
-.cookieimg{
-  max-width: 150px;
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
 h1 {
   color: whitesmoke;
   font-family: calibri;
@@ -43,5 +20,35 @@ button:hover{
 }
 button:active{
   background-color: rgb(192, 228, 175);
+}
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  color: white;
+  padding: 200px;
+}
+.cookie {
+  margin: 10px;
+  animation: rotation infinite linear;
+  animation-duration: 25s;
+}
+.cookieimg{
+  max-width: 150px;
+}
+.chatbubble{
+  animation: fadein 3s;
+  max-width:250px;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: .85; }
 }
 
