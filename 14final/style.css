@@ -8,8 +8,11 @@ body {
   margin: 10px;
   animation: rotation infinite linear;
   animation-duration: 25s;
-  max-width: 200px;
 }
+.cookieimg{
+  max-width: 150px;
+}
+
 @keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -31,7 +34,8 @@ button{
   max-width: 250px;
   background: none;
   vertical-align: middle;
-  margin: 1em;
+  margin-top: 2em;
+  margin-bottom:1em;
   padding: 1em 2em;
 }
 button:hover{
