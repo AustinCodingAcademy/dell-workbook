@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     totalCranks:0, 
     totalRPS: 0,
     currentSpeedMltiplyr: .05,
-    currentRoadMltiplyr: .009
+    currentRoadMltiplyr: .03
 
   };
   var frontwheel = document.querySelector('.front');
