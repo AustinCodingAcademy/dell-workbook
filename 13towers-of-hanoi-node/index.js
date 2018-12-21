@@ -13,30 +13,49 @@ let stacks = {
   c: []
 };
 
+let isGameOver = false;
+
+
 function printStacks() {
   console.log("a: " + stacks.a);
   console.log("b: " + stacks.b);
   console.log("c: " + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
+function movePiece(startStack, endStack) {
+  var number = stacks[startStack].pop();
+  stacks[endStack].push(number);
 
 }
 
-function isLegal() {
-  // Your code here
-
+function isLegal(startStack, endStack) {
+  if (stacks[endStack][stacks[endStack].length - 2] < stacks[endStack][stacks[endStack].length - 1]) {
+    movePiece(endStack, startStack);
+    printStacks();
+    console.log("IllegalMove.MoveReverted");
+  }
 }
 
-function checkForWin() {
-  // Your code here
+function checkForWin(startStack, endStack) {
+  var cond1 = stacks[startStack].length === 0;
+  var cond2 = true;
+  var length = stacks[endStack].length;
+  for (var i = 0; i < length; i++) {
+    if (stacks[endStack][i] < stacks[endStack][i + 1])
+      cond2 = false;
+  }
+
+  if (cond1 && cond2 && length === 4) {
+    isGameOver = true;
+    console.log("youWon!!")
+  }
 
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
-
+  movePiece(startStack, endStack);
+  isLegal(startStack, endStack);
+  checkForWin(startStack, endStack);
 }
 
 function getPrompt() {
@@ -44,7 +63,7 @@ function getPrompt() {
   rl.question('start stack: ', (startStack) => {
     rl.question('end stack: ', (endStack) => {
       towersOfHanoi(startStack, endStack);
-      getPrompt();
+      if (!isGameOver) getPrompt();
     });
   });
 }
