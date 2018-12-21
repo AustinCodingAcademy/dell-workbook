@@ -60,7 +60,7 @@ function checkForWin() {
 
 function ticTacToe(row, column) {
   // Your code here
-  
+  if (row<0||row>2||column<0||column>2) return false;
   if (!(board[row][column] === " ")) return false;
   board[row][column] = playerTurn;
   if (checkForWin()) {
