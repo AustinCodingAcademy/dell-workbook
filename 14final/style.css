@@ -50,18 +50,25 @@ h3 {
 img {
   height: 200px;
   width: 200px;
-  border: 5px solid blueviolet;
+  border: 5px solid violet;
   margin: 20px;
 }
 
 /* using flex for action section to make row alignment easier */
+.container{
+  padding: 25px;
+  content: center;
+}
+
 .row  {
   display: flex;
   min-width: 250px;
   max-width: 500px;
   flex-direction: row;
   justify-content: space-between;
+  margin: auto;
 }
+
 
 /* sets style for onscreen inputs and buttons  */
 
@@ -83,6 +90,7 @@ button {
   text-align: center;
   cursor: pointer;
   color: black;
+  background-color: #dda0dd;
 }
 
 
@@ -124,12 +132,12 @@ button {
 @media (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
-      "header header header"
-      "clickcoin  actions  jewels"
-      "clickcoin  actions  jewels";
+      "header    header"
+      "clickcoin actions"
+      "jewels    jewels"  ;
   }
 }
 
@@ -151,12 +159,12 @@ button {
 @media (min-width: 1200px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     grid-template-areas:
-      "header header header header header header"
-      "clickcoin  actions  actions  jewels  jewels  jewels"
-      "clickcoin  actions  actions  jewels  jewels  jewels"
-      "clickcoin  actions  actions  jewels  jewels  jewels";
+      "header     header   header   header  header"
+      "clickcoin  actions  jewels  jewels  jewels"  
+      "clickcoin  actions  jewels  jewels  jewels"
+      "clickcoin  actions  jewels  jewels  jewels";
   }
 }
