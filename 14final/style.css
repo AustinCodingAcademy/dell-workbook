@@ -37,7 +37,7 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-areas:
     "header"
     "clickcoin"
@@ -75,7 +75,7 @@ img {
 input {
   border-style: none;
   text-align: right;
-  width: 150px;
+  width: 130px;
   color: black;
  
 }
@@ -86,6 +86,7 @@ button {
   width: 170px;
   height: 30px;
   border: 1px solid gray;
+  margin: 0px 5px;
   box-shadow: 3px 3px;
   border-radius: 5px;
   text-align: center;
@@ -134,7 +135,7 @@ button {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-areas:
       "header    header"
       "clickcoin actions"
@@ -147,7 +148,7 @@ button {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-areas:
       "header header header header"
       "clickcoin  actions  jewels  jewels"
