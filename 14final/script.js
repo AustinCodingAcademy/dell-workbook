@@ -1,52 +1,7 @@
-//'use strict';
-// var gameActive = false,
-//     gameDuration = 25,
-//     gameSpeed = 1000,   
-//     speedIncrement = 14,    
-//     highScore = 0,
-//     currentScoreElement = document.getElementById("current-score"),
-//     highScoreElement = document.getElementById("high-score"),
-//     cells = document.getElementsByClassName("grid-cell"),
-//     activeCell,  
-//     currentGameSpeed,
-//     currentGameDuration,
-//     currentGameScore;
-
-
-//     document.getElementById("start-game").addEventListener("click", function() {
-//       if (!gameActive) {
-//          startGame();
-//       }
-//    });
-   
-//   //  for (var i = 0; i < cells.length; i++) {
-//   //     (function(i) {      
-//   //      cells[i].addEventListener('click', function() {
-//   //         if (gameActive) {
-//   //            whack(i);
-//   //         }
-//   //      });
-//   //     }(i));
-//    //}
-   
-//    function startGame() {
-//       document.getElementById("start-game").disabled = true;
-//       gameActive = true;
-//       currentGameSpeed = gameSpeed;
-//       currentGameDuration = gameDuration;
-//       currentGameScore = 0;   
-//       //activeCell = null;
-      
-//       //for (var i = 0; i < cells.length; i++) {
-//       //cells[i].classList.remove('active','whacked');
-//    }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   document.getElementById('speed').addEventListener('click', () => {
-//     const currentSpeed = getComputedStyle(document.querySelector('.square')).animationDuration;
-//     document.querySelector('.square').style.animationDuration = `${Number(currentSpeed.split('s')[0]) + 10}s`    
-//   })
-// });
+//this game is a work in progress. 
+//I used another santa game from codepen and have been trying to change the santa to a grinch and add different features
+//but I ran out of time, and what I tried hasn't been working enough. 
+//I'll come back to it this weekend to change things up
 
 var gameActive = false,
     gameDuration = 25,
