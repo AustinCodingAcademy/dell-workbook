@@ -1,20 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  document.querySelector('.start-game').addEventListener('click', (event) => {
-    (function addDot() {
-      setTimeout(() => {
-        dots[id] = new Dot(id);
-        dropDot(dots[id]);
-        id++;
-        addDot();
-      }, randInterval());
-    })();
-
-    event.target.remove();    
-  });
-
+  // Game Variables
   let id = 0;
   let dots = [];
   let dotValues = {
@@ -31,15 +18,33 @@ document.addEventListener("DOMContentLoaded", () => {
   let pointsToNextLevel = 200;
   let animationDuration = 15;
   let maxInterval = 5000;
+
+  // Start Game
+  document.querySelector('.start-game').addEventListener('click', (event) => {
+    (function addDot() {
+      setTimeout(() => {
+        dots[id] = new Dot(id, animationDuration, randColor());
+        dropDot(dots[id]);
+        selfDestructTimer(dots[id]);
+        id++;
+        addDot();
+      }, randInterval());
+    })();
+
+    event.target.remove();    
+  });
   
+  // Return random interval
   function randInterval() {
     return Math.round(Math.random() * maxInterval);
   }
 
+  // Return random dot size
   function randSize() {
     return Math.round(Math.random() * 4);
   }
 
+  // Return random color
   function randColor() {
     let color = Math.round(Math.random() * 4);
     
@@ -61,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
 
     case 4:
-      return `#F86624`;
+      return `#7A5980`;
       break;
     
     default:
@@ -69,11 +74,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function Dot(id) {
+  // Dot constructor
+  function Dot(id, expiresIn, color) {
     this.id = id;
     this.size = randSize();
+    this.expiresIn = expiresIn;
+    this.color = color;
+    this.clicked = false;
   }
 
+  // Generate and drop dot
   function dropDot(dot) {
     // Add dot to DOM
     let dotHTML = `<span id="${dot.id}" class="dot size-${dot.size}">${dotValues[dot.size]}</span>`;
@@ -81,27 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Style and position  dot
     let dotElement = document.getElementById(`${dot.id}`);
-    dotElement.style.backgroundColor = randColor();
+    dotElement.style.backgroundColor = dot.color;
     dotElement.style.left = Math.round(Math.random() * 90) + '%';
     dotElement.style.animationDuration = animationDuration + 's';
-
-    // Remove dot after animation duration
-    setTimeout(() => {
-      if (dots[dot.id]) {
-        dotElement.remove();
-        lives--;
-        if (lives !== 0 && lives > 0 ) {
-          document.querySelector('.lives').innerHTML = lives;
-        } else if (lives === 0) {
-          endGame();
-        }
-      }
-    }, animationDuration * 1000);
 
     // Add click handler to dots
     dotElement.addEventListener('click', () => {
       dotElement.remove();
-      dots = dots.filter(item => item.id === dot.id);
+      dots[dot.id].clicked = true;
       totalPoints += dotValues[dot.size];
       document.querySelector('.total-points').innerHTML = totalPoints;
 
@@ -109,12 +106,70 @@ document.addEventListener("DOMContentLoaded", () => {
         level++;
         pointsToNextLevel += 200;
         document.querySelector('.level').innerHTML = level;
-        animationDuration -= 1;
-        maxInterval -= 500;
+        awardPowerUp();
+
+        if (animationDuration > 5) {
+          animationDuration -= 1;
+        }
+
+        if (maxInterval > 2000) {
+          maxInterval -= 750;          
+        } 
       }
     })
   }
 
+  // Award random power up
+  function awardPowerUp() {
+    let powerUps = document.querySelectorAll('.power-up');
+    let randomPowerUp = powerUps[Math.round(Math.random() * 4)];
+
+    randomPowerUp.style.opacity = '1';
+    randomPowerUp.style.pointerEvents = 'all';
+    
+    randomPowerUp.addEventListener('click', () => {
+      dots.forEach(dot => {
+        if (dot.color === `#${randomPowerUp.dataset.color}` && !dot.clicked) {
+          // Set dot to clicked and remove from DOM
+          dot.clicked = true;
+          let dotElement = document.getElementById(`${dot.id}`);
+          dotElement.remove();
+
+          // Add points to total
+          totalPoints += dotValues[dot.size];
+          document.querySelector('.total-points').innerHTML = totalPoints;
+        }
+
+        randomPowerUp.style.opacity = '0.3';
+        randomPowerUp.style.pointerEvents = 'none';
+      });
+    })
+  }
+
+  // Remove dot from DOM and decrease lives 
+  // if not clicked in time
+  function selfDestructTimer(dot) {
+    setTimeout(() => {
+      if (!dots[dot.id].clicked) {
+        dot.expiresIn--;
+
+        if (dot.expiresIn > 0) {
+          selfDestructTimer(dot);
+        } else {
+          let dotElement = document.getElementById(`${dot.id}`);
+          dotElement.remove();
+          lives--;
+          if (lives !== 0 && lives > 0 ) {
+            document.querySelector('.lives').innerHTML = lives;
+          } else if (lives === 0) {
+            endGame();
+          }
+        }
+      }
+    }, 1000);
+  }
+
+  // End game
   function endGame() {
     document.querySelector('.lives').innerHTML = lives;
     document.querySelector('.game-over').style.display = 'flex';
