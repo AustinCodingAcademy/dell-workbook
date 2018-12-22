@@ -1,27 +1,30 @@
-
 body {
   background-color: #007db8;
   overflow: hidden;
 }
 
-.baloon-container{
+.baloon-container {
   min-height: 80vh;
   clear: both;
-  margin-top: 100px;  
+  margin-top: 100px;
 }
 
 @keyframes baloon_move {
-    from {bottom: -70px;}
-    to {bottom: 120%;}
+  from {
+    bottom: -70px;
+  }
+  to {
+    bottom: 120%;
+  }
 }
 
-.baloon{
+.baloon {
   width: 64px;
   height: 64px;
   position: absolute;
   bottom: -60px;
   border-radius: 50%;
- 
+
   animation-name: baloon_move;
   animation-duration: 10s;
   animation-timing-function: linear;
@@ -30,55 +33,52 @@ body {
 }
 
 .baloon:after {
-    content: "";
-    width: 0;
-    height: 70px;
-    border-right: 1px solid white;
-    display: block;
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
+  content: "";
+  width: 0;
+  height: 70px;
+  border-right: 1px solid white;
+  display: block;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
 }
-.red{
-  background-color:red;
-    width: 54px;
-    height: 62px;    
-    padding: 10px;
-  }
-.green{
-    width: 64px;
-    background-color:green;
+.red {
+  background-color: red;
+  width: 54px;
+  height: 62px;
+  padding: 10px;
+}
+.green {
+  width: 64px;
+  background-color: green;
 
-    height: 72px;  
-    padding: 10px;   
-  }
-.yellow{
-    width: 74px;
-    background-color:yellow;
+  height: 72px;
+  padding: 10px;
+}
+.yellow {
+  width: 74px;
+  background-color: yellow;
 
-    height: 82px;
-    padding: 10px;
-  }
-  .purple{
-    background-color:purple;
+  height: 82px;
+  padding: 10px;
+}
+.purple {
+  background-color: purple;
 
-    width: 84px;
-    height: 92px;
-    padding: 10px;
-  }
-  .orange{
-    background-color:orange;
+  width: 84px;
+  height: 92px;
+  padding: 10px;
+}
+.orange {
+  background-color: orange;
 
-    width: 94px;
-    height: 102px;
-    padding: 10px;
-  }
+  width: 94px;
+  height: 102px;
+  padding: 10px;
+}
 
-  #counter{
-    font-size: 24px;
-    color: white;
-    border: 1px solid white;
-  }
-  
-
-  
+#counter {
+  font-size: 24px;
+  color: white;
+  border: 1px solid white;
+}
