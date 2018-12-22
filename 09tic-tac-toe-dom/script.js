@@ -1,18 +1,20 @@
 'use strict';
 document.addEventListener("DOMContentLoaded", (event) => {
-    let Player = 'X';
-    document.querySelectorAll('[data-cell]').forEach((cell) => {
-        cell.addEventListener('click', (event) => {
-            if (!event.target.innerHTML) {
-                event.target.innerHTML = Player;
-                if (WinCheck()) {
-                    document.getElementById("announce-winner").innerHTML = `Player ${Player} Won!`;
-                    clearBoard();
-                }
-                Player = (Player === 'X') ? 'O' : 'X';
+  let Player = 'X';
+  document.querySelectorAll('[data-cell]').forEach((cell) => {
+    cell.addEventListener('click', (event) => 
+    {
+      if (!event.target.innerHTML) 
+      {
+        event.target.innerHTML = Player;
+        if (WinCheck()) {
+          document.getElementById("announce-winner").innerHTML = `Player ${Player} Won!`;
+          clearBoard();
+        }   
+        Player = (Player === 'X') ? 'O' : 'X';
 
-            };
-        });
+      };
+    });
     });
     function WinCheck() {
         const WinningMoves = [
