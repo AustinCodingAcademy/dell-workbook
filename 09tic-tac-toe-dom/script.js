@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     return false;
   }
 
-    function clearBoard() {
+  function clearBoard() {
     document.querySelectorAll('[data-cell]').forEach((cell) => {
       cell.innerHTML = "";
     });
