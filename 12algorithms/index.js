@@ -14,8 +14,19 @@ for (let i = 0; i < 1000; i++) {
   arr.push(getRandomInt(0, 1000));
 }
 
+function swap(firstIndex, secondIndex, arr) {
+  let temp = arr[firstIndex];
+  arr[firstIndex] = arr[secondIndex];
+  arr[secondIndex] = temp;
+}
+
 function bubbleSort(arr) {
-  // Your code here
+  for (let i=0; i<= arr.length; i++) {
+    if (arr[i] > arr[i+1]) {
+      swap(i, i+1, arr);
+    }
+  }
+  
 }
 
 function mergeSort(arr) {
@@ -23,7 +34,7 @@ function mergeSort(arr) {
 }
 
 function binarySearch(arr, item) {
-  // Your code here
+  // Your code her
 }
 
 // Tests
