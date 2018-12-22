@@ -5,32 +5,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
     button.addEventListener('click', (event) => {
       let text = event.target.innerHTML;
       switch (text) {
-        case '+':
-          addition();
-          break;
-        case '-':
-          Subtraction();
-          break;
-        case '*':
-          Multiplication();
-          break;
-        case '/':
-          Division();
-          break;
-        case '+/-':
-          Negate();
-          break;
-        case '=':
-          equals();
-          break;
-        case 'C':
-          deleteLast();
-          break;
-        case 'CE':
-          clearResults();
-          break;
-        default:
-          addNumber(text);
+      case '+':
+        addition();
+        break;
+      case '-':
+        Subtraction();
+        break;
+      case '*':
+        Multiplication();
+        break;
+      case '/':
+        Division();
+        break;
+      case '+/-':
+        Negate();
+        break;
+      case '=':
+        equals();
+        break;
+      case 'C':
+        deleteLast();
+        break;
+      case 'CE':
+        clearResults();
+        break;
+      default:
+        addNumber(text);
       }
     });
   });
