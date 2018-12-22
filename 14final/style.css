@@ -1,0 +1,13 @@
+.cage{
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+}
+
+.ball{
+  border-radius: 50%;
+  /* height:600px;
+  width: 50px;
+  background-color: blue; */
+}
+

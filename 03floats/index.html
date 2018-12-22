@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <title>UX Atlantic</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="">
+    <div class="nav">
+      <a>
+        <div class="home"><i class="fas fa-home" aria-hidden="true"></i> home </div>
+      </a>
+      <a>
+        <div class="deals"><i class="fas fa-plane" aria-hidden="true"></i> Travel Deals </div>
+      </a>
+      <a>
+        <div class="schedule"><i class="far fa-clock" aria-hidden="true"></i> Flight Schedule </div>
+      </a>
+      <a>
+        <div class="login"><i class="fas fa-sign-in-alt"></i> Register/Login </div>
+      </a>
+    </div>
+  </header>
+  <main style="background-image: url('./img/airline.jpg')">
+    <!--<img src="./img/airline.jpg">-->
+    <form class="search menu">
+      <div class="search option">
+        <div class="flight"><i class="fas fa-plane"></i></div>
+        <div class="hotel"><i class="fas fa-bed"></i></div>
+        <div class="car"><i class="fas fa-car-side"></i></div>
+      </div>
+      <div class="search details">
+        <div class="search row">
+          <input type="text" name="Departure_Airport" value="Depart">
+          <input type="text" name="Arrival_Airport" value="Arrive">
+        </div>
+        <div class="search row">
+          <input type="date" name="Departure_date">
+          <input type="date" name="Arrival_Date">
+        </div>
+        <div class="search row">
+          <div class="passengers">
+            Passengers
+            <select name="num_passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="round-trip">
+            <input type="radio" name="round_trip" value="return" checked>Return
+            <input type="radio" name="round_trip" value="one-way">One Way
+          </div>
+        </div>
+        <div class="search row submit">
+          <input type="submit" value="Search Flights">
+        </div>
+      </div>
+
+    </form>
+
+  </main>
+</body>
+
+</html>
