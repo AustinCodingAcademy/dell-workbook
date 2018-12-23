@@ -71,7 +71,7 @@ function binarySearch(arr, item) {
       end = middle-1
     else
       start = middle+1
-      middle = Math.floor((start+end)/2)
+    middle = Math.floor((start+end)/2)
   }
   return (arr[middle] !== item) ? -1 : middle
   
