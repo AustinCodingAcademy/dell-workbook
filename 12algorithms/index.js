@@ -68,10 +68,10 @@ function binarySearch(arr, item) {
   while(item !== arr[middle] && start < end)
   {
     if(item<arr[middle])
-     end = middle-1
+      end = middle-1
     else
-     start = middle+1
-     middle = Math.floor((start+end)/2)
+      start = middle+1
+      middle = Math.floor((start+end)/2)
   }
   return (arr[middle] !== item) ? -1 : middle
   
