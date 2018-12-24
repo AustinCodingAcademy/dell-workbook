@@ -9,31 +9,34 @@
 //   });
 // - show draw when all squares fill up with no winner
 
-// -----------START TIC-TAC-TOE GAME ---------------------
-
 // ---------- GLOBAL VARIABLES ------------------------
+  // I know, I know.. don't use global variables.. teachers said it was okay for now..stop judging me future self!
 var Player;
 var winningSymbol;
+const initialClickCount = 0;
+var currentClickCount = initialClickCount;
+// -----------START TIC-TAC-TOE GAME ---------------------
 
 // first the page loads up the  HTML and CSS
 document.addEventListener("DOMContentLoaded", event => {
   Player = "X";
+  
   // then every cell gets a listener attached to it..
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
-      // if cell block is empty AND there is no winner, do the following:
+      // if cell block is empty AND there is no winner, keep playing:
       if (!event.target.innerHTML && !winningSymbol) {
+        //add 'x' or 'o' to the html page
         event.target.innerHTML = Player;
+        currentClickCount++;
+        //check to see if anyone won
         determineWinner();
-        //ternary: switch symbols back and forth for both players
+        //ternary: two different symbols for each player
         Player = Player === "X" ? "O" : "X";
 
-        // TO DO: don't allow any more moves after you win..
-        // if (determineWinner() === true) {
-        //   startOver();
-        // }
-        // If you try to click after someone has already won:
+      // if someone won - prompt and ask if they want to play again, if not, clear board:  
       } else if (winningSymbol) {
+        // the prompt kept popping up before it displayed a winner so I added a .02sec pause
         setTimeout(function() {
           if (
             confirm(
@@ -45,38 +48,13 @@ document.addEventListener("DOMContentLoaded", event => {
             clearBoard();
           }
         }, 20); //pause for after winning for 20 milliseconds AKA .02 seconds to let rest of DOM loads first
-      }
-
-      // this is all that happens every time a cell is clicked..
-
-      // first check whether or not a cell has already been clicked so that you can't overwrite existing data..
-
-      //need to assign this variable somewhere, perhaps globally and then ternary
-
-      // this function determines if either symbol wins or if there is a tie.
+      } 
+      determineTie();
     });
   });
 
-  // to do..
-  // function checkCellContents() {
-  //   // if the cell is NOT empty, we have a problem.. alert user.
-  //   if (event.target.innerHTML) {
-  //     prompt("Sorry, this square has already been selected.. Try again.");
-  //     return;
-  //   }
-  // }
-
-  // determine what symbol it is and switch it every valid time.
-  /////////// dont need this in a function...
-  // function switchSymbol() {
-  //   // Teranary
-  //   Player = (Player === 'X') ? 'O' : 'X';
-  // }
-
-  // ------ THIS WORKS!!!!! ---------
-
   function determineWinner() {
-    // --------- Variables -------------
+    // --------- Local Variables -------------
     let zero = document.querySelector('[data-cell="0"]').innerHTML;
     let one = document.querySelector('[data-cell="1"]').innerHTML;
     let two = document.querySelector('[data-cell="2"]').innerHTML;
@@ -89,29 +67,24 @@ document.addEventListener("DOMContentLoaded", event => {
 
     if (
       // check if center cell has a value of 'X' or 'O' or not
-
-      // try: four !== NaN
-      (four === "X" || four === "O") &&
+      (four === Player) &&
       // check if opposites from center equal one another:
 
       // "/"
       ((six === four && four === two) ||
-        // "\"
-        (zero === four && four === eight) ||
-        // "---"
-        (one === four && four === seven) ||
-        // "|"
-        (three === four && four === five))
+      // "\"
+      (zero === four && four === eight) ||
+      // "---"
+      (one === four && four === seven) ||
+      // "|"
+      (three === four && four === five))
     ) {
       winningSymbol = four; //you can add a error checker here later
       document.querySelector("#announce-winner").innerHTML =
         "Player " + winningSymbol + " Wins!!";
-
-      // this gave me an input field... try "confirm()"
-      // prompt("Hi! You've won!!");
       return true;
     } else if (
-      (zero === "X" || zero === "O") &&
+      (zero === Player) &&
       ((six === three && three === zero) || (zero === one && one === two))
     ) {
       winningSymbol = zero; //you can add an error checker here later
@@ -119,7 +92,7 @@ document.addEventListener("DOMContentLoaded", event => {
         "Player " + winningSymbol + " Wins!!";
       return true;
     } else if (
-      (eight === "X" || eight === "O") &&
+      (eight === Player) &&
       ((five === eight && eight === two) || (six === seven && seven === eight))
     ) {
       winningSymbol = eight; //you can add an error checker here later
@@ -129,31 +102,21 @@ document.addEventListener("DOMContentLoaded", event => {
     }
     return false;
   }
+
+  function determineTie () {
+    if (currentClickCount === 9) {
+      document.querySelector("#announce-winner").innerHTML =
+        "Draw!";
+    }
+  }
 });
 
 function clearBoard() {
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.innerHTML = "";
   });
-  // clickCount = initialClickCount;
-  // window.clickCount = clickCount;
   document.querySelector("#announce-winner").innerHTML = "";
   winningSymbol = null;
   Player = "X";
+  currentClickCount = initialClickCount;
 }
-
-// function startOver() { //figure out how to change the dialogue box..
-
-//   if (confirm("Sorry","Sorry, this game is already over! would you like to play again?")) {
-//     clearBoard();
-//   }
-// }
-
-// function draw() {
-//   document.querySelectorAll("[data-cell]").forEach(cell => {
-//     if (  ((cell.innerHTML === 'X') || (cell.innerHTML === 'O'))
-//     )
-//       // ----------------- IT'S A DRAW!!!! --------------------------
-//     {document.querySelector("#announce-winner").innerHTML = "It's a DRAW!";}
-//   });
-// }
