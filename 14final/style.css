@@ -1,135 +1,135 @@
 html{
-    font-size:20px;
-    margin:0;
-    background: #0c0207;
-    }
+  font-size:20px;
+  margin:0;
+  background: #0c0207;
+}
 #framework{
-    width: 1325px;
-    height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 16px;
-    margin-top: 2em;
-    }
+  width: 1325px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-top: 2em;
+}
 
 #sky{
-    border-radius: 16px;
-    width: 1325px;
-    height: 500px;
-    background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%); 
-    position: absolute;
-    z-index: -30;
-    top: 0;
-    margin-top: 2em;
-    }
+  border-radius: 16px;
+  width: 1325px;
+  height: 500px;
+  background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%); 
+  position: absolute;
+  z-index: -30;
+  top: 0;
+  margin-top: 2em;
+}
 
 #city{
-    background: url('http://evasantos.com/ilustraciones/gatoCity/edificiosOne.svg');
-    height: 500px; 
-    width: 1325px;
-    z-index: -10;
-    top: 6.5em;
-    background-position: 0px 0px;
-    background-repeat: repeat-x;
-    /* animation: animar_edificios 120s linear infinite; */    
-    position: absolute;
-    }
+  background: url('http://evasantos.com/ilustraciones/gatoCity/edificiosOne.svg');
+  height: 500px; 
+  width: 1325px;
+  z-index: -10;
+  top: 6.5em;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  /* animation: animar_edificios 120s linear infinite; */    
+  position: absolute;
+}
 
-   @keyframes  city-animation {
-        from { background-position: 0 0; }
-        to { background-position: 100% 0; }
-    }
+@keyframes  city-animation {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
     
    
 #moon {
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;   
-    box-shadow: 30px 10px 0 #F7F8E0;
-    margin-top: 1em;
-    margin-left: 50%;
-    position: absolute;
-    z-index: -19;
-    }
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;   
+  box-shadow: 30px 10px 0 #F7F8E0;
+  margin-top: 1em;
+  margin-left: 50%;
+  position: absolute;
+  z-index: -19;
+}
 
 #wall{
-    height: 23em;
-    width: 100%;   
-    background: linear-gradient(to bottom,  #416663 0%,#0c0207 19%); 
-    bottom:0px; 
-    } 
+  height: 23em;
+  width: 100%;   
+  background: linear-gradient(to bottom,  #416663 0%,#0c0207 19%); 
+  bottom:0px; 
+} 
     
    
 
 #cat{
-    background: url('http://evasantos.com/ilustraciones/gatoCity/gatito.svg');
-    height: 297px; 
-    width: 507.5px;
-    margin-top: 2em;
-    margin-left: 2em;
-    z-index: 10;   
-    cursor:pointer;
-    /* animation: sprite-animation 1.2s steps(16,end) infinite; */
-    }   
+  background: url('http://evasantos.com/ilustraciones/gatoCity/gatito.svg');
+  height: 297px; 
+  width: 507.5px;
+  margin-top: 2em;
+  margin-left: 2em;
+  z-index: 10;   
+  cursor:pointer;
+  /* animation: sprite-animation 1.2s steps(16,end) infinite; */
+}   
 
 @keyframes sprite-animation { 
-        from { background-position: 0 0; }
-        to { background-position: -8120px 0; }
-    } 
+  from { background-position: 0 0; }
+  to { background-position: -8120px 0; }
+} 
 
-  #stepsTotal {
-    width: 150px;
-    height: 50px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 48px;
-    background: #F7F8E0;
-  }
+#stepsTotal {
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 48px;
+  background: #F7F8E0;
+}
 
-  #Treats{
-    width: 150px;
-    height: 50px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 48px;
-    background: #F7F8E0;
-  }
+#Treats{
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 48px;
+  background: #F7F8E0;
+}
 
-  #Bonus{
-    width: 150px;
-    height: 50px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 48px;
-    background: #F7F8E0;
-  }
+#Bonus{
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 48px;
+  background: #F7F8E0;
+}
 
-  .flexbox {
-    display: flex;
-    flex-direction: column;    
-    width: 100px;
-    height: 100px;
-  }
+.flexbox {
+  display: flex;
+  flex-direction: column;    
+  width: 100px;
+  height: 100px;
+}
 
-  .parent{
-    display: flex;
-    flex-direction: row; 
-    justify-content:space-around;   
-  }
+.parent{
+  display: flex;
+  flex-direction: row; 
+  justify-content:space-around;   
+}
   
 
-  label{
-    background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%);
-    color:antiquewhite;      
-  }
-  .Treat{
-    background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%);
-    font-size: 16px;
-    text-align: center;
-    color: antiquewhite;
-    border:none;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-  }
+label{
+  background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%);
+  color:antiquewhite;      
+}
+.Treat{
+  background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%);
+  font-size: 16px;
+  text-align: center;
+  color: antiquewhite;
+  border:none;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
  
