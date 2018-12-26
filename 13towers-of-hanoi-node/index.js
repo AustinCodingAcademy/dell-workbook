@@ -32,10 +32,10 @@ function isLegal(startStack, endStack) {
   let isLegalMove = false;  
   let stack1 = stacks[startStack];
   let stack2 = stacks[endStack];  
-   if(stack2.length < 1)   isLegalMove = true;
-   if (stack2[stack2.length-1] > stack1[stack1.length-1]) {
+  if(stack2.length < 1)   isLegalMove = true;
+  if (stack2[stack2.length-1] > stack1[stack1.length-1]) {
     isLegalMove = true;    
-   }
+  }
   return isLegalMove;
 }
 
@@ -44,7 +44,7 @@ function checkForWin() {
   if(stacks.a.length === 0 && (stacks.b.length === 0 || stacks.b.length === 4) && (stacks.c.length === 0 || stacks.c.length === 4)){
     win = true;
   }     
-    return win;
+  return win;
 }
 
 function towersOfHanoi(startStack, endStack) {
