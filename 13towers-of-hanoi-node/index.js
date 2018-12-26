@@ -28,34 +28,29 @@ function movePiece(startStack, endStack) {
 
 }
 
-function isLegal(startStack, endStack) {
-  if (stacks[endStack][stacks[endStack].length - 2] < stacks[endStack][stacks[endStack].length - 1]) {
-    movePiece(endStack, startStack);
-    printStacks();
-    console.log("IllegalMove.MoveReverted");
-  }
+function isLegal(startStack, endStack) {  
+  let isLegalMove = false;  
+  let stack1 = stacks[startStack];
+  let stack2 = stacks[endStack];  
+   if(stack2.length < 1)   isLegalMove = true;
+   if (stack2[stack2.length-1] > stack1[stack1.length-1]) {
+    isLegalMove = true;    
+   }
+  return isLegalMove;
 }
 
-function checkForWin(startStack, endStack) {
-  var cond1 = stacks[startStack].length === 0;
-  var cond2 = true;
-  var length = stacks[endStack].length;
-  for (var i = 0; i < length; i++) {
-    if (stacks[endStack][i] < stacks[endStack][i + 1])
-      cond2 = false;
-  }
-
-  if (cond1 && cond2 && length === 4) {
-    isGameOver = true;
-    console.log("youWon!!")
-  }
-
+function checkForWin() {  
+  let win = false;    
+  if(stacks.a.length === 0 && (stacks.b.length === 0 || stacks.b.length === 4) && (stacks.c.length === 0 || stacks.c.length === 4)){
+    win = true;
+  }     
+    return win;
 }
 
 function towersOfHanoi(startStack, endStack) {
   movePiece(startStack, endStack);
   isLegal(startStack, endStack);
-  checkForWin(startStack, endStack);
+  checkForWin();
 }
 
 function getPrompt() {
@@ -86,7 +81,7 @@ if (typeof describe === 'function') {
         b: [1],
         c: []
       };
-      assert.equal(isLegal('a', 'b'), false);
+      assert.equal(isLegal('a','b'), false);
     });
     it('should allow a legal move', () => {
       stacks = {
