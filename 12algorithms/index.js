@@ -73,24 +73,12 @@ function binarySearch(arr, item) {
       start = middle+1
     middle = Math.floor((start+end)/2)
   }
-  return (arr[middle] !== item) ? -1 : middle
+  return (arr[middle] !== item) ? false : middle
   
 
 }
 
-console.log("BUBBLESORT")
-console.log(arr);
-console.log("sortedarray:")
-console.log(bubbleSort(arr));
-console.log("MERGESORT");
-console.log(mergeSort(arr));
-console.log("BINARY SEARCH");
-let item = 1;
-let result =binarySearch(arr,item) 
-if(result === -1)
-  console.log(`Item ${item} Not found`)
-else
-  console.log(`Item ${item} Found at index ${result}`)
+
   
 
 // Tests
