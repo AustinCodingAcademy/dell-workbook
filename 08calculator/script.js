@@ -24,21 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function clearResults() {
     document.querySelector("#results").value = "";
-  }
-
-  // function addition() {
-  //   document.querySelector("#results").value += "+";
-  // }
-  // function sub() {
-  //   document.querySelector("#results").value += "-";
-  // }
-  // function multiply() {
-  //   document.querySelector("#results").value += "*";
-  // }
-
-  // function divide() {
-  //   document.querySelector("#results").value += "/";
-  // }
+  }  
 
   function flip() {
     document.querySelector("#results").value =
