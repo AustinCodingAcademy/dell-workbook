@@ -2,7 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
   let player = "X";
-  //var players=new Array(9);
   document.querySelectorAll("[data-cell]").forEach(cell => {
     cell.addEventListener("click", event => {
       player = player === "X" ? "O" : "X";
@@ -14,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector("button").addEventListener("click", event => {
     document.querySelectorAll("[data-cell]").forEach(cell => {
       cell.innerHTML = "";
+      document.querySelector("#announce-winner").innerHTML = "";
     });
   });
 });
@@ -45,6 +45,9 @@ function checkforWin(player) {
     document.querySelector(
       "#announce-winner"
     ).innerHTML = `Player '${player}' won`;
+    document.querySelectorAll("[data-cell]").forEach(cell => {
+      cell.innerHTML = "";
+    });
     return true;
   } else return false;
 }
