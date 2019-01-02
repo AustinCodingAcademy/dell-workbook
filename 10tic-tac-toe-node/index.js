@@ -21,44 +21,56 @@ function printBoard() {
 }
 
 function horizontalWin() {
-  const rows = board.length;
+  const winningMoves = [
+    [[0, 0], [0, 1], [0, 2]],
+    [[1, 0], [1, 1], [1, 2]],
+    [[2, 0], [2, 1], [2, 2]]
+  ];
 
-  for (var i = 0; i < rows; i++) {
-    if (
-      board[i][0] === playerTurn &&
-      board[i][1] === playerTurn &&
-      board[i][2] === playerTurn
-    ) {
-      return true;
-    }
-  }
+  let didPlayerWin = false;
+  winningMoves.forEach(combo => {
+    didPlayerWin =
+      didPlayerWin ||
+      (board[combo[0][0]][combo[0][1]] === playerTurn &&
+        board[combo[1][0]][combo[1][1]] === playerTurn &&
+        board[combo[2][0]][combo[2][1]] === playerTurn);
+  });
+
+  return didPlayerWin;
 }
 
 function verticalWin() {
-  const columns = board[0].length;
+  const winningMoves = [
+    [[0, 0], [1, 0], [2, 0]],
+    [[0, 1], [1, 1], [2, 1]],
+    [[0, 2], [1, 2], [2, 2]]
+  ];
 
-  for (var i = 0; i < columns; i++) {
-    if (
-      board[0][i] === playerTurn &&
-      board[1][i] === playerTurn &&
-      board[2][i] === playerTurn
-    ) {
-      return true;
-    }
-  }
+  let didPlayerWin = false;
+  winningMoves.forEach(combo => {
+    didPlayerWin =
+      didPlayerWin ||
+      (board[combo[0][0]][combo[0][1]] === playerTurn &&
+        board[combo[1][0]][combo[1][1]] === playerTurn &&
+        board[combo[2][0]][combo[2][1]] === playerTurn);
+  });
+
+  return didPlayerWin;
 }
 
 function diagonalWin() {
-  if (
-    (board[0][0] === playerTurn &&
-      board[1][1] === playerTurn &&
-      board[2][2]) === playerTurn ||
-    (board[0][2] === playerTurn &&
-      board[1][1] === playerTurn &&
-      board[2][0] === playerTurn)
-  ) {
-    return true;
-  }
+  const winningMoves = [[[0, 0], [1, 1], [2, 2]], [[0, 2], [1, 1], [2, 0]]];
+
+  let didPlayerWin = false;
+  winningMoves.forEach(combo => {
+    didPlayerWin =
+      didPlayerWin ||
+      (board[combo[0][0]][combo[0][1]] === playerTurn &&
+        board[combo[1][0]][combo[1][1]] === playerTurn &&
+        board[combo[2][0]][combo[2][1]] === playerTurn);
+  });
+
+  return didPlayerWin;
 }
 
 function checkForWin() {
@@ -76,12 +88,12 @@ function getPrompt() {
     rl.question("row: ", row => {
       rl.question("column: ", column => {
         ticTacToe(row, column);
-        getPrompt();
         if (checkForWin()) {
           winner = true;
           console.log("PLayer " + playerTurn + " won");
         }
         playerTurn = playerTurn === "X" ? "O" : "X";
+        getPrompt();
       });
     });
   }
