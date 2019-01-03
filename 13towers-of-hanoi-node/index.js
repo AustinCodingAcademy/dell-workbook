@@ -24,19 +24,32 @@ function movePiece() {
 
 }
 
-function isLegal() {
+function isLegal(startStack, endStack) {
   // Your code here
-
+  let pieceToMove = stacks[startStack][stacks[startStack].length - 1];
+  let pieceStackingOn = stacks[endStack][stacks[endStack].length - 1];
+  if (pieceToMove < pieceStackingOn || !pieceStackingOn) {
+    return true;
+  }
+  return false;
 }
 
 function checkForWin() {
   // Your code here
-
+  if (stacks.b.length === 4 || stacks.c.length === 4) {
+    console.log('You did it!!!');
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function towersOfHanoi(startStack, endStack) {
   // Your code here
-
+  if (isLegal(startStack, endStack)) {
+    stacks[endStack].push(stacks[startStack].pop());
+  }
+  checkForWin();
 }
 
 function getPrompt() {
