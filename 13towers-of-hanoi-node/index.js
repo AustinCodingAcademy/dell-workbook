@@ -22,36 +22,35 @@ function printStacks() {
 }
 
 function movePiece(startStack, endStack) {
-  var item = stacks[startStack].pop();
-  if (!isLegal(item, stacks[endStack])) {
+  if (!isLegal(startStack, endStack)) {
     console.log("not legal, try again");
-    stacks[startStack].push(item);
   } else {
     console.log("you did legal move");
-    var count = stacks[endStack].push(item);
-    checkForWin(count);
+    var item = stacks[startStack].pop();
+    stacks[endStack].push(item);
   }
 }
 
-function isLegal(item, arraytocheck) {
-  if (arraytocheck.length > 0) {
-    var lastitem = arraytocheck.pop();
-    arraytocheck.push(lastitem);
-    if (lastitem > item) {
-      return true;
-    } else {
-      console.log("you have entered incorrect value reenter");
-      return false;
-    }
-  }
-  return true;
+function isLegal(startStack, endStack) {
+  if (stacks[endStack].length < 1) return true;
+  if (
+    endStack[stacks[endStack].length - 1] >
+    startStack[stacks[startStack].length - 1]
+  )
+    return true;
+  else return false;
 }
 
-function checkForWin(count) {
-  if (count == 4) {
-    console.log("you won in " + rounds + " rounds");
+function checkForWin() {
+  let win = false;
+  if (
+    stacks.a.length === 0 &&
+    (stacks.b.length === 0 || stacks.b.length === 4) &&
+    (stacks.c.length === 0 || stacks.c.length === 4)
+  ) {
     win = true;
   }
+  return win;
 }
 
 function towersOfHanoi(startStack, endStack) {
@@ -62,6 +61,7 @@ function towersOfHanoi(startStack, endStack) {
     !(startStack === endStack)
   ) {
     movePiece(startStack, endStack);
+    checkForWin();
   } else {
     console.log("enter valid stacks");
   }
