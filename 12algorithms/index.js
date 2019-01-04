@@ -26,6 +26,7 @@ function bubbleSort(arr) {
       }
     }
   }
+  return arr;
   console.log("bubble sort iterations in total to sort : " + counter);
 }
 
@@ -59,9 +60,9 @@ function binarySearch(arr, item) {
   console.log(arr);
   console.log(item);
   var max = arr.length;
-  min = 0;
+  var min = 0;
   while (min < max) {
-    mid = Math.floor((min + max) / 2);
+    var mid = Math.floor((min + max) / 2);
     if (item == arr[mid]) {
       console.log(arr[mid] + "   " + mid);
       return mid;
@@ -73,6 +74,7 @@ function binarySearch(arr, item) {
       max = mid - 1;
     }
   }
+  return false;
 }
 
 // Tests
@@ -110,10 +112,10 @@ if (typeof describe === "function") {
   });
 } else {
   console.log("Run the tests!");
-  console.log(arr);
-  console.log("mergesort results are");
-  console.log(mergeSort(arr));
-  console.log("bubble sort results are");
-  bubbleSort(arr);
-  console.log(arr);
+  // console.log(arr);
+  // console.log("mergesort results are");
+  // console.log(mergeSort(arr));
+  // console.log("bubble sort results are");
+  // bubbleSort(arr);
+  // console.log(arr);
 }
