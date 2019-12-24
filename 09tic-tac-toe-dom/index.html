@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <title>tic tac toe (DOM)</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../resources/CSS/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+
+  <meta name="og:site_name" content="@nntrn" />
+  <meta name="og:title" content="dell-workbook" />
+  <meta name="og:url" content="https://nntrn.github.io/dell-workbook/">
+
+  <meta name="description" content="building a simple tic tac toe game by targeting elements in the DOM">
+
+  <link href="https://fonts.googleapis.com/css?family=Kalam:400,700" rel="stylesheet">
+
 </head>
+
 <body>
-  <div id="board">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
+  <div class="container">
+    <h1 class="title">TIC TAC TOE</h1>
+    <div id="board" class="noselect">
+      <div data-cell="0"></div>
+      <div data-cell="1"></div>
+      <div data-cell="2"></div>
+      <div data-cell="3"></div>
+      <div data-cell="4"></div>
+      <div data-cell="5"></div>
+      <div data-cell="6"></div>
+      <div data-cell="7"></div>
+      <div data-cell="8"></div>
+    </div>
+
+    <div id="announce-winner"></div>
+    <button id="clear">Clear Board</button>
   </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+
+
+  <div id="social-icons" class="noselect">
+    <a href="https://codepen.io/nntrn/pen/jQXxGN" title="view on codepen" target="_blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="icon" height="30" width="30"></a>
+    <a href="https://github.com/nntrn/dell-workbook/tree/gh-pages/09tic-tac-toe-dom" title="view on github" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="icon" height="30" width="30"></a>
+  </div>
+
   <script src="./script.js"></script>
 </body>
+
 </html>

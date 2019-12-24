@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>a fish farm</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="JS clicker game, cookie clicker, vanillaJS">
+  <meta name="description" content="clicker game game based on orteil's cookie cutter game">
+  <meta name="author" content="@nntrn">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <meta name="og:url" content="https://nntrn.github.io/dell-workbook/14final/">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+    integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/fish.css" media="all">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title disable-user-select">
+      a fish farm
+    </div>
+
+    <div class="instructions" >
+      fish for coins or coin for fish
+      <!-- TODO: instructions -->
+    </div>
+    
+    <div class="canvas">
+      <div id="fishbowl">
+          <canvas id="water">
+             <!-- TODO: canvas -->
+          </canvas>
+      </div>
+      
+      <div class="sidebar">
+        <!-- UPGRADES -->
+        <div class="upgrades">
+          <button id="upgrade1" title="upgrade" onclick="" class="btn-upgrade">
+            <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+            <!-- TODO: upgrades -->
+          </button>
+          <button id="add-more-fish" title="call a school of fish for 100 coins" onclick="schoolOfFish(20,1,100)" class="btn-buff">
+            <i class="fas fa-fish fa-2x"></i>
+          </button>
+        </div>
+
+        <!-- ITEMS -->
+        <div class="items">
+          <button id="fish-food" title="fish food" onclick="" class="btn-items">
+            <i class="fas fa-cookie-bite fa-2x"></i>
+            <!-- TODO: items -->
+          </button>
+        </div>
+
+        <!-- USER -->
+        <div class="user">
+          <!-- TODO: user -->
+        </div>
+
+      </div> <!-- //////////// sidebar -->
+
+    </div><!-- //////////// canvas -->
+    <div class="stats disable-user-select">
+      <div class="catches">0</div>
+      <div class="coins">0</div>
+      <div class="rank">
+        <!-- TODO: rank -->
+      </div>
+    </div>
+
+  </div><!-- //////////// container -->
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

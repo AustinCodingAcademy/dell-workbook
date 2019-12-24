@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>calculator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../resources/CSS/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+
+  <meta name="og:site_name" content="@nntrn" />
+  <meta name="og:title" content="dell-workbook" />
+  <meta name="og:url" content="https://nntrn.github.io/dell-workbook/">
+
+  <meta name="description" content="javascript calculator">
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="container noselect">
+
+    <div id="calc">
+      <div id="history"></div>
+      <div class="header">
+
+        <div id="equation"></div>
+        <input type="text" id="results" disabled>
+      </div>
+
+      <div class="section">
+
+        <div class="number-keys">
+          <button class="num" data-key="1" value="1">1</button>
+          <button class="num" data-key="2" value="2">2</button>
+          <button class="num" data-key="3" value="3">3</button>
+
+          <button class="num" data-key="4" value="4">4</button>
+          <button class="num" data-key="5" value="5">5</button>
+          <button class="num" data-key="6" value="6">6</button>
+
+          <button class="num" data-key="7" value="7">7</button>
+          <button class="num" data-key="8" value="8">8</button>
+          <button class="num" data-key="9" value="9">9</button>
+
+          <button id="neg" data-key="" value="n">+/-</button>
+          <button class="num" data-key="0" value="0">0</button>
+          <button id="equals" data-key="">=</button>
+        </div>
+
+        <div class="control-keys">
+          <button class="ops" data-key="+">+</button>
+          <button class="ops" data-key="-" value="minus">-</button>
+          <button class="ops" data-key="*">*</button>
+          <button class="ops" data-key="/">&divide;</button>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <button id="backspace" class="controls">del</button>
+        <button id="clear" class="controls">c</button>
+      </div>
+
+    </div>
+
+    <div id="social-icons">
+      <a href="https://codepen.io/nntrn/pen/XyYjpo" title="view on codepen"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="icon"></a>
+      <a href="https://github.com/nntrn/dell-workbook/tree/gh-pages/08calculator" title="view on github"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="icon"></a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

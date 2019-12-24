@@ -1,1 +1,410 @@
+:root {
+  font-family: "Times New Roman", Times, serif;
+  color: #272d33;
+  --navy: #30588c;
+  --soft-gray: #f4f7fb;
+  --gray: #e4e8ea;
+  --blue-gray: #eaeef2;
+  --almost-black: #152935;
+  --red: #E74C3C;
+  --blue: #0055B8;
+  --yellow: #F9E547;
+  --green: #5CB85C;
+  --sans-serif: "Helvetica Neue", -apple-system, Helvetica, Roboto, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", Arial, sans-serif;
+}
 
+body {
+  margin: 2%;
+  background: var(--soft-gray);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.caption p {
+  margin: 0;
+  padding: 2% 0;
+}
+
+.fr.container {
+  height: 20vw !important;
+  overflow: scroll;
+
+}
+
+.fr.container .card .caption {
+  overflow: scroll;
+}
+
+header {
+  font-family: var(--sans-serif);
+  position: fixed;
+  background: inherit;
+  padding: 1% 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header h1:after {
+  display: block;
+  font-size: .4em;
+  color: var(--red);
+}
+
+img:hover {
+  opacity: .8;
+}
+
+.container {
+  margin: 3% 0;
+  margin: 2% auto;
+  padding: 3%;
+  border-radius: 7px;
+  background: #fff;
+  border: 3px solid var(--gray);
+}
+
+.container:hover {
+  box-shadow: 0 0 4px 2px #dfe3e66e;
+}
+
+.section-title {
+  margin: 0;
+  padding: 2% 0;
+  padding-top: 0;
+}
+
+.section-title h1 {
+  margin: 0;
+  padding: 0%;
+  color: var(--blue);
+  font-style: italic;
+  font-family: var(--sans-serif);
+  line-height: 110%;
+  font-size: 1.02em;
+}
+
+.caption::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: transparent;
+}
+
+.caption::-webkit-scrollbar-thumb {
+  background: #edeff1;
+  border-radius: 10px;
+}
+
+/* post- links *********************************************/
+.post-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  white-space: pre;
+}
+
+.post-links {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(to left, white 0%, #edeff1 50%, white 100%);
+  border-image-slice: 1;
+  background: white;
+  width: 100%;
+  padding: 1% .5%;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.post-links>div {
+  padding: 0;
+  font-size: .7em;
+  font-family: var(--sans-serif);
+  background: transparent;
+  margin: 0 1%;
+}
+
+.post-links a {
+  color: rgba(136, 151, 162, 0.95);
+  overflow: hidden;
+  display: block;
+  padding: 0px .75%;
+  text-align: center;
+  transition: color 300ms ease-in;
+}
+
+.post-links>div:hover {
+  color: var(--navy);
+  transform: translate(0, -2px);
+  transition: transform 200ms ease-in;
+}
+
+.post-links>.likes {
+  border: 3px solid transparent;
+  white-space: pre;
+  border-radius: 10px;
+}
+
+.post-links .likes a {
+  color: var(--red);
+}
+
+.post-links .read-more a {
+  text-decoration: underline;
+  opacity: .8;
+  line-height: 1.5em;
+}
+
+.caption,
+.post-links {
+  position: relative;
+}
+
+/* read more link */
+a[data-readmore-toggle] {
+  z-index: 10;
+  width: 80%;
+  position: absolute;
+  right: 1%;
+  text-align: right;
+  bottom: 0;
+  font-size: 1.5em;
+  padding: 3px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+/* feature post *********************************************/
+.square .container:before {
+  content: "featured post";
+  position: absolute;
+  z-index: 2;
+  background: var(--green);
+  font-family: var(--sans-serif);
+  font-size: 1em;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.square .container {
+  border-color: var(--green);
+  padding-top: 1.3em;
+}
+
+.square .container .card,
+.square .image {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 2%;
+}
+
+/*****************************************************
+* Small screens (default)
+******************************************************** */
+html {
+  font-size: 100%;
+}
+
+header h1:after {
+  content: "mobile view";
+}
+
+.css-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+  width: 99%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: .75% 0;
+}
+
+.image {
+  padding: 1%;
+  width: 40%;
+  flex: 1 12em;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1%;
+  margin-bottom: 3%;
+  flex: 1 10em;
+  height: 100% !important;
+}
+
+div[class^="grid-"],
+.post {
+  position: relative;
+}
+
+.post .container .card .caption {
+  overflow: scroll;
+}
+
+/*****************************************************
+/* Medium screens (640px) 
+******************************************************** */
+@media (min-width: 40rem) {
+  html {
+    font-size: 112%;
+  }
+
+  header h1:after {
+    content: "tablet view";
+  }
+
+  .css-grid {
+    flex-flow: row wrap;
+  }
+
+  .post {
+    width: calc(98% / 2);
+    margin-left: 1%;
+  }
+
+  .post .container {
+    min-height: 25vw;
+  }
+
+  .post .card {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 80%;
+    height: 40%;
+  }
+
+  .square {
+    order: -10;
+    width: 100%;
+  }
+
+  .square .container {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .square .image img {
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .square .caption {
+    height: 100% !important;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  .half .container {
+    flex-direction: row;
+  }
+
+  .half .image {
+    max-width: 40%;
+    max-height: 90%;
+  }
+
+  .half .container .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+  }
+}
+
+/*****************************************************
+/* Large screens (1024px)
+******************************************************** */
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+
+  header h1:after {
+    content: "desktop view";
+  }
+
+  .container .section-title {
+    white-space: pre-line;
+    overflow: hidden;
+  }
+
+  .css-grid {
+    display: inline-grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, .5fr);
+    grid-gap: .5rem;
+  }
+
+  .container *:not(.caption):not(li) {
+    overflow: hidden;
+  }
+
+  div[class^="grid-"],
+  .post {
+    position: relative;
+  }
+
+  .half {
+    grid-column: 2 span;
+    width: unset;
+    height: unset;
+  }
+
+  .square {
+    display: grid;
+    grid-column: 2 span;
+    grid-row: 2 span;
+    grid-row: 2/4;
+    width: unset;
+    height: unset;
+  }
+
+  .square .container {
+    flex-direction: column;
+  }
+
+  .fr {
+    grid-column: 1 span;
+    width: unset;
+    height: unset;
+  }
+}

@@ -8,3 +8,7 @@ npm-debug.log*
 
 # OS artifacts
 *.DS_Store
+
+# other
+.history
+.vscode

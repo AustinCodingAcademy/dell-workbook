@@ -1,0 +1,327 @@
+/* 
+* assignment notes
+* https://nntrn.github.io/dell-workbook/03floats/README
+*/
+
+/* Base Styles
+******************************************************** */
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 1.25em;
+}
+
+body {
+  background: #ededee;
+  font-family: Roboto, arial, sans-serif;
+}
+
+/* Typography
+******************************************************** */
+a {
+  color: #ecebeb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #27af72;
+}
+
+/* Layout
+******************************************************** */
+header {
+  background: #193a55;
+  color: white;
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: .25rem;
+  position: relative;
+}
+
+header:after {
+  clear: both;
+}
+
+.website-logo {
+  float: left;
+}
+
+.website-logo img {
+  width: 14rem;
+  height: auto;
+}
+
+/* NAV ******************* */
+nav {
+  background: transparent;
+  font-weight: 500;
+  bottom: 0;
+  display: table-cell;
+  float: left;
+  margin-top: 2.5%;
+}
+
+nav .navigation li {
+  display: inline-block;
+  font-size: .75em;
+  vertical-align: bottom;
+  margin: 2px;
+}
+
+nav ul,
+.navigation {
+  padding: 0 10px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.navigation li a {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.navigation *:before {
+  padding: .5rem;
+  color: #06233c;
+  font-family: FontAwesome;
+}
+
+/* SECTION ******************* */
+section:before {
+  position: absolute;
+  background: linear-gradient(to bottom, #0a2761, #0542b4, #a3d2f6);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .7;
+  content: "";
+  z-index: 1;
+  mix-blend-mode: lighten;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/airline.jpg);
+  background-size: 100% 100%;
+}
+
+/* CONTENT ******************* */
+.content {
+  min-width: 40%;
+  max-height: 40%;
+  margin: 2rem;
+  position: absolute;
+  display: table;
+  background: #082f56;
+  color: #ecebeb;
+  z-index: 5;
+  border-radius: .5em;
+  font-size: .8em;
+  font-weight: 500;
+  box-shadow: 0 .3rem 0px #07162f;
+}
+
+.tabs {
+  margin-bottom: .2rem;
+  background: rgba(250, 250, 250, .3);
+  background-color: #27af72;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+.tab:hover input {
+  box-shadow: inset 0 100px rgba(250, 250, 250, .2);
+}
+
+.page {
+  padding: .5rem;
+}
+
+/* Forms
+******************************************************** */
+fieldset {
+  border: 0px solid white;
+  padding: 0px;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type="button"] {
+  width: 33.3%;
+  padding: 10px 0px;
+  box-shadow: inset 0 -3px rgba(250, 250, 250, .3);
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+  background: transparent;
+  float: left;
+  display: table-cell;
+  background-repeat: no-repeat;
+}
+
+.plane input {
+  background: #097edc;
+  border-top-left-radius: .3rem;
+  background-image: url(img/plane-icon.png);
+}
+
+.car input {
+  border-top-right-radius: .3rem;
+  background-image: url(img/car-icon.png);
+}
+
+.hotel input {
+  background-image: url(img/hotel-icon.png);
+}
+
+input[type="button"] {
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: .9rem;
+  background-position: center;
+}
+
+input[type="date"],
+input[type="text"] {
+
+  background: #082f56;
+  display: table-cell;
+  margin: .1rem;
+  width: 47%;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  padding: .6rem .4rem;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 2px solid #1e1e34;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background: rgba(250, 250, 250, .15);
+
+}
+
+input[type="submit"] {
+  border: 0px solid white;
+  width: 100%;
+  margin: 1rem auto;
+  padding: .3rem;
+  background: #0066ff;
+  border: 3px solid #064bb2;
+  color: white;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+select {
+  height: 30px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 2px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin: .6em;
+}
+
+.no-label label {
+  display: none;
+}
+
+label {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label {
+  display: inline;
+  font-weight: normal;
+  margin-right: 3%;
+}
+
+/* RESPONSIVE
+******************************************************** */
+.row:after {
+  clear: both;
+}
+
+.col {
+  display: inline;
+  margin: 10px 2px;
+}
+
+/* ETC
+******************************************************** */
+.selected {
+  color: #27af72;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Media Queries
+******************************************************** */
+/* For devices smaller than 500px */
+@media (max-width: 500px) {
+
+  nav li,
+  .navigation {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  input[type="date"],
+  input[type="text"],
+  select {
+    width: 100%;
+    display: table-row;
+    margin: .4rem 0;
+  }
+}
+
+/*  nav li:before {
+      font-size:2em;
+      display: table;
+      padding: 0px!important;
+  }
+  nav li a {
+      display: table-cell;
+  }
+  nav li {
+      width: 10%!important;
+      word-break: keep-all;
+      white-space: pre;
+      overflow: hidden;
+  } */

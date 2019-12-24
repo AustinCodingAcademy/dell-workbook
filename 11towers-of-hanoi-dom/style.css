@@ -36,3 +36,120 @@
   font-size: 50px;
   text-align: center;
 }
+
+/* custom css below this line *******************************/
+:root {
+  --default-font: 300 20px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+body {
+  background-color: #e5f0f9;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.container {
+  position: absolute;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 10%;
+  width: 90vw;
+  align-items: center;
+}
+
+[data-stack] {
+  all: unset;
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+  width: 10rem;
+  height: 12px;
+  position: relative;
+  border-radius: 10px;
+  background: white;
+}
+
+[data-stack]:after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 12px;
+  z-index: -1;
+}
+
+[data-block] {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: inset 0px 0 0 50px rgba(255, 255, 255, .3), inset 1px -4px 2px 0px rgba(0, 0, 0, .25);
+  position: relative;
+  filter: hue-rotate(-10deg);
+}
+
+[data-block]:hover {
+  border: 0px solid rgba(255, 255, 255, .75);
+  box-shadow: inset 0px 0 0 50px rgba(255, 255, 255, .3);
+}
+
+#announce-game-won {
+  all: unset;
+  font: var(--default-font);
+  position: absolute;
+  box-shadow: inset 0 -3px 0 0px white;
+  text-align: center;
+  bottom: 0;
+}
+
+.game-win {
+  animation: spiral-up 700ms ease 1;
+}
+
+@keyframes spiral-up {
+  0% {
+    transform: rotate(-5deg);
+    margin: 0;
+  }
+
+  50% {
+    transform: rotate(5deg);
+    margin: 2px;
+  }
+}
+
+.selected {
+  border: 0px solid rgba(255, 255, 255, .93);
+  box-shadow: inset 0px 0 0 50px rgba(255, 255, 255, .3);
+  transform: translate(2rem, 0);
+  animation: pop 300ms ease-out 1;
+}
+
+.selected-stack {
+  background: rgb(174, 205, 231);
+}
+
+@keyframes pop {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(2rem, 0);
+  }
+}
+
+@keyframes spiral-up {
+  0% {
+    transform: rotate(-5deg);
+    margin: 0;
+  }
+
+  50% {
+    transform: rotate(5deg);
+    margin: 2px;
+  }
+}

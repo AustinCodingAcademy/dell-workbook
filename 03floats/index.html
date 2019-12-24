@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title>UX ATLANTIC</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../resources/CSS/normalize.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="website-logo">
+      <img src="img/logo.png">
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li class="fa-home"><a href="#">home</a></li>
+        <li class="fa-plane"><a href="#">travel deals</a></li>
+        <li class="fa-calendar"><a href="#">flight schedule</a></li>
+        <li class="fa-sign-in"><a href="#">register/login</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section>
+
+    <div class="content">
+
+      <div class="clearfix tabs">
+
+        <div class="tab plane"> <input type="button"></div>
+        <div class="tab hotel"> <input type="button"></div>
+        <div class="tab car"> <input type="button"></div>
+
+      </div>
+
+      <div class="page flights-page">
+        <form>
+          <fieldset>
+            <p class="no-label">
+              <label for="text1">depart</label>
+              <input id="text1" type="text" placeholder="depart" maxlength="3">
+
+              <label for="text2">arrive</label>
+              <input id="text2" type="text" placeholder="arrive" maxlength="3">
+            </p>
+
+            <p class="no-label">
+              <label for="date1">Date</label>
+              <input id="date1" type="date">
+
+              <label for="date2">Date</label>
+              <input id="date2" type="date">
+            </p>
+
+            <div class="row">
+
+              <div class="col">
+                <label for="select">Passengers</label>
+                <select id="select" class="select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label for="radio1">
+                  <input id="radio1" name="radio" type="radio" class="radio"
+                    checked="checked">
+                  Return</label>
+                <label for="radio2">
+                  <input id="radio2" name="radio" type="radio" class="radio">
+                  One
+                  way</label>
+
+              </div>
+
+            </div>
+
+            <input type="submit" value="Search flights">
+          </fieldset>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

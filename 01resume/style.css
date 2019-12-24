@@ -1,0 +1,539 @@
+body {
+  line-height: 130%;
+  font-weight: 400;
+  margin: 0px;
+  zoom: 1.001;
+}
+
+* {
+  font-family: Nunito, Rubik, roboto, lato, open sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+img {
+  mix-blend-mode: normal;
+}
+
+#contentarea,
+#titlearea {
+  width: 100% !important;
+  max-width: 85% !important
+}
+
+#contentarea .markdown-cell {
+  border: none !important;
+}
+
+.container {
+  border: 0px solid #eee;
+  background: #fff;
+  position: relative;
+  width: 88% !important;
+  margin: 10px auto !important;
+  padding: 4% !important;
+  box-sizing: border-box;
+}
+
+
+/*
+grid table from: http://getskeleton.com/
+*/
+
+.row {
+  clear: both;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 4px;
+  margin: 2px 0;
+}
+
+@media (min-width:550px) {
+  .container {
+    width: 100%;
+  }
+
+  .column,
+  .columns {
+    margin: .5% 0%;
+    margin-left: 3.9999999997%;
+    padding-left: .9999999997%;
+  }
+
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .one.column,
+  .one.columns {
+    width: 8.3333333333%;
+  }
+
+  .two.columns {
+    width: 13.3333333333%;
+  }
+
+  .three.columns {
+    width: 22%;
+  }
+
+  .four.columns {
+    width: 31.9999999997%;
+  }
+
+  .five.columns {
+    width: 39.3333333333%;
+  }
+
+  .six.columns {
+    width: 48%;
+  }
+
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+
+  .eight.columns {
+    width: 63.9999999994%;
+  }
+
+  .nine.columns {
+    width: 74.0%;
+  }
+
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+
+  .eleven.columns {
+    width: 91.6666666667%;
+  }
+
+  .twelve.columns {
+    width: 97%;
+    margin-left: 0;
+  }
+
+  .one-quarter.column {
+    width: 23.6666666667%;
+  }
+
+  .one-third.column {
+    width: 30.36666666667%;
+  }
+
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+
+  .one-half.column {
+    width: 48%;
+  }
+
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%;
+  }
+
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+  }
+
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%;
+  }
+
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%;
+  }
+
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%;
+  }
+
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%;
+  }
+
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%;
+  }
+
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%;
+  }
+
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%;
+  }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%;
+  }
+
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%;
+  }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%;
+  }
+}
+
+.one-half,
+.one-quarter,
+.one-third {
+  box-shadow: inset 0px 0px 0px 0px #999;
+  background: none;
+  color: inherit;
+  margin-bottom: 9px;
+  padding: 0px;
+}
+
+.twelve,
+.twelve.columns {
+  background: none;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+
+  h4 {
+    font-size: 1.3em
+  }
+}
+
+a {
+  color: #1EAEDB;
+  text-decoration: none;
+  font-weight: initial;
+  font-size: initial
+}
+
+a:hover {
+  color: #0FA0CE;
+}
+
+.header {
+  margin-top: .3rem;
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 110%;
+  margin: 0px;
+  font-weight: 700;
+}
+
+h1 {
+  display: block;
+  font-size: 1.9em;
+  margin: 0px;
+  margin-bottom: 0px !important;
+}
+
+h2 {
+  display: block;
+  font-size: 1.25em;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-weight: 400;
+  color: #262626;
+}
+
+h3 {
+  font-size: 1.15em;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #262626;
+}
+
+h4 {
+  font-size: 1.03em;
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.03em;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1.13em;
+  color: #84a4ae;
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 2px;
+}
+
+li {
+  list-style-type: circle;
+  padding: 2px 4px;
+  margin: 3px;
+}
+
+#email:before {
+  content: "\f0e0";
+}
+
+#linkedin:before {
+  content: "\f08c";
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: inherit
+}
+
+#phone:before {
+  content: "\f095";
+}
+
+#location:before {
+  content: "\f041";
+}
+
+ul {
+  padding: 2px 1px !important;
+  margin-top: 0px !important;
+  margin-left: 30px;
+  margin: 0px 4px 0px 30px;
+}
+
+
+/*
+resume skill progress bar:
+https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/
+*/
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #434E5E;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.progress {
+  display: flex;
+  height: .5rem;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.895rem;
+  background-color: #DCE5E8;
+  border-radius: 0.25rem;
+}
+
+.theme-progress-bar-dark {
+  background-color: #434E5E;
+}
+
+.list-unstyled,
+.mb-2 {
+  list-style-type: none;
+  margin: 3px 0px;
+}
+
+.list-unstyled {
+  padding: 0px;
+  margin: 0px;
+}
+
+.resume-skill-name {
+  font-size: 0.8025rem;
+  color: #000;
+  margin-left: 4px;
+  float: left;
+  padding-right: 4px;
+  font-weight: 400;
+}
+
+.header * {
+  padding: 0px
+}
+
+.download {
+  padding: 2px 4px !important;
+  outline: 0;
+  background: white;
+  border: none;
+  border-radius: 0px;
+  display: inline !important;
+  margin: 0px 3px;
+  color: #444;
+}
+
+.fa,
+.contact-info *:before {
+  font-family: FontAwesome;
+}
+
+.fa:hover {
+  color: #93afb8;
+}
+
+.contact-info ul {
+  margin-left: 0px !important;
+}
+
+.contact-info li:before {
+  width: 150% !important;
+  border-right-width: 0px;
+  color: #93afb8;
+  padding: 0px 2px;
+}
+
+.contact-info li {
+  list-style-type: none;
+  display: inline-block;
+  background: rgba(0, 128, 255, 0);
+  background: #f0f4f5;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  padding: 0px;
+  margin: 2px 0;
+  font-size: .89rem;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.contact-info li:hover {
+  background: #f0f4f5;
+  background: rgba(0, 128, 255, 0);
+  border: 1px solid #ffffff;
+  transition: background 300ms;
+}
+
+#cert {
+  margin-left: 0px !important;
+}
+
+#cert li {
+  list-style-type: none;
+  background: #f2f2f2;
+  display: table;
+  margin: 5px 0;
+  padding: 2px;
+}
+
+#cert li:hover {
+  background: #ddd;
+}
+
+.hashtag:before,
+.hashtag:after {
+  color: #93afb8;
+  font-size: 104%;
+}
+
+#skills {
+  margin-left: 0px !important;
+  font-size: .8rem;
+}
+
+#skills li {
+  list-style-type: none;
+  line-height: 105%;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px;
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media print {
+  body {
+    zoom: 1.05
+  }
+
+  body:after {
+    content: "you can view this at: nntrn.me/me/resume";
+    font-size: .8em;
+    position: fixed;
+    bottom: 0;
+    font-family: arial;
+    text-align: left !important;
+    letter-spacing: .6px;
+    background: white;
+    opacity: .75;
+    width: 88%;
+    display: block;
+  }
+
+  .one-third.column,
+  .one-half.column {
+    width: 70%;
+  }
+
+  .column,
+  .columns,
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 15px !important;
+  }
+
+  .contact-info li {
+    display: block;
+  }
+
+  .container {
+    width: 100% !important;
+    margin: 0px auto !important;
+    padding: 4% !important;
+    box-sizing: border-box;
+  }
+}

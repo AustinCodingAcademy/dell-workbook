@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>flexbox</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../resources/CSS/normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+  <meta name="description" content="sample web layout using flexboxes only">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="image">
+      <a class="focus" href="#">
+        <img src="https://placeimg.com/640/480/any">
+      </a>
+    </div>
+
+    <div class="card">
+
+      <div class="section-title">
+        <h1>assignment 4</h1>
+      </div>
+
+      <div class="caption">
+
+        When the width is at least 576px, it needs to look horizontal. But when
+        the width shrinks down under 576px, it needs to be vertical
+
+        <ol>
+          <li>Do not use media queries for this, use flex and flex-wrap</li>
+          <li>For the image url, you can use https://placeimg.com/640/480/any</li>
+          <li> Make sure the content and image are centered and look good with
+            padding, etc.</li>
+        </ol>
+
+        Flexbox utilizes two fundamental types of elements. Their interaction
+        determines how a flex layout will behave:
+        <ul>
+          <li>The <strong>flex container</strong> - the parent element which
+            wraps child elements contained therein. The <strong>flex container</strong>
+            should have its <code>display</code> property set to <code>flex</code>
+            or <code>inline-flex</code>.<ul>
+              <li>The <strong>align-items</strong> property makes use of this
+                parent-child relationship, as it defines how flex items are
+                laid
+                out along the cross axis on the current line.</li>
+            </ul>
+          </li>
+          <li>The <strong>flex item(s)</strong> - the child element nested
+            within
+            a flex container.<ul>
+              <li>Similar to <code>align-items</code>, <strong>align-self</strong>
+                can be used to define how a single flex item is aligned on the
+                cross axis. It <strong>overrides</strong> the default value
+                established by align-items.</li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="post-links">
+        <div class="likes"><a href="#">&hearts; 12</a></div>
+        <div class="read-more"><a href="#">Read More</a></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

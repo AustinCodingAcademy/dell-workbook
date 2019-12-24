@@ -1,0 +1,49 @@
+#fishbowl {
+  width: 80vw;
+  height: 70vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+@keyframes swimv {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(10vh);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(20vh);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes swimh {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.selected-fish {
+  display: none;
+  transition: 700ms;
+}
+
+.fa-fish {
+  border-radius: 50%;
+  padding: 5px;
+}
+

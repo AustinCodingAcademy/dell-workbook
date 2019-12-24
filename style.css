@@ -1,1 +1,101 @@
-/* You can style your links page here */
+html {
+  font-size: 100%
+}
+
+body {
+  margin: unset;
+  padding: unset;
+  overflow: auto;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background: #333;
+  background: #3498db;
+}
+
+.container {
+  font-family: monospace;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.hello {
+  white-space: pre-line;
+  font-weight: bold;
+  font-size: 1em;
+  color: #ccc;
+  margin: .5rem;
+  padding: .14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.hello div {
+  background: #3498db;
+  padding: 0 .25rem;
+  color: #ffffffcf;
+}
+
+.hello div:last-child {
+  bottom: 0;
+  background: #fff;
+  overflow: hidden;
+  color: #3498dbc2;
+}
+
+.content {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding: .5rem;
+}
+
+.content a {
+  display: table;
+}
+
+.content a::before {
+  content: counter(my-counter)".";
+  color: #888;
+}
+
+.content a:hover {
+  background: white;
+  font-style: italic;
+  box-shadow: inset 0 -3px #3498db;
+  display: table-row
+}
+
+a:visited, a {
+  color: #555;
+}
+
+.content a {
+  text-decoration: none;
+  counter-increment: my-counter;
+  content: counter(my-counter);
+}
+
+.hi {
+  display: none;
+  position: absolute;
+}
+
+.hello div:hover .hi {
+  display: block;
+  width: 85%;
+  text-align: right;
+}
+
+.hello div {
+  overflow: hidden;
+}
