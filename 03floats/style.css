@@ -21,6 +21,10 @@ body {
   padding-left: 50px;  
 }
 
+.header {
+  height: 7vh;
+}
+
 .header-list {
   float: right;
   color: white;
@@ -54,7 +58,7 @@ main {
   background-image: url(img/airline.jpg); 
   background-size: 100%;
   width: auto;
-  height: 90.8vh;
+  height: 92.9vh;
   background-size: cover;
 }
 
